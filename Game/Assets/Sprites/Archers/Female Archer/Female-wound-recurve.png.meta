@@ -1,0 +1,3839 @@
+fileFormatVersion: 2
+guid: 72fca4dae3b155e43bf212fb43a52209
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Female-wound-recurve_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1988
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4970293881cfa6844a47b0071e20986d
+      internalID: -1105533367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1988
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d326d4a7fcdb98843a3e373f2fd65855
+      internalID: 633463979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1988
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e09612ee1c1a9c449210d5ad6a511f0
+      internalID: -533577706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1988
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c148fe955045b44bbdb8131c46f95a1
+      internalID: 1170299732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1988
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab63feba8f966714882d661190243937
+      internalID: 547712779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5d2108fc93f2c49a286dbd1796cbb6
+      internalID: 2031925686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1993dd90116f24d8ed2323a842d791
+      internalID: 2021911472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_7
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1988
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f058f4fecc4700b46a72e38aee4f1f31
+      internalID: 276641359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_8
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1988
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d58775051800504081e0a04ece1d824
+      internalID: -548414114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_9
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ed92022be518d4dab3d2f0a34a2f32
+      internalID: 1282923785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_10
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8cbc42ec09d26498265020b29904b8
+      internalID: 1550407055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_11
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1751e8ad7ad87441a0e12fe96dbe681
+      internalID: 1436232815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_12
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320a3d626091aab4f96fd09c08378797
+      internalID: -920604758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1924
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aede54708082de14384e97410fd90fa1
+      internalID: 867730077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1924
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a451389e5d576449d04de5ca57b035
+      internalID: 2088656707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1924
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92418e621beefb54b9645c16b1d407ee
+      internalID: -797915752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_16
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1924
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbceef5dd0b1c6489549a356825d926
+      internalID: 103273367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_17
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1924
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bab32bb3fe24ed4693390250a0e79e5
+      internalID: 1204535901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_18
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1924
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c9ed67c0450a34381282428f62eb53
+      internalID: -78433533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_19
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1924
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a95184503074cf458bace8298998804
+      internalID: -503477455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_20
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1924
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8312cd8ac549e084b844ad6aef72dcbc
+      internalID: -102539443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_21
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1924
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8285aad76e02d64cb0f57d845d6dc9e
+      internalID: 1009654701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_22
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1924
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f712f33ce527c479d4fc5389cc58ff
+      internalID: 701827082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_23
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1924
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4dbe439f48851f4ba210c5fe39b0c3e
+      internalID: 1135931967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_24
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1924
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c17f19d4a88f844bad297ccaeee4fe
+      internalID: -1998636676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_25
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1924
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ed7222f4ba5c841a2357f7998b24bb
+      internalID: 752158595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_26
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1860
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d015dbd96c51b63419a88b3c33a90db4
+      internalID: 587641785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_27
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1860
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef3a164381abe54fb1f5f26d3a7aa0a
+      internalID: -1863779645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_28
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1860
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36955568efcf6df458f7628b379b1efe
+      internalID: -216675629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_29
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1860
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce34e3d41c38bf943afd297f2a72a763
+      internalID: -527216560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_30
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfc13b359c87414d93d01728b63e2ed
+      internalID: -1850324535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_31
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39077142fb9c3f1469ff4b43da083815
+      internalID: 618645131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_32
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ceeea7b1e9164d43b0bf0910b747f27
+      internalID: -1787747065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_33
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1b5d23f29adae4895bdf3aa16420ca
+      internalID: -1171497188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_34
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34751b9c9491fce40b72d84a9d699182
+      internalID: -1452422153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_35
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79f61227336b404eb2a8896d1f77333
+      internalID: 812455647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_36
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c643c4d32f5d504b8d310b33c3a76e2
+      internalID: -240013661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_37
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1860
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ddfa8d8f5c0da4484abe146c6e002a
+      internalID: -1661375907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_38
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1860
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd6ca4e1788a8041a64b2b4e9d96333
+      internalID: 741164728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_39
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1796
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c8db12088230a48ba0ce2653e5b204
+      internalID: 155304528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1796
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1bf4a91e3854f4e9cb712f93cf60eb
+      internalID: -241138589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1796
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3229581c22a44d479fc92cf271497c5
+      internalID: 440950585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_42
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1796
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fc1b0f396972d4aa569d146d46d468
+      internalID: 1941828011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_43
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1796
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8dab2ffd925d148a4695ec32e05206
+      internalID: 816451597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_44
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1796
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a1d3c022bdc9f4b958ebac270cbe4b
+      internalID: -1790546842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_45
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1796
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d712af0110ea3e7449816298fe955a87
+      internalID: -490201965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_46
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1796
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7bf1ab050fe254e9048240b1c6476c
+      internalID: -699503806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_47
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1796
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de252e4da3d70004e83d063aeffd9e5a
+      internalID: 1162381115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_48
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1796
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03df4dc5ef85afd449db910694c549af
+      internalID: 1932473715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_49
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1796
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8b42d3d84918542a9ef5e9130d24a8
+      internalID: 2141660787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_50
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1796
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9a37145bee2ae41b6664dee4d8eddb
+      internalID: 561301564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_51
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1796
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faa8a6b232678d499275cb2bc7f7f03
+      internalID: -971232276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f8c6c712af23a439e374b1f6d1cd28
+      internalID: -570776140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_53
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d09d2b2da14aea43b42af415f53e24e
+      internalID: -109784596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_54
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b22bd46e3b5b824795b7aa2676bfa26
+      internalID: -1519540895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_55
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1665
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dce0274036357b4d9fd13aa4bd0e191
+      internalID: 375188625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_56
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e5bb56add0bae499b8ca64b50024d0
+      internalID: 1872054354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_57
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605e75fb0570b0b4ab893dbdf149b58f
+      internalID: -538569709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_58
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542d47c0db13c034681ac6023ceefa73
+      internalID: 65569601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_59
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1665
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86182c2ce1c7ef34582f15fe3f2a7924
+      internalID: -1199002004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1537
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67428c8f86e7aca45947523e69af3b0c
+      internalID: -576908391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_61
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1537
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3886955854161cc488f053dd62e5f7c4
+      internalID: 1945245932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_62
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1537
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc237351e2194ea46b6d497dae56f4ee
+      internalID: 1736258585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_63
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1537
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4144164c9270b5c48bc906ba64b2695f
+      internalID: 1041017723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_64
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1537
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77b5ea2f17367604191997f67fa262ad
+      internalID: -1197285712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_65
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1537
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 783d440032be2474b8f3e2ca935fb933
+      internalID: 155794638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_66
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1537
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e6d76f0d58ca54a9c8b562ab6ec653
+      internalID: -1275303234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_67
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1537
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b054183d897c558488139ab52e6eccc0
+      internalID: 1457887269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_68
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38847e83bce31b34bb2748154384505d
+      internalID: 1559333423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b58055acc39c884da1d2c37ad2a1ac1
+      internalID: -723107804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_70
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f1763947938184983b1010f3abd873
+      internalID: 44755185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_71
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1409
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ff36e5b70de2d4baa3561375a0ddf5
+      internalID: -455370316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_72
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4706d277fbf35204a9849065623e269d
+      internalID: -1458849689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_73
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ae81aa315c979488a234a32a205ace
+      internalID: 1968667463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_74
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbbf4c327df73f41bf42f74e3396c52
+      internalID: -625566400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_75
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1409
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09328f801e2413b489b17ea6d085dca0
+      internalID: 382575660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_76
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1281
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a9c778b4c6f7d84d9669eb1bcde6aa2
+      internalID: -1900276935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_77
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1281
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5b83c8f2bef91489f6315cb9e172b9
+      internalID: -440851132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_78
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1281
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e60885a2078694abccc6f27c0325b5
+      internalID: -215391735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_79
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1281
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c34713bdde97774688b66e8b3349177
+      internalID: 1659615814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_80
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1281
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a8902af4b7bf240a5503313483900d
+      internalID: 557923073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_81
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1281
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46ac351452a2cf544a78d1d5e8b3ab6f
+      internalID: -2044158837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_82
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1281
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31eeb1f9f1bc2f241adba6a2e039ee07
+      internalID: -838496677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_83
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1281
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0213ef3a7ed864db551a4cee655eb3
+      internalID: 1356835446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_88
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 969
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dddc76e13ac2a14b838ae7608b99604
+      internalID: 806527301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_89
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 969
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0d459f441bca74d808b4a45da8961d
+      internalID: 828340317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_90
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 969
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ccfc47fa7f80c4b8c086b3624430a6
+      internalID: 1424208109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_91
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 969
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c57a5a05b4fd940b3a92619a91b81e
+      internalID: -849188826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_92
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 969
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817d2df5c61aaf3478b0b92bc7f6aa16
+      internalID: -1805550309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_93
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b25f4dc7c3c784c98b63be60a6d2fe
+      internalID: -729507259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_94
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824120996d45ec84eab74f330d30f12c
+      internalID: -331836648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_95
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 969
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fc879ac39d93540bb9c854cdd40f67
+      internalID: -184787877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_96
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 969
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac29315d4458de44b5cb6ddd4161e74
+      internalID: -269609797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_97
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d95704225908dd148bd9ba80b3eabce1
+      internalID: -1457718449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_98
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2844dd2252495394e9be9493cf6ab0b6
+      internalID: -1983689547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_99
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2c39ab79221db4ba432c8d507a7613
+      internalID: 22978954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_100
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989075bdb03086a4cb1ab01f7ddf3680
+      internalID: -1744282683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_101
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 905
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb8eafb1d510fa4193f52303b7c12df
+      internalID: -1997180460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_102
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 905
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f245c3ca7a3134fa6a5dbaeb5f85a2
+      internalID: 2136990163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_103
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 905
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e761047e62a631843984c305cfcb2f2f
+      internalID: 2010842571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_104
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 905
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22674c36386691043a2c831c2c88ea4a
+      internalID: -115838516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_105
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 905
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2ca04b542664b4590610d649f8ef1c
+      internalID: 1909576326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_106
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 905
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c914c51e60318224b99a71038fe6f87e
+      internalID: -129670307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_107
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 905
+        width: 51
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d0be92438d66242bdc2d1c0107711b
+      internalID: -1503318570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_108
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 905
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83952b478ccad346ab559a9398af205
+      internalID: 721548726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_109
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 905
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725288a4b00d7794aa0ffc5959d9967d
+      internalID: 725633991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_110
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 905
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8270eaccdce9f4b8985cb4d96843d7
+      internalID: 1457625830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_111
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 905
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc72c04beaadd44eb52a6a3fd812a69
+      internalID: 622457169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_112
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 905
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1d5269645636e46b9f43b504c3e5a2
+      internalID: 1184742231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_113
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 905
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32139056f00ce954c950176f9fac3f9f
+      internalID: -671941283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_114
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 841
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ba33a288919504d96d760aef7a209a
+      internalID: 2067084202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_115
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 841
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d52374d369b2a46bc36e8fa14753f3
+      internalID: 1871002172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_116
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 841
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df009b3d01366ef449f7e4bb561d4522
+      internalID: -538616376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_117
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 841
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2805044183d33ea4da3bdca539e4b7a9
+      internalID: 252623032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_118
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13e39f998f26d14f9a2939676377633
+      internalID: -1268625589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_119
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6a81a63119bda4084f446fc58f2ac3
+      internalID: -359894889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_120
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a6fd3a8af97054fa8dcb5df0f2ac8a
+      internalID: -2143028468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_121
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d15d7402f0266469751eccabf289dc
+      internalID: -1448647212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_122
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2432310904085bc49b50ca6d97d441d5
+      internalID: -1534288618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_123
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d496c4e48e8d228408739ee29de295b5
+      internalID: -1771784336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_124
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4261c7dc30b5a6846b0c1abc062aebeb
+      internalID: -89186343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_125
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374e511037de0ab4da46b923ed8777ec
+      internalID: 324382075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_126
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf03266a24bf8254da1c3fb9fa510a6e
+      internalID: -1732844469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_127
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 777
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad16d22c7e845f043a734f8f6ff7588e
+      internalID: -449412132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_128
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 777
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9d283f8c01da945b5689919b4858af
+      internalID: -1433028701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_129
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 777
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d569cb11d221d1c4aabbcb5d64d39379
+      internalID: -308518768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_130
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 777
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f542332226150184095bb0eab4b08be6
+      internalID: -279429566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_131
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 777
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5f9c43d1238f542ac564c6adf2c413
+      internalID: -1366168111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_132
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 777
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f03490e42a1d3439da1a0a769f7af3
+      internalID: 465063569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_133
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 777
+        width: 51
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fbf8c38df823ab47804f3fab6a6eabe
+      internalID: -1549384527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_134
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 777
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3cc59206689694d828d725aeaba59d
+      internalID: 1854081882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_135
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 777
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1a1ff3654a0ae48a1fb60b928f9e8a
+      internalID: -1018292151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_136
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 777
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa362b9c5567234a934053dcbe4be9e
+      internalID: -1283560737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_137
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 777
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888030c867dcf9c48b4e97291c28719e
+      internalID: 1507276903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_138
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 777
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6700934e2bc2a243a32ee3c20b8f91d
+      internalID: 2107470967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_139
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 777
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07b09ec54e60bd4287c8692313a15ec
+      internalID: 1754317139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_140
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5964fa82b993cd640bb0a7eeef22b4f8
+      internalID: -416490508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_141
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76955f1a01a2cfa4892383b6330757c7
+      internalID: -161467144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_142
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62ae3e97b6ef97469c6da3ad27b1f67
+      internalID: 1416743227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_143
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 646
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba1f257b7d9dda42bf26fec69d67a41
+      internalID: -699621314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_144
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b1285ce16bd6146b5b41086ad46548
+      internalID: -1272589789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_145
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791decc962bf1b34dac23793e6de509b
+      internalID: 1375323610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_146
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88909092164fc147affeeaa48daec01
+      internalID: 600416473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_147
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 646
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaf39acb7c414024082ce56acf3cc183
+      internalID: 1952776517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_148
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 518
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b1d72aa39e1bc4da62189ab43dd532
+      internalID: 1431979754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_149
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 518
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ec6142e522e764d8c0bfb2d7c9ed5b
+      internalID: -2031351258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_150
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 518
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed297dbabb46c444806d9cc5a75612c
+      internalID: 1559105897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_151
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 518
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62331f340dbc17340bd9f2f57dd2b28a
+      internalID: -1168087479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_152
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 518
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7944be376c810ee499019268739c24b5
+      internalID: -1158911769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_153
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 518
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7ca4d46bbd6ba4ba0c4a351b79dac0
+      internalID: 1233214601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_154
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 518
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222e8d41d21b807479bd560ad71ebd91
+      internalID: 1978200305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_155
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 518
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f75dec501036f408ff1dab13574751
+      internalID: -2019519782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_156
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ca5d49058688f408e49b50d5e7ff6c
+      internalID: -1406323692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_157
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7aa1b6dcebaad46bec020d8f0f1cea
+      internalID: 819423539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_158
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517bf48c16736c941946bb963186be83
+      internalID: -397769282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_159
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 390
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e305b9a57829b48be89521176d27a6
+      internalID: -224892455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_160
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c09158386742fa4a93f050fe454c9f6
+      internalID: -2001578293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_161
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b3a434446c5144f89163c7d0c08de4
+      internalID: -795997943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_162
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fa7632313833e346bfc1339771e2358
+      internalID: -1574346232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_163
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 390
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3507cbae4be2bf6428f40650adec7a9f
+      internalID: 951547067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_164
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 262
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda180460ef7cc44cb4edde7ea1eec22
+      internalID: 250911307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_165
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 262
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d81a6d96ddca5248a20d44b5a88bf00
+      internalID: 1387847606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_166
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 262
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372e2719dc532ec40b85fc2d4c1556ae
+      internalID: 1521964862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_167
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 262
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b5222e2dec0d6479d7e325c7bad18e
+      internalID: 130617208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_168
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 262
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930a4cfdaa4f00c4eacf1074b19a825a
+      internalID: 692916306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_169
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 262
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19a3cdff750e0a439f9ddf7bcdd5b5f
+      internalID: 129193832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_170
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 262
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e1e2d68b852db4e9f6a308f3d841ec
+      internalID: 1497338431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-recurve_171
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 262
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2fafc71f13cd446a55402a29c0f224
+      internalID: 470005549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Female-wound-recurve_0: -1105533367
+      Female-wound-recurve_1: 633463979
+      Female-wound-recurve_10: 1550407055
+      Female-wound-recurve_100: -1744282683
+      Female-wound-recurve_101: -1997180460
+      Female-wound-recurve_102: 2136990163
+      Female-wound-recurve_103: 2010842571
+      Female-wound-recurve_104: -115838516
+      Female-wound-recurve_105: 1909576326
+      Female-wound-recurve_106: -129670307
+      Female-wound-recurve_107: -1503318570
+      Female-wound-recurve_108: 721548726
+      Female-wound-recurve_109: 725633991
+      Female-wound-recurve_11: 1436232815
+      Female-wound-recurve_110: 1457625830
+      Female-wound-recurve_111: 622457169
+      Female-wound-recurve_112: 1184742231
+      Female-wound-recurve_113: -671941283
+      Female-wound-recurve_114: 2067084202
+      Female-wound-recurve_115: 1871002172
+      Female-wound-recurve_116: -538616376
+      Female-wound-recurve_117: 252623032
+      Female-wound-recurve_118: -1268625589
+      Female-wound-recurve_119: -359894889
+      Female-wound-recurve_12: -920604758
+      Female-wound-recurve_120: -2143028468
+      Female-wound-recurve_121: -1448647212
+      Female-wound-recurve_122: -1534288618
+      Female-wound-recurve_123: -1771784336
+      Female-wound-recurve_124: -89186343
+      Female-wound-recurve_125: 324382075
+      Female-wound-recurve_126: -1732844469
+      Female-wound-recurve_127: -449412132
+      Female-wound-recurve_128: -1433028701
+      Female-wound-recurve_129: -308518768
+      Female-wound-recurve_13: 867730077
+      Female-wound-recurve_130: -279429566
+      Female-wound-recurve_131: -1366168111
+      Female-wound-recurve_132: 465063569
+      Female-wound-recurve_133: -1549384527
+      Female-wound-recurve_134: 1854081882
+      Female-wound-recurve_135: -1018292151
+      Female-wound-recurve_136: -1283560737
+      Female-wound-recurve_137: 1507276903
+      Female-wound-recurve_138: 2107470967
+      Female-wound-recurve_139: 1754317139
+      Female-wound-recurve_14: 2088656707
+      Female-wound-recurve_140: -416490508
+      Female-wound-recurve_141: -161467144
+      Female-wound-recurve_142: 1416743227
+      Female-wound-recurve_143: -699621314
+      Female-wound-recurve_144: -1272589789
+      Female-wound-recurve_145: 1375323610
+      Female-wound-recurve_146: 600416473
+      Female-wound-recurve_147: 1952776517
+      Female-wound-recurve_148: 1431979754
+      Female-wound-recurve_149: -2031351258
+      Female-wound-recurve_15: -797915752
+      Female-wound-recurve_150: 1559105897
+      Female-wound-recurve_151: -1168087479
+      Female-wound-recurve_152: -1158911769
+      Female-wound-recurve_153: 1233214601
+      Female-wound-recurve_154: 1978200305
+      Female-wound-recurve_155: -2019519782
+      Female-wound-recurve_156: -1406323692
+      Female-wound-recurve_157: 819423539
+      Female-wound-recurve_158: -397769282
+      Female-wound-recurve_159: -224892455
+      Female-wound-recurve_16: 103273367
+      Female-wound-recurve_160: -2001578293
+      Female-wound-recurve_161: -795997943
+      Female-wound-recurve_162: -1574346232
+      Female-wound-recurve_163: 951547067
+      Female-wound-recurve_164: 250911307
+      Female-wound-recurve_165: 1387847606
+      Female-wound-recurve_166: 1521964862
+      Female-wound-recurve_167: 130617208
+      Female-wound-recurve_168: 692916306
+      Female-wound-recurve_169: 129193832
+      Female-wound-recurve_17: 1204535901
+      Female-wound-recurve_170: 1497338431
+      Female-wound-recurve_171: 470005549
+      Female-wound-recurve_172: 1584695039
+      Female-wound-recurve_173: 1380545572
+      Female-wound-recurve_174: 1592623700
+      Female-wound-recurve_175: 1722593965
+      Female-wound-recurve_18: -78433533
+      Female-wound-recurve_19: -503477455
+      Female-wound-recurve_2: -533577706
+      Female-wound-recurve_20: -102539443
+      Female-wound-recurve_21: 1009654701
+      Female-wound-recurve_22: 701827082
+      Female-wound-recurve_23: 1135931967
+      Female-wound-recurve_24: -1998636676
+      Female-wound-recurve_25: 752158595
+      Female-wound-recurve_26: 587641785
+      Female-wound-recurve_27: -1863779645
+      Female-wound-recurve_28: -216675629
+      Female-wound-recurve_29: -527216560
+      Female-wound-recurve_3: 1170299732
+      Female-wound-recurve_30: -1850324535
+      Female-wound-recurve_31: 618645131
+      Female-wound-recurve_32: -1787747065
+      Female-wound-recurve_33: -1171497188
+      Female-wound-recurve_34: -1452422153
+      Female-wound-recurve_35: 812455647
+      Female-wound-recurve_36: -240013661
+      Female-wound-recurve_37: -1661375907
+      Female-wound-recurve_38: 741164728
+      Female-wound-recurve_39: 155304528
+      Female-wound-recurve_4: 547712779
+      Female-wound-recurve_40: -241138589
+      Female-wound-recurve_41: 440950585
+      Female-wound-recurve_42: 1941828011
+      Female-wound-recurve_43: 816451597
+      Female-wound-recurve_44: -1790546842
+      Female-wound-recurve_45: -490201965
+      Female-wound-recurve_46: -699503806
+      Female-wound-recurve_47: 1162381115
+      Female-wound-recurve_48: 1932473715
+      Female-wound-recurve_49: 2141660787
+      Female-wound-recurve_5: 2031925686
+      Female-wound-recurve_50: 561301564
+      Female-wound-recurve_51: -971232276
+      Female-wound-recurve_52: -570776140
+      Female-wound-recurve_53: -109784596
+      Female-wound-recurve_54: -1519540895
+      Female-wound-recurve_55: 375188625
+      Female-wound-recurve_56: 1872054354
+      Female-wound-recurve_57: -538569709
+      Female-wound-recurve_58: 65569601
+      Female-wound-recurve_59: -1199002004
+      Female-wound-recurve_6: 2021911472
+      Female-wound-recurve_60: -576908391
+      Female-wound-recurve_61: 1945245932
+      Female-wound-recurve_62: 1736258585
+      Female-wound-recurve_63: 1041017723
+      Female-wound-recurve_64: -1197285712
+      Female-wound-recurve_65: 155794638
+      Female-wound-recurve_66: -1275303234
+      Female-wound-recurve_67: 1457887269
+      Female-wound-recurve_68: 1559333423
+      Female-wound-recurve_69: -723107804
+      Female-wound-recurve_7: 276641359
+      Female-wound-recurve_70: 44755185
+      Female-wound-recurve_71: -455370316
+      Female-wound-recurve_72: -1458849689
+      Female-wound-recurve_73: 1968667463
+      Female-wound-recurve_74: -625566400
+      Female-wound-recurve_75: 382575660
+      Female-wound-recurve_76: -1900276935
+      Female-wound-recurve_77: -440851132
+      Female-wound-recurve_78: -215391735
+      Female-wound-recurve_79: 1659615814
+      Female-wound-recurve_8: -548414114
+      Female-wound-recurve_80: 557923073
+      Female-wound-recurve_81: -2044158837
+      Female-wound-recurve_82: -838496677
+      Female-wound-recurve_83: 1356835446
+      Female-wound-recurve_84: -2072217879
+      Female-wound-recurve_85: -112114859
+      Female-wound-recurve_86: 28727958
+      Female-wound-recurve_87: 433578188
+      Female-wound-recurve_88: 806527301
+      Female-wound-recurve_89: 828340317
+      Female-wound-recurve_9: 1282923785
+      Female-wound-recurve_90: 1424208109
+      Female-wound-recurve_91: -849188826
+      Female-wound-recurve_92: -1805550309
+      Female-wound-recurve_93: -729507259
+      Female-wound-recurve_94: -331836648
+      Female-wound-recurve_95: -184787877
+      Female-wound-recurve_96: -269609797
+      Female-wound-recurve_97: -1457718449
+      Female-wound-recurve_98: -1983689547
+      Female-wound-recurve_99: 22978954
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

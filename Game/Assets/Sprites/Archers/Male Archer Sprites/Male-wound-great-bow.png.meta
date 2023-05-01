@@ -1,0 +1,4007 @@
+fileFormatVersion: 2
+guid: 459b0a9d070ab4b4a9c852008b456606
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Male-wound-great-bow_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1985
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e25166f6e640a48a57cd181a31c5ff
+      internalID: 1173217523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1985
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391b1eaab5820c841b216e4a589ea9b1
+      internalID: 1363991980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1985
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efe07721790e864b9d92affd82ea58e
+      internalID: -1523986552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1985
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5de533ea29a60e499b1feb07069bbc2
+      internalID: -919631124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1985
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4c4b747d2866243b5f42f4c5075015
+      internalID: 1131460470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1985
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ba835cbbaf9574cb2c008b2a4a5fb5
+      internalID: 881983673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1985
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a49000422e5e1c4199664e1bf1fa819
+      internalID: 546163416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1985
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a86918e0f12d94fb5877ca1882cb2c
+      internalID: -797228205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1985
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcbc9c3ee7f6fa408160b6fe00552a6
+      internalID: 1970716618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_9
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1985
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5ec8b4cbc007f48850bfb7927bc6f1
+      internalID: -213677645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1985
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3974275dbd18240960f33160879103
+      internalID: -1230173144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_11
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1985
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fc6a71ac5707c48a88d97ba6487764
+      internalID: -688770161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_12
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1985
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea2ff0b13d1b6741aeba15e620d06df
+      internalID: 778281879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1921
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6079db3f59ce28d449f899b763bf2997
+      internalID: 1924595257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_14
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1921
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563c01af8c12c6c4193eb3e5a2d515e6
+      internalID: -8208034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1921
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbe3188e46b61e46870dfdbc9d208e9
+      internalID: 829618787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_16
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1921
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018dae31d039f784cb514b39526f2549
+      internalID: -1563575836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1921
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c6d34a1ea8943478b619ceff5d399f
+      internalID: -680778899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_18
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 1921
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f8574a8ad2f0d469565443953a6ef6
+      internalID: -1888553089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_19
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 1921
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f85766adfab1364e9b0fff69d154c95
+      internalID: -366421419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_20
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1921
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c483f254c95aa48b2eba2dceecd8fb
+      internalID: 823337971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_21
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1921
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2527ca712f39d42b2fa7aae13df0bc
+      internalID: -1208488459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_22
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1921
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4ce12edb14d5747a7aa1b12983fb3d
+      internalID: 134122593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_23
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1921
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd4eec796f9c2648b67cb6809c6249b
+      internalID: 1941721502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_24
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1921
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7009d5411e9f544a94cec0afd1c336
+      internalID: -243859037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_25
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 1921
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494658d2a754cce45bbf8a232d36c554
+      internalID: 150402405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_26
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1857
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba50d1f739f82a84bbb670b34b2ca9f4
+      internalID: -125560065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_27
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1857
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b70a50006c0bf74abca943ee977bbac
+      internalID: 1895130578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_28
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1857
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78cbebe1f5340847868e0eddc931864
+      internalID: -66948751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1857
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f01fc7087a7e34286bb69028dc8e68
+      internalID: -806142593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1857
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b86264231b42343b581ce4739d7079
+      internalID: 2043530007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_31
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1857
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879f8282cbd49134c81846162996e3af
+      internalID: 925813354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1857
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bcea46b08192b40a032714c8da725b
+      internalID: 380485561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_33
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1857
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ed50248d16d1549a40407bb1121d76
+      internalID: -588007006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_34
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1857
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78edab617aefc140b5b721b55d3facc
+      internalID: 37487806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_35
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1857
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361215d1c9db41d4e9941fe2e7d9591c
+      internalID: -1267430221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_36
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1857
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ca3636fde6113439747dcb760fcce0
+      internalID: 301759542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_37
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1857
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8d9cfd21644c94db3fb656866f751c
+      internalID: -1888527630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_38
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1857
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5fe260f446cb542ac82e06a6f0b393
+      internalID: 1336693995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_39
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1793
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e89a73a41677544eaf88c0fc70b0b1d
+      internalID: 30796283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_40
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1793
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2298698b089f18c4fab089c892efb4cc
+      internalID: 1563194384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_41
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1793
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3346f1c0325d9184787d32528f8529fa
+      internalID: -1962253377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_42
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1793
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db405c1b71f09734ab07a285dce6d49a
+      internalID: 889313105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_43
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1793
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae70d0ca850d5447986b826066809c9
+      internalID: 355866448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_44
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1793
+        width: 49
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82aa8f50f2ac58547ae3fd5598f0849a
+      internalID: 2100968101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_45
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1793
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84952167043bcba4db5b6cab550d1b5f
+      internalID: -1335537628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_46
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1793
+        width: 45
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c143dc8931135408e006cc86fe2642
+      internalID: -393169489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_47
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1793
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7b1d0d3aaf22f47bc11e6eb6e5a703
+      internalID: 1494342440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_48
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 1793
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1214c84acf0d3f848b12ade552c49c4b
+      internalID: -1020347196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_49
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1793
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051d4fad737da1b45a0f00ab3489c98e
+      internalID: 1825155589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_50
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1793
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62766543462c4e47aacff7f614a4964
+      internalID: 771004180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_51
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1793
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38de2de3bb549d4484525428f97e9fc
+      internalID: 608025420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_52
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1682
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69780a0d400e3e409826b7d5d35b14e
+      internalID: 200200322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_53
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1682
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c24189484a06f428744c65269b262d
+      internalID: 2057012262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_54
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1682
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8fe8563fd359f40807d50abe6c0623
+      internalID: 1344927861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_55
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1682
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ad931e2e65e4e4b9ed82d103437802
+      internalID: -1242625175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_56
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1682
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7213ae8dc555cfe42a8f3de8b16e6666
+      internalID: -1332185442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_57
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1682
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031a324005fb0aa4994be868e34fd6eb
+      internalID: -1524918949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_58
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1682
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626fe57b41007c14a997e090d8c8391d
+      internalID: 2058679429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_59
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1682
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af9dfba5d32e014db7e5525ec4e9cc3
+      internalID: 862907666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1554
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703f842ba14b59849b01ba08854f0907
+      internalID: -1763343812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_61
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1554
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce86261e21475014690180a296b36382
+      internalID: -863655959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_62
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1554
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaacc52fecbbf0b4eab0d684c99b24b7
+      internalID: -1670164938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_63
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1554
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d5e8d94b1a8f44a9f4e804f583a820
+      internalID: -450272989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_64
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 1554
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad00a0577e922b4c8318acf6e39e225
+      internalID: 1074219790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_65
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1554
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e93be9ed103ea741a58dbb04776a614
+      internalID: 379623462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_66
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1554
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b16b6ee294aed4886f2e649c83833a
+      internalID: -1337511792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_67
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1554
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2548b21310a12e3498881581c08a797e
+      internalID: 872424930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_68
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1426
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245c6d27751def945b2dddf36c0dc427
+      internalID: -1767562966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1426
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0650a54bcc7b7440908fc0c9371af4d
+      internalID: -1263863333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_70
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1426
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90cf689828e23e45ac1359f74e2d85b
+      internalID: 1165031583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_71
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1426
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47dc05f310a185d4c994af12afd698d1
+      internalID: 784683235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_72
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1426
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ecae0efec7befc43ad580257c139f19
+      internalID: 186159321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_73
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1426
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f71c35a9124db541ac112d4d1f9fe0d
+      internalID: -1776252767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_74
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1426
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8727054f71f7aa4fba23609c2b5bef4
+      internalID: -1542965758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_75
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 1426
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd25b77bf1cf19e4381debfb6ce41f10
+      internalID: 1273474626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_76
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1298
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40818c43ccc81214a89d15d4d95d3897
+      internalID: -1782380681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_77
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 1298
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a0b8f553916c04ab08110fb7909574
+      internalID: 580054232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_78
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1298
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4b2962451d1774f90441d76f9dc826
+      internalID: -627494489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_79
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1298
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024224d0c354904459134bc4c92ea4ad
+      internalID: 1438734649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_80
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1298
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2745355c3b7727448a4a118286849fa0
+      internalID: -897390015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_81
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1298
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2489f6f0e14044b80fbf92f5b1662d
+      internalID: -797447504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_82
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1298
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c364208ecf827c64199d57decb8574b1
+      internalID: -1069659375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_83
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1298
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19c4fd18e86e754392dae0a56af1461
+      internalID: -210555687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_84
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1225
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc3aaadc8ab77b419a664f71ac73082
+      internalID: 1550242604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_85
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1225
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc7c2c6c2490cf4eb610d2324311f0e
+      internalID: -300054587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_86
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1225
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92675d639b56b6498bc910f05c6d113
+      internalID: -319391743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_87
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1225
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ce6494cfab2854293c77663b2fc07c
+      internalID: -1340803683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_88
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 966
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cafe9e276313554fba70bfd3b06ab03
+      internalID: 1755453895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_89
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 966
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41197ac01c8b57644be73d937f1c2af0
+      internalID: -1998049082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_90
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 966
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c133f9a0b3c7c3e4e8d427868f4acbde
+      internalID: 1570581849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_91
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 966
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06cefedc3fe5614d95f1c3a495f728f
+      internalID: -2016072051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_92
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 966
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031d925cfe9727340b2d73506f3fe126
+      internalID: 1946025905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_93
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 966
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772a8f34c0bfeb84d8bf450f68b95a84
+      internalID: 337870680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_94
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 966
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1563f0e17f2ad644abc49cfb16e0d458
+      internalID: 1091707289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_95
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 966
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d414150319e9004d8ce7251c3fd1763
+      internalID: -1529846202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_96
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 966
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96eccdde238acb4c99d4ebf8dac63a7
+      internalID: 1634273884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_97
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 966
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575efddb01cfed84db32092a9c5f7339
+      internalID: 1593922649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_98
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 966
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc757219daa673546b87b677420de40c
+      internalID: 903629764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_99
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 966
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c4db0b396b91646bbc256c1a79f3f6
+      internalID: -575231122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_100
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 966
+        width: 35
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9627b72d898ec84c93d3598561bb41a
+      internalID: 1076685787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_101
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 902
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05c74761bce5a847b74bc15014076e3
+      internalID: 1646194761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_102
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 902
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd0c7ffd5b2bcd4292f86c0cc0e89c2
+      internalID: 1660628643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_103
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 902
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af70f2458d1af741b0726ef647d1a5b
+      internalID: 362554023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_104
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 902
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509fcd832e13ed144acddf9db492c6a6
+      internalID: 1115037260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_105
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 902
+        width: 47
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0987fddd53d1014aaaee41d39091a8d
+      internalID: -780883949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_106
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 902
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4c66a3af571a848832e4b3ef0f1450
+      internalID: -448272223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_107
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 902
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6409b78f94a2eca4da5a6b0ac722a794
+      internalID: -2059273022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_108
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 902
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3f213a8e9026d44beb37a8882ae392
+      internalID: -721215290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_109
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 902
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f1a66355f20fa42a437918c3c4bb7f
+      internalID: 1151075029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_110
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 902
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e33b0bfc51a5734bbc1ebcc7284d61c
+      internalID: 1853986512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_111
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 902
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03148b1acd751f54c81a421f63ccf50e
+      internalID: 618624326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_112
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 902
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84208ba3c785bcf4287cdd427b279b8e
+      internalID: 1276826681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_113
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 902
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fcce080fab88d49b96ceca10161c9e
+      internalID: 1044396362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_114
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 838
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3bf502165562c4ab550629bb6f9571
+      internalID: -1292836348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_115
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 838
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28742b978c2e19c40ae577e8ab57ea8a
+      internalID: -1395148616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_116
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 838
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863fd90fdd7a34d45910e37ca570773a
+      internalID: -301937426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_117
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 838
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177a4d44dc148074d9f48f1f326252c1
+      internalID: -1999180182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_118
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 838
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6109035cd0d8f9e46a1f93323d2d0013
+      internalID: -1085185074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_119
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 838
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d371be88baa364489724c1860ff9ab
+      internalID: 1040749204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_120
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 838
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61033a7dff34fe49b617bccb6f1d671
+      internalID: -118299438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_121
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 838
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92bfa233d345584eb714d3a4a63c30d
+      internalID: -1324603746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_122
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 838
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ee22dcec5c3b9489facbbd43f8cc2c
+      internalID: -642332389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_123
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 838
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41e8015ee38ee749bb800f98133e4e4
+      internalID: 105804565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_124
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 838
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b820c88635066da4f95c6d6a55299c91
+      internalID: 1787081410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_125
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 838
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d017c8d620da174ebaddda36b617972
+      internalID: -1381486829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_126
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 838
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea00f1fcc7e4964ab130c60a0515156
+      internalID: -524041649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_127
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 774
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ccc865ff9a8e7b4b99fdc19049a48ff
+      internalID: 685768935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_128
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 774
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e4e7115237d1041b616d6cc7055fa0
+      internalID: 875671791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_129
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 774
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569425ec2573bd14f9d6965dae06863a
+      internalID: -652222910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_130
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 774
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06fbd54f12ef9b0409e8023fddf6d634
+      internalID: -989744284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_131
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 774
+        width: 47
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d64ce26b594d14982a9689e1db0684
+      internalID: -790807431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_132
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 774
+        width: 52
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d863a5e39be29ee499c6a2a98522f7eb
+      internalID: -1415954067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_133
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 774
+        width: 51
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dda952de891aba4ab4d9de6241d61f4
+      internalID: -82057138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_134
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 774
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8cd2ba931f1294b84e25085dc3cb16
+      internalID: 1382701176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_135
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 774
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d1a50434447e5488fe453fdfed8677
+      internalID: -801353042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_136
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 774
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fca07359ce5a34781ad61ddd563875
+      internalID: 544124928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_137
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 774
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3eee18ba8ed1a841b68539d1df88734
+      internalID: 973016260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_138
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 774
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ec82a6ba1674545b4a126fe4883b56
+      internalID: -1890896658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_139
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 774
+        width: 44
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8add162d271e6cf4da5d811a6a55e2d2
+      internalID: 1621342133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_140
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 643
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebc32aa59e40cf47a729ccbcf2d0836
+      internalID: -303212779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_141
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 643
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db5ac83dde68b64bb45731f45d834ed
+      internalID: -1349921455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_142
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 643
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc34695a59b60d4c8399c87339d7117
+      internalID: 1804744622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_143
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 643
+        width: 55
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99ac3d86b3a58941b7bc72e8617ec0f
+      internalID: -214177143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_144
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 643
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ef17309b8cba343b29084fcf5e78a2
+      internalID: -548735236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_145
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 643
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26473a143ec0803458f82e61d9790376
+      internalID: -220651811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_146
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 643
+        width: 56
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c96fa1fdfa7f14cacb8248501466f5
+      internalID: 1360590781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_147
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 643
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd63ffe85c326444a327d7fcda3bad0
+      internalID: -993761699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_148
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 515
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f225ca01af5c9744ab3ba48618f708fe
+      internalID: 597320050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_149
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 515
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608a2261c6dd5164a9529ff8c76e3ded
+      internalID: -1053981476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_150
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 515
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c771cbb8bac7e24cb6f17a6726aa76d
+      internalID: 124558505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_151
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 515
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45537e9685df8c54182b4477365ac725
+      internalID: -1653095446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_152
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 515
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c392f42c6c4f249801260e90b0eb61
+      internalID: 401477330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_153
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 515
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314bdf72fe0de0343917be249038fe40
+      internalID: -2144033626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_154
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 515
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091530f3c125ad74697407fee96745be
+      internalID: 2085615708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_155
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 515
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2df883ff3c1604aaefd94f90672998
+      internalID: 573961224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_156
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 387
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67310523160a6d41ba76dca77aa3bec
+      internalID: 848686407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_157
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 387
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3793aacd13f3f194b849ddb1d4d9783f
+      internalID: 202773676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_158
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 387
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd167314aca345c43b3e541f0685436a
+      internalID: -1465426444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_159
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 387
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a11519b22df96449e2910911365000
+      internalID: -1432849978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_160
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 387
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e19a978c8dc1aa40b1fe1ebca83f127
+      internalID: 969773213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_161
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 387
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61856893b844fe34e89b0074b0cb57c9
+      internalID: -92682600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_162
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 387
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a286a2dd9e4d14d9ef671ee35c07a7
+      internalID: -69060745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_163
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 387
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189c449a88e57214c8a0ba7e94fec928
+      internalID: 2040971168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_164
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 259
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc0fd60e212c4e41ac674bdfa0b9c14
+      internalID: -1533457548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_165
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 259
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e148143cd8746d47b9aa1ee60b40cbe
+      internalID: -690391919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_166
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 259
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e430e36df71da2d4dbf4ad91673fc90a
+      internalID: -1020328866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_167
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 259
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6025a7457c4e2b64f83fc06421191617
+      internalID: -1073525088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_168
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 259
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8b3a196d7f8df42be793cbac229d2e
+      internalID: 108305195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_169
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 259
+        width: 46
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43811656ca562d47a565d322eb14264
+      internalID: -720550378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_170
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 259
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b6c881fd2e6e042b787a5365fa79e5
+      internalID: -88986225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_171
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 259
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af740603fb5e26f4787c63cb46d3f4d4
+      internalID: 2077371570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_172
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 147
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbd6761a2916aa469005eeed4cbfd22
+      internalID: -1570203460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_173
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 147
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b467d639dd9d2b94cab636a84c95d49a
+      internalID: -1849410358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_174
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 147
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad544cc041d21b4ebe62f3872171d2d
+      internalID: 498977872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-great-bow_175
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 147
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d0c596f771c9845b18c6a03f66866e
+      internalID: -1726500174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Male-wound-great-bow_0: 1173217523
+      Male-wound-great-bow_1: 1363991980
+      Male-wound-great-bow_10: -1230173144
+      Male-wound-great-bow_100: 1076685787
+      Male-wound-great-bow_101: 1646194761
+      Male-wound-great-bow_102: 1660628643
+      Male-wound-great-bow_103: 362554023
+      Male-wound-great-bow_104: 1115037260
+      Male-wound-great-bow_105: -780883949
+      Male-wound-great-bow_106: -448272223
+      Male-wound-great-bow_107: -2059273022
+      Male-wound-great-bow_108: -721215290
+      Male-wound-great-bow_109: 1151075029
+      Male-wound-great-bow_11: -688770161
+      Male-wound-great-bow_110: 1853986512
+      Male-wound-great-bow_111: 618624326
+      Male-wound-great-bow_112: 1276826681
+      Male-wound-great-bow_113: 1044396362
+      Male-wound-great-bow_114: -1292836348
+      Male-wound-great-bow_115: -1395148616
+      Male-wound-great-bow_116: -301937426
+      Male-wound-great-bow_117: -1999180182
+      Male-wound-great-bow_118: -1085185074
+      Male-wound-great-bow_119: 1040749204
+      Male-wound-great-bow_12: 778281879
+      Male-wound-great-bow_120: -118299438
+      Male-wound-great-bow_121: -1324603746
+      Male-wound-great-bow_122: -642332389
+      Male-wound-great-bow_123: 105804565
+      Male-wound-great-bow_124: 1787081410
+      Male-wound-great-bow_125: -1381486829
+      Male-wound-great-bow_126: -524041649
+      Male-wound-great-bow_127: 685768935
+      Male-wound-great-bow_128: 875671791
+      Male-wound-great-bow_129: -652222910
+      Male-wound-great-bow_13: 1924595257
+      Male-wound-great-bow_130: -989744284
+      Male-wound-great-bow_131: -790807431
+      Male-wound-great-bow_132: -1415954067
+      Male-wound-great-bow_133: -82057138
+      Male-wound-great-bow_134: 1382701176
+      Male-wound-great-bow_135: -801353042
+      Male-wound-great-bow_136: 544124928
+      Male-wound-great-bow_137: 973016260
+      Male-wound-great-bow_138: -1890896658
+      Male-wound-great-bow_139: 1621342133
+      Male-wound-great-bow_14: -8208034
+      Male-wound-great-bow_140: -303212779
+      Male-wound-great-bow_141: -1349921455
+      Male-wound-great-bow_142: 1804744622
+      Male-wound-great-bow_143: -214177143
+      Male-wound-great-bow_144: -548735236
+      Male-wound-great-bow_145: -220651811
+      Male-wound-great-bow_146: 1360590781
+      Male-wound-great-bow_147: -993761699
+      Male-wound-great-bow_148: 597320050
+      Male-wound-great-bow_149: -1053981476
+      Male-wound-great-bow_15: 829618787
+      Male-wound-great-bow_150: 124558505
+      Male-wound-great-bow_151: -1653095446
+      Male-wound-great-bow_152: 401477330
+      Male-wound-great-bow_153: -2144033626
+      Male-wound-great-bow_154: 2085615708
+      Male-wound-great-bow_155: 573961224
+      Male-wound-great-bow_156: 848686407
+      Male-wound-great-bow_157: 202773676
+      Male-wound-great-bow_158: -1465426444
+      Male-wound-great-bow_159: -1432849978
+      Male-wound-great-bow_16: -1563575836
+      Male-wound-great-bow_160: 969773213
+      Male-wound-great-bow_161: -92682600
+      Male-wound-great-bow_162: -69060745
+      Male-wound-great-bow_163: 2040971168
+      Male-wound-great-bow_164: -1533457548
+      Male-wound-great-bow_165: -690391919
+      Male-wound-great-bow_166: -1020328866
+      Male-wound-great-bow_167: -1073525088
+      Male-wound-great-bow_168: 108305195
+      Male-wound-great-bow_169: -720550378
+      Male-wound-great-bow_17: -680778899
+      Male-wound-great-bow_170: -88986225
+      Male-wound-great-bow_171: 2077371570
+      Male-wound-great-bow_172: -1570203460
+      Male-wound-great-bow_173: -1849410358
+      Male-wound-great-bow_174: 498977872
+      Male-wound-great-bow_175: -1726500174
+      Male-wound-great-bow_18: -1888553089
+      Male-wound-great-bow_19: -366421419
+      Male-wound-great-bow_2: -1523986552
+      Male-wound-great-bow_20: 823337971
+      Male-wound-great-bow_21: -1208488459
+      Male-wound-great-bow_22: 134122593
+      Male-wound-great-bow_23: 1941721502
+      Male-wound-great-bow_24: -243859037
+      Male-wound-great-bow_25: 150402405
+      Male-wound-great-bow_26: -125560065
+      Male-wound-great-bow_27: 1895130578
+      Male-wound-great-bow_28: -66948751
+      Male-wound-great-bow_29: -806142593
+      Male-wound-great-bow_3: -919631124
+      Male-wound-great-bow_30: 2043530007
+      Male-wound-great-bow_31: 925813354
+      Male-wound-great-bow_32: 380485561
+      Male-wound-great-bow_33: -588007006
+      Male-wound-great-bow_34: 37487806
+      Male-wound-great-bow_35: -1267430221
+      Male-wound-great-bow_36: 301759542
+      Male-wound-great-bow_37: -1888527630
+      Male-wound-great-bow_38: 1336693995
+      Male-wound-great-bow_39: 30796283
+      Male-wound-great-bow_4: 1131460470
+      Male-wound-great-bow_40: 1563194384
+      Male-wound-great-bow_41: -1962253377
+      Male-wound-great-bow_42: 889313105
+      Male-wound-great-bow_43: 355866448
+      Male-wound-great-bow_44: 2100968101
+      Male-wound-great-bow_45: -1335537628
+      Male-wound-great-bow_46: -393169489
+      Male-wound-great-bow_47: 1494342440
+      Male-wound-great-bow_48: -1020347196
+      Male-wound-great-bow_49: 1825155589
+      Male-wound-great-bow_5: 881983673
+      Male-wound-great-bow_50: 771004180
+      Male-wound-great-bow_51: 608025420
+      Male-wound-great-bow_52: 200200322
+      Male-wound-great-bow_53: 2057012262
+      Male-wound-great-bow_54: 1344927861
+      Male-wound-great-bow_55: -1242625175
+      Male-wound-great-bow_56: -1332185442
+      Male-wound-great-bow_57: -1524918949
+      Male-wound-great-bow_58: 2058679429
+      Male-wound-great-bow_59: 862907666
+      Male-wound-great-bow_6: 546163416
+      Male-wound-great-bow_60: -1763343812
+      Male-wound-great-bow_61: -863655959
+      Male-wound-great-bow_62: -1670164938
+      Male-wound-great-bow_63: -450272989
+      Male-wound-great-bow_64: 1074219790
+      Male-wound-great-bow_65: 379623462
+      Male-wound-great-bow_66: -1337511792
+      Male-wound-great-bow_67: 872424930
+      Male-wound-great-bow_68: -1767562966
+      Male-wound-great-bow_69: -1263863333
+      Male-wound-great-bow_7: -797228205
+      Male-wound-great-bow_70: 1165031583
+      Male-wound-great-bow_71: 784683235
+      Male-wound-great-bow_72: 186159321
+      Male-wound-great-bow_73: -1776252767
+      Male-wound-great-bow_74: -1542965758
+      Male-wound-great-bow_75: 1273474626
+      Male-wound-great-bow_76: -1782380681
+      Male-wound-great-bow_77: 580054232
+      Male-wound-great-bow_78: -627494489
+      Male-wound-great-bow_79: 1438734649
+      Male-wound-great-bow_8: 1970716618
+      Male-wound-great-bow_80: -897390015
+      Male-wound-great-bow_81: -797447504
+      Male-wound-great-bow_82: -1069659375
+      Male-wound-great-bow_83: -210555687
+      Male-wound-great-bow_84: 1550242604
+      Male-wound-great-bow_85: -300054587
+      Male-wound-great-bow_86: -319391743
+      Male-wound-great-bow_87: -1340803683
+      Male-wound-great-bow_88: 1755453895
+      Male-wound-great-bow_89: -1998049082
+      Male-wound-great-bow_9: -213677645
+      Male-wound-great-bow_90: 1570581849
+      Male-wound-great-bow_91: -2016072051
+      Male-wound-great-bow_92: 1946025905
+      Male-wound-great-bow_93: 337870680
+      Male-wound-great-bow_94: 1091707289
+      Male-wound-great-bow_95: -1529846202
+      Male-wound-great-bow_96: 1634273884
+      Male-wound-great-bow_97: 1593922649
+      Male-wound-great-bow_98: 903629764
+      Male-wound-great-bow_99: -575231122
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
