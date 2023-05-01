@@ -1,0 +1,2775 @@
+fileFormatVersion: 2
+guid: d5d95e8c4f98d0246af7c351187054cc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Female-dagger_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f44996c78b2aa4cbd588e9425c950f
+      internalID: -1478422364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac1d755b92a31748af97c001b3d99b8
+      internalID: -1787734882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed1a706554a11049b694f9a8895b507
+      internalID: 1691902571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1741
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88dfb4fcaf752c643a54880b3253c5a5
+      internalID: 945495574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da94b0ae4634e774287656400a817ca4
+      internalID: 101274863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_5
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c711d59b216e340be662fe0bfdf943
+      internalID: -1674811304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce6da75331c9bd4cb1dd6a4dd2610b6
+      internalID: 1204765569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_7
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1741
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e743462a9e1c7046b648bece6a26b70
+      internalID: -415424658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a428640bb4cf342834fc29ad788028
+      internalID: -51006039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1677
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b12eb35558b49458cdffa20536b36c
+      internalID: -1882546477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1677
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88f7fd8c9e43274cbc6033371d67600
+      internalID: 2095101364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_11
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1677
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb95a85a30143d248bfe5eaa03510794
+      internalID: 559472152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63aae7b678846ec4b9f3c25f312ea20d
+      internalID: 1108909557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_13
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b144620d47a3248a7801aef3af6e31
+      internalID: 2003592343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1677
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955966269a01d4942a7479d720f84af6
+      internalID: 643300228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_15
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b447030eae5d944af64280329e4226
+      internalID: 642044172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_16
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85452f324403d8045b58a2a455046904
+      internalID: 1390910128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_17
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1615acf3ed026c34c856a2d22bb5ded2
+      internalID: 387589485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec90674d59b35004981b1eb08238e6b4
+      internalID: 1575437598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_19
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045616483303b4245bfae84b9ef33d3a
+      internalID: 1426111635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_20
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5135162d00d367f4691586caa343cf77
+      internalID: -1008574603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_21
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1613
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba04c15eb8ada6b4189996bd8249f711
+      internalID: -870034823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95cb7468863bb3c44b56da9307bc0dfb
+      internalID: 2020082537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_23
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5a314c9c544bd4fa3e3e9a98f04549
+      internalID: 1487449396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_24
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caf9e89121fe8c4f8a1a8d4f9118a52
+      internalID: -223472413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_25
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1613
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4d9518684340041816f229727e5c47
+      internalID: -1964430105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_26
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a568b39dcf9ba549b04ffca8478ba52
+      internalID: -875907273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_27
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1549
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5137089264d49e4389d4613b7902b1a
+      internalID: 88050448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_28
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1549
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3fd3ace5f242a49bcf2fa8a8ed38e8
+      internalID: 632331360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_29
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1549
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1ea8b4f29ddf1408fdc2a404037859
+      internalID: 1123793877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf932af43f4310942b95f6938ef675df
+      internalID: 1234134373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_31
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aba2b95b23077648af9c79f9b2d8add
+      internalID: 2050185623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_32
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1549
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0762a5d3c55b16b418854bfd448513be
+      internalID: 634419357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_33
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece8285d7813c3548a45ed09d78772b2
+      internalID: 1774666220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_34
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bda85ee6699a0d4196792938975c206
+      internalID: -81718579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_35
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d733cfbd582632b409297b9be8bf753b
+      internalID: 1301232770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1485
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd934bcd0c24d645bb86fdcf87383b3
+      internalID: -1802038038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_37
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1485
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a69c4db67e58974e8a99007a8a1f0ad
+      internalID: -1364287785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_38
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1485
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d202a82e234bdf4dbf494c322dda947
+      internalID: -1294958965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_39
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1485
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dd63285b9f33149903ddff4efda6b0
+      internalID: -110309343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_40
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1485
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3618ab97c9ee14e8a985d20e321d7c
+      internalID: -514795754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_41
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1485
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ec62c2158117648a7599241d416ceb
+      internalID: 224750237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1421
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7f723aca60b4a498244930f06ff7d7
+      internalID: 1629549813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1421
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edd68385d870474295703fd29ed3338
+      internalID: -1326277439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_44
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1421
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a3e96bc44e6594db1bbc5aea57a1f6
+      internalID: 505752707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_45
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1421
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd5297e070423a48b112ae5690d2806
+      internalID: -2146927128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_46
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1421
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde865073eeecaf419dacfc704e6d5f7
+      internalID: 1202479847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_47
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1421
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97f6e63a81d71942bc317d2ae5e273b
+      internalID: 1614850620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_48
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1357
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057dfbb711015404ea9f3489aee909c2
+      internalID: -1661748819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_49
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1357
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1bf65f305fade469e58ca1c9ec3b46
+      internalID: -1067924863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_50
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1357
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2c750024b1c7744bb568b09bb6b276
+      internalID: -425611303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_51
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1357
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c2da83dda63ac4fb014ecec0de6cc5
+      internalID: -1166277935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_52
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1357
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a18ed605b3d4b94094ca5760d64d483
+      internalID: -591312808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_53
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1357
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b405522f327dcdc4d9d1dc14f9cd611b
+      internalID: 331784050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_54
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1293
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3727d69f28827b54ebccd863164ff182
+      internalID: 1821063362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_55
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1293
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8ade9bd0871cd498988b504765d860
+      internalID: -726790805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_56
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1293
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703efaf3b2c4ad84f871bb264e364c37
+      internalID: 1198455255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_57
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1293
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6bb78d310a828144bbfe49f00821b41
+      internalID: -1300295533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_58
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1293
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe5de5b379d42a448362be04dc182f2
+      internalID: 2061523130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_59
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1293
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6852c573a655e4d9bc976c88dc67f6
+      internalID: 733235283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_60
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0242864575af4cc4ea86b0c3638c4931
+      internalID: -1905649193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_61
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56234a770d245f645b18382b0def3c42
+      internalID: -991178184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_62
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc201d259693b3246955546a44f30c82
+      internalID: -722362945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_63
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 852
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175dbe5e9751b7b4494053254168a8aa
+      internalID: -628504716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_64
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0837af3ce060a4fbd096279a05c8c9
+      internalID: -1737915269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_65
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4549349bf92942e40ab17aa31c274f71
+      internalID: -1243820174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_66
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddf964def4a59047adac7d8fd489a72
+      internalID: 892921482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_67
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 852
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82884a9c098d31e488aa843aedabd9d8
+      internalID: 342930350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_68
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee1cc3e4b4f96248808a03c4f0da671
+      internalID: 132339131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_69
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 788
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad88a0b1f9819734aa057d989a8b1da6
+      internalID: 887308302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_70
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 788
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5def62d7e9b456942b78422957206fe9
+      internalID: 1372352264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_71
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 788
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5332077903dd1438e65f4ca7f50d89
+      internalID: 90660775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_72
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf679e2532f7ee4388feca2f42f5a91
+      internalID: -1958223263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_73
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe909636991e4a4dacf1ca4ea812b9d
+      internalID: 1103080306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_74
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 788
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982d8a0504208d84480e8026224f7bed
+      internalID: 1863682707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_75
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493c2f54d1e016c408d0eedb6cfa1625
+      internalID: 1288789063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_76
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90feb2a4963761c4bb3d3de2de822a64
+      internalID: -2108736250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_77
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965338c2f3cdcbc46b23969269a69740
+      internalID: -1906409518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_78
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403e3cba6abbcb749b7bdca204d4cacc
+      internalID: 909786999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_79
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15538f74657d07745aaeaad4245600c0
+      internalID: -1708740576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_80
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10274a6660e592643a47f930d4e3c8bb
+      internalID: -1135014287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_81
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 724
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eaf02968715be54d97c20ac7c03d45d
+      internalID: -1294699901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_82
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47eb806225adb2f49bb4c1c3236aa0a7
+      internalID: 169276777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_83
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50541d66b53d946478e3b7298fa44246
+      internalID: -921939927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_84
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2be6c47d7f7914b948547b8aab922b
+      internalID: 2065699100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_85
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 724
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55db3733a59d1f41898845f2b330914
+      internalID: -1620202491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_86
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b640b081830a2a443aea62ba9a5849c0
+      internalID: 480798593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_87
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 660
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce98757d5ac4f1945b210764110e381c
+      internalID: 890059489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_88
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 660
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ee5c6cf0a4689448f89dbe0a39f4ee
+      internalID: 1964035134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_89
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 660
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047c28d8650dd9a45a28ee199f68d944
+      internalID: -1161210618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_90
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a55babf967721440a3205c522a138cf
+      internalID: -979184247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_91
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f159e49ba6dc6234188437be2bc236ef
+      internalID: -729356698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_92
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 660
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb8849c5f4b53240ba504fc8cacbb25
+      internalID: 800817276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_93
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f434cad05c84b448e895c6fd591cb1
+      internalID: 1972896916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_94
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb54bae76230d7438872085388a2886
+      internalID: -1132206078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_95
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd91abfdac323e43a1e99bcb294e53e
+      internalID: 761048383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_96
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 596
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc1a819e567db64a81de0cbe9d10373
+      internalID: 330239430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_97
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 596
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43d3705e750df44191f3345e13e271c
+      internalID: 2034207798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_98
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 596
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772fb9b98b8e9ce4aa01098151c48f31
+      internalID: -866574836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_99
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 596
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90204d0f09843148993b81bb782702a
+      internalID: 1458029203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_100
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 596
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171a45f566b0ae14c89509ad8e34a846
+      internalID: 1297699615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_101
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 596
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d05c39f18f09dca44a12615b71f1513f
+      internalID: -1504580110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_102
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 532
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4ce3550e127a045b17768a7017283e
+      internalID: 284087309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_103
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 532
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d215be550482b4d8c10baae9b83849
+      internalID: 1880905338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_104
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 532
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906c2c42d5fcbe1418b9d8ec7d6b0280
+      internalID: 1603432994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_105
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 532
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41efbce036f9bb49944bb08a20df0c5
+      internalID: -755891384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_106
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 532
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a47359c73b684a4f9fb0824f1ac6902
+      internalID: 1780100045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_107
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 532
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3872bd0ce86c4a442bf28c1f07a3925d
+      internalID: -1113903733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_108
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 468
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c57cbcd17d40c4f8fc5aaabb82baf6
+      internalID: 282349727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_109
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 468
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41400d119ffe9ce40828728aece33fee
+      internalID: -1211117493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_110
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 468
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48faa934856737643bd660ce1d589517
+      internalID: 312412242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_111
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 468
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f4de1a9cbdbd940b68fc7200261a7d
+      internalID: 433476052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_112
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 468
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a63e74832e80e545ba185e7ba9c6386
+      internalID: 1741322376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_113
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 468
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f41a31d6111ea468b47094bd614af5
+      internalID: 211005941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_114
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 404
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5325d78737df75409d160fb9daa8221
+      internalID: 2081852432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_115
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 404
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96714fccc2912049b1df7a8e5ff4c00
+      internalID: -225992280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_116
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 404
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a459e1eff40b9fe47a79c68e251ecd37
+      internalID: 1460511460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_117
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 404
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309192ba8790aa44b9dc582dd3963926
+      internalID: -622765419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_118
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 404
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f08a86d6d400484f9e3d385a1d30722
+      internalID: 660877775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-dagger_119
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 404
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204a5ab5fc27cb440ae9e4d7994cfe18
+      internalID: -554081756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Female-dagger_0: -1478422364
+      Female-dagger_1: -1787734882
+      Female-dagger_10: 2095101364
+      Female-dagger_100: 1297699615
+      Female-dagger_101: -1504580110
+      Female-dagger_102: 284087309
+      Female-dagger_103: 1880905338
+      Female-dagger_104: 1603432994
+      Female-dagger_105: -755891384
+      Female-dagger_106: 1780100045
+      Female-dagger_107: -1113903733
+      Female-dagger_108: 282349727
+      Female-dagger_109: -1211117493
+      Female-dagger_11: 559472152
+      Female-dagger_110: 312412242
+      Female-dagger_111: 433476052
+      Female-dagger_112: 1741322376
+      Female-dagger_113: 211005941
+      Female-dagger_114: 2081852432
+      Female-dagger_115: -225992280
+      Female-dagger_116: 1460511460
+      Female-dagger_117: -622765419
+      Female-dagger_118: 660877775
+      Female-dagger_119: -554081756
+      Female-dagger_12: 1108909557
+      Female-dagger_13: 2003592343
+      Female-dagger_14: 643300228
+      Female-dagger_15: 642044172
+      Female-dagger_16: 1390910128
+      Female-dagger_17: 387589485
+      Female-dagger_18: 1575437598
+      Female-dagger_19: 1426111635
+      Female-dagger_2: 1691902571
+      Female-dagger_20: -1008574603
+      Female-dagger_21: -870034823
+      Female-dagger_22: 2020082537
+      Female-dagger_23: 1487449396
+      Female-dagger_24: -223472413
+      Female-dagger_25: -1964430105
+      Female-dagger_26: -875907273
+      Female-dagger_27: 88050448
+      Female-dagger_28: 632331360
+      Female-dagger_29: 1123793877
+      Female-dagger_3: 945495574
+      Female-dagger_30: 1234134373
+      Female-dagger_31: 2050185623
+      Female-dagger_32: 634419357
+      Female-dagger_33: 1774666220
+      Female-dagger_34: -81718579
+      Female-dagger_35: 1301232770
+      Female-dagger_36: -1802038038
+      Female-dagger_37: -1364287785
+      Female-dagger_38: -1294958965
+      Female-dagger_39: -110309343
+      Female-dagger_4: 101274863
+      Female-dagger_40: -514795754
+      Female-dagger_41: 224750237
+      Female-dagger_42: 1629549813
+      Female-dagger_43: -1326277439
+      Female-dagger_44: 505752707
+      Female-dagger_45: -2146927128
+      Female-dagger_46: 1202479847
+      Female-dagger_47: 1614850620
+      Female-dagger_48: -1661748819
+      Female-dagger_49: -1067924863
+      Female-dagger_5: -1674811304
+      Female-dagger_50: -425611303
+      Female-dagger_51: -1166277935
+      Female-dagger_52: -591312808
+      Female-dagger_53: 331784050
+      Female-dagger_54: 1821063362
+      Female-dagger_55: -726790805
+      Female-dagger_56: 1198455255
+      Female-dagger_57: -1300295533
+      Female-dagger_58: 2061523130
+      Female-dagger_59: 733235283
+      Female-dagger_6: 1204765569
+      Female-dagger_60: -1905649193
+      Female-dagger_61: -991178184
+      Female-dagger_62: -722362945
+      Female-dagger_63: -628504716
+      Female-dagger_64: -1737915269
+      Female-dagger_65: -1243820174
+      Female-dagger_66: 892921482
+      Female-dagger_67: 342930350
+      Female-dagger_68: 132339131
+      Female-dagger_69: 887308302
+      Female-dagger_7: -415424658
+      Female-dagger_70: 1372352264
+      Female-dagger_71: 90660775
+      Female-dagger_72: -1958223263
+      Female-dagger_73: 1103080306
+      Female-dagger_74: 1863682707
+      Female-dagger_75: 1288789063
+      Female-dagger_76: -2108736250
+      Female-dagger_77: -1906409518
+      Female-dagger_78: 909786999
+      Female-dagger_79: -1708740576
+      Female-dagger_8: -51006039
+      Female-dagger_80: -1135014287
+      Female-dagger_81: -1294699901
+      Female-dagger_82: 169276777
+      Female-dagger_83: -921939927
+      Female-dagger_84: 2065699100
+      Female-dagger_85: -1620202491
+      Female-dagger_86: 480798593
+      Female-dagger_87: 890059489
+      Female-dagger_88: 1964035134
+      Female-dagger_89: -1161210618
+      Female-dagger_9: -1882546477
+      Female-dagger_90: -979184247
+      Female-dagger_91: -729356698
+      Female-dagger_92: 800817276
+      Female-dagger_93: 1972896916
+      Female-dagger_94: -1132206078
+      Female-dagger_95: 761048383
+      Female-dagger_96: 330239430
+      Female-dagger_97: 2034207798
+      Female-dagger_98: -866574836
+      Female-dagger_99: 1458029203
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,4007 @@
+fileFormatVersion: 2
+guid: 9303b8b4ee07412488453129938737a3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Male-wound-recurve_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1988
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223988cd19cb8c74391e2154120b4a7d
+      internalID: -1294874323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1988
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c57f5167a187f949b2432a2bded7487
+      internalID: -350001555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1988
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754954063f537b54cbe659ad580131ae
+      internalID: -1061414351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1988
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0c7b54811df7141967cb3f560b4f0a
+      internalID: -332281962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1988
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30da85ba3c1242640bc40932c91c42e0
+      internalID: -333259576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e16897eb8542b40949e25a7457f7a3
+      internalID: 1222303128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900f20f8622990541a8141b7058b5a34
+      internalID: 849496782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_7
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1988
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4086853601f5874cb9a08ee4db2d1c7
+      internalID: -1860023940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_8
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1988
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07fdd65ba9dd204c9c8611573ae61cd
+      internalID: 501081887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_9
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c91a9736ab61c2f45a66879d9f3c5644
+      internalID: 1318672326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_10
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa6ffe409ac44745933ccdaa249b73e
+      internalID: -43299216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_11
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65fee84ec7781b46bd6da0f359762fb
+      internalID: -1796988916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_12
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1988
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca087b2bfed69b4468dfea460c35a0c6
+      internalID: -664696259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1924
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba38ee8134bbc54c8dc2a92568b57b0
+      internalID: 497325855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1924
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67aab8bb48474b844a66fafbf4fabdc2
+      internalID: 437310673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1924
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14dd16e973e7ca44a8d2ddba34979df
+      internalID: 375204177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_16
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1924
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed58ee0fdabcf44f91e6ae974e96b82
+      internalID: -122909328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_17
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1924
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d050753b58c01014297f2753e0d4903f
+      internalID: -263908776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_18
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 1924
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a104d306085d6b34299a3fe3666619eb
+      internalID: 1271859134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_19
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1924
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35a829715352484da4e6a2e3c81ebfa
+      internalID: -2011847097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_20
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1924
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd0dce55863070449972eb35ebaa9f2
+      internalID: -697232320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_21
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1924
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae8f4e1a9d41a449836fc4d1e9c6f1d
+      internalID: 114274526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_22
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1924
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9686b20db9b03d4089016a1916d343b
+      internalID: -966998306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_23
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1924
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e21481d99ff7549ac5b8680b31f768
+      internalID: -354413048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_24
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1924
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0bcb30e38fab641874f240712567ab
+      internalID: 1101622421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_25
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 1924
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114b85a42c5d06d4ab0417c551151b26
+      internalID: -31985280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_26
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1860
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300bbb4a433e33a48875fb26320cbe6e
+      internalID: -2046850608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_27
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1860
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd444b0bd9e1f84c8a44a04ad80089c
+      internalID: 595037546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_28
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1860
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54104eb5ec3b44a478532d1978bb7d49
+      internalID: -1684597197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_29
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1860
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3836eb597f1bc08409399791a7e999ac
+      internalID: 1516211322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_30
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a4bb5570c6a8248bda4ec2e6d5d0a3
+      internalID: -856998906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_31
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429b732c076b80d44a82122f458a3182
+      internalID: -1626803100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_32
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e25aa4cdb0b975479ea30e4c52d8b25
+      internalID: -580304625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_33
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec04dc069e02a6040a943d93ff0435a3
+      internalID: 2105479144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_34
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65c4b1b4a4aaf8419d307325af6165b
+      internalID: 47358006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_35
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfba199cef136c449a3ae3c85d1ddb7e
+      internalID: 748795201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_36
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1860
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ee9bb457d50284a8c7b6cb9bc3fe3c
+      internalID: 266772827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_37
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1860
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b676d9d021a0aa049af209d788021c18
+      internalID: 338679224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_38
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 1860
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5e07d29e473cd4f8adfaaaf77fdf0a
+      internalID: -743843275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_39
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1796
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4069403408938744999f0934b03530ef
+      internalID: 995666194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1796
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cedb7c699f93245b9341d1fa115998
+      internalID: -1580867403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_41
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1796
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd95e6c8ce25cbe469af249cffccdbfa
+      internalID: 1266538654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_42
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1796
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d41d4739463f34cacdfcb47116015d
+      internalID: -155859747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_43
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1796
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb12014c57cd30c4baa9058a4648b9b7
+      internalID: 1202355205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_44
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1796
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab30c67deb957b64fb24743230037a6c
+      internalID: -1317056508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_45
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1796
+        width: 48
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d11fcd7ee459749964fdbdf3b88d9a
+      internalID: -2019085100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_46
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1796
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23b2cfd28e9d4445ba3ac143c89fdb3
+      internalID: -494460418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_47
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1796
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a27b60a6941f84c9f8579b55aac678
+      internalID: 1132890680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_48
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1796
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91597426001d13741950f8cccc9a9a5d
+      internalID: 159417116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_49
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1796
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469c62b2748d48349b5c0b34007439fe
+      internalID: 783686070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_50
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1796
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae051a1b8cd98e545a58ff0c5612fda3
+      internalID: 2070599486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_51
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1796
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fc541d0e266aa4bae986a4e08b1b88
+      internalID: 158918554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_52
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdfaa594b9bb5a42a88925faa1ffeef
+      internalID: 2003709732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_53
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19bbeeb36f111746ab86ea489ccca3e
+      internalID: -1041170553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_54
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03aadb6ed5247d8478993de675eb57c3
+      internalID: 1752804513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_55
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1665
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b66418ea986d04b89345671bf6f54d
+      internalID: 1222882333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_56
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d090eda19827b1a4fae80681511bee82
+      internalID: -1258425386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_57
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd3ec617d50aa84882fe64941db9dfe
+      internalID: 1741359981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_58
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1665
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202106a4c812e404faebbaf02535829b
+      internalID: -39014737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_59
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1665
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8ce751301063d47b3d8ffdebb8cc31
+      internalID: -2075441761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1537
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43186d1a63a77e947b146dc343f32026
+      internalID: 1213922701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_61
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1537
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c4ce9fc0db9e540b27d1141dbc0405
+      internalID: 444506012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_62
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1537
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3487e1b83630e13448e334f240d77593
+      internalID: 494421364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_63
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 1537
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331dd9bdf011f3b4da46194962d4b557
+      internalID: -311757769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_64
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1537
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264e5f97510e489418ae22270bbdb461
+      internalID: 1140963338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_65
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1537
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd49f32088867c4d92ccc319223d972
+      internalID: 1959303901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_66
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1537
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370f97107cfa5ff49915f148b4a3b343
+      internalID: -517093634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_67
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 1537
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca8e8b22f77c374d8f863e4dc7fb3d2
+      internalID: -1598677059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_68
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98ccb10e9bbb5b4798b8abb77ddb435
+      internalID: 1540235064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a55dc7b37556cd4fa36878238dbaea1
+      internalID: -524975535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_70
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c99c156a42a7c4b80e97cdddb8a05a
+      internalID: 767604935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_71
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1409
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad45281b3f7823a409a11f632ed235ac
+      internalID: -116153029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_72
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c53f933c1b64334996b1aef47cc9de0
+      internalID: -1501434604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_73
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14660255069d05543b77872c58d094bc
+      internalID: 987083319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_74
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 1409
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e86a03afc3c1304bb5dfa78181722bd
+      internalID: -468657580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_75
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1409
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5f24d6084e76a41bb88a4749f76db9
+      internalID: 1610089423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_76
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1281
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66c9fbeeda0e98c428b46ced6f03955f
+      internalID: 2059607319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_77
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1281
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aadae89b1ade7f344b2462ab38f79860
+      internalID: 960434164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_78
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1281
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d984e94ed44ecfd42838e2ef395b8146
+      internalID: 1785089917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_79
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1281
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b8a2af0392f544abe3e0e4db49eaf9
+      internalID: -894394548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_80
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1281
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4627749d2ec76484d829d2a1d5c4bbf9
+      internalID: -1868282742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_81
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1281
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3cbc52888dd7954c99339e83a635414
+      internalID: -720313874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_82
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1281
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a125f24d1d47a4c8988097aa6c2b3b
+      internalID: 310909569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_83
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 1281
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6f106cdd1513848b023f5f62aa31da
+      internalID: 2106395083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_84
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1200
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca8a448b0c920a43b900ed23283f338
+      internalID: 2012875196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1200
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefcd34dbfa708a4f978003caf817120
+      internalID: 52583105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_86
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 1200
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fb765efb16c354d8c358db69b78a84
+      internalID: -1225253193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_87
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1200
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1167423e826c71b46b13790b78597e04
+      internalID: 1133962012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_88
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 969
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddf726a91bdcd445863e53603a6f814
+      internalID: 180342136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_89
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 969
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5982ed8febeb61c4db8ee9d1d348eed0
+      internalID: 59132027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_90
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 969
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad4a8f051e855447b663d9e885e178a
+      internalID: -113387329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_91
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 969
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcffc65f4a80924429fec31754a61e0a
+      internalID: 1724927866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_92
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 969
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05775373cb54ced45a4bfc86e56785c6
+      internalID: 388808859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_93
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66132f47cfd4e8f49812ee94fac0ecfc
+      internalID: -482583320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_94
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3b877dfc3488f4f8ae7dcabd493471
+      internalID: -1160401981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_95
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 969
+        width: 35
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d51ef30bdc54b8468eac840de35ee2a
+      internalID: 1071502303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_96
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 969
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0746997593da114fa83e4de0c19fe64
+      internalID: 2139081554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_97
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45b246ce717e954d809c33c8e90f032
+      internalID: -1459941341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_98
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af6409c67fe8174196319a9a2399615
+      internalID: -1060474049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_99
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3a73c761ee7934eb39363f2476475f
+      internalID: 1292146937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_100
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 969
+        width: 35
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b129101d7f98534eae6aa110ffc5e8e
+      internalID: -936322886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_101
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 905
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0eb67dc3d6c3824d843fa59ae833da7
+      internalID: -307871686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_102
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 905
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d67b842f65a622419aeddc31a841066
+      internalID: -1198290326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_103
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 905
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceeea3e95b10b804687b1347a47f7b5c
+      internalID: -1771612451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_104
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 905
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bde272c9e6a7d4983ad623d2253d42
+      internalID: -965823068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_105
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 905
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb265f1bf3fc2824aaf008b093f371a8
+      internalID: -1452248672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_106
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 905
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e12a723e5126049bef3e4ca8b6fa9c
+      internalID: -830933258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_107
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 905
+        width: 51
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab49e1c73c823c4db088371d340d430
+      internalID: 989280792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_108
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 905
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63568d6e7e06add42907cfb22607f598
+      internalID: 87760969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_109
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 905
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffd79ff9ca2d51489108b7a56f1522f
+      internalID: -605557301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_110
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 905
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a31d4a5be1d004885a52b515a19821
+      internalID: -400774834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_111
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 905
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce5d1cb269f8644a8202394acf36400
+      internalID: -1918976985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_112
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 905
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44769787dda9aa4d8e22b58c1557a63
+      internalID: -1442169488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_113
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 905
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9489fe26536c264e89392df1b5f5ec1
+      internalID: -608891837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_114
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 841
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b5939646339a642a56b51d320ba27c
+      internalID: -523528276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_115
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 841
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea470dbcc472b943837b0d887c66101
+      internalID: -619370864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_116
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 841
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33626ecef606cf045a5192f69721278a
+      internalID: 1270858080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_117
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 841
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32adee2028e939d4b9f84428c669bf7d
+      internalID: 68501054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_118
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3984fd3182416584fbbcba951015e9d2
+      internalID: -1004899459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_119
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf27db81974e1714dbd87638a7745e40
+      internalID: 578734310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_120
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d425470a4a70cf4387e4920705fd3e1
+      internalID: -527728422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_121
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb5be80d0948304e99d003abf45c65a
+      internalID: 1474681082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_122
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa11a1e0b8efeb542b5de2ab1a217615
+      internalID: 416146323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_123
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cbe8fc5d739d3945a1fcc35b00269df
+      internalID: -911058782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_124
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c7c6cf71d201548b47cc9b60537d51
+      internalID: -1769414765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_125
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f114197c35c0a3f45a03534ab6b4e73a
+      internalID: -194742198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_126
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 841
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50ec1b1c45feb349a9d7908e0916abc
+      internalID: -1412496772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_127
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 777
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d856e6524d8564d95bdb61fc46ed0a
+      internalID: 1557115053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_128
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 777
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31684ec30eb29394f937cee47133e073
+      internalID: -2056278221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_129
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 777
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ec409b33df2f241974b12cfc5c51d4
+      internalID: -814684787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_130
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 777
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3407588c8b75e974f895ded89094a832
+      internalID: 113909285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_131
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 777
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3569576eaeeb88e46867795ed0c95ee0
+      internalID: -226448834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_132
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 777
+        width: 52
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cd0ca22bc9ff34ba4dd969ba3e32f0
+      internalID: -71264494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_133
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 777
+        width: 51
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b463c24a5c6524e8c1b2e0ef489287
+      internalID: -884114894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_134
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 777
+        width: 48
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf820defa0c4be44dbe775d9c92a89c5
+      internalID: -964860800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_135
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 777
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a1f9d524eb83b479dec59139f14a04
+      internalID: -1324570004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_136
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 777
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0770fb369633ac45aa77e737c74eb77
+      internalID: -757920857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_137
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 777
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0305b0cee6cf0d6449eebb57bdcfcb8b
+      internalID: -1045227215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_138
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 777
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5664600fb9b7a6147a9f108e1bc853f9
+      internalID: -1958524320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_139
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 777
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ce6563e19b9ee438646dd7d0cfd2fe
+      internalID: -1326477787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_140
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab06de36093fee478e334d2a97791ac
+      internalID: -1269222800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_141
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628524ddadf330b498decb66156deedf
+      internalID: -1540317288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_142
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f191316eff7dfe543b1755c615f5adac
+      internalID: -645101614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_143
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 646
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad141e7e8d3e0e4d8a8924eb37cc272
+      internalID: -1508918360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_144
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f427765f8688849915b56490decb1e
+      internalID: -1552382791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_145
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead18fa30ac42bf49a0e325cbb83e8a5
+      internalID: -966916528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_146
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 646
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddf8918eb531f54596a39edcb618b1a
+      internalID: -302549532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_147
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 646
+        width: 52
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295b62a56eaa136449e6672ce2b1e26e
+      internalID: -1698170426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_148
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 518
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5645602c3f7d8b74685e0915ffe59740
+      internalID: 1812706115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_149
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 518
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5db5fe53280e84e90b3a74cdea3779
+      internalID: -772560330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_150
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 518
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a8861b8d49dda4f8cca68922cae93b
+      internalID: 1932862498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_151
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 518
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849493c659950b641a3d7a4ff3b3779f
+      internalID: -1970318873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_152
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 518
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd15d6c81c261a4ba83e0c90f6ec14f
+      internalID: -1208610110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_153
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 518
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e826554b898c844a870a1535fdf1dc
+      internalID: -1703143954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_154
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 518
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a4b0fdaa8122b4b81dfcdf0683458c
+      internalID: 2018812258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_155
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 518
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaefc973fd0795e4fbf1fa3733ff3ced
+      internalID: 1653735453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_156
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef807d7a7557eb4c81a17814b606225
+      internalID: 567491450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_157
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372e736dc2b31914d862c4ba50752bed
+      internalID: -256931953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_158
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e533443f2dccb0d42b579234e06f868c
+      internalID: 522673712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_159
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 390
+        width: 43
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27486563c6c49a84f982749abcfc2733
+      internalID: 1648913782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_160
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce0c4b48e1c92a94786f8f4b461c149f
+      internalID: -1524985795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_161
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8829247574f64645aa54c2e6bc3c85f
+      internalID: 640898028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_162
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 390
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c96c3f187f3454c8f2e56d61597222
+      internalID: 1676279712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_163
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 390
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f8886b4f49b6348bc295dabaff08dd
+      internalID: -1796416000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_164
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 262
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f56f8bd6e58f745b743ee768e8a6aa
+      internalID: -775941195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_165
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 262
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d901d67a260bd4faed4af4c3bbb516
+      internalID: -299614467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_166
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 262
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5d28c9fe5c33e4a9f8c96421449813
+      internalID: 1596059266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_167
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 262
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6b6a5cc69d4214d97be0c377b4251f
+      internalID: 531642031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_168
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 262
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a24a8c4e294504a88a51f6628a1883
+      internalID: 520618755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_169
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 262
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5c2f73ce5cbbf4fb21dcf9cbc9abd3
+      internalID: -1949653063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_170
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 262
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49d175c4e5537c4389343000b3dff15
+      internalID: -2034512750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_171
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 262
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561125a101faba74e942e256ad2c2144
+      internalID: -1421056291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_172
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 150
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90117db308276814eb9c7e061bc728ad
+      internalID: -244684366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_173
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 150
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a5c97eba96ed2429ac387e2c76eaf4
+      internalID: 2001503804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_174
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 150
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97330207f1e6a8b42adb4fc9111b2167
+      internalID: 1695166081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male-wound-recurve_175
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 150
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2804f0231883a98428328ac334e94f62
+      internalID: 478531450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Male-wound-recurve_0: -1294874323
+      Male-wound-recurve_1: -350001555
+      Male-wound-recurve_10: -43299216
+      Male-wound-recurve_100: -936322886
+      Male-wound-recurve_101: -307871686
+      Male-wound-recurve_102: -1198290326
+      Male-wound-recurve_103: -1771612451
+      Male-wound-recurve_104: -965823068
+      Male-wound-recurve_105: -1452248672
+      Male-wound-recurve_106: -830933258
+      Male-wound-recurve_107: 989280792
+      Male-wound-recurve_108: 87760969
+      Male-wound-recurve_109: -605557301
+      Male-wound-recurve_11: -1796988916
+      Male-wound-recurve_110: -400774834
+      Male-wound-recurve_111: -1918976985
+      Male-wound-recurve_112: -1442169488
+      Male-wound-recurve_113: -608891837
+      Male-wound-recurve_114: -523528276
+      Male-wound-recurve_115: -619370864
+      Male-wound-recurve_116: 1270858080
+      Male-wound-recurve_117: 68501054
+      Male-wound-recurve_118: -1004899459
+      Male-wound-recurve_119: 578734310
+      Male-wound-recurve_12: -664696259
+      Male-wound-recurve_120: -527728422
+      Male-wound-recurve_121: 1474681082
+      Male-wound-recurve_122: 416146323
+      Male-wound-recurve_123: -911058782
+      Male-wound-recurve_124: -1769414765
+      Male-wound-recurve_125: -194742198
+      Male-wound-recurve_126: -1412496772
+      Male-wound-recurve_127: 1557115053
+      Male-wound-recurve_128: -2056278221
+      Male-wound-recurve_129: -814684787
+      Male-wound-recurve_13: 497325855
+      Male-wound-recurve_130: 113909285
+      Male-wound-recurve_131: -226448834
+      Male-wound-recurve_132: -71264494
+      Male-wound-recurve_133: -884114894
+      Male-wound-recurve_134: -964860800
+      Male-wound-recurve_135: -1324570004
+      Male-wound-recurve_136: -757920857
+      Male-wound-recurve_137: -1045227215
+      Male-wound-recurve_138: -1958524320
+      Male-wound-recurve_139: -1326477787
+      Male-wound-recurve_14: 437310673
+      Male-wound-recurve_140: -1269222800
+      Male-wound-recurve_141: -1540317288
+      Male-wound-recurve_142: -645101614
+      Male-wound-recurve_143: -1508918360
+      Male-wound-recurve_144: -1552382791
+      Male-wound-recurve_145: -966916528
+      Male-wound-recurve_146: -302549532
+      Male-wound-recurve_147: -1698170426
+      Male-wound-recurve_148: 1812706115
+      Male-wound-recurve_149: -772560330
+      Male-wound-recurve_15: 375204177
+      Male-wound-recurve_150: 1932862498
+      Male-wound-recurve_151: -1970318873
+      Male-wound-recurve_152: -1208610110
+      Male-wound-recurve_153: -1703143954
+      Male-wound-recurve_154: 2018812258
+      Male-wound-recurve_155: 1653735453
+      Male-wound-recurve_156: 567491450
+      Male-wound-recurve_157: -256931953
+      Male-wound-recurve_158: 522673712
+      Male-wound-recurve_159: 1648913782
+      Male-wound-recurve_16: -122909328
+      Male-wound-recurve_160: -1524985795
+      Male-wound-recurve_161: 640898028
+      Male-wound-recurve_162: 1676279712
+      Male-wound-recurve_163: -1796416000
+      Male-wound-recurve_164: -775941195
+      Male-wound-recurve_165: -299614467
+      Male-wound-recurve_166: 1596059266
+      Male-wound-recurve_167: 531642031
+      Male-wound-recurve_168: 520618755
+      Male-wound-recurve_169: -1949653063
+      Male-wound-recurve_17: -263908776
+      Male-wound-recurve_170: -2034512750
+      Male-wound-recurve_171: -1421056291
+      Male-wound-recurve_172: -244684366
+      Male-wound-recurve_173: 2001503804
+      Male-wound-recurve_174: 1695166081
+      Male-wound-recurve_175: 478531450
+      Male-wound-recurve_18: 1271859134
+      Male-wound-recurve_19: -2011847097
+      Male-wound-recurve_2: -1061414351
+      Male-wound-recurve_20: -697232320
+      Male-wound-recurve_21: 114274526
+      Male-wound-recurve_22: -966998306
+      Male-wound-recurve_23: -354413048
+      Male-wound-recurve_24: 1101622421
+      Male-wound-recurve_25: -31985280
+      Male-wound-recurve_26: -2046850608
+      Male-wound-recurve_27: 595037546
+      Male-wound-recurve_28: -1684597197
+      Male-wound-recurve_29: 1516211322
+      Male-wound-recurve_3: -332281962
+      Male-wound-recurve_30: -856998906
+      Male-wound-recurve_31: -1626803100
+      Male-wound-recurve_32: -580304625
+      Male-wound-recurve_33: 2105479144
+      Male-wound-recurve_34: 47358006
+      Male-wound-recurve_35: 748795201
+      Male-wound-recurve_36: 266772827
+      Male-wound-recurve_37: 338679224
+      Male-wound-recurve_38: -743843275
+      Male-wound-recurve_39: 995666194
+      Male-wound-recurve_4: -333259576
+      Male-wound-recurve_40: -1580867403
+      Male-wound-recurve_41: 1266538654
+      Male-wound-recurve_42: -155859747
+      Male-wound-recurve_43: 1202355205
+      Male-wound-recurve_44: -1317056508
+      Male-wound-recurve_45: -2019085100
+      Male-wound-recurve_46: -494460418
+      Male-wound-recurve_47: 1132890680
+      Male-wound-recurve_48: 159417116
+      Male-wound-recurve_49: 783686070
+      Male-wound-recurve_5: 1222303128
+      Male-wound-recurve_50: 2070599486
+      Male-wound-recurve_51: 158918554
+      Male-wound-recurve_52: 2003709732
+      Male-wound-recurve_53: -1041170553
+      Male-wound-recurve_54: 1752804513
+      Male-wound-recurve_55: 1222882333
+      Male-wound-recurve_56: -1258425386
+      Male-wound-recurve_57: 1741359981
+      Male-wound-recurve_58: -39014737
+      Male-wound-recurve_59: -2075441761
+      Male-wound-recurve_6: 849496782
+      Male-wound-recurve_60: 1213922701
+      Male-wound-recurve_61: 444506012
+      Male-wound-recurve_62: 494421364
+      Male-wound-recurve_63: -311757769
+      Male-wound-recurve_64: 1140963338
+      Male-wound-recurve_65: 1959303901
+      Male-wound-recurve_66: -517093634
+      Male-wound-recurve_67: -1598677059
+      Male-wound-recurve_68: 1540235064
+      Male-wound-recurve_69: -524975535
+      Male-wound-recurve_7: -1860023940
+      Male-wound-recurve_70: 767604935
+      Male-wound-recurve_71: -116153029
+      Male-wound-recurve_72: -1501434604
+      Male-wound-recurve_73: 987083319
+      Male-wound-recurve_74: -468657580
+      Male-wound-recurve_75: 1610089423
+      Male-wound-recurve_76: 2059607319
+      Male-wound-recurve_77: 960434164
+      Male-wound-recurve_78: 1785089917
+      Male-wound-recurve_79: -894394548
+      Male-wound-recurve_8: 501081887
+      Male-wound-recurve_80: -1868282742
+      Male-wound-recurve_81: -720313874
+      Male-wound-recurve_82: 310909569
+      Male-wound-recurve_83: 2106395083
+      Male-wound-recurve_84: 2012875196
+      Male-wound-recurve_85: 52583105
+      Male-wound-recurve_86: -1225253193
+      Male-wound-recurve_87: 1133962012
+      Male-wound-recurve_88: 180342136
+      Male-wound-recurve_89: 59132027
+      Male-wound-recurve_9: 1318672326
+      Male-wound-recurve_90: -113387329
+      Male-wound-recurve_91: 1724927866
+      Male-wound-recurve_92: 388808859
+      Male-wound-recurve_93: -482583320
+      Male-wound-recurve_94: -1160401981
+      Male-wound-recurve_95: 1071502303
+      Male-wound-recurve_96: 2139081554
+      Male-wound-recurve_97: -1459941341
+      Male-wound-recurve_98: -1060474049
+      Male-wound-recurve_99: 1292146937
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
