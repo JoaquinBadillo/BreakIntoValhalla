@@ -13,7 +13,6 @@ Authors:
 * Pablo Bolio Pradilla
 * Shaul Zayat Askenazi
 
-##
 ## _Index_
 
 ---
@@ -262,9 +261,11 @@ Due to the nature of Roguelites, the game flow is expected to work to a great ex
 ### **Derived Classes / Component Compositions**
 1. Character
     1. Player
+    2. Melee Draugr
+    3. Archer Draugr 
 2. IEnemy
     1. Melee Draugr
-    2. Archer Draugr
+    2. Archer Draugr 
 3. IWeapon
     1. Great Bow
     2. Recurve Bow
@@ -272,14 +273,19 @@ Due to the nature of Roguelites, the game flow is expected to work to a great ex
     4. Saber
 4. Consumable
     1. Upgrade weapon
-    2. 10% Horn
-    3. 50% Horn
+    2. 10% Horn (Health potion)
+    3. 50% Horn (Big Health potion)
     4. Coin (increases players currency)
-5. Door
+5. Key
+6. Door
     1. LockedDoor (checks if key was obtained)
 7. DungeonGenerator
-8. Chest (drops consumables)
-9. Key
+8. EnemySpawner
+    1. Contains enemy (Archer/Melee Draugr) to spawn
+9. Chest (drops consumables)
+    1. Contains list of consumables
+10. Shop
+    1. Contains list of consumables
 
 ## _Graphics_
 
@@ -351,6 +357,8 @@ Legendary Chests (Odin's Favors)
 ![Odin's Favor sprite](./static/Interactable/LegendaryChest.png)
 
 Keys
+
+![Key](./static/Interactable/Key.png)
 
 Coins
 
