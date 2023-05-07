@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +115,511 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: waraxe_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 972
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a89d676641275846865d6ae9b70c86a
+      internalID: -943142351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 979
+        width: 45
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a7359e7ba79da469aab649dcc87ceb
+      internalID: 1044486031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 981
+        width: 46
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902f6e4c96f328c499d72e32d862641a
+      internalID: 2115702780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_3
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 981
+        width: 45
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466d2f18c23277c438c108a609c263d2
+      internalID: -1222320753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_4
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 973
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1049a37979237f40b45fa3d2619c5a8
+      internalID: -943068923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_5
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 978
+        width: 55
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f669a698e14044409fe4be2ac6488bf
+      internalID: 1507303784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 777
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89c86dcb1f050d4a89c1ddb6a67402f
+      internalID: -1280438164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_7
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 778
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c970f8e909bf19c44b2dee6ff4778645
+      internalID: 990212823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 775
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5d8de26aa213349b25bca944877460
+      internalID: 773694293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_10
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 776
+        width: 56
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e2b42984c4a3f4186fe5e7e66c4fd3
+      internalID: -2007701142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_11
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 775
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29405d98db8b31747812f4327413d9bf
+      internalID: -1946372421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_12
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 783
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d6e49ed9df87f4e82c4b2dce147e81
+      internalID: -1446580114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 586
+        width: 46
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511b843e8ee1668428f220acc08d4e69
+      internalID: -1043595913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_14
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 587
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e61ff0aa47bd8a469c39e3162d6b199
+      internalID: 532505475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_16
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 588
+        width: 46
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738f435dbcb47394d936745b38b19020
+      internalID: 329518202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_17
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 583
+        width: 54
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a116c932e90344886ebfef1078a61b
+      internalID: -1720619243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_19
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 571
+        width: 66
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece00418439d88242820800a0f165e18
+      internalID: -1518989560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_20
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 575
+        width: 62
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e13e34155262e14bab18dc8e5c5ad59
+      internalID: 2095914380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 393
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab09cbb7b415ca4a89099ec72cccafe
+      internalID: -546159294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_23
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 394
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b519dbec25eb60b43ad0688251d2f3c1
+      internalID: 1215617623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_24
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 391
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1572aee0f015b439f9fe3267785bec
+      internalID: -46940340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_26
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 392
+        width: 56
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd4cb0f5a9ca2d4382ae2abdd9c32b6
+      internalID: 1554430306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_27
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 391
+        width: 47
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e276a6b17a0632c4381f2b999682b1c6
+      internalID: -490582449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waraxe_28
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 399
+        width: 49
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8800ae2fae763544f948cdfd1cfa63b1
+      internalID: 1186369920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +630,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      waraxe_0: -943142351
+      waraxe_1: 1044486031
+      waraxe_10: -2007701142
+      waraxe_11: -1946372421
+      waraxe_12: -1446580114
+      waraxe_13: -1043595913
+      waraxe_14: 532505475
+      waraxe_15: 1107624719
+      waraxe_16: 329518202
+      waraxe_17: -1720619243
+      waraxe_18: 2113442283
+      waraxe_19: -1518989560
+      waraxe_2: 2115702780
+      waraxe_20: 2095914380
+      waraxe_21: -1535463055
+      waraxe_22: -546159294
+      waraxe_23: 1215617623
+      waraxe_24: -46940340
+      waraxe_25: 1018247675
+      waraxe_26: 1554430306
+      waraxe_27: -490582449
+      waraxe_28: 1186369920
+      waraxe_3: -1222320753
+      waraxe_4: -943068923
+      waraxe_5: 1507303784
+      waraxe_6: -1280438164
+      waraxe_7: 990212823
+      waraxe_8: -1680190693
+      waraxe_9: 773694293
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
