@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +115,1099 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: recurve-bow_0
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 986
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f0f48b32b02bc4d8f23c4a4cf69163
+      internalID: 2001743997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_1
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1007
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3403a08f35275a44381e27e73a00df06
+      internalID: -1478506664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_2
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1007
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafcce4f7d0c1e44a9a1ca0a9a106d22
+      internalID: 824785112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_3
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1007
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ac5ae813367b541971c6c5fb4fe041
+      internalID: 687796874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_4
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1007
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce44147cb275c9e4f8e94a3797f39df1
+      internalID: -672215571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_5
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1007
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea72554d606d5b841a71b3ec6bb83628
+      internalID: -2144938677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_6
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 1007
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da366effd5fbd2d4b94f65d744560378
+      internalID: 563559639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_7
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1007
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc48978c73cb3c46bde2362dccd9304
+      internalID: -804398538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_8
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 1007
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeff5eb5c6470a40ac479a9f18df3fb
+      internalID: 1795567466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_9
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 1007
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638cda18e661bd24da411e0dd0bef87f
+      internalID: 1764317844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_10
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 971
+        width: 43
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6d535283e45fe4ea3c3755ad1f67be
+      internalID: -1811280639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 965
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e92249e9b43df40bfdb04d4d937802
+      internalID: -1504909676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_12
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 969
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02520fcfc9686444a15bbdb903d36cd
+      internalID: 1333216907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_16
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 901
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8412f8b0ceab29947b6710c99ead3185
+      internalID: -2126937714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_17
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 903
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471e3e4001f4fdc4eb599287e71ab085
+      internalID: 1148033900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_18
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 896
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5dc942b562749d4ab58863f9747d3ea
+      internalID: 939838980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_19
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 902
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738df53b82fc15845a858140bab70f8d
+      internalID: -1954850799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_20
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 904
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245e182391871f644b09e6228b491c56
+      internalID: -265234929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 906
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169cff3482791794cb1976fb409866c0
+      internalID: -1100154339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_22
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 905
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de1cbfdbb50e02d47878ab239c16eec9
+      internalID: 1260724736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_23
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 905
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc8724ea8b92474ea7f6933143f2758
+      internalID: 663565059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_24
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 902
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be4e8f34a6e84c47bf4e9e8f045dc3a
+      internalID: 192901218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_25
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 902
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c26e6bf4372df478469e95a6847c09
+      internalID: 1334132576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_26
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 902
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f99984831aeee94b879e6eb3715135c
+      internalID: 1733784014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_27
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 902
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff204f2e3e9cde94da38a0a7a64bcc23
+      internalID: -392481741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_28
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 910
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5373f0d93b10069458e93e6ad3f39ce7
+      internalID: -1109467090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_36
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 844
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18dd6be18b19234dafb447c89a2d8c4
+      internalID: 1594942796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_37
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 839
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fd18cb58e34bb45944564ebc54b4f8
+      internalID: 1402074888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_38
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 837
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901bbc91b96437e4cb75be40c847b803
+      internalID: 533899950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_39
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 832
+        width: 18
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b283b039c15d1a949a5e9798d0fdfaf8
+      internalID: 24340011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_40
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 834
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad967ec30deac6d44af136fb3afe8aa5
+      internalID: 1287816901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_41
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 835
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1f83ecddd3b004fb739e0c63d7da96
+      internalID: -2119904270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_42
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 835
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8707a9679d3634d8b36136f49b198a
+      internalID: 1842441592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_44
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 838
+        width: 16
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23305bc64591dd247a07a3e81e697d2d
+      internalID: 1386983180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_46
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 835
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7d6ef2f5a8bd4438345dfbf7e2fb5c
+      internalID: -1206268251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_47
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 833
+        width: 9
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7029b57ed2f918f4f81eff2ddb1cb961
+      internalID: 543448832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_48
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 833
+        width: 9
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84057949a4db13b4e84f981ba877d21b
+      internalID: 437494254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_49
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 833
+        width: 9
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6fd78b8ba4e5e4d81194f620231b03
+      internalID: 1399443040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_50
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 833
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e085a28821232554385970c87fac235a
+      internalID: -734041188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_52
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 773
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0241101bc9b74d342977bf2e7ed2bbc8
+      internalID: -1390287647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_53
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 775
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf23f80267c9c34894e38f75307dba0
+      internalID: 437730726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_54
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 768
+        width: 31
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff48ef26a37f01b46a2c34f158a4b4c3
+      internalID: 218646642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_55
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 774
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e27aa3659133b4495ae9a4bb4533fc
+      internalID: 1209113091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_56
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 776
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067c829cd5e4b87489fdd9c7d8669cb1
+      internalID: 1122588544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_57
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 778
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901b2618d6cf6754ba82545cb65f30fc
+      internalID: 1474600732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_58
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 777
+        width: 33
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306262daf806ea24288be50dbf6c2f07
+      internalID: 1474126073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_59
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 777
+        width: 33
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 309372354ae89ee4dbca3fe45ae5683b
+      internalID: 1335181815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_60
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 774
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bb30eebff270d344a2ebc2521ef5e83
+      internalID: -435999191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_61
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 774
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43298c8cbd2ef8343befff6835e32a88
+      internalID: 1476133651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_62
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 774
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b0f624ea2fbe64fabeb44d34236f10
+      internalID: 506085958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_63
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 774
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c33e182d15b33546bcf025ff86c98c7
+      internalID: 1646656838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: recurve-bow_65
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 782
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739d9ce46938fd3479304111bade7516
+      internalID: -961916163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +1218,79 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      recurve-bow_0: 2001743997
+      recurve-bow_1: -1478506664
+      recurve-bow_10: -1811280639
+      recurve-bow_11: -1504909676
+      recurve-bow_12: 1333216907
+      recurve-bow_13: -240251257
+      recurve-bow_14: -239522207
+      recurve-bow_15: 2108316943
+      recurve-bow_16: -2126937714
+      recurve-bow_17: 1148033900
+      recurve-bow_18: 939838980
+      recurve-bow_19: -1954850799
+      recurve-bow_2: 824785112
+      recurve-bow_20: -265234929
+      recurve-bow_21: -1100154339
+      recurve-bow_22: 1260724736
+      recurve-bow_23: 663565059
+      recurve-bow_24: 192901218
+      recurve-bow_25: 1334132576
+      recurve-bow_26: 1733784014
+      recurve-bow_27: -392481741
+      recurve-bow_28: -1109467090
+      recurve-bow_29: 1766993734
+      recurve-bow_3: 687796874
+      recurve-bow_30: -1831695520
+      recurve-bow_31: -76369197
+      recurve-bow_32: 645372751
+      recurve-bow_33: 941653328
+      recurve-bow_34: -862914402
+      recurve-bow_35: 1516976563
+      recurve-bow_36: 1594942796
+      recurve-bow_37: 1402074888
+      recurve-bow_38: 533899950
+      recurve-bow_39: 24340011
+      recurve-bow_4: -672215571
+      recurve-bow_40: 1287816901
+      recurve-bow_41: -2119904270
+      recurve-bow_42: 1842441592
+      recurve-bow_43: 1170409607
+      recurve-bow_44: 1386983180
+      recurve-bow_45: -517015833
+      recurve-bow_46: -1206268251
+      recurve-bow_47: 543448832
+      recurve-bow_48: 437494254
+      recurve-bow_49: 1399443040
+      recurve-bow_5: -2144938677
+      recurve-bow_50: -734041188
+      recurve-bow_51: 646470014
+      recurve-bow_52: -1390287647
+      recurve-bow_53: 437730726
+      recurve-bow_54: 218646642
+      recurve-bow_55: 1209113091
+      recurve-bow_56: 1122588544
+      recurve-bow_57: 1474600732
+      recurve-bow_58: 1474126073
+      recurve-bow_59: 1335181815
+      recurve-bow_6: 563559639
+      recurve-bow_60: -435999191
+      recurve-bow_61: 1476133651
+      recurve-bow_62: 506085958
+      recurve-bow_63: 1646656838
+      recurve-bow_64: -41181390
+      recurve-bow_65: -961916163
+      recurve-bow_66: 774007194
+      recurve-bow_67: 177453271
+      recurve-bow_68: 1320360246
+      recurve-bow_69: 667328904
+      recurve-bow_7: -804398538
+      recurve-bow_70: -1611563863
+      recurve-bow_71: -317358101
+      recurve-bow_8: 1795567466
+      recurve-bow_9: 1764317844
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

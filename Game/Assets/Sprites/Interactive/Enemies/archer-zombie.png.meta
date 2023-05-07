@@ -1,0 +1,2159 @@
+fileFormatVersion: 2
+guid: a7286efa59ed70a44bc9b7a2ac3a5830
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: archer-zombie_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 968
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab400b3b11733c649b8cfb8b9dba49c3
+      internalID: -1411283969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_1
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 968
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337086e67576d844182257737dac360d
+      internalID: 1073318810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 968
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253dfbb65443c414e9e647b022e78a84
+      internalID: -106736837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 968
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7c970e0ef5c6b4189cc3f7999b4b2e
+      internalID: 1648345115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_4
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 968
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32e152e78f491b044bb4325c17a5724b
+      internalID: 1600834090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_5
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 968
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c196884210dacc41ae5fd8af3648302
+      internalID: 450473008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_6
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 968
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50a11b111c77a34fb8ff003d196cab1
+      internalID: -465230477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_7
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 968
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06fb5d857b69c54e957708f06118725
+      internalID: 495978565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_8
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 968
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc339e68541c36b4eb48fbcf7274a429
+      internalID: 42744919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_9
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 904
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0719d4999e1f14f8aced9b889ef6a3
+      internalID: -1422835863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 904
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9593f69de14c294ab0a102a11e682c6
+      internalID: 1781562429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_11
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 904
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9f8f27a51bf764494ddcb649d2fcac
+      internalID: -208304379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_12
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 904
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d2902747c5ae74da2ec994aaeacb57
+      internalID: -1480974017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_13
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 904
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1b3837ef5522e42aaad3e4c757ba12
+      internalID: -628172410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_14
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 904
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634e8afe642055e44a6c7dd9642aaa97
+      internalID: -1179534774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_15
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 904
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab39314be32a16444a05258fa84c1824
+      internalID: 1872133266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_16
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 904
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ea2ee9802c4474bba12b32c0850c01
+      internalID: -1328497627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_17
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 904
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8549c8cb53f4584d80b70347fcfb17b
+      internalID: 453888876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_18
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 840
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f808d4c72ec22e429b6b0f9177b0606
+      internalID: -186601935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_19
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 840
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a345a94bc1f334ca5ef9db19a920d6
+      internalID: 1295408255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_20
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 840
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fae1cba9d391d4a9f0f22e6c94e307
+      internalID: -1558824669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 840
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6226f6354a2fec4e82fe33469fc14d9
+      internalID: -1500628804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_22
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 840
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321be59d46231214fa9b3183806b3a59
+      internalID: 382250944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_23
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 840
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b581cc1a840898048b0ce39d736f99be
+      internalID: -328307328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_24
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 840
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e7a3b5811f5d948952eff2797fe0fe
+      internalID: -47706778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_25
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 840
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5217919abbfbdb242bac8798e1251d21
+      internalID: -2045922498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_26
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 840
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573ad3af712538e45a34465b5abff377
+      internalID: 1167546666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_27
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 776
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cec0b5e00ab9e4d81095a46c68dfa0
+      internalID: -210154787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_28
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 776
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22edbdc9ce7ecbb4ab314c3991477fa1
+      internalID: 1724489357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_29
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 776
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62a1aa2dd448f44d8a67c7cbff0b381
+      internalID: -917763634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_30
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 776
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c5a0b48f404a449b931f7bbee4a43e
+      internalID: 672001143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_31
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 776
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0585153347860524aaa74e92d06a62cd
+      internalID: -423437909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_32
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 776
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42471f12900469e499754fb1b64f4052
+      internalID: -406249525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_33
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 776
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d1450dbbbbecd48b911b5eec08120a
+      internalID: -568567777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_34
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 776
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75f302fc05d0094799363742033f39d
+      internalID: 201420905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_35
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 776
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42311e1ca73948242b134c26f9d9498c
+      internalID: 1142119307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_36
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee5d741f51a5034db99bf0a2f7b8e9d
+      internalID: 785632364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_37
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 713
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e8c117c00f82541ac3817fbbbb2cb7
+      internalID: -1486313503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_38
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5227e5116b1f4b4a803891ebf6d5ab0
+      internalID: -1862692670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_39
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e89ac2c888d404ea4d548249576e46
+      internalID: -825604533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_40
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175b0c25a71bd424597f6339c372c1b4
+      internalID: -21295350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_41
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0b87d0639ad834d8c580ce5f9e494b
+      internalID: 534420750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_42
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547859939aa0ec14ca33a26c1b63878f
+      internalID: -246425499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_43
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aaaba525ce466e4cbc5e3e03731c6a8
+      internalID: -467099382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_44
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f328d698665fdf6498bdde299b372671
+      internalID: 1503501889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_45
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa1c70582ed722747a59514c80c2c372
+      internalID: 728187699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_46
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c64b3570e241a545840579cf598dc81
+      internalID: -542826284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_47
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240fee65ddf3e5547a43863d02574f56
+      internalID: 343229932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_48
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 713
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee493e4f9d742544b37b1a95ff11b76
+      internalID: -52282221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_49
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 649
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e01d2ab490f118947ab7d0d5390ec4be
+      internalID: 1152780055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_50
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 649
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8020bac493484247b73b82fa492cfb1
+      internalID: 1233991395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_51
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 649
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cd7cf7e4c8d364fba02c1b404f348a
+      internalID: 648071558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_52
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 649
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33f6e7f7eb5da0499fa29afc5bb0073
+      internalID: -993221086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_53
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 649
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a0011678e4c6bc42955c788020aca9b
+      internalID: 334767599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_54
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 649
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa63d78fcb2f4f46819aa087f73055f
+      internalID: 270105854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_55
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 649
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff092ae813eb940a48bee3daca859d
+      internalID: 1471276446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_56
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 649
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d283886b1ba89e7438da3806ec5e3216
+      internalID: -677610095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_57
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 649
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806d8a952c0470e4e8c5ee0e2932af1b
+      internalID: -557050194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_58
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 649
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94eec550e91aa44e9446e57f7b21818
+      internalID: 358417974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_59
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 649
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddf1277a1175ad4ea1ba8b59e4a1097
+      internalID: -343099874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_60
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 649
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5347cafe07e5c24195e582a77ef15b0
+      internalID: -1701534574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_61
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 649
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fd07f2af309bd4aa8fb4bc5b4115a8
+      internalID: 433756503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_62
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2f7703bab5a9e4e8ea0e186d078ddf
+      internalID: -1880392068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_63
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dac009a37c4bdf4384a19826357bd18
+      internalID: 343308458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_64
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ebe7b3bd120e54685fe4a479b83928
+      internalID: 653572624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_65
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ffcea29503f0846ae8f851563e2af8
+      internalID: -1576755344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_66
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce66125eb8537384fa357331e4efee7b
+      internalID: 476450458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_67
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc646ccea4d9ed143bc9629fd14ecd91
+      internalID: -2062873260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_68
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3a0949dfd2d0748bbdd702bcae7bdb
+      internalID: 1052816723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_69
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf762089958ae04598278bb8aebbda2
+      internalID: -1902473831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_70
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0531c064b3a524fb39b2f56aef0128
+      internalID: 373372050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_71
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10811b080d9d974992eab5a622973a9
+      internalID: -61518961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_72
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb19355db86178f409bcca3ced0af298
+      internalID: -1833182319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_73
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc583b095133024586199fa26b209c6
+      internalID: 1428132440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_74
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 585
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4695822a4aa4b4da7f52fa933884bf
+      internalID: -1737732551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_75
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 521
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4715712447caeb84eb0eefb2b198b5d4
+      internalID: 1560955149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_76
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 521
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78616504ef9f68942a3ec2af95bbf1df
+      internalID: -1713572162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_77
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 521
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b680a3ebd91070746bc8354f94e210fb
+      internalID: 46378501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_78
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 521
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69647a03830eb04b9cbb94623a77980
+      internalID: 1009859276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_79
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 521
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70abc40b39a46b04cbfa35fa5e4d0f6b
+      internalID: 1463447009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_80
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 521
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e91dee11d6a1e4d93a30399e8873b3
+      internalID: -735135539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_81
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 521
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3da14eab9512354680d85796cc069a7
+      internalID: -959801999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_82
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 521
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3865f2914e279ba4087a9c4a13ef3e9f
+      internalID: 1010087434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_83
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 521
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51adbb60931e4646b0ae5e9b975e861
+      internalID: -733017878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_84
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 521
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ce87e9085a8bd4fbdfb52339a0ebf9
+      internalID: 1512620286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_85
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 521
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bed2f5cf019c4f4e9042194929a4179
+      internalID: -614683560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_86
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 521
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129759889ebb5c344b1041c52c34afe1
+      internalID: -243176062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_87
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 521
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bbe55845e646a44a1ef61d42e199c2
+      internalID: 1763514431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_88
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 457
+        width: 40
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cecd1c137d9dd41b9fe2f8ed28ea70
+      internalID: 1228542000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_89
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 457
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58a49bb4a1d4a244aca2d835d91081f
+      internalID: 477450889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_90
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 458
+        width: 36
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784fbe6370a9f164a8a09e2203433662
+      internalID: -1732686370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer-zombie_91
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 457
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a40bbb57921e34a862a73fb8a40d00
+      internalID: -1907337435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      archer-zombie_0: -1411283969
+      archer-zombie_1: 1073318810
+      archer-zombie_10: 1781562429
+      archer-zombie_11: -208304379
+      archer-zombie_12: -1480974017
+      archer-zombie_13: -628172410
+      archer-zombie_14: -1179534774
+      archer-zombie_15: 1872133266
+      archer-zombie_16: -1328497627
+      archer-zombie_17: 453888876
+      archer-zombie_18: -186601935
+      archer-zombie_19: 1295408255
+      archer-zombie_2: -106736837
+      archer-zombie_20: -1558824669
+      archer-zombie_21: -1500628804
+      archer-zombie_22: 382250944
+      archer-zombie_23: -328307328
+      archer-zombie_24: -47706778
+      archer-zombie_25: -2045922498
+      archer-zombie_26: 1167546666
+      archer-zombie_27: -210154787
+      archer-zombie_28: 1724489357
+      archer-zombie_29: -917763634
+      archer-zombie_3: 1648345115
+      archer-zombie_30: 672001143
+      archer-zombie_31: -423437909
+      archer-zombie_32: -406249525
+      archer-zombie_33: -568567777
+      archer-zombie_34: 201420905
+      archer-zombie_35: 1142119307
+      archer-zombie_36: 785632364
+      archer-zombie_37: -1486313503
+      archer-zombie_38: -1862692670
+      archer-zombie_39: -825604533
+      archer-zombie_4: 1600834090
+      archer-zombie_40: -21295350
+      archer-zombie_41: 534420750
+      archer-zombie_42: -246425499
+      archer-zombie_43: -467099382
+      archer-zombie_44: 1503501889
+      archer-zombie_45: 728187699
+      archer-zombie_46: -542826284
+      archer-zombie_47: 343229932
+      archer-zombie_48: -52282221
+      archer-zombie_49: 1152780055
+      archer-zombie_5: 450473008
+      archer-zombie_50: 1233991395
+      archer-zombie_51: 648071558
+      archer-zombie_52: -993221086
+      archer-zombie_53: 334767599
+      archer-zombie_54: 270105854
+      archer-zombie_55: 1471276446
+      archer-zombie_56: -677610095
+      archer-zombie_57: -557050194
+      archer-zombie_58: 358417974
+      archer-zombie_59: -343099874
+      archer-zombie_6: -465230477
+      archer-zombie_60: -1701534574
+      archer-zombie_61: 433756503
+      archer-zombie_62: -1880392068
+      archer-zombie_63: 343308458
+      archer-zombie_64: 653572624
+      archer-zombie_65: -1576755344
+      archer-zombie_66: 476450458
+      archer-zombie_67: -2062873260
+      archer-zombie_68: 1052816723
+      archer-zombie_69: -1902473831
+      archer-zombie_7: 495978565
+      archer-zombie_70: 373372050
+      archer-zombie_71: -61518961
+      archer-zombie_72: -1833182319
+      archer-zombie_73: 1428132440
+      archer-zombie_74: -1737732551
+      archer-zombie_75: 1560955149
+      archer-zombie_76: -1713572162
+      archer-zombie_77: 46378501
+      archer-zombie_78: 1009859276
+      archer-zombie_79: 1463447009
+      archer-zombie_8: 42744919
+      archer-zombie_80: -735135539
+      archer-zombie_81: -959801999
+      archer-zombie_82: 1010087434
+      archer-zombie_83: -733017878
+      archer-zombie_84: 1512620286
+      archer-zombie_85: -614683560
+      archer-zombie_86: -243176062
+      archer-zombie_87: 1763514431
+      archer-zombie_88: 1228542000
+      archer-zombie_89: 477450889
+      archer-zombie_9: -1422835863
+      archer-zombie_90: -1732686370
+      archer-zombie_91: -1907337435
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
