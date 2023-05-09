@@ -17,6 +17,7 @@ public class PlayerBar : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+        hitpoints.text = currentHealth + "/" + maxHealth;
     }
 
     // Update is called once per frame
@@ -32,6 +33,6 @@ public class PlayerBar : MonoBehaviour
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
-        // PENDING hitpoints.text = currentHealth + "/" + maxHealth;
+        hitpoints.text = currentHealth + "/" + maxHealth;
     }
 }
