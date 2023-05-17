@@ -1,0 +1,2974 @@
+fileFormatVersion: 2
+guid: becdecbfd655b2d40a247f777f9462a6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Female-wound-dagger_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaedd17daa5cb4b42a971cae330aa9d9
+      internalID: -1225110491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a95c570b4b18f48b6fe854df5f9327
+      internalID: 1714728532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0bcf4ee3121834d84f007cb6cec3a5
+      internalID: -1453575707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1741
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0d3a37d0886af4fa4e86251b705f79
+      internalID: 119141548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13165121a03296d43b1ba0a3ecfa0b58
+      internalID: -1937313898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_5
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24b4f7fb2cdde24ea1c3602cff4f312
+      internalID: -2136914638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_6
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 907bf95b95c4ab7408f1cec05c3c75bd
+      internalID: 1534654921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_7
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1741
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe13a2a6845bd5e459ba822503ac4de7
+      internalID: -1058529662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1741
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc754c8751a5fa489a8e9931f0f075c
+      internalID: -1696663571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1677
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 726cbeeca5a9e9344b80f4d58ef9e89b
+      internalID: -263838803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1677
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0e3bb81af3eff4d943a53cee16b0ec
+      internalID: 337778340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_11
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1677
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6491fd2f648e85b42b61594d91037c20
+      internalID: -44824629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_12
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22dd415f556cca943809d070642f6b0a
+      internalID: 748903654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_13
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db16e1d4fbd60af409dda246424514a9
+      internalID: 1435224770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_14
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1677
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c2e05065aa2d04caf3c8c39ad0a80a
+      internalID: 903377088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_15
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae9b9eb68166f441a619f5e17313e3a
+      internalID: -1307684226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_16
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5c5d785e4dd634e9f9c08a60b80c42
+      internalID: -1434731886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_17
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1677
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19513ea44bd7a14e88e8397dbd6c010
+      internalID: -1332247559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb65276473939e43b50caaca92148ca
+      internalID: -966531120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_19
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fa32d20e50c864ca8e2b0737d9577f
+      internalID: 2019329780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_20
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a8a1be9fd54514b9a645f763f0e377
+      internalID: 820819011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_21
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1613
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de654b2168f5364fb18a92ddf7539c8
+      internalID: 1277634386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d11fe1dd3e8cd7469803203274d8c41
+      internalID: 1333571435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_23
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568927c3d581a3242b5d8314612d9b4f
+      internalID: -940417936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_24
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f56ecc537b3c649b848dfbe5c42f9e
+      internalID: 189428139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_25
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1613
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831041af22a64fa429050bd1eceb3e49
+      internalID: -916650130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_26
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1613
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2312fc38ceb42e74f875a9885d00a935
+      internalID: 2024101240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_27
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1549
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b5e323af08ec945a7b1bf761b14902
+      internalID: -128315284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_28
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1549
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4243e5df2fb4f945bb2879b05dd8358
+      internalID: 1946446501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_29
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1549
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45628c287bf99d7409ce1eaab109e897
+      internalID: -1009456896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_30
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52e798d63568b943be4aeec0c476ea9
+      internalID: -519623440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_31
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d81b998c66bb6440b0bbee332df70b9
+      internalID: 1818397831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_32
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1549
+        width: 29
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3863ac236926ae4dbd76dab2692f7cf
+      internalID: 1458065835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_33
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c92881e51f2b346966f2371db72a30
+      internalID: 201808684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_34
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458430a86ad77f24da26f2d9d39f3062
+      internalID: -1478687402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_35
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 1549
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cd1acc683d16541b9f5b980d5bc68b
+      internalID: 1095624440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_36
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1485
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3749aa377b4a2f4bbc40d2577b9618d
+      internalID: -576029543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_37
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1485
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb70bcc6e8845042ad8d975bb868079
+      internalID: -115310815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_38
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1485
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf158c6a69a8b4b42ad98e0f6f9e5d92
+      internalID: -862647674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_39
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 1485
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5716c41b22b82384a9930b5ac55e624d
+      internalID: 867493013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_40
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1485
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c2c6f49b28cab4e9b8059fe532c74f
+      internalID: -458333390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_41
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1485
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2566a7188f1b1cc46ae721366e14d0cb
+      internalID: 1017992314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1421
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 028365f479b95ea45acfcda4add46c13
+      internalID: 41489868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1421
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a84e74b99667ba46ad37e4230a30ef3
+      internalID: 1598619364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_44
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1421
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b175f244848c6546a3cd36fde4ca2d0
+      internalID: -349048374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_45
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1421
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c64ae77ff5f604883da5107362c056
+      internalID: -1789653877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_46
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 1421
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e9248c125473a4dac31a39d7287157
+      internalID: 1721334219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_47
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 1421
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b0e226925f6884bb30028f70346f8c
+      internalID: 1868167437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_48
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1357
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3d22f705f688248994d01f2e7ad269
+      internalID: 1057000355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_49
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1357
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef3c6a28546d0940a60ccb0f9231072
+      internalID: 531393787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_50
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1357
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d01f7f07e25f24fa7e46948134629e
+      internalID: -635412240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_51
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1357
+        width: 31
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd9b1b4d9c568d44fb7d41fdf3dcba34
+      internalID: -1460492676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_52
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1357
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5254786101cf9514bbcf7ae72a874b2e
+      internalID: -815340436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_53
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 1357
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38db31f0a5312e149ae69fb2d28b0589
+      internalID: 926375837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_55
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1293
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44d89fc953d3a54591459613cfa5ad9
+      internalID: -1926633855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_57
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1293
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e170e0fd19e46b04495546d9875b8d2c
+      internalID: 1875371467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_59
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1293
+        width: 29
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f540b9148ca4d4ca4a6019ae2d048a
+      internalID: -249979600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_61
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1293
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6fc3fbb84b2454ebfdb58ebf5fd857
+      internalID: 2080645266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_62
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1293
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e119b21eea1f5d04b82ee63e24aa6624
+      internalID: -1617420443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_63
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1293
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671babbab3eb5504c95a5cfac7e7815d
+      internalID: 1334010245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_64
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beec7a66e5304f4cb527741c0259af3
+      internalID: -1111832063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_65
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc9ddc75b82bc84d84e022d11fa4741
+      internalID: -469100789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_66
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb7382e4015bff41968b6586b050542
+      internalID: 3001100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_67
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 852
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1b6d5def20c224e95bacb7cd035fa2
+      internalID: -2071898993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_68
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dae5b5a1d40e640b07bcd4aa3c53da
+      internalID: 253091112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_69
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b2016f49ae68d45a8698fa64ae7b97
+      internalID: -1584209628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_70
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f820fa375e852ce458b7f71f5f3f041e
+      internalID: 1267834906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_71
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 852
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83322a837ccb6e4c8a0e085b3c1e852
+      internalID: 605501819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_72
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 852
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e40f951ccb36104b8c590a05e73711b
+      internalID: -1826406043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_73
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 788
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0aea17fc591024e81c902701beb6f5
+      internalID: 1152758000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_74
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 788
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6894d7c0242710544a7d5b19e5cf6332
+      internalID: -2140413690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_75
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 788
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b452d961b94924cad3f21b054e2d61
+      internalID: 1783413922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_76
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a867fe40b8e87e5418535fa4d773e30e
+      internalID: 766248473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_77
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1657781be0cd14a92e6b07e546b7d4
+      internalID: -166660352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_78
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 788
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471e51467e4b9834a8a4a1be74ef2486
+      internalID: 1080320398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_79
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d6232df4dab9743ba31891f7a5e7ef
+      internalID: 1881601304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_80
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a17d6b8c8cca34792260e907ac4c8e
+      internalID: 876448333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_81
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 788
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d78b92ba677a64589957b0f631392a
+      internalID: 538692792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_82
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9605a3dba924a844ae7c16a9f05a9f5
+      internalID: -197141644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_83
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec2401ca65d8d54cad7dfe72abf119f
+      internalID: -922462287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_84
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4429a7da4462be54f9d347c8536f7157
+      internalID: 662582934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_85
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 724
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87800c2879c35d4c8382c8893cd025b
+      internalID: 142912129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_86
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54eac7f281afd3543bd5fab9f4abe64e
+      internalID: 736785585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_87
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1150441cc037bcb488eacb39b133f895
+      internalID: -827229046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_88
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000287935b3120f418a91b61957e5943
+      internalID: 1954782249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_89
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 724
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3ac2a16f9dcee419457992aac4e5a1
+      internalID: 928427408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_90
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 724
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21aee5b60d8018149a433a6b833c38e3
+      internalID: -690606041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_91
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 660
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebace94bdbe10554c89ac37948e99ac3
+      internalID: 1567762483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_92
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 660
+        width: 33
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97dba0460a0dac943aa00843c8c1dda2
+      internalID: -2033022858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_93
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 660
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6138f4ef3c7b7ef4eb8ca9031cb864d7
+      internalID: 422241562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_94
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e07d5a38b58eb84d8797ea18325ec37
+      internalID: -618252475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_95
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a411db86ec26e494199ecd23ec7dca54
+      internalID: -388642329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_96
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 660
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f025f5b8ed6908941ae69805c1c71565
+      internalID: 2136589028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_97
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbbcb481ccc01a418e9a61546a09555
+      internalID: 1137154521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_98
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d214bcbf5a3de46950d080e6f59876
+      internalID: -1123883129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_99
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 660
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bd922b320f7e9408e96a79ba03fe1d
+      internalID: -1485762797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_100
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 596
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8adfcdb3e28a1d4c859530e8b01ea62
+      internalID: -223994623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_101
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 596
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c250f823ccac6c04db9672b6152f622c
+      internalID: 1999475448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_102
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 596
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0596baad40f689f4b9e202ae2b57300b
+      internalID: -1933340639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_103
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 596
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 071b34b61fc9feb4b977eda374109163
+      internalID: -1214064871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_104
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 596
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae03a0321b0a3934b8be119e63e4df1f
+      internalID: -720819142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_105
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 596
+        width: 47
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ed4264c7897ab4f807fec79c3a17a8
+      internalID: -318270645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_106
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 532
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb88270ec94e4f8438d4e9a5e07eb3c8
+      internalID: 716426810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_107
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 532
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d5ad2cac7aa1946a59239101e8e97b
+      internalID: -1010050212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_108
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 532
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85150fead505d1342a19e8b297aa6c33
+      internalID: -17823970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_109
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 532
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4c9b6831285c442b61286be0dcf54b
+      internalID: 1858511643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_110
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 532
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c40ce347f2e8b498db37f0e486bdeb
+      internalID: 2003214124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_111
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 532
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c224eca725dce74ba9a594835339a58
+      internalID: 505526171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_112
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 468
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5ad4e220f307b4d803201a060ecbf7
+      internalID: -221796557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_113
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 468
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a7587a9af87a14baa5ce5401b3952a
+      internalID: -642697959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_114
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 468
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401ef473828eec24fb683650ded28adc
+      internalID: -54112550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_115
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 468
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5057fb897ca2b6d4991150ab149c5fe2
+      internalID: -66531798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_116
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 468
+        width: 44
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43a5e81de5999c49a8c1b8606954276
+      internalID: -1565437148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_117
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 468
+        width: 48
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0930a335d5e5fec41ba871091077c703
+      internalID: 173854393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_118
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 404
+        width: 39
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c92fac27cc109e4190dea6fbc398c36
+      internalID: 1018782985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_120
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 404
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c3e1d6e801a044ca404a81d3e1b2f4
+      internalID: -305832088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_123
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 404
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f314421389ce67149a7913119dea6b0c
+      internalID: 2119317143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_125
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 404
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f593d17c5760ff24fa221122bd9d7b11
+      internalID: -671635690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_126
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 404
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0003d51e951884baaf9264dff39133
+      internalID: 281627793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_127
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 404
+        width: 42
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42eedfd32f26eee49b392b78e70348c3
+      internalID: 465276053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_54
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1235
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8b6c5db38377547aa7b7a07d82d6ed
+      internalID: -744649596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_56
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1235
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce489bc0937fdde4e8be6801ff01e7b9
+      internalID: -1007279159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_58
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1235
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a779b36bb7a28a469861c464a3a60e5
+      internalID: 1973049247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_60
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1235
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a19da2a1a867bf4f8eccf9a1a770012
+      internalID: -1817504620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_119
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 342
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71190115553dc6547b320288148f7312
+      internalID: 1638790113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_121
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 342
+        width: 35
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abedfa9a66202fa4894b0696c0d62c16
+      internalID: -2108821587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_122
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 342
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e04f4ba636c264baf70362211c9210
+      internalID: -53459479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_124
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 342
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2990ae8fc555fff498496fd35b18fcb5
+      internalID: -755139646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female-wound-dagger_128
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1238
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ac430e7963096489355f5eba8134e8
+      internalID: -8412591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Female-wound-dagger_0: -1225110491
+      Female-wound-dagger_1: 1714728532
+      Female-wound-dagger_10: 337778340
+      Female-wound-dagger_100: -223994623
+      Female-wound-dagger_101: 1999475448
+      Female-wound-dagger_102: -1933340639
+      Female-wound-dagger_103: -1214064871
+      Female-wound-dagger_104: -720819142
+      Female-wound-dagger_105: -318270645
+      Female-wound-dagger_106: 716426810
+      Female-wound-dagger_107: -1010050212
+      Female-wound-dagger_108: -17823970
+      Female-wound-dagger_109: 1858511643
+      Female-wound-dagger_11: -44824629
+      Female-wound-dagger_110: 2003214124
+      Female-wound-dagger_111: 505526171
+      Female-wound-dagger_112: -221796557
+      Female-wound-dagger_113: -642697959
+      Female-wound-dagger_114: -54112550
+      Female-wound-dagger_115: -66531798
+      Female-wound-dagger_116: -1565437148
+      Female-wound-dagger_117: 173854393
+      Female-wound-dagger_118: 1018782985
+      Female-wound-dagger_119: 1638790113
+      Female-wound-dagger_12: 748903654
+      Female-wound-dagger_120: -305832088
+      Female-wound-dagger_121: -2108821587
+      Female-wound-dagger_122: -53459479
+      Female-wound-dagger_123: 2119317143
+      Female-wound-dagger_124: -755139646
+      Female-wound-dagger_125: -671635690
+      Female-wound-dagger_126: 281627793
+      Female-wound-dagger_127: 465276053
+      Female-wound-dagger_128: -8412591
+      Female-wound-dagger_129: -1103346309
+      Female-wound-dagger_13: 1435224770
+      Female-wound-dagger_14: 903377088
+      Female-wound-dagger_15: -1307684226
+      Female-wound-dagger_16: -1434731886
+      Female-wound-dagger_17: -1332247559
+      Female-wound-dagger_18: -966531120
+      Female-wound-dagger_19: 2019329780
+      Female-wound-dagger_2: -1453575707
+      Female-wound-dagger_20: 820819011
+      Female-wound-dagger_21: 1277634386
+      Female-wound-dagger_22: 1333571435
+      Female-wound-dagger_23: -940417936
+      Female-wound-dagger_24: 189428139
+      Female-wound-dagger_25: -916650130
+      Female-wound-dagger_26: 2024101240
+      Female-wound-dagger_27: -128315284
+      Female-wound-dagger_28: 1946446501
+      Female-wound-dagger_29: -1009456896
+      Female-wound-dagger_3: 119141548
+      Female-wound-dagger_30: -519623440
+      Female-wound-dagger_31: 1818397831
+      Female-wound-dagger_32: 1458065835
+      Female-wound-dagger_33: 201808684
+      Female-wound-dagger_34: -1478687402
+      Female-wound-dagger_35: 1095624440
+      Female-wound-dagger_36: -576029543
+      Female-wound-dagger_37: -115310815
+      Female-wound-dagger_38: -862647674
+      Female-wound-dagger_39: 867493013
+      Female-wound-dagger_4: -1937313898
+      Female-wound-dagger_40: -458333390
+      Female-wound-dagger_41: 1017992314
+      Female-wound-dagger_42: 41489868
+      Female-wound-dagger_43: 1598619364
+      Female-wound-dagger_44: -349048374
+      Female-wound-dagger_45: -1789653877
+      Female-wound-dagger_46: 1721334219
+      Female-wound-dagger_47: 1868167437
+      Female-wound-dagger_48: 1057000355
+      Female-wound-dagger_49: 531393787
+      Female-wound-dagger_5: -2136914638
+      Female-wound-dagger_50: -635412240
+      Female-wound-dagger_51: -1460492676
+      Female-wound-dagger_52: -815340436
+      Female-wound-dagger_53: 926375837
+      Female-wound-dagger_54: -744649596
+      Female-wound-dagger_55: -1926633855
+      Female-wound-dagger_56: -1007279159
+      Female-wound-dagger_57: 1875371467
+      Female-wound-dagger_58: 1973049247
+      Female-wound-dagger_59: -249979600
+      Female-wound-dagger_6: 1534654921
+      Female-wound-dagger_60: -1817504620
+      Female-wound-dagger_61: 2080645266
+      Female-wound-dagger_62: -1617420443
+      Female-wound-dagger_63: 1334010245
+      Female-wound-dagger_64: -1111832063
+      Female-wound-dagger_65: -469100789
+      Female-wound-dagger_66: 3001100
+      Female-wound-dagger_67: -2071898993
+      Female-wound-dagger_68: 253091112
+      Female-wound-dagger_69: -1584209628
+      Female-wound-dagger_7: -1058529662
+      Female-wound-dagger_70: 1267834906
+      Female-wound-dagger_71: 605501819
+      Female-wound-dagger_72: -1826406043
+      Female-wound-dagger_73: 1152758000
+      Female-wound-dagger_74: -2140413690
+      Female-wound-dagger_75: 1783413922
+      Female-wound-dagger_76: 766248473
+      Female-wound-dagger_77: -166660352
+      Female-wound-dagger_78: 1080320398
+      Female-wound-dagger_79: 1881601304
+      Female-wound-dagger_8: -1696663571
+      Female-wound-dagger_80: 876448333
+      Female-wound-dagger_81: 538692792
+      Female-wound-dagger_82: -197141644
+      Female-wound-dagger_83: -922462287
+      Female-wound-dagger_84: 662582934
+      Female-wound-dagger_85: 142912129
+      Female-wound-dagger_86: 736785585
+      Female-wound-dagger_87: -827229046
+      Female-wound-dagger_88: 1954782249
+      Female-wound-dagger_89: 928427408
+      Female-wound-dagger_9: -263838803
+      Female-wound-dagger_90: -690606041
+      Female-wound-dagger_91: 1567762483
+      Female-wound-dagger_92: -2033022858
+      Female-wound-dagger_93: 422241562
+      Female-wound-dagger_94: -618252475
+      Female-wound-dagger_95: -388642329
+      Female-wound-dagger_96: 2136589028
+      Female-wound-dagger_97: 1137154521
+      Female-wound-dagger_98: -1123883129
+      Female-wound-dagger_99: -1485762797
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

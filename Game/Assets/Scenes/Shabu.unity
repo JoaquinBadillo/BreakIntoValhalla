@@ -234,7 +234,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -43.116, y: -33.121}
+  m_AnchoredPosition: {x: -81, y: -313}
   m_SizeDelta: {x: 86.2329, y: 31.1647}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192264844
@@ -365,7 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
-  hitpoints: {fileID: 0}
+  hitpoints: {fileID: 192264844}
   healthBar: {fileID: 675546669}
 --- !u!4 &254809610
 Transform:
