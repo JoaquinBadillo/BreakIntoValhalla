@@ -1,8 +1,23 @@
+@import "./normalize.css";
+@import "./about.css";
+@import "./play.css";
+@import "./stats.css";
+
+
 :root{
     --footer: #3C2C2B;
     --primary: #493A39;
     --button: #3C2C2B;
+    --button-border: #585858;
+    --button-hover: #342827;
+
+    --stats-bg: #354255;
+    --stats-button: #1E3659;
+    --stats-button-border: #92B5EA;
+    --stats-button-hover: #10223D;
 }
+
+/* font faces */
 @font-face {
     font-family: 'Aclonica';
     src: url(../fonts/Aclonica-Regular.ttf);
@@ -28,6 +43,10 @@
     src: url(../fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+
+/* base */
 html {
     box-sizing: border-box;
     font-size: 62.5%; 
@@ -37,7 +56,17 @@ html {
     box-sizing: inherit;
 }
 
-.homepage{
+body {
+    background-color: var(--primary);
+}
+
+h2 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: calc(100% + 2vw);
+}
+
+/* sections */
+#home {
     background: -webkit-linear-gradient(to bottom, #00427E, #090909);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #004e92, #090909); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-repeat: no-repeat;
@@ -62,6 +91,7 @@ html {
     transform: translateX(0rem);
     animation: float 6s ease-in-out infinite;
 }
+
 @keyframes float {
     0% {
         transform: translatey(0rem);
@@ -73,10 +103,6 @@ html {
         transform: translatey(0px);
     }
 }
-
-
-
-
 
 .footer{
     background-color: var(--footer);
