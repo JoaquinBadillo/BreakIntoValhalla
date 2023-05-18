@@ -1,0 +1,12 @@
+.mountains-front{
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+.mountains-back{
+    position: absolute;
+    top: -4%;
+    z-index: 1;
+}
+
