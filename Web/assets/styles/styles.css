@@ -3,6 +3,7 @@
 @import "./play.css";
 @import "./stats.css";
 @import "./parallax.css";
+@import "./warrior.css";
 
 :root{
     --footer: #3C2C2B;
@@ -10,6 +11,10 @@
     --button: #3C2C2B;
     --button-border: #585858;
     --button-hover: #342827;
+
+    --archer-bg: #414C2C;
+    --berserker-bg: #2F5579;
+    --spellcaster-bg: #363428;
 
     --stats-bg: #354255;
     --stats-button: #1E3659;
