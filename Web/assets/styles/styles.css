@@ -2,7 +2,7 @@
 @import "./about.css";
 @import "./play.css";
 @import "./stats.css";
-
+@import "./parallax.css";
 
 :root{
     --footer: #3C2C2B;
