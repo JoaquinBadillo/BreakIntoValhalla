@@ -1,0 +1,185 @@
+#warrior {
+  text-align: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#warrior > header {
+  z-index: 3;
+}
+
+.main-container{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  background: none;
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.card-container{
+  width: 100%;
+  border-radius: 25px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.card-master{
+  width: calc(60% - 4vw);
+  margin: 0 2vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-master:hover > .card-container {
+  transform: rotateY(-180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .front-card{
+  width: 100%;
+  max-height: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 25px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.archer-front{
+  background: url("../img/archers.png");
+  background-size: 100%;
+}
+
+.berserker-front{
+  background: url("../img/berserkrs.png");
+  background-size: 100%;
+}
+.spellcaster-front{
+  background: url("../img/spellcaster.png");
+  background-size: 100%;
+}
+
+.card-frame{
+  position: absolute;
+  top: 69.5%;
+  left: 0;
+  width: 100%;   
+  max-height: 31%;
+  aspect-ratio: 3/4;
+  border-radius: 0px 0px 25px 25px;
+  overflow: hidden;
+  color: white;
+  z-index: 2;
+  display: flex;
+  align-content: space-around;
+  justify-content: right;
+  padding: 0.3vw 1vw;
+}
+
+.card-frame-text{
+  position: absolute;
+  top: 69.5%;
+  left: 45.5%;
+  width: 55%;   
+  max-height: 31%;
+  aspect-ratio: 3/4;
+  border-radius: 0px 0px 25px 25px;
+  overflow: hidden;
+  color: white;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Aclonica', sans-serif;
+  font-size: calc(70% + 1.2vw);
+}
+
+.frame-circle{
+  position: absolute;
+  top: 53%;
+  left: 0;
+  height: 33.75%;
+  width: 45%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.weapon img{
+  position: absolute;
+  z-index: 3;
+}
+
+.archer-weapon img{
+  top: 53%;
+  left: 12%;
+  max-height: 45%;
+}
+
+.berserker-weapon img{
+  top: 53%;
+  left: -4%;
+  max-height: 45%;
+}
+
+.spellcaster-weapon img{
+  top: 56%;
+  left: 3%;
+  max-height: 37%;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.back-card{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;   
+  max-height: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 25px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.archer-back{
+  background: var(--archer-bg);
+}
+.berserker-back{
+  background: var(--berserker-bg);
+}
+.spellcaster-back{
+  background: var(--spellcaster-bg);
+}
+
+@media screen and (max-width: 1000px) {
+  #warrior {
+      height: auto;
+  }
+  
+  .main-container{
+      flex-direction: column;
+    }
+  
+  .card-container{
+      width: calc(50% - 4vw);
+      margin: 2vh 0;
+  }
+  .card-frame p{
+      font-family: 'Aclonica', sans-serif;
+      font-size: calc(100% + 3vw);
+}
+.card-frame-text{
+  font-family: 'Aclonica', sans-serif;
+  font-size: calc(75% + 1.8vw);
+}
+}
