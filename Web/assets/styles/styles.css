@@ -13,7 +13,7 @@
     --button-hover: #342827;
 
     --archer-bg: #414C2C;
-    --berserker-bg: #2F5579;
+    --berserker-bg: #283C4F;
     --spellcaster-bg: #363428;
 
     --stats-bg: #354255;
@@ -69,6 +69,11 @@ body {
 h2 {
     font-family: 'Aclonica', sans-serif;
     font-size: calc(100% + 2vw);
+}
+
+h3 {
+    font-family: 'Aclonica', sans-serif;
+    font-size: calc(100% + 1.5vw);
 }
 
 /* sections */

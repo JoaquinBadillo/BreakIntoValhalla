@@ -44,13 +44,14 @@
 }
 
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
- .front-card{
+.front-card{
   width: 100%;
   max-height: 100%;
   aspect-ratio: 3/4;
   border-radius: 25px;
   backface-visibility: hidden;
   overflow: hidden;
+  transform-style: preserve-3d;
 }
 
 .archer-front{
@@ -69,7 +70,7 @@
 
 .card-frame{
   position: absolute;
-  top: 69.5%;
+  top: 69.2%;
   left: 0;
   width: 100%;   
   max-height: 31%;
@@ -81,13 +82,13 @@
   display: flex;
   align-content: space-around;
   justify-content: right;
-  padding: 0.3vw 1vw;
+  transform-style: preserve-3d;
 }
 
 .card-frame-text{
   position: absolute;
-  top: 69.5%;
-  left: 45.5%;
+  top: 69.2%;
+  left: 45.2%;
   width: 55%;   
   max-height: 31%;
   aspect-ratio: 3/4;
@@ -100,6 +101,7 @@
   align-items: center;
   font-family: 'Aclonica', sans-serif;
   font-size: calc(70% + 1.2vw);
+  transform-style: preserve-3d;
 }
 
 .frame-circle{
@@ -110,11 +112,13 @@
   width: 45%;
   border-radius: 50%;
   z-index: 1;
+  transform-style: preserve-3d;
 }
 
 .weapon img{
   position: absolute;
   z-index: 3;
+  transform-style: preserve-3d;
 }
 
 .archer-weapon img{
@@ -161,25 +165,44 @@
   background: var(--spellcaster-bg);
 }
 
+.class-stats-container{
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.class-stats-container p{
+  font-family: 'Aclonica', sans-serif;
+  font-size: calc(75% + 1vw);
+}
+
+.class-stats-container img{
+  margin: 0 auto;
+  height: 100%;
+}
+
 @media screen and (max-width: 1000px) {
   #warrior {
-      height: auto;
+    height: auto;
   }
   
   .main-container{
-      flex-direction: column;
-    }
+    flex-direction: column;
+  }
   
   .card-container{
-      width: calc(50% - 4vw);
-      margin: 2vh 0;
+    width: calc(50% - 4vw);
+    margin: 2vh 0;
   }
   .card-frame p{
-      font-family: 'Aclonica', sans-serif;
-      font-size: calc(100% + 3vw);
-}
+    font-family: 'Aclonica', sans-serif;
+    font-size: calc(100% + 3vw);
+  }
 .card-frame-text{
-  font-family: 'Aclonica', sans-serif;
-  font-size: calc(75% + 1.8vw);
-}
+    font-family: 'Aclonica', sans-serif;
+    font-size: calc(75% + 1.8vw);
+  }
 }
