@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
       propertyPath: m_LocalPosition.x
@@ -264,3 +264,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2022480111
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.940141
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7323942
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621112, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087722852396621114, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
+      propertyPath: m_Name
+      value: Saber-draugr
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eba7d263fe43ecd47ac36abd3469625b, type: 3}
