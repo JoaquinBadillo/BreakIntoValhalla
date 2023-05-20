@@ -39,7 +39,7 @@
   justify-content: center;
 }
 
-.card-master> .card-container {
+.card-master:hover > .card-container {
   transform: rotateY(-180deg);
 } 
 
