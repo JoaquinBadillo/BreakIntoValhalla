@@ -6,10 +6,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  z-index: 4;
 }
 
+
 #warrior > header {
-  z-index: 3;
+  z-index: 5;
 }
 
 .main-container{
@@ -78,7 +80,7 @@
   border-radius: 0px 0px 25px 25px;
   overflow: hidden;
   color: white;
-  z-index: 2;
+  z-index: 6;
   display: flex;
   align-content: space-around;
   justify-content: right;
@@ -95,7 +97,7 @@
   border-radius: 0px 0px 25px 25px;
   overflow: hidden;
   color: white;
-  z-index: 4;
+  z-index: 8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,13 +113,13 @@
   height: 33.75%;
   width: 45%;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 5;
   transform-style: preserve-3d;
 }
 
 .weapon img{
   position: absolute;
-  z-index: 3;
+  z-index: 7;
   transform-style: preserve-3d;
 }
 
