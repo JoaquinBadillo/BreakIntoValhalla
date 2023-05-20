@@ -1,12 +1,44 @@
 .mountains-front{
     position: absolute;
-    top: 50%;
-    z-index: 2;
+    bottom: -10%;
+    z-index: 3;
 }
 
 .mountains-back{
     position: absolute;
-    top: -20%;
+    bottom: 0%;
     z-index: 1;
 }
 
+.mountains-back img,
+.mountains-front img{
+    width: 100vw;
+}
+
+.mountain-background{
+    position: absolute;
+    bottom: -12%;
+    width: 100vw;
+    z-index: 2;
+}
+
+@media (min-width: 1800px){ 
+    .mountains-front{
+        top: 50%;
+    }
+    .mountains-back{
+        top: -20%;
+    }
+    .mountain-background{
+        display: none;
+    }
+}
+
+@media (display-mode: fullscreen){ 
+    .mountains-front{
+        top: 60%;
+    }
+    .mountains-back{
+        top: -3%;
+    }    
+}
