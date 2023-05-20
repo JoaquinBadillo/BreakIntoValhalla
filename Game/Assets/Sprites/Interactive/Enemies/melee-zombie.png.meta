@@ -120,9 +120,9 @@ TextureImporter:
       name: melee-zombie_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 10
         y: 968
-        width: 38
+        width: 41
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1086472123848545a9f50b84356da57
-      internalID: 963005054
+      spriteID: 86f5e425d3920be40bada6ccd4af330f
+      internalID: 1388688640
       vertices: []
       indices: 
       edges: []
@@ -141,9 +141,9 @@ TextureImporter:
       name: melee-zombie_1
       rect:
         serializedVersion: 2
-        x: 77
+        x: 74
         y: 968
-        width: 38
+        width: 41
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9099c3858d7a9ba429c6437fe79c1afd
-      internalID: 215340641
+      spriteID: 6045c4d80f6dda843a9f76fe0f166b88
+      internalID: 395653681
       vertices: []
       indices: 
       edges: []
@@ -162,9 +162,9 @@ TextureImporter:
       name: melee-zombie_2
       rect:
         serializedVersion: 2
-        x: 141
+        x: 138
         y: 968
-        width: 38
+        width: 41
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54434ff5da8e37c459df8a0095c5f97a
-      internalID: -2092315700
+      spriteID: 4ff3f18bcd4d1a249874af7ee1c2491e
+      internalID: 1268328707
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
       name: melee-zombie_3
       rect:
         serializedVersion: 2
-        x: 205
+        x: 202
         y: 968
-        width: 38
+        width: 41
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5d3f7883c8ab5540ac242a19255d3d6
-      internalID: 646998596
+      spriteID: 6393ceadf5982bf4d9b91bef7b2b85d3
+      internalID: -2051590905
       vertices: []
       indices: 
       edges: []
@@ -204,9 +204,9 @@ TextureImporter:
       name: melee-zombie_4
       rect:
         serializedVersion: 2
-        x: 269
+        x: 267
         y: 968
-        width: 38
+        width: 40
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43213450b98b3db4a92f170d668bb5cc
-      internalID: 189631731
+      spriteID: a6b32a1d20640504e918df532a9cccea
+      internalID: 582561476
       vertices: []
       indices: 
       edges: []
@@ -225,9 +225,9 @@ TextureImporter:
       name: melee-zombie_5
       rect:
         serializedVersion: 2
-        x: 333
+        x: 331
         y: 968
-        width: 38
+        width: 40
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a9c188f65e2a7b42a4e842e045d90d6
-      internalID: -283171092
+      spriteID: be2b0f2dadfbcb942b7d384e7e96e4b4
+      internalID: 1377845056
       vertices: []
       indices: 
       edges: []
@@ -246,9 +246,9 @@ TextureImporter:
       name: melee-zombie_6
       rect:
         serializedVersion: 2
-        x: 397
+        x: 395
         y: 968
-        width: 38
+        width: 40
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -257,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ea30cb4925684d4d98950656748ac30
-      internalID: 1921931718
+      spriteID: deed6ea6e016d8e408c0f25283081e8a
+      internalID: -1260185433
       vertices: []
       indices: 
       edges: []
@@ -267,9 +267,9 @@ TextureImporter:
       name: melee-zombie_7
       rect:
         serializedVersion: 2
-        x: 461
+        x: 460
         y: 968
-        width: 38
+        width: 39
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -278,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12c531760b7030c4b8beb0344a9f7bb4
-      internalID: 724078318
+      spriteID: dadafdae00f3ba34b9da3ced1da3d8cf
+      internalID: -860272377
       vertices: []
       indices: 
       edges: []
@@ -288,9 +288,9 @@ TextureImporter:
       name: melee-zombie_8
       rect:
         serializedVersion: 2
-        x: 525
+        x: 523
         y: 968
-        width: 38
+        width: 40
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -299,8 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69c8d59189527024f81313df58da7962
-      internalID: 1775086536
+      spriteID: c5714a47f2e5a4e42a71d88aaaf26be1
+      internalID: 594183403
       vertices: []
       indices: 
       edges: []
@@ -320,8 +320,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a436b898b1a15d469781aa7feac5032
-      internalID: 2030728769
+      spriteID: 8eb56b18080da5e4e8372245e532fef3
+      internalID: -614677584
       vertices: []
       indices: 
       edges: []
@@ -341,8 +341,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f0ef1198560b7f4283b564dcfb6000f
-      internalID: 845587914
+      spriteID: 01b35e30c01c0e145ad9a9dc83f58e34
+      internalID: -940018355
       vertices: []
       indices: 
       edges: []
@@ -362,8 +362,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 894b64d5dac04b24abb249966a714b72
-      internalID: -351000311
+      spriteID: ae52a58e37208084fa90d0326a146e95
+      internalID: 318365036
       vertices: []
       indices: 
       edges: []
@@ -374,7 +374,7 @@ TextureImporter:
         serializedVersion: 2
         x: 211
         y: 904
-        width: 31
+        width: 32
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -383,8 +383,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6f055de734341b42aa5124defd1d55f
-      internalID: 2055485036
+      spriteID: 9a0cd18a1fe44cb4ebdf01e0b78aad0e
+      internalID: 1206963545
       vertices: []
       indices: 
       edges: []
@@ -395,7 +395,7 @@ TextureImporter:
         serializedVersion: 2
         x: 275
         y: 904
-        width: 31
+        width: 33
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -404,8 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a3a634f40bd8e6478949eb669cd4855
-      internalID: 1677148924
+      spriteID: 7d7595aad0566714b8d054bb193362d1
+      internalID: 359866992
       vertices: []
       indices: 
       edges: []
@@ -416,7 +416,7 @@ TextureImporter:
         serializedVersion: 2
         x: 339
         y: 904
-        width: 31
+        width: 34
         height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -425,8 +425,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ccaa1bce7b6ae84a8a207080c7157ac
-      internalID: 1313455922
+      spriteID: e25c116bf35090b4ebb7d4120a3c4857
+      internalID: -1229187505
       vertices: []
       indices: 
       edges: []
@@ -437,7 +437,7 @@ TextureImporter:
         serializedVersion: 2
         x: 403
         y: 904
-        width: 31
+        width: 34
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -446,8 +446,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96de22d7620bc9c44aca0303e45dfe20
-      internalID: -1203919847
+      spriteID: 0b5505597f10b0640ae0368df73df025
+      internalID: 860553664
       vertices: []
       indices: 
       edges: []
@@ -458,7 +458,7 @@ TextureImporter:
         serializedVersion: 2
         x: 467
         y: 904
-        width: 31
+        width: 33
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -467,8 +467,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a8f283778072a947ab02aae7b13f953
-      internalID: -1316813940
+      spriteID: bdbac509db879b44ab7a15b673f6bd2e
+      internalID: -1269521865
       vertices: []
       indices: 
       edges: []
@@ -479,7 +479,7 @@ TextureImporter:
         serializedVersion: 2
         x: 531
         y: 904
-        width: 31
+        width: 32
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -488,8 +488,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf42b24cf32946742b0bc6b9582245c8
-      internalID: -241676764
+      spriteID: 02fe22dca6f601b41b9183634788cb12
+      internalID: -2040320605
       vertices: []
       indices: 
       edges: []
@@ -509,8 +509,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 409f961a7e752ee45a49f72b39bbef03
-      internalID: 717883129
+      spriteID: aed63759b60ffe64ca0a3d3184f1266a
+      internalID: 544895181
       vertices: []
       indices: 
       edges: []
@@ -530,8 +530,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c367e1212c4e394ba84d70776df644a
-      internalID: -1264569588
+      spriteID: dce42c9701f645d4a906fa86fbe25567
+      internalID: -679989108
       vertices: []
       indices: 
       edges: []
@@ -551,8 +551,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9678bca4f900b64e86ef8a7a545d5aa
-      internalID: -741316946
+      spriteID: e7a60bbbf3a1ccd4083e668c31e91841
+      internalID: 90671698
       vertices: []
       indices: 
       edges: []
@@ -572,8 +572,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 186e0aec8ba352a479551643d45960f2
-      internalID: -1509789021
+      spriteID: 5ac493813ebfdf841b336b1d49934191
+      internalID: -1713282885
       vertices: []
       indices: 
       edges: []
@@ -593,8 +593,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 269d49d7b56be8645bd8038d262db62a
-      internalID: -1331261094
+      spriteID: 8197e15b3293e394384556effd14c200
+      internalID: 1868272499
       vertices: []
       indices: 
       edges: []
@@ -603,9 +603,9 @@ TextureImporter:
       name: melee-zombie_23
       rect:
         serializedVersion: 2
-        x: 332
+        x: 331
         y: 840
-        width: 40
+        width: 41
         height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -614,8 +614,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0166d46fa55ebe84bab14fd9bfa724b4
-      internalID: -1027887378
+      spriteID: c3ee7e16f05d3b346bc83120057dc4b9
+      internalID: 1227478797
       vertices: []
       indices: 
       edges: []
@@ -635,8 +635,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e56d4eab89a7f9548a627e09b417ec20
-      internalID: 1290205
+      spriteID: 2bfd29671adf4664db8c760b610a35bb
+      internalID: -1805026948
       vertices: []
       indices: 
       edges: []
@@ -656,8 +656,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73885e4e127aabe47b80532b9bde0863
-      internalID: 164912616
+      spriteID: cafea1014f0996f41b844ab803d65a37
+      internalID: 1899170805
       vertices: []
       indices: 
       edges: []
@@ -677,8 +677,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc486423b8eb4e74bb1cbcc78a260c9b
-      internalID: 188268088
+      spriteID: 83c8cde2d22070348958af7235a2cce8
+      internalID: -739683706
       vertices: []
       indices: 
       edges: []
@@ -698,8 +698,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4723862acc6573746b91ea346447d1a1
-      internalID: 1941421792
+      spriteID: 0a1148ff7b78c734dad013954a5195ef
+      internalID: 330498410
       vertices: []
       indices: 
       edges: []
@@ -719,8 +719,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6797e06f80035a34b8db9e6bbab34935
-      internalID: -1710185638
+      spriteID: 64d8bd152657d4948a6f69ff01487c99
+      internalID: 2053768532
       vertices: []
       indices: 
       edges: []
@@ -740,8 +740,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 902f7a93c45ed1843862039d5937aace
-      internalID: 1607739323
+      spriteID: b352b75ace5da194593a8fb93153164e
+      internalID: 891962345
       vertices: []
       indices: 
       edges: []
@@ -750,9 +750,9 @@ TextureImporter:
       name: melee-zombie_30
       rect:
         serializedVersion: 2
-        x: 206
+        x: 205
         y: 776
-        width: 31
+        width: 32
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -761,8 +761,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 840f8ef4d8fb1064db9bd781487afd64
-      internalID: 314479272
+      spriteID: 734532accbb604b439622afe0ebcc4d0
+      internalID: 800736600
       vertices: []
       indices: 
       edges: []
@@ -771,9 +771,9 @@ TextureImporter:
       name: melee-zombie_31
       rect:
         serializedVersion: 2
-        x: 270
+        x: 268
         y: 776
-        width: 31
+        width: 33
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -782,8 +782,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eec698c654c3c1945ac4fcaa5c68e59f
-      internalID: -2037072337
+      spriteID: fc892d9f553d663409717aeb3a582c51
+      internalID: 858958549
       vertices: []
       indices: 
       edges: []
@@ -792,9 +792,9 @@ TextureImporter:
       name: melee-zombie_32
       rect:
         serializedVersion: 2
-        x: 334
+        x: 331
         y: 776
-        width: 31
+        width: 34
         height: 53
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -803,8 +803,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ded3145a461db58439ac72b07f3e54a9
-      internalID: -655512155
+      spriteID: 6fafab84f34406940bb44ae85e7095b1
+      internalID: 1389362748
       vertices: []
       indices: 
       edges: []
@@ -813,9 +813,9 @@ TextureImporter:
       name: melee-zombie_33
       rect:
         serializedVersion: 2
-        x: 398
+        x: 395
         y: 776
-        width: 31
+        width: 34
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -824,8 +824,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02dbc826f97bd0a49abf42f85d239b14
-      internalID: -333592697
+      spriteID: 01d1e4e021d6b0245811c449afb0c8f8
+      internalID: -1972870231
       vertices: []
       indices: 
       edges: []
@@ -834,9 +834,9 @@ TextureImporter:
       name: melee-zombie_34
       rect:
         serializedVersion: 2
-        x: 462
+        x: 460
         y: 776
-        width: 31
+        width: 33
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -845,8 +845,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0114124145a0e074b83785377eccd54c
-      internalID: -190054060
+      spriteID: da10bff932a189a4dbc312483f6539ff
+      internalID: -600952288
       vertices: []
       indices: 
       edges: []
@@ -855,9 +855,9 @@ TextureImporter:
       name: melee-zombie_35
       rect:
         serializedVersion: 2
-        x: 526
+        x: 525
         y: 776
-        width: 31
+        width: 32
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -866,8 +866,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbc12a6926910464f9506bd65b4ea4bb
-      internalID: -1964199232
+      spriteID: a61d97895ce124a4aac21e9b1f4fda53
+      internalID: 577197676
       vertices: []
       indices: 
       edges: []
@@ -876,9 +876,9 @@ TextureImporter:
       name: melee-zombie_36
       rect:
         serializedVersion: 2
-        x: 13
+        x: 10
         y: 712
-        width: 38
+        width: 41
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -887,8 +887,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a0cb005d05be494aafe4168d73b22d8
-      internalID: -2025846859
+      spriteID: 2fa63d04528cb6d479f86a5dff4a2043
+      internalID: 2014462427
       vertices: []
       indices: 
       edges: []
@@ -908,8 +908,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d1cc3af53cce9f418f9b967941d7fe4
-      internalID: 497725253
+      spriteID: c1cb246c7c62172409a6554bb2bc3a52
+      internalID: 88182552
       vertices: []
       indices: 
       edges: []
@@ -918,9 +918,9 @@ TextureImporter:
       name: melee-zombie_38
       rect:
         serializedVersion: 2
-        x: 140
+        x: 135
         y: 712
-        width: 38
+        width: 43
         height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -929,8 +929,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce5501dbc87b3bd46bd77465ffcbe06e
-      internalID: 9035953
+      spriteID: d3128ea85db46a7418fccfffa4b9443a
+      internalID: -1823221389
       vertices: []
       indices: 
       edges: []
@@ -939,9 +939,9 @@ TextureImporter:
       name: melee-zombie_39
       rect:
         serializedVersion: 2
-        x: 206
+        x: 204
         y: 712
-        width: 38
+        width: 40
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -950,8 +950,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df269757f2f347745b7297048459e5ca
-      internalID: -1422874361
+      spriteID: 3de37ffd09f0a5c44a79bf3e2062a1c0
+      internalID: 2113250385
       vertices: []
       indices: 
       edges: []
@@ -960,9 +960,9 @@ TextureImporter:
       name: melee-zombie_40
       rect:
         serializedVersion: 2
-        x: 271
+        x: 269
         y: 712
-        width: 39
+        width: 48
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -971,8 +971,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2d2ead5cc90db7449654205a67f37a4
-      internalID: -1079438530
+      spriteID: ffd7ac91b9966da4ea4294b873ff3229
+      internalID: -839172839
       vertices: []
       indices: 
       edges: []
@@ -981,9 +981,9 @@ TextureImporter:
       name: melee-zombie_41
       rect:
         serializedVersion: 2
-        x: 335
+        x: 333
         y: 712
-        width: 42
+        width: 67
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -992,8 +992,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 310d108faa518e34fbe97ef16439bd4e
-      internalID: -1737758200
+      spriteID: 19b780afca49f42408786b1c079ffa15
+      internalID: -1605143703
       vertices: []
       indices: 
       edges: []
@@ -1002,9 +1002,9 @@ TextureImporter:
       name: melee-zombie_42
       rect:
         serializedVersion: 2
-        x: 20
+        x: 8
         y: 648
-        width: 30
+        width: 42
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1013,8 +1013,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e6aead87089aeb42b5cddad6e69b49f
-      internalID: -3086868
+      spriteID: 8f5ac379572704d4f9151287d20ca0fd
+      internalID: -1501352653
       vertices: []
       indices: 
       edges: []
@@ -1025,7 +1025,7 @@ TextureImporter:
         serializedVersion: 2
         x: 80
         y: 648
-        width: 32
+        width: 34
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1034,8 +1034,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12f9ab605a595a947b1481ee47859f3a
-      internalID: 804905767
+      spriteID: fbde36e3d9ed28b488edab1b154a8ce2
+      internalID: 1292698519
       vertices: []
       indices: 
       edges: []
@@ -1046,7 +1046,7 @@ TextureImporter:
         serializedVersion: 2
         x: 144
         y: 648
-        width: 32
+        width: 34
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1055,8 +1055,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afceeebe3675cc847afcdcf289894e4d
-      internalID: -531243030
+      spriteID: bb1be13cf851b41418173ea801781ba3
+      internalID: 794113005
       vertices: []
       indices: 
       edges: []
@@ -1067,7 +1067,7 @@ TextureImporter:
         serializedVersion: 2
         x: 203
         y: 648
-        width: 36
+        width: 40
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1076,8 +1076,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d7f5ccba4ccca843a98df720da04bba
-      internalID: 1540606149
+      spriteID: b484aefae61382e47927556814904491
+      internalID: 768827187
       vertices: []
       indices: 
       edges: []
@@ -1086,9 +1086,9 @@ TextureImporter:
       name: melee-zombie_46
       rect:
         serializedVersion: 2
-        x: 264
+        x: 246
         y: 648
-        width: 38
+        width: 62
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1097,8 +1097,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1c2f706ed5c9fd4e9cfa1eb88a50f70
-      internalID: -408111860
+      spriteID: be42402b4940d1244bc0af24d6c479f7
+      internalID: 1363903714
       vertices: []
       indices: 
       edges: []
@@ -1107,9 +1107,9 @@ TextureImporter:
       name: melee-zombie_47
       rect:
         serializedVersion: 2
-        x: 331
+        x: 309
         y: 648
-        width: 35
+        width: 64
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1118,8 +1118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 716ef44ca66c672499bb8f8c91afb0a9
-      internalID: -423318563
+      spriteID: 21b255620fe78344ebc2184ff2ec1553
+      internalID: 1793098707
       vertices: []
       indices: 
       edges: []
@@ -1139,8 +1139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2bd34d39e3d20543bf308271113dfe3
-      internalID: 1003382621
+      spriteID: 96ca087f88d09124ca3e5b09bf062080
+      internalID: -993567766
       vertices: []
       indices: 
       edges: []
@@ -1149,9 +1149,9 @@ TextureImporter:
       name: melee-zombie_49
       rect:
         serializedVersion: 2
-        x: 76
+        x: 74
         y: 584
-        width: 40
+        width: 42
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1160,8 +1160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01d13b799d25e594ebb3d7e50757decf
-      internalID: 542638655
+      spriteID: a56505ac953bb4e4c845fee8c6a9a927
+      internalID: -551582325
       vertices: []
       indices: 
       edges: []
@@ -1170,9 +1170,9 @@ TextureImporter:
       name: melee-zombie_50
       rect:
         serializedVersion: 2
-        x: 139
+        x: 136
         y: 584
-        width: 40
+        width: 43
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1181,8 +1181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba4a2006ff1a9ec4c89f0125d09939d9
-      internalID: -191582367
+      spriteID: 9ca66cfb94611834d9e531d21172ecd9
+      internalID: -896004212
       vertices: []
       indices: 
       edges: []
@@ -1202,8 +1202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 325b140df7259b24f9ce9566d4c8ecea
-      internalID: 1368805718
+      spriteID: e813d59eee08bbc41b2cb29820388efa
+      internalID: 341560631
       vertices: []
       indices: 
       edges: []
@@ -1213,9 +1213,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 270
-        y: 584
-        width: 41
-        height: 51
+        y: 581
+        width: 50
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1223,8 +1223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9e666ffd8c82884c9ecdaa423156f16
-      internalID: -1410516923
+      spriteID: 134d8d6de927de04d9b527d450af8f78
+      internalID: -1994176681
       vertices: []
       indices: 
       edges: []
@@ -1235,7 +1235,7 @@ TextureImporter:
         serializedVersion: 2
         x: 334
         y: 584
-        width: 44
+        width: 69
         height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1244,8 +1244,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e29c5fc933badeb47bd1d4e8138d817a
-      internalID: -1023988689
+      spriteID: d4ca4d2ec9efd69418070467235fea9f
+      internalID: -1188412286
       vertices: []
       indices: 
       edges: []
@@ -1256,7 +1256,7 @@ TextureImporter:
         serializedVersion: 2
         x: 14
         y: 520
-        width: 31
+        width: 41
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1265,8 +1265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b44f62c39be94f48b6313663a275c5b
-      internalID: -106371649
+      spriteID: c7c0bb88f9a034548a935cafe7d8410d
+      internalID: 1957982189
       vertices: []
       indices: 
       edges: []
@@ -1275,9 +1275,9 @@ TextureImporter:
       name: melee-zombie_55
       rect:
         serializedVersion: 2
-        x: 80
+        x: 78
         y: 520
-        width: 31
+        width: 33
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1286,8 +1286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24c5beb36f99afc4d9108635e675a818
-      internalID: -1183466429
+      spriteID: ce2493acbc0b0504ba9ddcbd2ffe79ce
+      internalID: -1699139694
       vertices: []
       indices: 
       edges: []
@@ -1296,9 +1296,9 @@ TextureImporter:
       name: melee-zombie_56
       rect:
         serializedVersion: 2
-        x: 145
+        x: 142
         y: 520
-        width: 30
+        width: 33
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1307,8 +1307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01e4dd7056c2f6843b1db0b0859203c6
-      internalID: 1033208642
+      spriteID: f93f1d00277f83a499292728e6987730
+      internalID: -1555343734
       vertices: []
       indices: 
       edges: []
@@ -1317,9 +1317,9 @@ TextureImporter:
       name: melee-zombie_57
       rect:
         serializedVersion: 2
-        x: 210
+        x: 205
         y: 520
-        width: 35
+        width: 43
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1328,8 +1328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f76ba53f27101041916e1d1a8d03e70
-      internalID: -377054027
+      spriteID: ee373ac391f19d647a4c33b7b4e9bd49
+      internalID: 2050191839
       vertices: []
       indices: 
       edges: []
@@ -1338,9 +1338,9 @@ TextureImporter:
       name: melee-zombie_58
       rect:
         serializedVersion: 2
-        x: 275
+        x: 268
         y: 520
-        width: 37
+        width: 61
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1349,8 +1349,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d4d75cbf4314544db31369e81f822d3
-      internalID: -920043378
+      spriteID: 8df46571ce63580448b692aa6d9c1bfd
+      internalID: -495318442
       vertices: []
       indices: 
       edges: []
@@ -1359,9 +1359,9 @@ TextureImporter:
       name: melee-zombie_59
       rect:
         serializedVersion: 2
-        x: 338
+        x: 331
         y: 520
-        width: 35
+        width: 65
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1370,8 +1370,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea274431f4f141044b0c35f545951041
-      internalID: -1777885207
+      spriteID: 6896b213ba64b854ba20093f09b6abb2
+      internalID: -1967556590
       vertices: []
       indices: 
       edges: []
@@ -1391,8 +1391,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6ea7159f924fd5408989993783e431c
-      internalID: -389703909
+      spriteID: 38d6d9b56e548a84f803e4e030e8a35b
+      internalID: -205485351
       vertices: []
       indices: 
       edges: []
@@ -1412,8 +1412,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35dee0bfc2ae3624ca0d563271262b97
-      internalID: -993816128
+      spriteID: 33cd9501fb1e1084b85dcb1ad7e6be3e
+      internalID: -1947875878
       vertices: []
       indices: 
       edges: []
@@ -1433,8 +1433,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c4901f3b4f0c694490aeb0a3815fd0f
-      internalID: 1973960594
+      spriteID: f0922a0f65f33dd43b5af659507254d3
+      internalID: 204216767
       vertices: []
       indices: 
       edges: []
@@ -1454,8 +1454,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f1186b2ae521fe49aee6d3849c91ffb
-      internalID: -1421140131
+      spriteID: 98021c32aff346241a0b850cfd406131
+      internalID: -1231517915
       vertices: []
       indices: 
       edges: []
@@ -1471,70 +1471,70 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      melee-zombie_0: 963005054
-      melee-zombie_1: 215340641
-      melee-zombie_10: 845587914
-      melee-zombie_11: -351000311
-      melee-zombie_12: 2055485036
-      melee-zombie_13: 1677148924
-      melee-zombie_14: 1313455922
-      melee-zombie_15: -1203919847
-      melee-zombie_16: -1316813940
-      melee-zombie_17: -241676764
-      melee-zombie_18: 717883129
-      melee-zombie_19: -1264569588
-      melee-zombie_2: -2092315700
-      melee-zombie_20: -741316946
-      melee-zombie_21: -1509789021
-      melee-zombie_22: -1331261094
-      melee-zombie_23: -1027887378
-      melee-zombie_24: 1290205
-      melee-zombie_25: 164912616
-      melee-zombie_26: 188268088
-      melee-zombie_27: 1941421792
-      melee-zombie_28: -1710185638
-      melee-zombie_29: 1607739323
-      melee-zombie_3: 646998596
-      melee-zombie_30: 314479272
-      melee-zombie_31: -2037072337
-      melee-zombie_32: -655512155
-      melee-zombie_33: -333592697
-      melee-zombie_34: -190054060
-      melee-zombie_35: -1964199232
-      melee-zombie_36: -2025846859
-      melee-zombie_37: 497725253
-      melee-zombie_38: 9035953
-      melee-zombie_39: -1422874361
-      melee-zombie_4: 189631731
-      melee-zombie_40: -1079438530
-      melee-zombie_41: -1737758200
-      melee-zombie_42: -3086868
-      melee-zombie_43: 804905767
-      melee-zombie_44: -531243030
-      melee-zombie_45: 1540606149
-      melee-zombie_46: -408111860
-      melee-zombie_47: -423318563
-      melee-zombie_48: 1003382621
-      melee-zombie_49: 542638655
-      melee-zombie_5: -283171092
-      melee-zombie_50: -191582367
-      melee-zombie_51: 1368805718
-      melee-zombie_52: -1410516923
-      melee-zombie_53: -1023988689
-      melee-zombie_54: -106371649
-      melee-zombie_55: -1183466429
-      melee-zombie_56: 1033208642
-      melee-zombie_57: -377054027
-      melee-zombie_58: -920043378
-      melee-zombie_59: -1777885207
-      melee-zombie_6: 1921931718
-      melee-zombie_60: -389703909
-      melee-zombie_61: -993816128
-      melee-zombie_62: 1973960594
-      melee-zombie_63: -1421140131
-      melee-zombie_7: 724078318
-      melee-zombie_8: 1775086536
-      melee-zombie_9: 2030728769
+      melee-zombie_0: 1388688640
+      melee-zombie_1: 395653681
+      melee-zombie_10: -940018355
+      melee-zombie_11: 318365036
+      melee-zombie_12: 1206963545
+      melee-zombie_13: 359866992
+      melee-zombie_14: -1229187505
+      melee-zombie_15: 860553664
+      melee-zombie_16: -1269521865
+      melee-zombie_17: -2040320605
+      melee-zombie_18: 544895181
+      melee-zombie_19: -679989108
+      melee-zombie_2: 1268328707
+      melee-zombie_20: 90671698
+      melee-zombie_21: -1713282885
+      melee-zombie_22: 1868272499
+      melee-zombie_23: 1227478797
+      melee-zombie_24: -1805026948
+      melee-zombie_25: 1899170805
+      melee-zombie_26: -739683706
+      melee-zombie_27: 330498410
+      melee-zombie_28: 2053768532
+      melee-zombie_29: 891962345
+      melee-zombie_3: -2051590905
+      melee-zombie_30: 800736600
+      melee-zombie_31: 858958549
+      melee-zombie_32: 1389362748
+      melee-zombie_33: -1972870231
+      melee-zombie_34: -600952288
+      melee-zombie_35: 577197676
+      melee-zombie_36: 2014462427
+      melee-zombie_37: 88182552
+      melee-zombie_38: -1823221389
+      melee-zombie_39: 2113250385
+      melee-zombie_4: 582561476
+      melee-zombie_40: -839172839
+      melee-zombie_41: -1605143703
+      melee-zombie_42: -1501352653
+      melee-zombie_43: 1292698519
+      melee-zombie_44: 794113005
+      melee-zombie_45: 768827187
+      melee-zombie_46: 1363903714
+      melee-zombie_47: 1793098707
+      melee-zombie_48: -993567766
+      melee-zombie_49: -551582325
+      melee-zombie_5: 1377845056
+      melee-zombie_50: -896004212
+      melee-zombie_51: 341560631
+      melee-zombie_52: -1994176681
+      melee-zombie_53: -1188412286
+      melee-zombie_54: 1957982189
+      melee-zombie_55: -1699139694
+      melee-zombie_56: -1555343734
+      melee-zombie_57: 2050191839
+      melee-zombie_58: -495318442
+      melee-zombie_59: -1967556590
+      melee-zombie_6: -1260185433
+      melee-zombie_60: -205485351
+      melee-zombie_61: -1947875878
+      melee-zombie_62: 204216767
+      melee-zombie_63: -1231517915
+      melee-zombie_7: -860272377
+      melee-zombie_8: 594183403
+      melee-zombie_9: -614677584
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
