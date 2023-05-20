@@ -39,9 +39,9 @@
   justify-content: center;
 }
 
-.card-master:hover > .card-container {
+.card-master> .card-container {
   transform: rotateY(-180deg);
-}
+} 
 
 /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
 .front-card{
@@ -166,10 +166,10 @@
 }
 
 .class-stats-container{
-  height: 78%;
+  height: 80%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  grid-template-rows: repeat(5, minmax(0,1fr));
   align-content: center;
   justify-content: space-evenly;
 }
@@ -183,6 +183,15 @@
   margin: 0 auto;
   height: 100%;
 }
+
+@-moz-document url-prefix() {
+  .class-stats-container{
+    position: absolute;
+    top: 20%;
+    height: 75%;
+    width: 90%;
+  }
+  }
 
 @media screen and (max-width: 1000px) {
   #warrior {
