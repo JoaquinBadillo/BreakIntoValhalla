@@ -8,135 +8,79 @@ public class PlayerMovement : MonoBehaviour{
     private Rigidbody2D rigid2d;
     // Physics
     [SerializeField] float movement_speed = 2f;
-    private float x_axis;
-    private float y_axis;
-    // Animation Variables
-    private string currentAnimaton;
-    private string direction;
-    private string action;
-    private bool isPrimaryAttack;
-    private bool isSecondaryAttack;
+    private Vector2 movement;
     // Attack Variables
     private Transform meleeAttackPoint;
-    private float meleeRange;
-    public LayerMask enemyLayers;
+    [SerializeField] float meleeRange;
+    [SerializeField] LayerMask enemyLayers;
+    // Stat variables
+    public int attack = 20;
     
     void Start(){
         rigid2d = GetComponent<Rigidbody2D>();
         animator = this.gameObject.transform.GetChild(0).GetComponent<Animator>();
-        direction = "-down";
-        action = "-idle";
     }
 
     void Update(){
         // Checking for WASD or arrow key inputs
-        x_axis = Input.GetAxisRaw("Horizontal");
-        y_axis = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        
+        animator.SetFloat("xSpeed", movement.x);
+        animator.SetFloat("ySpeed", movement.y);
+        Walk();
         PrimaryAttack();
         SecondaryAttack();
-        Walk();
-        Idle();
-        ChangeAnimationState("archer-female" + direction + action);
-    }
-    
-    void FixedUpdate(){
-        /* 
-        This function updates more frequently than Update() 
-        for reliable physics
-        */
-        Vector2 vel = new Vector2(0, rigid2d.velocity.y);
-        // Movement in x
-        if (x_axis < 0){
-           vel.x = -movement_speed;
-        }
-        else if (x_axis > 0){
-           vel.x = movement_speed;
-        }
-        else{
-            vel.x = 0;
-
-        }
-        // Movement in y
-        if (y_axis < 0){
-           vel.y = -movement_speed;
-        }
-        else if (y_axis > 0){
-           vel.y = movement_speed;
-        }
-        else{
-            vel.y = 0;
-        }
-        rigid2d.velocity = vel.normalized * 2;
     }
 
-    void ChangeAnimationState(string newAnimation){
-        /* 
-        This function switches the animations 
-        smoothly and returns them upon inputs
-        */
-        if (currentAnimaton == newAnimation) return;
-        animator.Play(newAnimation);
-        currentAnimaton = newAnimation;
+    void FixedUpdate() {
+        rigid2d.MovePosition(rigid2d.position + movement * movement_speed * Time.fixedDeltaTime);
     }
 
     void Walk(){
-        // 
-        if (x_axis != 0 || y_axis != 0)
-            action = "-walk";
-
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)){
-            direction = "-right";
+        if (movement.x > 0){
             meleeAttackPoint = this.gameObject.transform.GetChild(4);
-            meleeRange = 0.46f;
+            meleeRange = 0.5f;
         }
 
-        else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)){
-            direction = "-left";
+        else if (movement.x < 0){
             meleeAttackPoint = this.gameObject.transform.GetChild(2);
-            meleeRange = 0.46f;
+            meleeRange = 0.5f;
         }
 
-        else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)){
-            direction = "-up";
+        else if (movement.y > 0){
             meleeAttackPoint = this.gameObject.transform.GetChild(1);
             meleeRange = 0.35f;
         }
 
-        else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow)){
-            direction = "-down";
+        else if (movement.y < 0){
             meleeAttackPoint = this.gameObject.transform.GetChild(3);
             meleeRange = 0.43f;
         }
     }
 
-    void Idle(){
-        if (x_axis == 0 && y_axis == 0)
-            action = "-idle";
-    }
-
     void PrimaryAttack(){
         if (Input.GetKeyDown(KeyCode.P)){
-            // Changing the animation through string concatenation
-            action = "-slash";
-            ChangeAnimationState("archer-female" + direction + action);
+            animator.SetTrigger("primaryAttack");
             // Detecting attack range
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(meleeAttackPoint.position, meleeRange, enemyLayers);
             // Deal damage
-            foreach(Collider2D enemy in hitEnemies)
+            foreach(Collider2D enemy in hitEnemies){
+                enemy.GetComponent<MeleeDraugr>().TakeDamage(attack);
                 Debug.Log("We be slashin" + enemy.name);
+            }
         }
     }
 
     void OnDrawGizmosSelected() {
-        if (meleeAttackPoint == null) return;
-
+        if (meleeAttackPoint == null) 
+            return;
         Gizmos.DrawWireSphere(meleeAttackPoint.position, meleeRange);
     }
 
     void SecondaryAttack(){
         if (Input.GetKeyDown(KeyCode.L)){
-            action = "-shoot";
-            ChangeAnimationState("archer-female" + direction + action);
+            animator.SetTrigger("secondaryAttack");
         }
     }
 }

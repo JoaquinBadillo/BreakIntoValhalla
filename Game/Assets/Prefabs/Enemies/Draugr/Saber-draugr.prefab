@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 243029587}
   - component: {fileID: 243029588}
   - component: {fileID: 6671374888635770386}
+  - component: {fileID: 283551289}
   m_Layer: 7
   m_Name: Saber-draugr
   m_TagString: Untagged
@@ -286,6 +287,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+--- !u!114 &283551289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7087722852396621114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4913df07211a0854b88fb0324ab611c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiPath: {fileID: 243029587}
+  playerLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &7087722852763066331
 GameObject:
   m_ObjectHideFlags: 0
