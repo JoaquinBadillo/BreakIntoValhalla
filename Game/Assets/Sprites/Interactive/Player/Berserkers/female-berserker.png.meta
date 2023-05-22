@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18914e4488234e949b65a028e14b9a68
-      internalID: 1462755206
+      spriteID: cedd3abc7bdedf444a339d25445441d7
+      internalID: 188700971
       vertices: []
       indices: 
       edges: []
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9909417632e065469d05d48e68fc8b1
-      internalID: 1002500724
+      spriteID: 9a27d0a3ac0177340922345c09f600ee
+      internalID: -895055497
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c8f2015cc9f48048904d153645e18e6
-      internalID: -642417577
+      spriteID: 8a52139681708b94f8d9d38b26e7cf0f
+      internalID: 1415885745
       vertices: []
       indices: 
       edges: []
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9b2ab879419ab0478bcf6613ee6e0e5
-      internalID: -463009114
+      spriteID: 670681bc121efe746b12c25bdf74b4d8
+      internalID: -1261544868
       vertices: []
       indices: 
       edges: []
@@ -204,7 +204,7 @@ TextureImporter:
       name: female-berserker_4
       rect:
         serializedVersion: 2
-        x: 268
+        x: 269
         y: 968
         width: 38
         height: 51
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 510588dbf69cc56439e5cb7ae8557ab5
-      internalID: -83316481
+      spriteID: d3e67e383780f6545a056b6670f92746
+      internalID: -958921956
       vertices: []
       indices: 
       edges: []
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 402063667a4d46c46bb8777ec2e2bbce
-      internalID: -2142179615
+      spriteID: e1ed5bf86d6ff744ca18897009cb2981
+      internalID: -1553337828
       vertices: []
       indices: 
       edges: []
@@ -257,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27a0db7f37cf8e2448cd7a24122e1482
-      internalID: 1305730124
+      spriteID: c9b769c818ec54b4986368f1d9ab7179
+      internalID: 1721536797
       vertices: []
       indices: 
       edges: []
@@ -278,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 948bfb44f983b7f46bb07655a5f84c0c
-      internalID: -1503679138
+      spriteID: a55737fbd0d9b854c806370ed157677d
+      internalID: 929538574
       vertices: []
       indices: 
       edges: []
@@ -299,8 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30f6ebb2feb45384493fea169f9f3777
-      internalID: -1594725131
+      spriteID: 5617d32450acbee48891745bc2a15017
+      internalID: 1961347840
       vertices: []
       indices: 
       edges: []
@@ -320,8 +320,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 397004373fe6e0840807b632919dfd17
-      internalID: 565320765
+      spriteID: 293224d2b546f814f96f1f359b9492c8
+      internalID: -1305757629
       vertices: []
       indices: 
       edges: []
@@ -341,8 +341,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06a07d732c23b024c99225789f160197
-      internalID: -2118842857
+      spriteID: c66f143470df4974288e4b1d2094097d
+      internalID: 1386245531
       vertices: []
       indices: 
       edges: []
@@ -362,8 +362,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa42be94c30c0f949b1bd8a605928815
-      internalID: 484302947
+      spriteID: 5aed3fdebedaf6a4783c3b042c98af39
+      internalID: 284066307
       vertices: []
       indices: 
       edges: []
@@ -383,8 +383,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b8bdda4f52a980409c5cbecdb6b8e4f
-      internalID: -2080154509
+      spriteID: 6c9ca0d6bb3703a4799a0de07602273f
+      internalID: -1376935799
       vertices: []
       indices: 
       edges: []
@@ -404,8 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9f058b116fb3b5498e4f286ec7034ab
-      internalID: -1139889298
+      spriteID: 4d9eeb1992506dd4cbeb44e876fa805e
+      internalID: 522729558
       vertices: []
       indices: 
       edges: []
@@ -425,8 +425,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 756d1b31e0a405b46bab01c7d5f77ba3
-      internalID: -1144394122
+      spriteID: d8e572973ee519545aa5ddaf85cd610e
+      internalID: -316381725
       vertices: []
       indices: 
       edges: []
@@ -446,8 +446,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65ed54c8b98a4f9409c2d7ea511f38df
-      internalID: -43487416
+      spriteID: 891ad77eb30cc6847887e77bd4d9ac6e
+      internalID: 637332077
       vertices: []
       indices: 
       edges: []
@@ -467,8 +467,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 676a65810b0b861488db1e969074b6b3
-      internalID: 1531631471
+      spriteID: 2dc546573b2ea564985e761fb331a315
+      internalID: -1172201753
       vertices: []
       indices: 
       edges: []
@@ -488,8 +488,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7f73e5aa9b1a6842826f3d9b07db3d6
-      internalID: -1581574403
+      spriteID: 59815630e0695384d9a8743322bdd158
+      internalID: 726885396
       vertices: []
       indices: 
       edges: []
@@ -509,8 +509,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1bf5e7f08e572c49b77631ef80ffb74
-      internalID: -2068688007
+      spriteID: 760e22a376b8c1a42b08d69e344978b1
+      internalID: 960319045
       vertices: []
       indices: 
       edges: []
@@ -530,8 +530,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ff918cf58b688649a709f993e5fe994
-      internalID: -30745718
+      spriteID: f4ae89ce5c0e9584c9f1ffd5d7dc9ffe
+      internalID: 686922647
       vertices: []
       indices: 
       edges: []
@@ -551,8 +551,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32585208fadef664a8e61fc8057c49fd
-      internalID: 1749063178
+      spriteID: 0bbd9779f6acc1543af4c1b614e9a99c
+      internalID: -1290544079
       vertices: []
       indices: 
       edges: []
@@ -572,8 +572,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3d7e3d020265f445bcb6419656f6638
-      internalID: 648106007
+      spriteID: 660e35147035b60408b9b5b8a322fba7
+      internalID: 876656043
       vertices: []
       indices: 
       edges: []
@@ -593,8 +593,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e924c3bb643e0b4eb42aa21488bfe3e
-      internalID: -1930421560
+      spriteID: e1efc8d5b7f8b5542b4946bca74c0f2d
+      internalID: 1459160853
       vertices: []
       indices: 
       edges: []
@@ -614,8 +614,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d951a456b89b4494da8678ab795ab3c7
-      internalID: 1155324844
+      spriteID: 3b21394254dd5fb468b45d3962e41102
+      internalID: -54254054
       vertices: []
       indices: 
       edges: []
@@ -635,8 +635,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 698ca90c5922148428434ee62fdfd2b4
-      internalID: -1153384357
+      spriteID: 145eceffbd33bc64f84b549b8916f80e
+      internalID: -1687698107
       vertices: []
       indices: 
       edges: []
@@ -656,8 +656,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71b460b6dcf7ef84aa8473ed089ad88c
-      internalID: -754702796
+      spriteID: 9e6d6d51dc09b934da2ae7ba3a8e2dca
+      internalID: -1469551566
       vertices: []
       indices: 
       edges: []
@@ -677,8 +677,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9efa4e7511e091b469151dc9f3d31036
-      internalID: -783715003
+      spriteID: 565b9ded8e607e54e8fc366ab8fad07c
+      internalID: -1169699980
       vertices: []
       indices: 
       edges: []
@@ -698,8 +698,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc270e06324a38140b7c72bb10a48ae8
-      internalID: 1189578193
+      spriteID: 1cde1e7edc635db499c7a10939316969
+      internalID: 455442774
       vertices: []
       indices: 
       edges: []
@@ -719,8 +719,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 098b919712b19bf4085170c8d5c97124
-      internalID: 700421956
+      spriteID: dda77aa44a365224eaa1c9f2da126999
+      internalID: 69907014
       vertices: []
       indices: 
       edges: []
@@ -740,8 +740,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82aac4cc19eb7ad4a8980ba880055091
-      internalID: -1130601717
+      spriteID: 7141ad500f9332f4485adeaa20074781
+      internalID: 1829461597
       vertices: []
       indices: 
       edges: []
@@ -761,8 +761,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98251ac311792ba4483a3432f527cd6f
-      internalID: 1089889295
+      spriteID: 0d5af3f93f91b7b43979c8f42a4b84cc
+      internalID: 16294
       vertices: []
       indices: 
       edges: []
@@ -782,8 +782,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fafa843b4b0a14342aeb57b02ca7e8f7
-      internalID: -2055858569
+      spriteID: 66fecc91b6b76794cadeb35bc3f23176
+      internalID: -1051274379
       vertices: []
       indices: 
       edges: []
@@ -803,8 +803,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c708959fa01a7584f8c844d7a0b333ec
-      internalID: -791582329
+      spriteID: 84a56aafbc4f8d3448d524ebc9a2726a
+      internalID: 186008891
       vertices: []
       indices: 
       edges: []
@@ -824,8 +824,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c0df79b8e144b64c85e1a033bdb1321
-      internalID: -1432703479
+      spriteID: 293ab4c83bdbf5749b2025d648175238
+      internalID: 1394854536
       vertices: []
       indices: 
       edges: []
@@ -845,8 +845,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: feefd78849c168a41bf98b03ca1654fe
-      internalID: -1545568226
+      spriteID: fffc965866b9d00468be2fd7d0252ce1
+      internalID: -1245059162
       vertices: []
       indices: 
       edges: []
@@ -866,8 +866,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecd6f1e3bca92a246b32549dc6892bcd
-      internalID: -194407665
+      spriteID: 433b531746e85ed4bbc68b2a0427e4ab
+      internalID: -255632641
       vertices: []
       indices: 
       edges: []
@@ -878,7 +878,7 @@ TextureImporter:
         serializedVersion: 2
         x: 13
         y: 712
-        width: 38
+        width: 46
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -887,8 +887,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd83da8364d384d4f8d230f346b0d64d
-      internalID: 1481375206
+      spriteID: 1f091c82fd86986439e37d7e93a8932d
+      internalID: -1592106260
       vertices: []
       indices: 
       edges: []
@@ -897,9 +897,9 @@ TextureImporter:
       name: female-berserker_37
       rect:
         serializedVersion: 2
-        x: 77
+        x: 99
         y: 712
-        width: 38
+        width: 45
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -908,8 +908,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93c62fa9a8eeaf141bf54dbc2a5d571d
-      internalID: -529248440
+      spriteID: ebd5d60ee1be8cb4e99e29471f3a80b2
+      internalID: 849156351
       vertices: []
       indices: 
       edges: []
@@ -918,9 +918,9 @@ TextureImporter:
       name: female-berserker_38
       rect:
         serializedVersion: 2
-        x: 140
+        x: 181
         y: 712
-        width: 38
+        width: 47
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -929,8 +929,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50efdeebd065d9d4eae8bd8f32b2e759
-      internalID: -758316183
+      spriteID: de9e7f8bf1a2dda488d7ed9cade4cde3
+      internalID: -1785067580
       vertices: []
       indices: 
       edges: []
@@ -939,9 +939,9 @@ TextureImporter:
       name: female-berserker_39
       rect:
         serializedVersion: 2
-        x: 206
+        x: 284
         y: 712
-        width: 38
+        width: 45
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -950,8 +950,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f7bdfc0ae143ec45a0744c86a7aef02
-      internalID: -798763289
+      spriteID: 05085a1fec50a5a4a9b9c2624c7efa6d
+      internalID: -1455823640
       vertices: []
       indices: 
       edges: []
@@ -960,10 +960,10 @@ TextureImporter:
       name: female-berserker_40
       rect:
         serializedVersion: 2
-        x: 271
+        x: 378
         y: 712
-        width: 39
-        height: 50
+        width: 54
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -971,8 +971,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d498d8e5754bf442a706e5ed49a49b5
-      internalID: 50624213
+      spriteID: 23de2bd95f963004da7b6eff72d10ace
+      internalID: 508546273
       vertices: []
       indices: 
       edges: []
@@ -981,10 +981,10 @@ TextureImporter:
       name: female-berserker_41
       rect:
         serializedVersion: 2
-        x: 335
+        x: 477
         y: 712
-        width: 42
-        height: 50
+        width: 66
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -992,8 +992,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8591921a942e5854ebc3010b6227357a
-      internalID: 1185260481
+      spriteID: 1d0bc62a997b77c488e90050526d198a
+      internalID: 88649769
       vertices: []
       indices: 
       edges: []
@@ -1002,9 +1002,9 @@ TextureImporter:
       name: female-berserker_42
       rect:
         serializedVersion: 2
-        x: 20
-        y: 648
-        width: 30
+        x: 10
+        y: 636
+        width: 45
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1013,8 +1013,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d9a4490c753383408440c7ce3f32968
-      internalID: 291911794
+      spriteID: c7fe93b37ee1f884991691e7c7eafee5
+      internalID: 1914695490
       vertices: []
       indices: 
       edges: []
@@ -1023,9 +1023,9 @@ TextureImporter:
       name: female-berserker_43
       rect:
         serializedVersion: 2
-        x: 80
-        y: 648
-        width: 34
+        x: 103
+        y: 636
+        width: 35
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1034,8 +1034,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d53d7e01454ac9d45b8e5237025ac95f
-      internalID: 109952684
+      spriteID: ea1c9c29bc0f2d94a840351a6efc43f2
+      internalID: -778683471
       vertices: []
       indices: 
       edges: []
@@ -1044,9 +1044,9 @@ TextureImporter:
       name: female-berserker_44
       rect:
         serializedVersion: 2
-        x: 144
-        y: 648
-        width: 33
+        x: 191
+        y: 636
+        width: 39
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1055,8 +1055,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad5359e35a412ee47b65537827af209f
-      internalID: -1338545602
+      spriteID: 3a7a1aafcb7d38e4faab8b3593c30011
+      internalID: 1478398185
       vertices: []
       indices: 
       edges: []
@@ -1065,9 +1065,9 @@ TextureImporter:
       name: female-berserker_45
       rect:
         serializedVersion: 2
-        x: 203
-        y: 648
-        width: 36
+        x: 266
+        y: 636
+        width: 56
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1076,8 +1076,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adf196f0f15c184469fc743ee3b9c339
-      internalID: 1354169357
+      spriteID: e3ab32be04efedc45b45cbc131eb2f2b
+      internalID: 1377605708
       vertices: []
       indices: 
       edges: []
@@ -1086,9 +1086,9 @@ TextureImporter:
       name: female-berserker_46
       rect:
         serializedVersion: 2
-        x: 264
-        y: 648
-        width: 38
+        x: 358
+        y: 636
+        width: 58
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1097,8 +1097,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 057aff0ff8000a14b856e15664cb10d1
-      internalID: -1999174274
+      spriteID: ab7972100a5e40a448ae1d4775991263
+      internalID: 1867488513
       vertices: []
       indices: 
       edges: []
@@ -1107,9 +1107,9 @@ TextureImporter:
       name: female-berserker_47
       rect:
         serializedVersion: 2
-        x: 331
-        y: 648
-        width: 35
+        x: 451
+        y: 636
+        width: 57
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1118,8 +1118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee7c56859bc44b43863d485699d757b
-      internalID: 804582159
+      spriteID: 20d25e4e6d55999478de6252878a16f4
+      internalID: 1453484007
       vertices: []
       indices: 
       edges: []
@@ -1129,8 +1129,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 12
-        y: 584
-        width: 40
+        y: 560
+        width: 51
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1139,8 +1139,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bed375c0462e90a4b923f862150da436
-      internalID: -1374839851
+      spriteID: f5c9b1d71748da241b5c1dc9d98af5b4
+      internalID: -1606031470
       vertices: []
       indices: 
       edges: []
@@ -1149,9 +1149,9 @@ TextureImporter:
       name: female-berserker_49
       rect:
         serializedVersion: 2
-        x: 76
-        y: 584
-        width: 40
+        x: 99
+        y: 560
+        width: 45
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1160,8 +1160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3aef5534fe43f14a8be5f8a5cbaeb5c
-      internalID: 1058506520
+      spriteID: b993b5d01396ce74aa4df19b51cb03aa
+      internalID: -1018238183
       vertices: []
       indices: 
       edges: []
@@ -1170,9 +1170,9 @@ TextureImporter:
       name: female-berserker_50
       rect:
         serializedVersion: 2
-        x: 139
-        y: 584
-        width: 40
+        x: 180
+        y: 560
+        width: 49
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1181,8 +1181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9733f3bcdb1cf7a45851707c21255a86
-      internalID: -113784821
+      spriteID: 569a0ef356bd62d46900c98752d32718
+      internalID: -1124840993
       vertices: []
       indices: 
       edges: []
@@ -1191,9 +1191,9 @@ TextureImporter:
       name: female-berserker_51
       rect:
         serializedVersion: 2
-        x: 206
-        y: 584
-        width: 40
+        x: 277
+        y: 560
+        width: 54
         height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1202,8 +1202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec6c83fbe640bea448e4bf38891a04ac
-      internalID: 1028359700
+      spriteID: 57ffaa9c4bc76854db7c6131467b86b4
+      internalID: 1382404200
       vertices: []
       indices: 
       edges: []
@@ -1212,10 +1212,10 @@ TextureImporter:
       name: female-berserker_52
       rect:
         serializedVersion: 2
-        x: 271
-        y: 584
-        width: 40
-        height: 51
+        x: 381
+        y: 553
+        width: 66
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1223,8 +1223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cc47c0fe72148644b724e20b6577dcb
-      internalID: -384769364
+      spriteID: 8ad8f82883fdaab48bc7a5647e82fa9e
+      internalID: -2014579377
       vertices: []
       indices: 
       edges: []
@@ -1233,10 +1233,10 @@ TextureImporter:
       name: female-berserker_53
       rect:
         serializedVersion: 2
-        x: 335
-        y: 584
-        width: 43
-        height: 51
+        x: 477
+        y: 557
+        width: 67
+        height: 54
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1244,8 +1244,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66c7c85ec8530284584777a4d2bc289d
-      internalID: -1355001570
+      spriteID: d09889dc8e2f4964c81edc14257a1ae2
+      internalID: -1113219809
       vertices: []
       indices: 
       edges: []
@@ -1254,9 +1254,9 @@ TextureImporter:
       name: female-berserker_54
       rect:
         serializedVersion: 2
-        x: 14
-        y: 520
-        width: 31
+        x: 9
+        y: 484
+        width: 45
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1265,8 +1265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd51d849e214e81498b7d03f2b0c63f7
-      internalID: -1950317944
+      spriteID: 09d152808ca4e934b9a6d9020fbf7934
+      internalID: -1658842441
       vertices: []
       indices: 
       edges: []
@@ -1275,9 +1275,9 @@ TextureImporter:
       name: female-berserker_55
       rect:
         serializedVersion: 2
-        x: 78
-        y: 520
-        width: 33
+        x: 106
+        y: 484
+        width: 35
         height: 49
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1286,8 +1286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 883ff54b1bf131a4e83828277d714031
-      internalID: -1717817000
+      spriteID: 9ba7c291db42f724ca4f5e68c8d39844
+      internalID: 1010056520
       vertices: []
       indices: 
       edges: []
@@ -1296,9 +1296,9 @@ TextureImporter:
       name: female-berserker_56
       rect:
         serializedVersion: 2
-        x: 144
-        y: 520
-        width: 31
+        x: 190
+        y: 484
+        width: 39
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1307,8 +1307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bceec6b14aaad64a8e39d037491b0fd
-      internalID: 1515842869
+      spriteID: 72c6e9946b3268d40aeea10b9a467dcb
+      internalID: -1410048100
       vertices: []
       indices: 
       edges: []
@@ -1317,9 +1317,9 @@ TextureImporter:
       name: female-berserker_57
       rect:
         serializedVersion: 2
-        x: 209
-        y: 520
-        width: 36
+        x: 290
+        y: 484
+        width: 56
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1328,8 +1328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2eea690167737e448108c0cfbadb302
-      internalID: 450903352
+      spriteID: 07b8603896764934aab74e464a19b19b
+      internalID: -1955537593
       vertices: []
       indices: 
       edges: []
@@ -1338,9 +1338,9 @@ TextureImporter:
       name: female-berserker_58
       rect:
         serializedVersion: 2
-        x: 274
-        y: 520
-        width: 38
+        x: 388
+        y: 484
+        width: 58
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1349,8 +1349,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2bbe092ff8b697e4980220c3dce32bb8
-      internalID: -1135392027
+      spriteID: e49ecb2c5e842aa459885c86d9ec3c84
+      internalID: 1616573159
       vertices: []
       indices: 
       edges: []
@@ -1359,9 +1359,9 @@ TextureImporter:
       name: female-berserker_59
       rect:
         serializedVersion: 2
-        x: 338
-        y: 520
-        width: 35
+        x: 480
+        y: 484
+        width: 59
         height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1370,8 +1370,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07fe5b422f1983f4094b68e6385e1f42
-      internalID: -1046941247
+      spriteID: 70f1eba183750fb4c83938f9a2aa2b39
+      internalID: -726466907
       vertices: []
       indices: 
       edges: []
@@ -1381,7 +1381,511 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 13
-        y: 462
+        y: 375
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8d312aebe042c45a67901a3648b5bc
+      internalID: -2036834013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_61
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 375
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686b1380926245840bf0c2e9011eeae4
+      internalID: -513029985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_62
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 375
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0d17ab10f139d43898c14063b9b65b
+      internalID: -1583402065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_63
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 375
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999e82b99d3b0f6459a8130ba1caafe3
+      internalID: -1264639041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_64
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 375
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab8c1ef09016094190cc7b969638623
+      internalID: 2033197697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_65
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 375
+        width: 66
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639906b90265b224a8ab80beb8ce861e
+      internalID: -325444969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_66
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 299
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be97a9dec39d2544a86371cd7143151
+      internalID: 1498811088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_67
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 299
+        width: 32
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33288273645fe274d8ea809246071a51
+      internalID: -458406988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_68
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 299
+        width: 32
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f20171560f9ba41965c5434a574cdc
+      internalID: 761431510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_69
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 299
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4208fee7577e5458a13c5c92214ad0
+      internalID: -776281076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_70
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 299
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12c90579c06b784ba23a5d631cfc028
+      internalID: -905178890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_71
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 299
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756b107ce37e6cc4b82ead569dfb0d6b
+      internalID: 348722891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_72
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 223
+        width: 40
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f839fac2e29dd3145932076c531d15e3
+      internalID: -935527591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_73
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 223
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4e1f0d34defbf409bd93582b5d19dd
+      internalID: 589477028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_74
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 223
+        width: 44
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaccdeb84bcf7b4aa3c640e95b29fd5
+      internalID: 1553580054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_75
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 223
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34551c18685e214fbf9cc2ba39dd17f
+      internalID: 198869536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_76
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 219
+        width: 49
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452157213667dc64f8436d814b538d4e
+      internalID: -1289758256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_77
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 223
+        width: 66
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b026254972a90246bd5acc2b3ba3768
+      internalID: -1312379178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_78
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 147
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df96eb9e940611848a57a380ff1281b8
+      internalID: 1599311847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_79
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 147
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9e2b9cddfa9f148ada75706afb2843
+      internalID: -1718289848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_80
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 147
+        width: 31
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205dfafaf3ea8b34c9b9c2bd1973ab93
+      internalID: -1254289464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_81
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 147
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f26e8b42b13784d84a8a22bed2b503
+      internalID: 1807576861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_82
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 147
+        width: 55
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df126601027d274db6bf6740f1fb635
+      internalID: 1240530172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_83
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 147
+        width: 58
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710cc658f48fdb848b7784aca6f3afbd
+      internalID: -1593921450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: female-berserker_84
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 6
         width: 40
         height: 43
       alignment: 0
@@ -1391,18 +1895,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ed21fcf6038d5a4d94211e1eadf2fb8
-      internalID: 963136421
+      spriteID: 3ce5904f7b70084478779f185936bf1a
+      internalID: -73541058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female-berserker_61
+      name: female-berserker_85
       rect:
         serializedVersion: 2
         x: 77
-        y: 462
+        y: 6
         width: 40
         height: 40
       alignment: 0
@@ -1412,18 +1916,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bbb1e20ba1455045902459fa70d4587
-      internalID: -877272267
+      spriteID: 45b88914cd182334f9edd6c4d47903aa
+      internalID: -1713452490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female-berserker_62
+      name: female-berserker_86
       rect:
         serializedVersion: 2
         x: 143
-        y: 463
+        y: 7
         width: 36
         height: 31
       alignment: 0
@@ -1433,20 +1937,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7203ef655b1f7b44aff03a4e353a40c
-      internalID: -1429570903
+      spriteID: 9554bb632f7fed240bfd378310d7c0e8
+      internalID: 867326206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female-berserker_63
+      name: female-berserker_87
       rect:
         serializedVersion: 2
-        x: 208
-        y: 462
-        width: 36
-        height: 36
+        x: 207
+        y: 5
+        width: 38
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1454,8 +1958,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc0495dfee116154185d16bc26473190
-      internalID: 689015789
+      spriteID: ce16738050239a247a414e42f3acee4d
+      internalID: 1070613925
       vertices: []
       indices: 
       edges: []
@@ -1471,70 +1975,94 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      female-berserker_0: 1462755206
-      female-berserker_1: 1002500724
-      female-berserker_10: -2118842857
-      female-berserker_11: 484302947
-      female-berserker_12: -2080154509
-      female-berserker_13: -1139889298
-      female-berserker_14: -1144394122
-      female-berserker_15: -43487416
-      female-berserker_16: 1531631471
-      female-berserker_17: -1581574403
-      female-berserker_18: -2068688007
-      female-berserker_19: -30745718
-      female-berserker_2: -642417577
-      female-berserker_20: 1749063178
-      female-berserker_21: 648106007
-      female-berserker_22: -1930421560
-      female-berserker_23: 1155324844
-      female-berserker_24: -1153384357
-      female-berserker_25: -754702796
-      female-berserker_26: -783715003
-      female-berserker_27: 1189578193
-      female-berserker_28: 700421956
-      female-berserker_29: -1130601717
-      female-berserker_3: -463009114
-      female-berserker_30: 1089889295
-      female-berserker_31: -2055858569
-      female-berserker_32: -791582329
-      female-berserker_33: -1432703479
-      female-berserker_34: -1545568226
-      female-berserker_35: -194407665
-      female-berserker_36: 1481375206
-      female-berserker_37: -529248440
-      female-berserker_38: -758316183
-      female-berserker_39: -798763289
-      female-berserker_4: -83316481
-      female-berserker_40: 50624213
-      female-berserker_41: 1185260481
-      female-berserker_42: 291911794
-      female-berserker_43: 109952684
-      female-berserker_44: -1338545602
-      female-berserker_45: 1354169357
-      female-berserker_46: -1999174274
-      female-berserker_47: 804582159
-      female-berserker_48: -1374839851
-      female-berserker_49: 1058506520
-      female-berserker_5: -2142179615
-      female-berserker_50: -113784821
-      female-berserker_51: 1028359700
-      female-berserker_52: -384769364
-      female-berserker_53: -1355001570
-      female-berserker_54: -1950317944
-      female-berserker_55: -1717817000
-      female-berserker_56: 1515842869
-      female-berserker_57: 450903352
-      female-berserker_58: -1135392027
-      female-berserker_59: -1046941247
-      female-berserker_6: 1305730124
-      female-berserker_60: 963136421
-      female-berserker_61: -877272267
-      female-berserker_62: -1429570903
-      female-berserker_63: 689015789
-      female-berserker_7: -1503679138
-      female-berserker_8: -1594725131
-      female-berserker_9: 565320765
+      female-berserker_0: 188700971
+      female-berserker_1: -895055497
+      female-berserker_10: 1386245531
+      female-berserker_11: 284066307
+      female-berserker_12: -1376935799
+      female-berserker_13: 522729558
+      female-berserker_14: -316381725
+      female-berserker_15: 637332077
+      female-berserker_16: -1172201753
+      female-berserker_17: 726885396
+      female-berserker_18: 960319045
+      female-berserker_19: 686922647
+      female-berserker_2: 1415885745
+      female-berserker_20: -1290544079
+      female-berserker_21: 876656043
+      female-berserker_22: 1459160853
+      female-berserker_23: -54254054
+      female-berserker_24: -1687698107
+      female-berserker_25: -1469551566
+      female-berserker_26: -1169699980
+      female-berserker_27: 455442774
+      female-berserker_28: 69907014
+      female-berserker_29: 1829461597
+      female-berserker_3: -1261544868
+      female-berserker_30: 16294
+      female-berserker_31: -1051274379
+      female-berserker_32: 186008891
+      female-berserker_33: 1394854536
+      female-berserker_34: -1245059162
+      female-berserker_35: -255632641
+      female-berserker_36: -1592106260
+      female-berserker_37: 849156351
+      female-berserker_38: -1785067580
+      female-berserker_39: -1455823640
+      female-berserker_4: -958921956
+      female-berserker_40: 508546273
+      female-berserker_41: 88649769
+      female-berserker_42: 1914695490
+      female-berserker_43: -778683471
+      female-berserker_44: 1478398185
+      female-berserker_45: 1377605708
+      female-berserker_46: 1867488513
+      female-berserker_47: 1453484007
+      female-berserker_48: -1606031470
+      female-berserker_49: -1018238183
+      female-berserker_5: -1553337828
+      female-berserker_50: -1124840993
+      female-berserker_51: 1382404200
+      female-berserker_52: -2014579377
+      female-berserker_53: -1113219809
+      female-berserker_54: -1658842441
+      female-berserker_55: 1010056520
+      female-berserker_56: -1410048100
+      female-berserker_57: -1955537593
+      female-berserker_58: 1616573159
+      female-berserker_59: -726466907
+      female-berserker_6: 1721536797
+      female-berserker_60: -2036834013
+      female-berserker_61: -513029985
+      female-berserker_62: -1583402065
+      female-berserker_63: -1264639041
+      female-berserker_64: 2033197697
+      female-berserker_65: -325444969
+      female-berserker_66: 1498811088
+      female-berserker_67: -458406988
+      female-berserker_68: 761431510
+      female-berserker_69: -776281076
+      female-berserker_7: 929538574
+      female-berserker_70: -905178890
+      female-berserker_71: 348722891
+      female-berserker_72: -935527591
+      female-berserker_73: 589477028
+      female-berserker_74: 1553580054
+      female-berserker_75: 198869536
+      female-berserker_76: -1289758256
+      female-berserker_77: -1312379178
+      female-berserker_78: 1599311847
+      female-berserker_79: -1718289848
+      female-berserker_8: 1961347840
+      female-berserker_80: -1254289464
+      female-berserker_81: 1807576861
+      female-berserker_82: 1240530172
+      female-berserker_83: -1593921450
+      female-berserker_84: -73541058
+      female-berserker_85: -1713452490
+      female-berserker_86: 867326206
+      female-berserker_87: 1070613925
+      female-berserker_9: -1305757629
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

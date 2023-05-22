@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6605626833431034072}
   - component: {fileID: 4929882490899577309}
+  - component: {fileID: 8494485328369900560}
   m_Layer: 0
   m_Name: Female-berserker
   m_TagString: Untagged
@@ -46,9 +47,30 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.3317442, y: -1.8860302}
-  m_Size: {x: 0.99552727, y: 1.5745254}
+  m_Offset: {x: -0.00070881844, y: 0.015763879}
+  m_Size: {x: 1.0031848, y: 1.5812113}
   m_Direction: 0
+--- !u!50 &8494485328369900560
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8159686830257683386}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &8856073269820954379
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,7 +97,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8856073269820954379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3320463, y: -1.898984, z: -0.06357666}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -123,7 +145,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1462755206, guid: 8780a4b942dc82442bebbf1fa2cb2872, type: 3}
+  m_Sprite: {fileID: 188700971, guid: 8780a4b942dc82442bebbf1fa2cb2872, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
