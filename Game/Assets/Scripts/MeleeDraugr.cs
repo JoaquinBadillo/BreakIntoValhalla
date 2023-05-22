@@ -8,72 +8,57 @@ public class MeleeDraugr : MonoBehaviour{
     private Animator animator;
     private Rigidbody2D rigid2d;
     public AIPath aiPath;
-    // Animation Variables
-    private string currentAnimaton;
-    private string direction;
-    private string action;
-    private bool isAttacking;
     // Attack Variables
     private Transform meleeAttackPoint;
     private float meleeRange;
-    public LayerMask enemyLayers;
+    [SerializeField] LayerMask playerLayers;
+    // Stat Variables
+    private int maxHealth = 150;
+    private int currentHealth;
+
 
     void Start(){
         rigid2d = GetComponent<Rigidbody2D>();
         animator = this.gameObject.transform.GetChild(0).GetComponent<Animator>();
+        currentHealth = maxHealth;
+        animator.SetBool("isDead", false);
     }
 
     void Update(){
         Walk();
-        Idle();
-        ChangeAnimationState("draugr-saber-" + direction + action);
+        animator.SetFloat("xSpeed", aiPath.desiredVelocity.x);
+        animator.SetFloat("ySpeed", aiPath.desiredVelocity.y);
     }
 
     void Walk(){
-        // 
-        if (aiPath.desiredVelocity.x != 0f || aiPath.desiredVelocity.y != 0f)
-            action = "-walk";
-
         if (aiPath.desiredVelocity.x > 0.01f){
-            direction = "-right";
             meleeAttackPoint = this.gameObject.transform.GetChild(4);
             meleeRange = 0.46f;
         }
 
         else if (aiPath.desiredVelocity.x < 0.01f){
-            direction = "-left";
             meleeAttackPoint = this.gameObject.transform.GetChild(2);
             meleeRange = 0.46f;
         }
 
         else if (aiPath.desiredVelocity.y > 0.01f){
-            direction = "-up";
             meleeAttackPoint = this.gameObject.transform.GetChild(1);
             meleeRange = 0.35f;
         }
 
         else if (aiPath.desiredVelocity.y < 0.01f){
-            direction = "-down";
             meleeAttackPoint = this.gameObject.transform.GetChild(3);
             meleeRange = 0.43f;
         }
     }
 
-    void Idle(){
-        if (aiPath.desiredVelocity.x == 0f || aiPath.desiredVelocity.y == 0f)
-            action = "-idle";
-    }
-
-    void PrimaryAttack(){
+    void Attack(){
         if (true){
-            // Changing the animation through string concatenation
-            action = "-slash";
-            ChangeAnimationState("archer-female" + direction + action);
+            animator.SetTrigger("slash");
             // Detecting attack range
-            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(meleeAttackPoint.position, meleeRange, enemyLayers);
+            Collider2D hitPlayer = Physics2D.OverlapCircle(meleeAttackPoint.position, meleeRange, playerLayers);
             // Deal damage
-            foreach(Collider2D enemy in hitEnemies)
-                Debug.Log("We be slashin" + enemy.name);
+
         }
     }
 
@@ -83,13 +68,17 @@ public class MeleeDraugr : MonoBehaviour{
         Gizmos.DrawWireSphere(meleeAttackPoint.position, meleeRange);
     }
 
-    void ChangeAnimationState(string newAnimation){
-        /* 
-        This function switches the animations 
-        smoothly and returns them upon inputs
-        */
-        if (currentAnimaton == newAnimation) return;
-        animator.Play(newAnimation);
-        currentAnimaton = newAnimation;
+    public void TakeDamage(int damage){
+        currentHealth -= damage;
+        Debug.Log("Got hit, current health is now: " + currentHealth);
+        if (currentHealth <= 0)
+            Die();
+    }
+
+    void Die(){
+        animator.SetBool("isDead", true);
+        Debug.Log("I died");
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
     }
 }
