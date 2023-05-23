@@ -25,7 +25,8 @@ USE valhalla;
 --
 CREATE TABLE users (
 	user_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-    email VARCHAR(100) NOT NULL,
+    username VARCHAR(30) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(32) NOT NULL,
     PRIMARY KEY (user_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
@@ -95,8 +96,22 @@ CREATE TABLE stats (
     defense SMALLINT UNSIGNED NOT NULL,
     speed FLOAT NOT NULL,
     PRIMARY KEY (stats_id),
-    CONSTRAINT fk_classes_game FOREIGN KEY (class_id) REFERENCES classes (class_id) ON DELETE RESTRICT ON UPDATE CASCADE
+    CONSTRAINT fk_classes_stats FOREIGN KEY (class_id) REFERENCES classes (class_id) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+
+--
+-- Table structure for table `deaths`
+--
+CREATE TABLE deaths(
+	deaths_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    user_id SMALLINT UNSIGNED NOT NULL,
+    room VARCHAR(50) NOT NULL,
+	killer VARCHAR(50),
+    PRIMARY KEY (deaths_id),
+	CONSTRAINT fk_deaths_users FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE RESTRICT ON UPDATE CASCADE
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
 
 SHOW TABLES;
 
