@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656543757646511740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: -0.9, z: -0.09192508}
+  m_LocalPosition: {x: -0.528, y: 0.05, z: -0.09192508}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55,7 +55,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656543757886657916}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -1.1, z: -0.09192508}
+  m_LocalPosition: {x: 0.133, y: -0.269, z: -0.09192508}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -86,7 +86,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656543758262656692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37, y: 0.41, z: -0.09192508}
+  m_LocalPosition: {x: 0.61, y: 0.41, z: -0.09192508}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -214,7 +214,6 @@ GameObject:
   - component: {fileID: 656543758717817469}
   - component: {fileID: 656543758717817468}
   - component: {fileID: 656543758717817471}
-  - component: {fileID: 656543758717817446}
   m_Layer: 7
   m_Name: Saber-draugr
   m_TagString: Untagged
@@ -286,7 +285,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656543758717817470}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
   m_Name: 
@@ -356,7 +355,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656543758717817470}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
   m_Name: 
@@ -370,7 +369,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656543758717817470}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4913df07211a0854b88fb0324ab611c9, type: 3}
   m_Name: 
@@ -379,24 +378,6 @@ MonoBehaviour:
   playerLayers:
     serializedVersion: 2
     m_Bits: 0
---- !u!114 &656543758717817446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 656543758717817470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf000b750e74f4c41b3592a96060a284, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movement_speed: 2
-  meleeRange: 0
-  enemyLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  attack: 20
 --- !u!1 &656543758782573724
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656543758782573724}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.44, y: -0.61, z: -0.09192508}
+  m_LocalPosition: {x: 0.497, y: 0.067, z: -0.09192508}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
