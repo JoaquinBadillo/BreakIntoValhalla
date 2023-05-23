@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour{
         // Checking for WASD or arrow key inputs
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        
+        movement.Normalize();
         animator.SetFloat("xSpeed", movement.x);
         animator.SetFloat("ySpeed", movement.y);
         Walk();
