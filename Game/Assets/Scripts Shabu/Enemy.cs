@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed;
-    public float stoppingDistance;
-    public float retreatDistance; // how far away the enemy will retreat from the player
+    [SerializeField] float speed;
+    [SerializeField] float stoppingDistance;
+    [SerializeField] float retreatDistance; // how far away the enemy will retreat from the player
 
     private float timeBtwShots; // time between shots
-    public float startTimeBtwShots; // time between shots at the start of the game
-    public GameObject projectile; // reference to the projectile
-    public Transform player; // reference to the player
+    [SerializeField] float startTimeBtwShots; // time between shots at the start of the game
+    [SerializeField] GameObject projectile; // reference to the projectile
+    [SerializeField] Transform player; // reference to the player
 
     void Start()
     {
@@ -42,7 +42,9 @@ public class Enemy : MonoBehaviour
 
         if(timeBtwShots <= 0)
         {
-            Instantiate(projectile, transform.position, Quaternion.identity); // create a projectile at the enemy's position
+            Vector2 direction = player.position - transform.position; // direction of the projectile
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 45; // angle of the projectile
+            Instantiate(projectile, transform.position, Quaternion.Euler(0,0, angle)); // create a projectile at the enemy's position
             timeBtwShots = startTimeBtwShots; 
         }
         else 
