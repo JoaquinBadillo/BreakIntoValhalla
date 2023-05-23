@@ -31,24 +31,24 @@ public class MeleeDraugr : MonoBehaviour{
     }
 
     void Walk(){
-        if (aiPath.desiredVelocity.x > 0.01f){
+        if (animator.GetFloat("xSpeed") > 0.01f){
             meleeAttackPoint = this.gameObject.transform.GetChild(4);
-            meleeRange = 0.46f;
+            meleeRange = 0.5f;
         }
 
-        else if (aiPath.desiredVelocity.x < 0.01f){
+        else if (animator.GetFloat("xSpeed") < 0.01f){
             meleeAttackPoint = this.gameObject.transform.GetChild(2);
-            meleeRange = 0.46f;
+            meleeRange = 0.5f;
         }
 
-        else if (aiPath.desiredVelocity.y > 0.01f){
+        else if (animator.GetFloat("ySpeed") > 0.01f){
             meleeAttackPoint = this.gameObject.transform.GetChild(1);
-            meleeRange = 0.35f;
+            meleeRange = 0.55f;
         }
 
-        else if (aiPath.desiredVelocity.y < 0.01f){
+        else if (animator.GetFloat("ySpeed") < 0.01f){
             meleeAttackPoint = this.gameObject.transform.GetChild(3);
-            meleeRange = 0.43f;
+            meleeRange = 0.8f;
         }
     }
 
