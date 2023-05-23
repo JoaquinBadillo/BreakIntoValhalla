@@ -27,3 +27,17 @@ FROM users
 INNER JOIN metrics ON users.user_id = metrics.user_id
 WHERE metrics.last_update >= DATE_SUB(CURDATE(), INTERVAL WEEKDAY(CURDATE()) DAY)
 ORDER BY metrics.kills DESC;
+
+-- Place of Death View
+CREATE VIEW death_place AS
+SELECT users.user_id, users.username, deaths.room
+FROM users
+INNER JOIN deaths ON deaths.user_id = user.user_id
+ORDER BY deaths.room;
+
+-- Cause of Death View (Which type of character killed the player)
+CREATE VIEW death_cause AS
+SELECT users.user_id, users, users.username, deaths.killer
+FROM users
+INNER JOIN deaths on deaths.user_id = user.user_id
+ORDER BY deaths.killer;
