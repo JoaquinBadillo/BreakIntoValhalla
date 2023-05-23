@@ -43,7 +43,7 @@ CREATE TABLE metrics (
     wins SMALLINT UNSIGNED NOT NULL DEFAULT 0,
     last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (metrics_id),
-    UNIQUE INDEX (user_id),
+    UNIQUE INDEX user_id (user_id ASC),
     CONSTRAINT fk_users_metrics FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -79,7 +79,7 @@ CREATE TABLE games (
     class_id TINYINT UNSIGNED NOT NULL,
     enemy_stats_multiplier FLOAT NOT NULL DEFAULT 1,
     PRIMARY KEY (game_id),
-    UNIQUE INDEX (user_id),
+    UNIQUE INDEX user_id (user_id ASC),
     CONSTRAINT fk_users_game FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT fk_levels_game FOREIGN KEY (level_id) REFERENCES levels (level_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT fk_classes_game FOREIGN KEY (class_id) REFERENCES classes (class_id) ON DELETE RESTRICT ON UPDATE CASCADE
