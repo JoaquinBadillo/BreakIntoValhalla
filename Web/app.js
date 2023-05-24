@@ -251,6 +251,279 @@ app.put('/api/classes/stats/:stat', async (req, res)=>{
     }
 });
 
+app.get('/api/metrics', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+
+        const [results, fields] = await connection.execute('select * from valhalla.metrics');
+
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    } 
+    
+    catch (error) {
+        res.status(500);
+        res.json(error);
+    }
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+// Read metrics specific to user
+app.get('/api/users/metrics', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+
+        const [results, fields] = await connection
+        .execute('select * from valhalla.metrics where user_id = ?', 
+            [req.body["user_id"]]);
+
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    } 
+    
+    catch (error) {
+        res.status(500);
+        res.json(error);
+    }
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+// View leaderboard
+app.get('/api/metrics/leaderboards', async (req, res)=>{
+    let connection = null;
+    const validLeaderboards = new Set(["top_kills", "top_weekly_elims"])
+
+    try {
+        if (!validLeaderboards.has(req.body["type"])) throw new Error("Invalid Leaderboard!")
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute(`select * from valhalla.${req.body["type"]}`);
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    } 
+    
+    catch (error) {
+        if (error.message === "Invalid Leaderboard!") {
+            res.status(400);
+        } 
+        else {
+            res.status(500);
+        }
+        res.json(error);
+    }
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+// Update metrics
+app.put('/api/metrics', async (req, res)=>{
+    let connection = null;
+
+    try{
+        connection = await connectToDB();
+
+        const [results, fields] = await connection
+        .query('update valhalla.metrics set kills = ?, num_deaths = ?, wins = ? where metrics_id = ?',
+            [req.body['kills'], req.body['num_deaths'], req.body['wins'],
+            req.body['metrics_id']]);
+        
+        console.log(`${results.affectedRows} rows updated`);
+        res.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`});
+    }
+    catch(error)
+    {
+        res.status(500);
+        res.json(error);
+        console.log(error);
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+// Update game
+app.put('/api/game', async (req, res)=>{
+    let connection = null;
+
+    try{
+        connection = await connectToDB();
+
+        const [results, fields] = await connection
+        .query('update valhalla.games set game_id = ?, user_id = ?, level_id = ?, class_id = ? where user_id = ?',
+            [req.body['game_id'], req.body['user_id'], req.body['level_id'], req.body['class_id'],
+            req.body['user_id']]);
+        
+        console.log(`${results.affectedRows} rows updated`);
+        res.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`});
+    }
+    catch(error)
+    {
+        res.status(500);
+        res.json(error);
+        console.log(error);
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+// endpoint to get all users
+app.get('/api/users', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute('select * from valhalla.users');
+
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+
+});
+
+// endpoint to get user by id or username or email
+app.get('/api/users/:id', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute('select * from valhalla.users where user_id = ? or username = ? or email = ?', [req.params.id, req.params.id, req.params.id]);
+
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+
+// endpoint to insert a new user
+app.post('/api/users', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.query('insert into valhalla.users set username = ?, email = ?, password = ?', [req.body["username"], req.body["email"], req.body["password"]]);
+        console.log(`${results.affectedRows} rows inserted`);
+        res.json({'message': "User inserted correctly.", "id": results.insertId})
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+
+});
+
+
+// endpoint to update a user
+app.put('/api/users', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.query('update valhalla.users set username = ?, email = ?, password = ? where user_id = ?', [req.body["username"], req.body["email"], req.body["password"], req.body["user_id"]]);
+
+        console.log(`${results.affectedRows} rows updated`)
+        res.json({'message': `User data updated correctly: ${results.affectedRows} rows updated.`})
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+
+});
+
+// endpoint to delete a user by id or username or email
+app.delete('/api/users/:id', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const[results, fields] = await connection.query('delete from valhalla.users where user_id = ?', [req.body["user_id"]]);
+
+        console.log(`${results.affectedRows} rows updated`)
+        res.json({'message': `User deleted correctly: ${results.affectedRows} rows updated.`})
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection !==null){
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+
+});
+
 app.listen(port, () => {
   console.log(`You can now view your app on a browser`);
   console.log(`Local:\t http://localhost:${port}`);
