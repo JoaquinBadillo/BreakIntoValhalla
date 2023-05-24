@@ -21,7 +21,7 @@ INSERT INTO users (`username`, `email`, `password`) VALUES
 COMMIT;
 
 SET AUTOCOMMIT=0;
-INSERT INTO metrics (`user_id`, `kills`, `deaths`, `wins`) VALUES
+INSERT INTO metrics (`user_id`, `kills`, `num_deaths`, `wins`) VALUES
 (1, 100, 5, 2),
 (2, 50, 10, 0),
 (3, 200, 2, 5),
@@ -32,14 +32,14 @@ INSERT INTO metrics (`user_id`, `kills`, `deaths`, `wins`) VALUES
 COMMIT;
 
 SET AUTOCOMMIT=0;
-INSERT INTO levels (`seed`) VALUES
-(123456),
-(654321),
-(987654),
-(123789),
-(456123),
-(789456),
-(159753);
+INSERT INTO levels (`level_num`,`seed`) VALUES
+(1, 123456),
+(1, 654321),
+(1, 987654),
+(1, 123789),
+(1, 456123),
+(1, 789456),
+(1, 159753);
 COMMIT;
 
 SET AUTOCOMMIT=0;
@@ -50,15 +50,16 @@ INSERT INTO classes (`name`) VALUES
 COMMIT;
 
 SET AUTOCOMMIT=0;
-INSERT INTO games (`user_id`, `level_id`, `class_id`, `enemy_stats_multiplier`) VALUES
-(1, 1, 1, 1),
-(2, 2, 2, 1),
-(3, 3, 3, 1),
-(4, 4, 1, 1),
-(5, 5, 2, 1),
-(6, 6, 3, 1),
-(7, 1, 1, 1);
+INSERT INTO games (`user_id`, `level_id`, `class_id`) VALUES
+(1, 1, 1),
+(2, 2, 2),
+(3, 3, 3),
+(4, 4, 1),
+(5, 5, 2),
+(6, 6, 3),
+(7, 7, 1);
 COMMIT;
+
  
 SET AUTOCOMMIT=0; 
 INSERT INTO stats (`class_id`, `hp`, `attack`, `attack_speed`, `defense`, `speed`) VALUES

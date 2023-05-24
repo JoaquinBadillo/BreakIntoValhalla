@@ -6,23 +6,6 @@ INNER JOIN metrics USING (user_id)
 ORDER BY metrics.kills DESC
 LIMIT 10;
 
--- K/D View
-CREATE VIEW top_kd AS
-SELECT users.user_id, users.username, metrics.kills, metrics.deaths
-FROM users
-INNER JOIN metrics USING (user_id)
-ORDER BY metrics.kills/metrics.deaths DESC
-LIMIT 10;
-
-
--- Win Rate View
-CREATE VIEW top_winrate AS
-SELECT users.user_id, users.username, metrics.wins, metrics.deaths
-FROM users
-INNER JOIN metrics USING (user_id)
-ORDER BY metrics.wins/metrics.deaths DESC
-LIMIT 10;
-
 -- Weekly Eliminations Leaderboard 
 -- (You only need to play that week to appear on the leaderboard)
 CREATE VIEW top_weekly_elims AS
