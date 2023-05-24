@@ -36,20 +36,20 @@ app.get('/', (req, res)=> {
 });
 
 // API
-app.get('/api/classes', async (request, response)=>{
+app.get('/api/classes', async (req, res)=>{
     let connection = null;
 
     try {
         connection = await connectToDB();
-        const [results, fields] = await connection.execute('select * from classes');
+        const [results, fields] = await connection.execute('select * from valhalla.classes');
 
         console.log(`${results.length} rows returned`);
-        response.json(results);
+        res.json(results);
     }
 
     catch(error) {
-        response.status(500);
-        response.json(error);
+        res.status(500);
+        res.json(error);
     }
 
     finally {
@@ -60,6 +60,150 @@ app.get('/api/classes', async (request, response)=>{
     }
 });
 
+
+// Read metrics
+app.get('/api/metrics', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+
+        const [results, fields] = await connection.execute('select * from valhalla.metrics');
+
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    } 
+    
+    catch (error) {
+        res.status(500);
+        res.json(error);
+    }
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+// Read metrics specific to user
+app.get('/api/users/metrics', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+
+        const [results, fields] = await connection
+        .execute('select * from valhalla.metrics where user_id = ?', 
+            [req.body["user_id"]]);
+
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    } 
+    
+    catch (error) {
+        res.status(500);
+        res.json(error);
+    }
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+// View leaderboard
+app.get('/api/metrics/leaderboards', async (req, res)=>{
+    let connection = null;
+    const validLeaderboards = new Set(["top_kills", "top_weekly_elims"])
+
+    try {
+        if (!validLeaderboards.has(req.body["type"])) throw new Error("Invalid Leaderboard!")
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute(`select * from valhalla.${req.body["type"]}`);
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    } 
+    
+    catch (error) {
+        if (error.message === "Invalid Leaderboard!") {
+            res.status(400);
+        } 
+        else {
+            res.status(500);
+        }
+        res.json(error);
+    }
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+// Update metrics
+app.put('/api/metrics', async (req, res)=>{
+    let connection = null;
+
+    try{
+        connection = await connectToDB();
+
+        const [results, fields] = await connection
+        .query('update valhalla.metrics set kills = ?, num_deaths = ?, wins = ? where metrics_id = ?',
+            [req.body['kills'], req.body['num_deaths'], req.body['wins'],
+            req.body['metrics_id']]);
+        
+        console.log(`${results.affectedRows} rows updated`);
+        res.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`});
+    }
+    catch(error)
+    {
+        res.status(500);
+        res.json(error);
+        console.log(error);
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+// Update game
+app.put('/api/game', async (req, res)=>{
+    let connection = null;
+
+    try{
+        connection = await connectToDB();
+
+        const [results, fields] = await connection
+        .query('update valhalla.games set game_id = ?, user_id = ?, level_id = ?, class_id = ? where user_id = ?',
+            [req.body['game_id'], req.body['user_id'], req.body['level_id'], req.body['class_id'],
+            req.body['user_id']]);
+        
+        console.log(`${results.affectedRows} rows updated`);
+        res.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`});
+    }
+    catch(error)
+    {
+        res.status(500);
+        res.json(error);
+        console.log(error);
+    }
+    finally
+    {
+        if(connection!==null) 
+        {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
 
 
 app.listen(port, () => {
