@@ -39,7 +39,7 @@ CREATE TABLE metrics (
 	metrics_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_id SMALLINT UNSIGNED NOT NULL,
     kills SMALLINT UNSIGNED NOT NULL DEFAULT 0,
-    deaths SMALLINT UNSIGNED NOT NULL DEFAULT 0,
+    num_deaths SMALLINT UNSIGNED NOT NULL DEFAULT 0,
     wins SMALLINT UNSIGNED NOT NULL DEFAULT 0,
     last_update TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     PRIMARY KEY (metrics_id),
@@ -53,6 +53,7 @@ CREATE TABLE metrics (
 --
 CREATE TABLE levels (
 	level_id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    level_num TINYINT UNSIGNED NOT NULL,
     -- In case the size of the number generated from the seed is large
     seed MEDIUMINT UNSIGNED NOT NULL,
     PRIMARY KEY (level_id)
@@ -77,9 +78,10 @@ CREATE TABLE games (
     user_id SMALLINT UNSIGNED NOT NULL,
     level_id TINYINT UNSIGNED NOT NULL,
     class_id TINYINT UNSIGNED NOT NULL,
-    enemy_stats_multiplier FLOAT NOT NULL DEFAULT 1,
     PRIMARY KEY (game_id),
     UNIQUE INDEX user_id (user_id ASC),
+    UNIQUE INDEX level_id (level_id ASC),
+    UNIQUE INDEX class_id (class_id ASC),
     CONSTRAINT fk_users_game FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT fk_levels_game FOREIGN KEY (level_id) REFERENCES levels (level_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT fk_classes_game FOREIGN KEY (class_id) REFERENCES classes (class_id) ON DELETE RESTRICT ON UPDATE CASCADE
@@ -98,6 +100,7 @@ CREATE TABLE stats (
     defense SMALLINT UNSIGNED NOT NULL,
     speed FLOAT NOT NULL,
     PRIMARY KEY (stats_id),
+    UNIQUE INDEX class_id (class_id ASC),
     CONSTRAINT fk_classes_stats FOREIGN KEY (class_id) REFERENCES classes (class_id) ON DELETE RESTRICT ON UPDATE CASCADE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
