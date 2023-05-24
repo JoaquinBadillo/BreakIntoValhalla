@@ -81,7 +81,7 @@ CREATE TABLE games (
     PRIMARY KEY (game_id),
     UNIQUE INDEX user_id (user_id ASC),
     UNIQUE INDEX level_id (level_id ASC),
-    UNIQUE INDEX class_id (class_id ASC),
+    INDEX class_id (class_id ASC),
     CONSTRAINT fk_users_game FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT fk_levels_game FOREIGN KEY (level_id) REFERENCES levels (level_id) ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT fk_classes_game FOREIGN KEY (class_id) REFERENCES classes (class_id) ON DELETE RESTRICT ON UPDATE CASCADE
