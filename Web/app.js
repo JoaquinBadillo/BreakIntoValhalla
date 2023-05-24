@@ -36,7 +36,7 @@ app.get('/', (req, res)=> {
 });
 
 // API
-app.get('/api/classes', async (request, response)=>{
+app.get('/api/classes', async (req, res)=>{
     let connection = null;
 
     try {
@@ -44,12 +44,12 @@ app.get('/api/classes', async (request, response)=>{
         const [results, fields] = await connection.execute('select * from classes');
 
         console.log(`${results.length} rows returned`);
-        response.json(results);
+        res.json(results);
     }
 
     catch(error) {
-        response.status(500);
-        response.json(error);
+        res.status(500);
+        res.json(error);
     }
 
     finally {
@@ -58,6 +58,138 @@ app.get('/api/classes', async (request, response)=>{
             console.log("Connection closed succesfully!");
         }
     }
+});
+
+
+
+// endpoint to get all users
+app.get('/api/users', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute('select * from valhalla.users');
+
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+
+});
+
+// endpoint to get user by id or username or email
+app.get('/api/users/:id', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute('select * from valhalla.users where user_id = ? or username = ? or email = ?', [req.params.id, req.params.id, req.params.id]);
+
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+
+// endpoint to insert a new user
+app.post('/api/users', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.query('insert into valhalla.users set username = ?, email = ?, password = ?', [req.body["username"], req.body["email"], req.body["password"]]);
+        console.log(`${results.affectedRows} rows inserted`);
+        res.json({'message': "User inserted correctly.", "id": results.insertId})
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+
+});
+
+
+// endpoint to update a user
+app.put('/api/users', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.query('update valhalla.users set username = ?, email = ?, password = ? where user_id = ?', [req.body["username"], req.body["email"], req.body["password"], req.body["user_id"]]);
+
+        console.log(`${results.affectedRows} rows updated`)
+        res.json({'message': `User data updated correctly: ${results.affectedRows} rows updated.`})
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+
+});
+
+// endpoint to delete a user by id or username or email
+app.delete('/api/users/:id', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const[results, fields] = await connection.query('delete from valhalla.users where user_id = ?', [req.body["user_id"]]);
+
+        console.log(`${results.affectedRows} rows updated`)
+        res.json({'message': `User deleted correctly: ${results.affectedRows} rows updated.`})
+    }
+
+    catch(error) {
+        res.status(500);
+        res.json(error);
+    }
+
+    finally {
+        if(connection !==null){
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+
 });
 
 
