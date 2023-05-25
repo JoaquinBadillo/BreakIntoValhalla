@@ -1,3 +1,12 @@
+/* 
+    Enemy Spawner
+
+    Given a prefab and a list of locations, it will 
+    instantiate the prefab at each location.
+
+    Joaquin Badillo 
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
