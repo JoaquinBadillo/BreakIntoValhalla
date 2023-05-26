@@ -34,6 +34,8 @@ public class DungeonGenerator : MonoBehaviour {
     // A counter to keep track of the room we are inserting
     private int roomCount;
 
+    [SerializeField] AstarPath path;
+
     void Start() {
         // Room number starts at -1 because the room is increased when inserting 
         roomCount = -1;
@@ -48,6 +50,7 @@ public class DungeonGenerator : MonoBehaviour {
 
         // Call the recursive function to insert rooms, starting with the base
         InsertRoom(gameObject, baseRoom);
+        path.Scan();
     }
 
     // Inserts room as a child of the reference, and checks if it should continue inserting
