@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 7533395636212230894}
   m_Layer: 3
   m_Name: Female-archer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,6 +186,7 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
+  attack: 20
 --- !u!1 &6741388741946219065
 GameObject:
   m_ObjectHideFlags: 0
