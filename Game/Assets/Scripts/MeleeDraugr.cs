@@ -35,6 +35,7 @@ public class MeleeDraugr : MonoBehaviour{
         currentHealth = maxHealth;
         animator.SetBool("isDead", false);
         GetComponent<AIPath>().enabled = false;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update(){
