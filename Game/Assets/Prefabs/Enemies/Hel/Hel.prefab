@@ -70,7 +70,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &8332767521309878598
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ SpriteRenderer:
   m_SortingLayerID: 1262265355
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1655982121, guid: 41aae74e4b5ede24b8b38fc6010b3873, type: 3}
+  m_Sprite: {fileID: 982594051, guid: 41aae74e4b5ede24b8b38fc6010b3873, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
