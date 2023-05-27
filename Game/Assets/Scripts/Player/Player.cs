@@ -8,6 +8,8 @@
         - Ranged Combat Mechanics ()
         - Take Damage (using methods called in enemy scripts)
         - Death (deactivating different components with GetComponent<>() method)
+        
+        - Set player stats from DB, contributed by Joaquin Badillo
 
     Pablo Bolio
 */
@@ -22,13 +24,37 @@ public class Player : Character{
     // Health Bar variables
     [SerializeField] TMP_Text hitpoints;
     public SliderMaster healthBar;
+    Stats stats;
 
     // Sets necessary parameters and gets necessary components
     void Start(){
-        attack = 20;
-        speed = 2f;
-        endLag = 1.5f;
-        maxHealth = 200;
+        stats = new Stats();
+        GetStats getStats = GetComponent<GetStats>();
+
+        // 1 is the class id for the archer class
+        getStats.setClassType("1"); 
+
+        try {
+            StartCoroutine(getStats.FetchStats((jsonString) => {
+            stats = JsonUtility.FromJson<Stats>(jsonString);
+                // Unpack results
+                maxHealth = stats.hp;
+                attack = stats.attack;
+                endLag = stats.attack_speed;
+                speed = stats.speed;
+                //defense = stats.defense;
+            }));
+        }
+        
+        catch (System.Exception) {
+            // If FetchStats fails, use some default values
+            Debug.Log("Make sure to start the server!");
+            attack = 20;
+            speed = 2f;
+            endLag = 1.5f;
+            maxHealth = 200;
+        }
+
         base.Initialize();
         healthBar.SetMaxHealth(maxHealth);
         hitpoints.text = currentHealth + "/" + maxHealth;
