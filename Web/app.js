@@ -39,19 +39,27 @@ app.get('/', (req, res)=> {
 /**
  * Get level by user_id
  */
-app.get('/api/users/levels', async (req, res)=>{
+app.get('/api/users/:id/levels', async (req, res)=>{
     let connection = null;
 
     try {
         connection = await connectToDB();
         const [results, fields] = await connection
             .execute('SELECT level_num, seed FROM valhalla.levels INNER JOIN games USING (level_id) WHERE user_id = ?', 
-                [req.body["user_id"]]);
-        res.json(results);
+                [req.params["id"]]);
+        
+        if (results.length === 0) 
+            throw new Error("User not found!");
+        
+        res.json(results[0]);
     }
 
     catch(error) {
-        res.status(500);
+        if (error.message === "User not found!")
+            res.status(404);
+        else 
+            res.status(500);
+        
         res.json(error);
     }
 
@@ -151,6 +159,40 @@ app.put('/api/classes', async (req, res)=>{
 });
 
 /**
+ * Get all the stats of a specific class through the URI
+ */
+app.get('/api/classes/:class_id/stats', async (req, res)=>{
+    let connection = null;
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection
+            .execute('SELECT * FROM valhalla.stats WHERE class_id = ?', 
+                [req.params["class_id"]]);
+        
+        if (results.length === 0) 
+            throw new Error("Class not found!");
+
+        res.json(results[0]);
+    }
+
+    catch(error) {
+        if (error.message === "Class not found!")
+            res.status(404);
+        else
+            res.status(500);
+        
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+/**
  * Get all the stats of a specific class
  */
 app.get('/api/classes/stats', async (req, res)=>{
@@ -194,7 +236,12 @@ app.put('/api/classes/stats', async (req, res)=>{
         connection = await connectToDB();
         const [results, fields] = await connection
             .query('UPDATE valhalla.stats SET hp = ?, attack = ?, attack_speed = ?, defense = ?, speed = ? WHERE class_id = ?', 
-                [req.body["hp"], req.body["attack"], req.body["attack_speed"], req.body["defense"], req.body["speed"], req.body["class_id"]]);
+                [req.body["hp"], 
+                req.body["attack"], 
+                req.body["attack_speed"], 
+                req.body["defense"], 
+                req.body["speed"], 
+                req.body["class_id"]]);
 
         res.json({'message': 'Data updated correctly!'});
     }
