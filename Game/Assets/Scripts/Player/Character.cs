@@ -13,7 +13,7 @@ public class Character : MonoBehaviour{
     public float meleeRange; // gizmo radius
     public LayerMask enemyLayers; // Layer that can be attacked by player
     public LayerMask playerLayers;
-    protected bool immune = false;
+    public int childIndex;
     // Stat variables
     // HP
     protected int maxHealth = 200;
@@ -25,7 +25,7 @@ public class Character : MonoBehaviour{
     protected float timeUntilNextAttack;
     // DEF
     // SPD
-    [SerializeField] protected float speed = 2f;
+    public float speed = 2f;
     
 
     protected void Initialize(){
