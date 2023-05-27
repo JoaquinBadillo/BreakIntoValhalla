@@ -15,6 +15,8 @@ public class MeleeDraugr : Character{
 
 
     void Start() {
+        endLag = 3f;
+        range = 1.3f;
         rigid2d = GetComponent<Rigidbody2D>();
         animator = this.gameObject.transform.GetChild(0).GetComponent<Animator>();
         animatorSlave = this.gameObject.transform.GetChild(0).GetComponent<MeleeDraugrSpriter>();
@@ -27,26 +29,15 @@ public class MeleeDraugr : Character{
     void Update() {
         animator.SetFloat("xSpeed", aiPath.desiredVelocity.x);
         animator.SetFloat("ySpeed", aiPath.desiredVelocity.y);
-        Walk();
         Attack();
-    }
-
-    void Walk() {
-        if (animator.GetFloat("xSpeed") > 0.01f){
-            meleeAttackPoint = this.gameObject.transform.GetChild(2);
-            meleeRange = 1f;
-        }
-
-        else if (animator.GetFloat("xSpeed") < -0.01f){
-            meleeAttackPoint = this.gameObject.transform.GetChild(1);
-            meleeRange = 1f;
-        }
     }
 
     void Attack() {
         if (Vector3.Distance(transform.position, player.transform.position) < range){
-            animator.SetTrigger("slash");
-            timeUntilNextAttack = Time.time + endLag;
+            if (Time.time >= timeUntilNextAttack){
+                animator.SetTrigger("slash");
+                timeUntilNextAttack = Time.time + endLag;
+            }
         }
     }
 
