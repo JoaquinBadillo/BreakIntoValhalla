@@ -44,7 +44,6 @@ public class Player : Character{
         // Sets the speed vectors for the animator parameters
         animator.SetFloat("xSpeed", movement.x);
         animator.SetFloat("ySpeed", movement.y);
-        Walk();
         if (Time.time >= timeUntilNextAttack)
             PrimaryAttack();
         SecondaryAttack();
@@ -58,40 +57,18 @@ public class Player : Character{
         rigid2d.MovePosition(rigid2d.position + movement * speed * Time.fixedDeltaTime);
     }
 
-    /*
-        This fucntion changes the melee attack reach by 
-        calling a different child object that acts as a 
-        point where a gizmo circle is drawn, said circle
-        acts as the attack range and changing its radius
-    */
-    void Walk(){
-        if (movement.x > 0){
-            meleeAttackPoint = this.gameObject.transform.GetChild(4);
-            meleeRange = 0.5f; 
-        }
-
-        else if (movement.x < 0){
-            meleeAttackPoint = this.gameObject.transform.GetChild(2);
-            meleeRange = 0.5f;
-        }
-
-        else if (movement.y > 0){
-            meleeAttackPoint = this.gameObject.transform.GetChild(1);
-            meleeRange = 0.35f;
-        }
-
-        else if (movement.y < 0){
-            meleeAttackPoint = this.gameObject.transform.GetChild(3);
-            meleeRange = 0.43f;
-        }
-    }
-
     // This function allows the player to attack on command
     void PrimaryAttack(){
         if (Input.GetKeyDown(KeyCode.P)){
             animator.SetTrigger("primaryAttack");
             timeUntilNextAttack = Time.time + endLag;
         }
+    }
+
+    void OnDrawGizmosSelected() {
+        if (meleeAttackPoint == null) 
+            return;
+        Gizmos.DrawWireSphere(meleeAttackPoint.position, meleeRange);
     }
 
     void SecondaryAttack(){
