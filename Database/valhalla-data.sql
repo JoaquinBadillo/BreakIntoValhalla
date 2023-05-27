@@ -63,9 +63,9 @@ COMMIT;
  
 SET AUTOCOMMIT=0; 
 INSERT INTO stats (`class_id`, `hp`, `attack`, `attack_speed`, `defense`, `speed`) VALUES
-(1, 100, 10, 1.0, 5, 15.0),
-(2, 200, 25, 1.5, 1, 20.0),
-(3, 100, 15, 1.0, 2, 10.0);
+(1, 200, 20, 3.0, 5, 5.0),
+(2, 250, 35, 2.5, 1, 9.0),
+(3, 200, 25, 3.0, 2, 4.0);
 COMMIT;
 
 SET AUTOCOMMIT=0;
