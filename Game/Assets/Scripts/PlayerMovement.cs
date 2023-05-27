@@ -39,9 +39,11 @@ public class PlayerMovement : MonoBehaviour{
     // DEF
     // SPD
     [SerializeField] float movement_speed = 2f;
+
+    private Stats stats;
     
     // Sets necessary parameters and gets necessary components
-    void Start(){
+    void Start() {
         rigid2d = GetComponent<Rigidbody2D>();
         animator = this.gameObject.transform.GetChild(0).GetComponent<Animator>();
 
