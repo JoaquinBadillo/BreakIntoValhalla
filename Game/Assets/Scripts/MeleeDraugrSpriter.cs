@@ -6,6 +6,7 @@ public class MeleeDraugrSpriter : MonoBehaviour
 {
     private MeleeDraugr master;
     private bool isAttacking;
+    private Collider2D hitPlayer;
     void Start() {  
         master = this.GetComponentInParent<MeleeDraugr>();
         isAttacking = false;
@@ -14,9 +15,18 @@ public class MeleeDraugrSpriter : MonoBehaviour
     void Update() {
         if (isAttacking) {
             // Detecting attack range
-            Collider2D hitPlayer = Physics2D.OverlapCircle(master.meleeAttackPoint.position, master.meleeRange, master.playerLayers);
+            if (master.meleeAttackPoint == null) 
+                hitPlayer = Physics2D.OverlapCircle(Vector2.zero, 0, master.playerLayers);
+            else
+                hitPlayer = Physics2D.OverlapCircle(master.meleeAttackPoint.position, master.meleeRange, master.playerLayers);
+            Debug.Log("This what we got");
             // Deal damage
-            hitPlayer.GetComponent<Player>().TakeDamage(master.attack);
+            if (hitPlayer == null) return;
+            if(hitPlayer.GetComponent<Player>() != null){
+                    Debug.Log("Lo logro señor");
+                    master.meleeAttackPoint = null;
+                    hitPlayer.GetComponent<Player>().TakeDamage(master.attack);
+                }
         }
     }
 
@@ -28,7 +38,24 @@ public class MeleeDraugrSpriter : MonoBehaviour
         isAttacking = false;
     }
 
+    // FIX death animation same as attack
+
     public bool endOfAnimation() {
         return true;
+    }
+
+    /*
+        these functions change the melee attack reach by 
+        calling a different child object that acts as a 
+        point where a gizmo circle is drawn, said circle
+        acts as the attack range and changing its radius
+    */
+    public void Right(){
+        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(2);
+        master.meleeRange = 1f;
+    }
+    public void Left(){
+        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(1);
+        master.meleeRange = 1f;
     }
 }
