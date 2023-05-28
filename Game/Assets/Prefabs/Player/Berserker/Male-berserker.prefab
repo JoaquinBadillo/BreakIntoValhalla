@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3400508258369042580}
   - component: {fileID: 3410505773198327722}
   - component: {fileID: 2639671169925922074}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Male-berserker
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 1146797510079466234}
   - component: {fileID: 1457806613014693000}
   - component: {fileID: 6463494610972582604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: male-berserker_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

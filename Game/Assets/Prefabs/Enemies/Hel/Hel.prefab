@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8332767520128435678}
   - component: {fileID: 2515022433395027366}
   - component: {fileID: 5035811493229523961}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hel
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 8332767521309878599}
   - component: {fileID: 8332767521309878597}
   - component: {fileID: 8332767521309878596}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spriter
   m_TagString: Untagged
   m_Icon: {fileID: 0}

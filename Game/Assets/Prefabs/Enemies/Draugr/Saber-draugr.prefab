@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6799095663273965131}
   m_Layer: 7
   m_Name: Saber-draugr
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
   playerLayers:
     serializedVersion: 2
     m_Bits: 8
+  childIndex: 0
   attack: 20
   endLag: 0
   speed: 2
