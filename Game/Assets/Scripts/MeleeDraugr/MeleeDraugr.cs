@@ -12,7 +12,7 @@ public class MeleeDraugr : Character{
     [SerializeField] float range;
     // Slave script for animator events
     private MeleeDraugrSpriter animatorSlave;
-
+    // Death check
 
     void Start() {
         endLag = 3f;
@@ -52,23 +52,18 @@ public class MeleeDraugr : Character{
         Debug.Log("Got hit, current health is now: " + currentHealth);
         if (currentHealth <= 0)
             Die();
+            
     }
 
     void Die() {
         animator.SetBool("isDead", true);
         Debug.Log("I died");
-        if (animatorSlave.endOfAnimation() == true)
-            this.gameObject.SetActive(false);
+        this.GetComponent<AIPath>().enabled = false;
+        this.GetComponent<AIDestinationSetter>().enabled = false;
+        this.GetComponent<Seeker>().enabled = false;
+        if (animatorSlave.death == true)
+            Destroy(gameObject);
         
-    }
-
-    void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player"))
-            GetComponent<AIPath>().enabled = true;
-    }
-
-    void OnTriggerExit2D(Collider2D other) {
-        if (other.CompareTag("Player"))
-            GetComponent<AIPath>().enabled = false;
+        
     }
 }
