@@ -15,13 +15,11 @@ public class MeleeDraugr : Character{
     // Death check
 
     void Start() {
+        maxHealth = 200;
         endLag = 3f;
         range = 1.3f;
-        rigid2d = GetComponent<Rigidbody2D>();
-        animator = this.gameObject.transform.GetChild(0).GetComponent<Animator>();
+        base.Initialize();
         animatorSlave = this.gameObject.transform.GetChild(0).GetComponent<MeleeDraugrSpriter>();
-        currentHealth = maxHealth;
-        animator.SetBool("isDead", false);
         GetComponent<AIPath>().enabled = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
