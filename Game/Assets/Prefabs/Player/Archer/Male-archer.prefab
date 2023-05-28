@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7103374161676554517}
   - component: {fileID: 7103374161676554514}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Male-archer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 7103374162210679880}
   - component: {fileID: 7103374162210679926}
   - component: {fileID: 7103374162210679881}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spriter
   m_TagString: Untagged
   m_Icon: {fileID: 0}

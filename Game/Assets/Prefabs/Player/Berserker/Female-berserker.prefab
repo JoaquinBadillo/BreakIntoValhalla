@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6605626833431034072}
   - component: {fileID: 4929882490899577309}
   - component: {fileID: 8494485328369900560}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Female-berserker
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 4561907159098905089}
   - component: {fileID: 7385379565465033374}
   - component: {fileID: 2036396290524746992}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spriter
   m_TagString: Untagged
   m_Icon: {fileID: 0}

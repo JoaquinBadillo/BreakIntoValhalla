@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4377996923285953462}
   - component: {fileID: 6028190119338513307}
   - component: {fileID: 4569507522375004497}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spriter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,9 +117,9 @@ GameObject:
   - component: {fileID: 1092339117688538691}
   - component: {fileID: 1574141281549724397}
   - component: {fileID: 2140508652378270351}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bow-draugr
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
