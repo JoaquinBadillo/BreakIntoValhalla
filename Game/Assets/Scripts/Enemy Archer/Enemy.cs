@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     private float timeBtwShots; // time between shots
     [SerializeField] float startTimeBtwShots; // time between shots at the start of the game
     [SerializeField] GameObject projectile; // reference to the projectile
-    [SerializeField] Transform player; // reference to the player
+    private Transform player; // reference to the player
 
     void Start()
     {
