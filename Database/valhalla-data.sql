@@ -21,14 +21,14 @@ INSERT INTO users (`username`, `email`, `password`) VALUES
 COMMIT;
 
 SET AUTOCOMMIT=0;
-INSERT INTO metrics (`user_id`, `kills`, `num_deaths`, `wins`) VALUES
-(1, 100, 5, 2),
-(2, 50, 10, 0),
-(3, 200, 2, 5),
-(4, 20, 20, 0),
-(5, 150, 5, 3),
-(6, 50, 15, 0),
-(7, 1000, 0, 100);
+INSERT INTO metrics (`user_id`, `kills`, `wins`) VALUES
+(1, 100, 2),
+(2, 50, 0),
+(3, 200, 5),
+(4, 20, 0),
+(5, 150, 3),
+(6, 50, 0),
+(7, 1000, 100);
 COMMIT;
 
 SET AUTOCOMMIT=0;
@@ -62,10 +62,10 @@ COMMIT;
 
  
 SET AUTOCOMMIT=0; 
-INSERT INTO stats (`class_id`, `hp`, `attack`, `attack_speed`, `defense`, `speed`) VALUES
-(1, 200, 20, 3.0, 5, 5.0),
-(2, 250, 35, 2.5, 1, 9.0),
-(3, 200, 25, 3.0, 2, 4.0);
+INSERT INTO stats (`class_id`, `hp`, `primary_attack`, `secondary_attack`, `primary_lag`, `secondary_lag`, `defense`, `speed`) VALUES
+(1, 200, 20, 15, 1.5, 3.0, 5, 2),
+(2, 250, 30, 40, 1.5, 2.0, 2, 3),
+(3, 150, 15, 35, 1.5, 3.0, 4, 2);
 COMMIT;
 
 SET AUTOCOMMIT=0;
