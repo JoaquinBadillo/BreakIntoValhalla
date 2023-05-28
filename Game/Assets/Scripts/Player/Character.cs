@@ -19,10 +19,13 @@ public class Character : MonoBehaviour{
     protected int maxHealth = 200;
     protected int currentHealth;
     // ATK
-    public int attack = 20; // PENDING protected variable
+    public int attack = 20;
+    public int secondaryAttack = 20;
     // ATKSPD
-    [SerializeField] protected float endLag; // Seconds before next attack can be executed
-    protected float timeUntilNextAttack;
+    public float endLag; // Seconds before next attack can be executed
+    public float secondaryEndLag; // Seconds before next attack can be executed
+    public float timeUntilNextAttack;
+    public float timeUntilNextShot;
     // DEF
     // SPD
     public float speed = 2f;

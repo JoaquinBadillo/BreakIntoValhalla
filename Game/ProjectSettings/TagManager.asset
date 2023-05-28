@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Arrow
+  - Chaser
+  - Walls
   layers:
   - Default
   - TransparentFX
@@ -14,8 +18,8 @@ TagManager:
   - Ground
   - Enemy
   - Walls
-  - 
-  - 
+  - Arrows
+  - Chaser
   - 
   - 
   - 

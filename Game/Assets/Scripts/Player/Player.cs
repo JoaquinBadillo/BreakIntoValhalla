@@ -25,6 +25,8 @@ public class Player : Character {
     [SerializeField] TMP_Text hitpoints;
     public SliderMaster healthBar;
     Stats stats;
+    //
+    private PlayerAttack animatorSlave;
 
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -54,7 +56,8 @@ public class Player : Character {
             endLag = 1.5f;
             maxHealth = 200;
         }
-
+        secondaryEndLag = 1.5f;
+        animatorSlave = GetComponentInChildren<PlayerAttack>();
         base.Initialize();
         healthBar.SetMaxHealth(maxHealth);
         hitpoints.text = currentHealth + "/" + maxHealth;
@@ -72,7 +75,8 @@ public class Player : Character {
         animator.SetFloat("ySpeed", movement.y);
         if (Time.time >= timeUntilNextAttack)
             PrimaryAttack();
-        SecondaryAttack();
+        if (Time.time >= timeUntilNextShot)
+            SecondaryAttack();
     }
 
     /*
@@ -88,6 +92,7 @@ public class Player : Character {
         if (Input.GetKeyDown(KeyCode.P)) {
             animator.SetTrigger("primaryAttack");
             timeUntilNextAttack = Time.time + endLag;
+            //if (animatorSlave.isAttacking == false)
         }
     }
 
@@ -98,9 +103,13 @@ public class Player : Character {
     }
 
     void SecondaryAttack() {
-        if (Input.GetKeyDown(KeyCode.L)) {
+        if (Input.GetKeyDown(KeyCode.L)) 
             animator.SetTrigger("secondaryAttack");
-        }
+            timeUntilNextAttack = Time.time + endLag;
+            // if (animatorSlave.canAttack == false){
+                
+            //     animatorSlave.canAttack = true;
+            // }
     }
 
     public void TakeDamage(int damage) {
