@@ -6,10 +6,12 @@ public class MeleeDraugrSpriter : MonoBehaviour
 {
     private MeleeDraugr master;
     private bool isAttacking;
+    public bool death;
     private Collider2D hitPlayer;
     void Start() {  
         master = this.GetComponentInParent<MeleeDraugr>();
         isAttacking = false;
+        death = false;
     }
 
     void Update() {
@@ -40,8 +42,8 @@ public class MeleeDraugrSpriter : MonoBehaviour
 
     // FIX death animation same as attack
 
-    public bool endOfAnimation() {
-        return true;
+    public void endOfAnimation() {
+        death = true;
     }
 
     /*

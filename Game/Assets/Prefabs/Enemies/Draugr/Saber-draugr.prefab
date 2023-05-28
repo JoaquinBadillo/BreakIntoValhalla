@@ -1,5 +1,66 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3188146940165349060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5055332035359830257}
+  - component: {fileID: 8607589471517953303}
+  - component: {fileID: 3221477046666434343}
+  m_Layer: 10
+  m_Name: Chase-trigger
+  m_TagString: Chaser
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5055332035359830257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188146940165349060}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6799095663273965122}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8607589471517953303
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188146940165349060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 5.5
+--- !u!114 &3221477046666434343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3188146940165349060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db25e9948cd68c44e97e96916b161c07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6799095663273965130
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,7 +71,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6799095663273965122}
   - component: {fileID: 6799095663273965125}
-  - component: {fileID: 6799095663273965124}
   - component: {fileID: 6799095663273965127}
   - component: {fileID: 6799095663273965126}
   - component: {fileID: 6799095663273965129}
@@ -38,6 +98,7 @@ Transform:
   - {fileID: 6799095665200022144}
   - {fileID: 6799095663919322278}
   - {fileID: 6799095665178354801}
+  - {fileID: 5055332035359830257}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57,22 +118,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.00012779236, y: 0.021734118}
   m_Size: {x: 1.0107026, y: 1.5223844}
   m_Direction: 0
---- !u!58 &6799095663273965124
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6799095663273965130}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 5.5
 --- !u!50 &6799095663273965127
 Rigidbody2D:
   serializedVersion: 4
@@ -200,7 +245,11 @@ MonoBehaviour:
     m_Bits: 8
   childIndex: 0
   attack: 20
+  secondaryAttack: 20
   endLag: 0
+  secondaryEndLag: 0
+  timeUntilNextAttack: 0
+  timeUntilNextShot: 0
   speed: 2
   aiPath: {fileID: 6799095663273965126}
   player: {fileID: 0}
@@ -386,3 +435,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8243e337fcad604f8efec29eac78743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  death: 0
