@@ -35,5 +35,6 @@ public class Character : MonoBehaviour{
         rigid2d = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         currentHealth = maxHealth;
+        animator.SetBool("isDead", false);
     }
 }
