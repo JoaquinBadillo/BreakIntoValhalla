@@ -234,14 +234,25 @@ app.put('/api/classes/stats', async (req, res)=>{
 
     try {
         connection = await connectToDB();
-        const [results, fields] = await connection
-            .query('UPDATE valhalla.stats SET hp = ?, attack = ?, attack_speed = ?, defense = ?, speed = ? WHERE class_id = ?', 
-                [req.body["hp"], 
-                req.body["attack"], 
-                req.body["attack_speed"], 
-                req.body["defense"], 
-                req.body["speed"], 
-                req.body["class_id"]]);
+        const [results, fields] = await connection.query(
+            "UPDATE valhalla.stats SET " +
+             "hp = ?, " +
+             "primary_attack = ?, " + 
+             "secondary_attack = ?, " +
+             "primary_lag = ?, " +
+             "secondary_lag = ?, " +
+             "defense = ?, " +
+             "speed = ? " +
+            "WHERE class_id = ?", 
+            [req.body["hp"],
+             req.body["primary_attack"], 
+             req.body["secondary_attack"],
+             req.body["primary_lag"],
+             req.body["secondary_lag"],
+             req.body["defense"], 
+             req.body["speed"], 
+             req.body["class_id"]]
+        );
 
         res.json({'message': 'Data updated correctly!'});
     }
@@ -259,14 +270,23 @@ app.put('/api/classes/stats', async (req, res)=>{
     }
 });
 
+
 /**
  * Uncoupled API endpoint to update a specific stat for a particular class
  * -- This endpoint is not meant to be used on Unity --
  * It is designed to facilitate the release of patches
  */ 
-app.put('/api/classes/stats/:stat', async (req, res)=>{
+app.put('/api/classes/:class_id/stats/:stat', async (req, res)=>{
     let connection = null;
-    const validStats = new Set(["hp", "attack", "attack_speed", "defense", "speed"]);
+    const validStats = new Set(
+        ["hp",
+         "primary_attack",
+         "secondary_attack",
+         "primary_lag",
+         "secondary_lag",
+         "defense",
+         "speed"]
+    );
 
     try {
         // Safety Check
@@ -275,8 +295,8 @@ app.put('/api/classes/stats/:stat', async (req, res)=>{
         connection = await connectToDB();
         const [results, fields] = await connection
             .query(`UPDATE valhalla.stats SET ${req.params.stat} = ? WHERE class_id = ?`, 
-                [req.body["value"], req.body["class_id"]]);
-
+                [req.body["value"], req.params["class_id"]]);
+        
         res.json({'message': 'Stat updated correctly!'});
     }
 
@@ -387,9 +407,8 @@ app.put('/api/metrics', async (req, res)=>{
         connection = await connectToDB();
 
         const [results, fields] = await connection
-        .query('update valhalla.metrics set kills = ?, num_deaths = ?, wins = ? where metrics_id = ?',
-            [req.body['kills'], req.body['num_deaths'], req.body['wins'],
-            req.body['metrics_id']]);
+        .query('update valhalla.metrics set kills = ?, wins = ? where user_id = ?',
+            [req.body['kills'], req.body['wins'], req.body['user_id']]);
         
         console.log(`${results.affectedRows} rows updated`);
         res.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`});
@@ -414,7 +433,7 @@ app.put('/api/metrics', async (req, res)=>{
 app.put('/api/game', async (req, res)=>{
     let connection = null;
 
-    try{
+    try {
         connection = await connectToDB();
 
         const [results, fields] = await connection
@@ -425,14 +444,14 @@ app.put('/api/game', async (req, res)=>{
         console.log(`${results.affectedRows} rows updated`);
         res.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`});
     }
-    catch(error)
-    {
+
+    catch(error) {
         res.status(500);
         res.json(error);
         console.log(error);
     }
-    finally
-    {
+
+    finally {
         if(connection!==null) 
         {
             connection.end();
