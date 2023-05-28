@@ -20,14 +20,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Player : Character{
+public class Player : Character {
     // Health Bar variables
     [SerializeField] TMP_Text hitpoints;
     public SliderMaster healthBar;
     Stats stats;
 
     // Sets necessary parameters and gets necessary components
-    void Start(){
+    void Start() {
         stats = new Stats();
         GetStats getStats = GetComponent<GetStats>();
 
@@ -61,7 +61,7 @@ public class Player : Character{
     }
 
     // Function that is called each frame
-    void Update(){
+    void Update() {
         // Checking for WASD or arrow key inputs
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -84,8 +84,8 @@ public class Player : Character{
     }
 
     // This function allows the player to attack on command
-    void PrimaryAttack(){
-        if (Input.GetKeyDown(KeyCode.P)){
+    void PrimaryAttack() {
+        if (Input.GetKeyDown(KeyCode.P)) {
             animator.SetTrigger("primaryAttack");
             timeUntilNextAttack = Time.time + endLag;
         }
@@ -97,27 +97,31 @@ public class Player : Character{
         Gizmos.DrawWireSphere(meleeAttackPoint.position, meleeRange);
     }
 
-    void SecondaryAttack(){
-        if (Input.GetKeyDown(KeyCode.L)){
+    void SecondaryAttack() {
+        if (Input.GetKeyDown(KeyCode.L)) {
             animator.SetTrigger("secondaryAttack");
         }
     }
 
-    public void TakeDamage(int damage){
+    public void TakeDamage(int damage) {
         Debug.Log("AAAAGH i've been hit");
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
         hitpoints.text = currentHealth + "/" + maxHealth;
+
+        if (currentHealth <= 0) {
+            Die();
+        }
     }
 
-    void Die(){
+    void Die() {
         animator.SetBool("isDead", true);
         Debug.Log("I died");
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
     }
 
-    public int GetMaxHealth(){
+    public int GetMaxHealth() {
         return maxHealth;
     }
 }
