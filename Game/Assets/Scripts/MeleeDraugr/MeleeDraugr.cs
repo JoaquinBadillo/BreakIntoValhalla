@@ -31,7 +31,7 @@ public class MeleeDraugr : Character{
         Attack();
     }
 
-    void Attack() {
+    public void Attack() {
         if (Vector3.Distance(transform.position, player.transform.position) < range){
             if (Time.time >= timeUntilNextAttack){
                 animator.SetTrigger("slash");

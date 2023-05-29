@@ -138,4 +138,17 @@ public class Player : Character {
     public int GetMaxHealth() {
         return maxHealth;
     }
+
+    public void UpgradeAttack() {
+        attack += 2;
+    }
+
+    public void UpgradeHealth() {
+        maxHealth += 20;
+        currentHealth += 20;
+    }
+
+    public void UpgradeSpeed() {
+        speed += 0.2f;
+    }
 }
