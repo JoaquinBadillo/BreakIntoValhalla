@@ -14,19 +14,17 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 public class Stats {
-    // Stat id
-    public int stats_id;
-    // Class id
-    public int class_id;
     // HP
     public int hp;
-    // ATK
-    public int attack;
-    // ATKSPD
-    public float attack_speed;
-    // DEF
+    // Attack Damage for each weapon
+    public int primary_attack;
+    public int secondary_attack;
+    // Attack Speed for each weapon
+    public float primary_lag;
+    public float secondary_lag;
+    // Defense
     public int defense;
-    // SPD
+    // Movement Speed
     public float speed;
 }
 

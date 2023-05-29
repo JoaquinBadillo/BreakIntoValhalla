@@ -41,22 +41,26 @@ public class Player : Character {
             stats = JsonUtility.FromJson<Stats>(jsonString);
                 // Unpack results
                 maxHealth = stats.hp;
-                attack = stats.attack;
-                endLag = stats.attack_speed;
+                attack = stats.primary_attack;
+                secondaryAttack = stats.secondary_attack;
+                endLag = stats.primary_lag;
+                secondaryEndLag = stats.secondary_lag;
+                //defense = stats.defense; Not implemented yet
                 speed = stats.speed;
-                //defense = stats.defense;
             }));
         }
         
         catch (System.Exception) {
             // If FetchStats fails, use some default values
             Debug.Log("Make sure to start the server!");
-            attack = 20;
-            speed = 2f;
-            endLag = 1.5f;
             maxHealth = 200;
+            attack = 20;
+            secondaryAttack = 15;
+            endLag = 1.5f;
+            secondaryEndLag = 1.5f;
+            speed = 2f;
         }
-        secondaryEndLag = 1.5f;
+
         animatorSlave = GetComponentInChildren<PlayerAttack>();
         base.Initialize();
         healthBar.SetMaxHealth(maxHealth);
@@ -103,9 +107,10 @@ public class Player : Character {
     }
 
     void SecondaryAttack() {
-        if (Input.GetKeyDown(KeyCode.L)) 
+        if (Input.GetKeyDown(KeyCode.L)) {
             animator.SetTrigger("secondaryAttack");
-            timeUntilNextAttack = Time.time + endLag;
+            timeUntilNextShot = Time.time + secondaryEndLag;
+        }
             // if (animatorSlave.canAttack == false){
                 
             //     animatorSlave.canAttack = true;
