@@ -12,7 +12,8 @@ public class MeleeDraugr : Character{
     [SerializeField] float range;
     // Slave script for animator events
     private MeleeDraugrSpriter animatorSlave;
-    // Death check
+    // attack check
+    public bool withinReach;
 
     void Start() {
         maxHealth = 200;
