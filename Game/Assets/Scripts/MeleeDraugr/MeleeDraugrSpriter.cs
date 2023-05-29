@@ -21,7 +21,6 @@ public class MeleeDraugrSpriter : MonoBehaviour
                 hitPlayer = Physics2D.OverlapCircle(Vector2.zero, 0, master.playerLayers);
             else
                 hitPlayer = Physics2D.OverlapCircle(master.meleeAttackPoint.position, master.meleeRange, master.playerLayers);
-            Debug.Log("This what we got");
             // Deal damage
             if (hitPlayer == null) return;
             if(hitPlayer.GetComponent<Player>() != null){
@@ -59,5 +58,9 @@ public class MeleeDraugrSpriter : MonoBehaviour
     public void Left(){
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(1);
         master.meleeRange = 1f;
+    }
+
+    void OnTriggerStay2D(Collider2D other) {
+        this.GetComponentInParent<MeleeDraugr>().Attack();
     }
 }

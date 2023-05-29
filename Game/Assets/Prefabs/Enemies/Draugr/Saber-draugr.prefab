@@ -235,8 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4913df07211a0854b88fb0324ab611c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeAttackPoint: {fileID: 0}
-  meleeRange: 0
+  meleeAttackPoint: {fileID: 6799095663919322278}
+  meleeRange: 1
   enemyLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -264,7 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6799095663919322278}
   m_Layer: 3
-  m_Name: Hitbox-left
+  m_Name: Melee-left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -295,7 +295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6799095665178354801}
   m_Layer: 3
-  m_Name: Hitbox-right
+  m_Name: Melee-right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -325,6 +325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6799095665200022144}
+  - component: {fileID: 6472873509812722990}
   - component: {fileID: 6799095665200022206}
   - component: {fileID: 6799095665200022145}
   - component: {fileID: 8402942731796984246}
@@ -350,6 +351,22 @@ Transform:
   m_Father: {fileID: 6799095663273965122}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &6472873509812722990
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6799095665200022147}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015555496, y: 0.05210734}
+  m_Size: {x: 3.37868, y: 1.9918058}
+  m_Direction: 1
 --- !u!212 &6799095665200022206
 SpriteRenderer:
   m_ObjectHideFlags: 0
