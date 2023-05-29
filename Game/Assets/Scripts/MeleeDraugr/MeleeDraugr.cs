@@ -12,8 +12,8 @@ public class MeleeDraugr : Character{
     [SerializeField] float range;
     // Slave script for animator events
     private MeleeDraugrSpriter animatorSlave;
-    // attack check
-    public bool withinReach;
+    // distance between enemy and player
+    private float reach = 8;
 
     void Start() {
         maxHealth = 200;
@@ -28,15 +28,14 @@ public class MeleeDraugr : Character{
     void Update() {
         animator.SetFloat("xSpeed", aiPath.desiredVelocity.x);
         animator.SetFloat("ySpeed", aiPath.desiredVelocity.y);
-        Attack();
+        ICanSmellYou();
     }
 
     public void Attack() {
-        if (Vector3.Distance(transform.position, player.transform.position) < range){
-            if (Time.time >= timeUntilNextAttack){
-                animator.SetTrigger("slash");
-                timeUntilNextAttack = Time.time + endLag;
-            }
+        if (Time.time >= timeUntilNextAttack){
+            aiPath.enabled = false;
+            animator.SetTrigger("slash");
+            timeUntilNextAttack = Time.time + endLag;
         }
     }
 
@@ -61,8 +60,20 @@ public class MeleeDraugr : Character{
         this.GetComponent<AIDestinationSetter>().enabled = false;
         this.GetComponent<Seeker>().enabled = false;
         if (animatorSlave.death == true)
-            Destroy(gameObject);
-        
-        
+            Destroy(gameObject); 
+    }
+    /*
+        This function calculates the distance between 
+        the enemy and the player
+    */
+    bool WithinReach(Vector2 me, Vector2 player){ 
+        return (Mathf.Pow((player.x - me.x), 2) + Mathf.Pow((player.y - me.y), 2)) <= reach * reach;
+    }
+
+    void ICanSmellYou(){
+        if (WithinReach(transform.position, player.transform.position))
+            aiPath.enabled = true;
+        else
+            aiPath.enabled = false;
     }
 }

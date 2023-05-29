@@ -37,6 +37,7 @@ public class MeleeDraugrSpriter : MonoBehaviour
 
     public void endAttack() {
         isAttacking = false;
+        master.aiPath.enabled = true;
     }
 
     // FIX death animation same as attack
@@ -61,6 +62,7 @@ public class MeleeDraugrSpriter : MonoBehaviour
     }
 
     void OnTriggerStay2D(Collider2D other) {
-        this.GetComponentInParent<MeleeDraugr>().Attack();
+        if (other.CompareTag("Player"))
+            master.Attack();
     }
 }
