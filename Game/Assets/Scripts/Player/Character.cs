@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Character : MonoBehaviour{
     // Unity Objects
-    protected Animator animator; // Unity Object that allows script to change animation states
+    public Animator animator; // Unity Object that allows script to change animation states
     protected Rigidbody2D rigid2d; // Unity Object that makes it compatible with physics
     // Physics
     protected Vector2 movement;
