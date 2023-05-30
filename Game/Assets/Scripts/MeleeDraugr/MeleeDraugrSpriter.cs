@@ -55,10 +55,14 @@ public class MeleeDraugrSpriter : MonoBehaviour
     public void Right(){
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(2);
         master.meleeRange = 1f;
+        master.animator.SetBool("lastRight", true);
+        master.animator.SetBool("lastLeft", false);
     }
     public void Left(){
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(1);
         master.meleeRange = 1f;
+        master.animator.SetBool("lastLeft", true);
+        master.animator.SetBool("lastRight", false);
     }
 
     void OnTriggerStay2D(Collider2D other) {
