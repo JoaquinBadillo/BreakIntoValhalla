@@ -16,6 +16,11 @@ public class PlayerAttack : MonoBehaviour {
     private Vector3 facing;
     private bool throwable;
 
+
+     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
+
+    private Coroutine regen;
+
     void Start() {
         master = this.GetComponentInParent<Player>();
         isAttacking = false;
@@ -67,6 +72,7 @@ public class PlayerAttack : MonoBehaviour {
         isShooting = false;
         throwable = true;
         hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.enemyLayers);
+        UseStamina(master.amount);
     }
 
     /*
@@ -111,6 +117,35 @@ public class PlayerAttack : MonoBehaviour {
         facing.y = -1;
         shootPoint = this.gameObject.transform.parent.GetChild(7);
         shootPoint.rotation = Quaternion.Euler(0, 0, direction);
+    }
+
+    public void UseStamina(int amount)
+    {
+        if(master.currentStamina - amount >= 0)
+        {
+            master.currentStamina -= amount;
+
+            if(regen != null)
+            {
+                StopCoroutine(regen);
+            }
+            regen = StartCoroutine(RegenStamina());
+        }
+        else
+        {
+            Debug.Log("Not enough stamina");
+        }
+    }
+    
+    private IEnumerator RegenStamina()
+    {
+        yield return new WaitForSeconds(2f);
+        while(master.currentStamina < master.maxStamina)
+        {
+            master.currentStamina += master.maxStamina / 100; 
+            yield return regenTick;
+        }
+        regen = null; // reset regen
     }
 }
 
