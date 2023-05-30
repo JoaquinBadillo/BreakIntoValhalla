@@ -28,4 +28,7 @@ public class LoginScreen : MonoBehaviour {
             Debug.Log("Gotta love the return key");
         }
     }
+
+    // Invalid Credentials, please
+    // try again or register
 }
