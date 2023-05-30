@@ -27,7 +27,9 @@ public class Player : Character {
     Stats stats;
     //
     private PlayerAttack animatorSlave;
-
+    // Stamina cost
+    public int amount = 20;
+   
     // Sets necessary parameters and gets necessary components
     void Start() {
         stats = new Stats();
@@ -79,7 +81,7 @@ public class Player : Character {
         animator.SetFloat("ySpeed", movement.y);
         if (Time.time >= timeUntilNextAttack)
             PrimaryAttack();
-        if (Time.time >= timeUntilNextShot)
+        if (Time.time >= timeUntilNextShot && currentStamina - amount >= 0)
             SecondaryAttack();
     }
 

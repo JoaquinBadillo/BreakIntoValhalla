@@ -28,13 +28,18 @@ public class Character : MonoBehaviour{
     public float timeUntilNextShot;
     // DEF
     // SPD
+
     public float speed = 2f;
     
+    //Stamina
+    public int maxStamina = 100;
+    public int currentStamina;
 
     protected void Initialize(){
         rigid2d = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         currentHealth = maxHealth;
+        currentStamina = maxStamina;
         animator.SetBool("isDead", false);
     }
 }
