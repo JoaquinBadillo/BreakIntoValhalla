@@ -9,7 +9,7 @@ import mysql from 'mysql2/promise'
 import fs from 'fs'
 
 const app = express();
-const port = 5000;
+const port = process.env.DB_PORT;
 
 app.use(express.json());
 app.use(express.static('./public'));
@@ -36,6 +36,36 @@ app.get('/', (req, res)=> {
 });
 
 // API
+
+/**
+ * Endpoint to initialize player data and tables
+ */
+app.post("/api/users", async (req, res) => {
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.query(
+            "CALL init_user(?, ?, ?);", 
+            [req.body["username"], 
+             req.body["email"],
+             req.body["password"]
+            ]);
+
+        res.json({'message': "User initialized."})
+    }
+
+    catch(error) {
+        if (error.message === "User already exists") {
+            res.status(400);
+            res.json(error); 
+        }
+
+        res.status(500);
+        res.json(error); 
+    }
+});
+
 /**
  * Get level by user_id
  */
@@ -44,18 +74,22 @@ app.get('/api/users/:id/levels', async (req, res)=>{
 
     try {
         connection = await connectToDB();
-        const [results, fields] = await connection
-            .execute('SELECT level_num, seed FROM valhalla.levels INNER JOIN games USING (level_id) WHERE user_id = ?', 
+        const [results, fields] = await connection.execute(
+            'SELECT level_num, seed ' +
+            'FROM valhalla.levels ' +
+            'INNER JOIN games USING (level_id) ' +
+            'INNER JOIN users USING (game_id) ' +
+            'WHERE user_id = ?', 
                 [req.params["id"]]);
         
         if (results.length === 0) 
-            throw new Error("User not found!");
+            throw new Error("Level not found!");
         
         res.json(results[0]);
     }
 
     catch(error) {
-        if (error.message === "User not found!")
+        if (error.message === "Level not found!")
             res.status(404);
         else 
             res.status(500);
@@ -78,9 +112,17 @@ app.put('/api/users/levels', async (req, res)=>{
 
     try {
         connection = await connectToDB();
-        const [results, fields] = await connection
-            .execute('UPDATE valhalla.levels INNER JOIN games USING (level_id) SET level_num = ?, seed = ? WHERE user_id = ?', 
-                [req.body["level_num"], req.body["seed"], req.body["user_id"]]);
+        const [results, fields] = await connection.execute(
+            'UPDATE valhalla.levels ' + 
+            'INNER JOIN games USING (level_id) ' +
+            'INNER JOIN users USING (user_id) ' +
+            'SET level_num = ?, seed = ? ' +
+            'WHERE user_id = ?', 
+                [req.body["level_num"], 
+                 req.body["seed"], 
+                 req.body["user_id"]
+                ]);
+
         res.json({'message': 'Seed updated correctly!'});
     }
 
@@ -105,7 +147,6 @@ app.get('/api/classes', async (req, res)=>{
     try {
         connection = await connectToDB();
         if (req?.body?.class_id !== undefined) {
-            console.log("yes");
             const [results, fields] = await connection
                 .execute('SELECT * FROM valhalla.classes WHERE class_id = ?', 
                     [req.body["class_id"]]); 
@@ -168,6 +209,43 @@ app.get('/api/classes/:class_id/stats', async (req, res)=>{
         const [results, fields] = await connection
             .execute('SELECT * FROM valhalla.stats WHERE class_id = ?', 
                 [req.params["class_id"]]);
+        
+        if (results.length === 0) 
+            throw new Error("Class not found!");
+
+        res.json(results[0]);
+    }
+
+    catch(error) {
+        if (error.message === "Class not found!")
+            res.status(404);
+        else
+            res.status(500);
+        
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+/**
+ * Get all the stats of a specific class through the character id
+ */
+app.get('/api/characters/:character_id/stats', async (req, res)=>{
+    let connection = null;
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute(
+            'SELECT * FROM valhalla.stats ' +
+            'INNER JOIN valhalla.classes USING (class_id) ' +
+            'INNER JOIN valhalla.characters USING (class_id) ' +
+            'WHERE character_id = ?', 
+                [req.params["character_id"]]);
         
         if (results.length === 0) 
             throw new Error("Class not found!");
@@ -293,8 +371,11 @@ app.put('/api/classes/:class_id/stats/:stat', async (req, res)=>{
         if(!validStats.has(req.params.stat)) throw new Error("Invalid stat!");
 
         connection = await connectToDB();
-        const [results, fields] = await connection
-            .query(`UPDATE valhalla.stats SET ${req.params.stat} = ? WHERE class_id = ?`, 
+        const [results, fields] = await connection.query(
+            `UPDATE valhalla.stats ` +
+            'INNER JOIN valhalla.classes USING (stats_id) ' +
+            `SET ${req.params["stat"]} = ? ` +
+            'WHERE class_id = ?',
                 [req.body["value"], req.params["class_id"]]);
         
         res.json({'message': 'Stat updated correctly!'});
@@ -349,8 +430,10 @@ app.get('/api/users/metrics', async (req, res)=>{
     try {
         connection = await connectToDB();
 
-        const [results, fields] = await connection
-        .execute('select * from valhalla.metrics where user_id = ?', 
+        const [results, fields] = await connection.execute(
+            'SELECT kills, wins FROM valhalla.metrics ' + 
+            'INNER JOIN valhalla.users USING (metrics_id) ' +
+            'WHERE user_id = ?',
             [req.body["user_id"]]);
 
         console.log(`${results.length} rows returned`);
@@ -370,14 +453,15 @@ app.get('/api/users/metrics', async (req, res)=>{
 });
 
 // View leaderboard
-app.get('/api/metrics/leaderboards', async (req, res)=>{
+app.get('/api/metrics/leaderboards/:type', async (req, res)=>{
     let connection = null;
     const validLeaderboards = new Set(["top_kills", "top_weekly_elims"])
 
     try {
-        if (!validLeaderboards.has(req.body["type"])) throw new Error("Invalid Leaderboard!")
+        if (!validLeaderboards.has(req.params["type"])) throw new Error("Invalid Leaderboard!")
         connection = await connectToDB();
-        const [results, fields] = await connection.execute(`select * from valhalla.${req.body["type"]}`);
+        const [results, fields] = await connection.execute(
+            `SELECT * FROM valhalla.${req.params["type"]}`);
         console.log(`${results.length} rows returned`);
         res.json(results);
     } 
@@ -466,7 +550,7 @@ app.get('/api/users', async (req, res)=>{
 
     try {
         connection = await connectToDB();
-        const [results, fields] = await connection.execute('select * from valhalla.users');
+        const [results, fields] = await connection.execute('SELECT * FROM valhalla.users');
 
         console.log(`${results.length} rows returned`);
         res.json(results);
@@ -509,32 +593,6 @@ app.get('/api/users/:id', async (req, res)=>{
             console.log("Connection closed succesfully!");
         }
     }
-});
-
-
-// endpoint to insert a new user
-app.post('/api/users', async (req, res)=>{
-    let connection = null;
-
-    try {
-        connection = await connectToDB();
-        const [results, fields] = await connection.query('insert into valhalla.users set username = ?, email = ?, password = ?', [req.body["username"], req.body["email"], req.body["password"]]);
-        console.log(`${results.affectedRows} rows inserted`);
-        res.json({'message': "User inserted correctly.", "id": results.insertId})
-    }
-
-    catch(error) {
-        res.status(500);
-        res.json(error);
-    }
-
-    finally {
-        if(connection!==null) {
-            connection.end();
-            console.log("Connection closed succesfully!");
-        }
-    }
-
 });
 
 
