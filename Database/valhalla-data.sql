@@ -10,29 +10,29 @@ SET @old_autocommit=@@autocommit;
 USE valhalla;
 
 SET AUTOCOMMIT=0;
-INSERT INTO users (`username`, `email`, `password`) VALUES 
-('user1', 'user1@test.com', 'secret!'),
-('user2', 'user2@test.com', 'secreterSecret'),
-('user3', 'user3@test.com', 'superSecret'),
-('user4', 'user4@test.com', 'shhhh!'),
-('user5', 'user5@test.com', 'password'),
-('user6', 'user6@test.com', '123456'),
-('thor', 'odins@favourite.com', 'jotunHater1');
+INSERT INTO valhalla.users (`username`, `email`, `password`, `metrics_id`, `game_id`) VALUES 
+('user1', 'user1@test.com', 'secret!', 1, 1),
+('user2', 'user2@test.com', 'secreterSecret', 2, 2),
+('user3', 'user3@test.com', 'superSecret', 3, 3),
+('user4', 'user4@test.com', 'shhhh!', 4, 4),
+('user5', 'user5@test.com', 'password',5 ,5),
+('user6', 'user6@test.com', '123456', 6, 6),
+('thor', 'odins@favourite.com', 'jotunHater1', 7, 7);
 COMMIT;
 
 SET AUTOCOMMIT=0;
-INSERT INTO metrics (`user_id`, `kills`, `wins`) VALUES
-(1, 100, 2),
-(2, 50, 0),
-(3, 200, 5),
-(4, 20, 0),
-(5, 150, 3),
-(6, 50, 0),
-(7, 1000, 100);
+INSERT INTO valhalla.metrics (`kills`, `wins`) VALUES
+(100, 2),
+(50, 0),
+(200, 5),
+(20, 0),
+(150, 3),
+(50, 0),
+(1000, 100);
 COMMIT;
 
 SET AUTOCOMMIT=0;
-INSERT INTO levels (`level_num`,`seed`) VALUES
+INSERT INTO valhalla.levels (`level_num`,`seed`) VALUES
 (1, 123456),
 (1, 654321),
 (1, 987654),
@@ -43,33 +43,41 @@ INSERT INTO levels (`level_num`,`seed`) VALUES
 COMMIT;
 
 SET AUTOCOMMIT=0;
-INSERT INTO classes (`name`) VALUES
-('Archer'),
-('Berserker'),
-('Spellcaster');
+INSERT INTO valhalla.characters (`class_id`, `gender`) VALUES
+(1, "Female"),
+(1, "Male"),
+(2, "Female"),
+(2, "Male"),
+(3, "Neutral");
 COMMIT;
 
 SET AUTOCOMMIT=0;
-INSERT INTO games (`user_id`, `level_id`, `class_id`) VALUES
-(1, 1, 1),
-(2, 2, 2),
-(3, 3, 3),
-(4, 4, 1),
-(5, 5, 2),
-(6, 6, 3),
-(7, 7, 1);
+INSERT INTO valhalla.classes (`name`, `stats_id`) VALUES
+('Archer', 1),
+('Berserker', 2),
+('Spellcaster', 3);
 COMMIT;
 
- 
+SET AUTOCOMMIT=0;
+INSERT INTO valhalla.games (`level_id`, `character_id`) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5),
+(6, 6),
+(7, 4);
+COMMIT;
+
 SET AUTOCOMMIT=0; 
-INSERT INTO stats (`class_id`, `hp`, `primary_attack`, `secondary_attack`, `primary_lag`, `secondary_lag`, `defense`, `speed`) VALUES
-(1, 200, 20, 15, 0.5, 1.5, 5, 2),
-(2, 250, 30, 40, 0.5, 1.1, 2, 3),
-(3, 150, 15, 35, 0.5, 2, 4, 2);
+INSERT INTO valhalla.stats (`hp`, `primary_attack`, `secondary_attack`, `primary_lag`, `secondary_lag`, `defense`, `speed`) VALUES
+(200, 20, 15, 0.5, 1.5, 5, 2),
+(250, 30, 40, 0.5, 1.1, 2, 3),
+(150, 15, 35, 0.5, 2, 4, 2);
 COMMIT;
 
 SET AUTOCOMMIT=0;
-INSERT INTO deaths (`user_id`, `room`, `killer`) VALUES
+INSERT INTO valhalla.deaths (`user_id`, `room`, `killer`) VALUES
 (1, 'Big Battle', 'Sword Draugr'),
 (2, 'Hard Battle', 'Archer Draugr'),
 (3, 'Hard Battle', 'Archer Draugr'),

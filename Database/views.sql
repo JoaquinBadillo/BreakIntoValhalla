@@ -2,7 +2,7 @@
 CREATE VIEW top_kills AS
 SELECT users.user_id, users.username, metrics.kills
 FROM users
-INNER JOIN metrics USING (user_id)
+INNER JOIN metrics USING (metrics_id)
 ORDER BY metrics.kills DESC
 LIMIT 10;
 
@@ -11,7 +11,7 @@ LIMIT 10;
 CREATE VIEW top_weekly_elims AS
 SELECT users.user_id, users.username, metrics.kills
 FROM users
-INNER JOIN metrics USING (user_id)
+INNER JOIN metrics USING (metrics_id)
 WHERE metrics.last_update >= DATE_SUB(CURDATE(), INTERVAL WEEKDAY(CURDATE()) DAY)
 ORDER BY metrics.kills DESC;
 
