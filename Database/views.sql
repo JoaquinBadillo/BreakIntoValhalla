@@ -24,7 +24,8 @@ ORDER BY deaths.room;
 
 -- Cause of Death View (Which type of character killed the player)
 CREATE VIEW death_cause AS
-SELECT users.user_id, users.username, deaths.killer
+SELECT deaths.killer, COUNT(deaths.killer)
 FROM users
 INNER JOIN deaths USING (user_id)
-ORDER BY deaths.killer;
+GROUP BY deaths.killer;
+
