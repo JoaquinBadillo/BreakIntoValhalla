@@ -25,27 +25,27 @@
 /* font faces */
 @font-face {
     font-family: 'Aclonica';
-    src: url(../fonts/Aclonica-Regular.ttf);
+    src: url("../fonts/Aclonica-Regular.ttf");
 }
 
 @font-face {
     font-family: 'Corleone';
-    src: url(../fonts/Corleone.ttf);
+    src: url("../fonts/Corleone.ttf");
 }
 
 @font-face {
     font-family: 'Thunder Kingdom';
-    src: url(../fonts/Thunder\ Kingdom.ttf);
+    src: url("../fonts/Thunder\ Kingdom.ttf");
 }
 
 @font-face {
     font-family: 'TT Tricks';
-    src: url(../fonts/TT\ Tricks\ Trial\ DemiBold.otf);
+    src: url("../fonts/TT\ Tricks\ Trial\ DemiBold.otf");
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
