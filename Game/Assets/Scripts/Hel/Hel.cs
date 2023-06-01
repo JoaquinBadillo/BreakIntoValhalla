@@ -23,7 +23,9 @@ public class Hel : Character{
         maxHealth = 600;
         endLag = 5f;
         range = 3f;
-
+        meleeAttackBox = null;
+        meleeAttackCircle = null;
+        
         zRange = 1;
 
         base.Initialize();
@@ -36,8 +38,6 @@ public class Hel : Character{
     void Update() {
         animator.SetFloat("xSpeed", aiPath.desiredVelocity.x);
         animator.SetFloat("ySpeed", aiPath.desiredVelocity.y);
-        if (Vector3.Distance(transform.position, player.transform.position) < range)
-            Attack();
     }
 
     public void Attack() {
@@ -49,7 +49,7 @@ public class Hel : Character{
     }
 
     void OnDrawGizmosSelected() {
-        if (meleeAttackPoint == null || meleeAttackBox == null || meleeAttackCircle == null) 
+        if (meleeAttackPoint == null) 
             return;
         
         Gizmos.DrawWireSphere(meleeAttackPoint.position, meleeRange);

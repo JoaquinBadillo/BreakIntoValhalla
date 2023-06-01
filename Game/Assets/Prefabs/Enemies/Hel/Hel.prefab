@@ -63,67 +63,6 @@ Transform:
   m_Father: {fileID: 8332767520128435678}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &993629249008960134
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1443322388311187898}
-  - component: {fileID: 4811612312506739817}
-  - component: {fileID: 4576392473020153923}
-  m_Layer: 7
-  m_Name: Chase-trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1443322388311187898
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993629249008960134}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8332767520128435678}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &4811612312506739817
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993629249008960134}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 9
---- !u!114 &4576392473020153923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993629249008960134}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec2cbd8baf755985da71d6a76b383a90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1680851846680209648
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,7 +263,7 @@ RectTransform:
   - {fileID: 8302478626395662477}
   - {fileID: 7422784767663138998}
   m_Father: {fileID: 8332767520128435678}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -776,7 +715,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.35
+  m_fontSize: 21.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -880,54 +819,6 @@ Transform:
   m_Father: {fileID: 2625863622883326290}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6166132859033484887
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4544427223423443535}
-  - component: {fileID: 7524491862203083006}
-  m_Layer: 7
-  m_Name: Attack-trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4544427223423443535
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6166132859033484887}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8332767520128435678}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &7524491862203083006
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6166132859033484887}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.013893119, y: 0.08338161}
-  m_Size: {x: 6.332802, y: 4.1397853}
-  m_Direction: 1
 --- !u!1 &6559911896356341429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,8 +922,6 @@ Transform:
   - {fileID: 1459266533464889287}
   - {fileID: 2625863622883326290}
   - {fileID: 3939856690946679677}
-  - {fileID: 1443322388311187898}
-  - {fileID: 4544427223423443535}
   - {fileID: 2619863477518822226}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1066,7 +955,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 20
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -1178,7 +1067,7 @@ MonoBehaviour:
     m_Bits: 0
   playerLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   childIndex: 0
   attack: 20
   secondaryAttack: 20
@@ -1198,6 +1087,7 @@ MonoBehaviour:
   zRange: 1
   meleeAttackBox: {fileID: 0}
   meleeAttackCircle: {fileID: 0}
+  isAttacking: 0
 --- !u!1 &8332767521309878598
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,6 +1100,7 @@ GameObject:
   - component: {fileID: 8332767521309878597}
   - component: {fileID: 8332767521309878596}
   - component: {fileID: 789762966255539963}
+  - component: {fileID: 808906416}
   m_Layer: 7
   m_Name: Spriter
   m_TagString: Untagged
@@ -1273,7 +1164,7 @@ SpriteRenderer:
   m_SortingLayerID: 2104697489
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1769059420, guid: 41aae74e4b5ede24b8b38fc6010b3873, type: 3}
+  m_Sprite: {fileID: 1655982121, guid: 41aae74e4b5ede24b8b38fc6010b3873, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1318,3 +1209,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   death: 0
+--- !u!70 &808906416
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332767521309878598}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.013893119, y: 0.08338161}
+  m_Size: {x: 6.332802, y: 4.1397853}
+  m_Direction: 1
