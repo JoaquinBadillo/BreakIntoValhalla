@@ -6,10 +6,15 @@ public class HelSpriter : MonoBehaviour
 {
     private Hel master;
     public bool death;
-    private Collider2D[] circleHits;
-    private Collider2D[] innerHits;
-
     bool sideAttack;
+
+    Collider2D[] circleHits;
+
+    Collider2D[] innerHits;
+
+    private Collider2D hitPlayer;
+
+
     void Start() {  
         master = this.GetComponentInParent<Hel>();
         master.isAttacking = false;
@@ -27,38 +32,37 @@ public class HelSpriter : MonoBehaviour
     }
 
     void circleIntersection() {
+        Debug.Log("Yeet Start");
         if (master.meleeAttackPoint == null || master.meleeAttackCircle == null)
                 return;
 
-        Collider2D[] circleHits = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, 
-            master.meleeRange, master.playerLayers);
+        Debug.Log("Yeet");
+        
+        circleHits = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.playerLayers);
+        innerHits = Physics2D.OverlapCircleAll(master.meleeAttackCircle.position, master.meleeInnerRange, master.playerLayers);
 
-        Collider2D[] innerHits = Physics2D.OverlapBoxAll(master.meleeAttackBox.position, 
-            new Vector2(master.xRange, master.yRange), 
-            0, master.playerLayers);
-
-        intersection(circleHits, innerHits);
+        intersection();
     }
+    
 
     void boxIntersection() {
             if (master.meleeAttackPoint == null || master.meleeAttackBox == null)
                 return;
 
-            Collider2D[] circleHits = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, 
-                master.meleeRange, master.playerLayers);
+            circleHits = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.playerLayers);
 
-            Collider2D[] innerHits = Physics2D.OverlapBoxAll(master.meleeAttackBox.position, 
-                new Vector2(master.xRange, master.yRange), 
-                0, master.playerLayers);
+            innerHits = Physics2D.OverlapBoxAll(master.meleeAttackBox.position, new Vector2(master.xRange, master.yRange), 0, master.playerLayers);
 
-            intersection(circleHits, innerHits);
+            intersection();
     }
 
-    private void intersection(Collider2D[] circleHits, Collider2D[] innerHits) {
+    private void intersection() {
         // Simle check for collisions in gizmos
+            Debug.Log("Intersection Yeet Start");
             if (circleHits == null || innerHits == null)
                 return;
 
+            Debug.Log("Intersection Yeet");
             HashSet<Collider2D> circleCollisions = new HashSet<Collider2D>();
             List<Collider2D> trueCollisions = new List<Collider2D>();
 
@@ -77,7 +81,6 @@ public class HelSpriter : MonoBehaviour
             foreach (Collider2D collider in trueCollisions) {
                 if (collider.GetComponent<Obstacle>() != null) {
                     collider.GetComponent<Obstacle>().Yeet();
-                    Debug.Log("YEEEEET");
                 }
 
                 else if (collider.GetComponent<Player>() != null) {
@@ -98,6 +101,7 @@ public class HelSpriter : MonoBehaviour
     public void endAttack() {
         master.isAttacking = false;
         master.aiPath.enabled = true;
+        sideAttack = false;
     }
 
     // FIX death animation same as attack
@@ -112,42 +116,42 @@ public class HelSpriter : MonoBehaviour
         on direction
     */
     public void Up() {
-        sideAttack = false;
-
+        //master.meleeAttackCircle = null;
+        Debug.Log(this.gameObject.transform.parent.GetChild(1).name);
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(1);
         master.meleeRange = 2.2f;
 
-        master.meleeAttackBox = master.meleeAttackBox.GetChild(0);
+        master.meleeAttackBox = master.meleeAttackPoint.GetChild(0);
         master.xRange = 3.7f;
         master.yRange = 1.5f;
     }
     public void Left() {
         sideAttack = true;
-        
+        //master.meleeAttackBox = null;
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(2);
         master.meleeRange = 1.3f;
 
-        master.meleeAttackCircle = master.meleeAttackBox.GetChild(0);
+        master.meleeAttackCircle = master.meleeAttackPoint.GetChild(0);
         master.meleeInnerRange = 1.4f;
 
     }
     public void Down() {
-        sideAttack = false;
+        //master.meleeAttackCircle = null;
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(3);
         master.meleeRange = 2.2f;
 
-        master.meleeAttackCircle = master.meleeAttackBox.GetChild(0);
+        master.meleeAttackCircle = master.meleeAttackPoint.GetChild(0);
         master.xRange = 3.5f;
         master.yRange = 1.3f;
 
     }
     public void Right() {
         sideAttack = true;
-
+        //master.meleeAttackBox = null;
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(4);
         master.meleeRange = 1.3f;
 
-        master.meleeAttackCircle = master.meleeAttackBox.GetChild(0);
+        master.meleeAttackCircle = master.meleeAttackPoint.GetChild(0);
         master.meleeInnerRange = 1.4f;
     }
 
