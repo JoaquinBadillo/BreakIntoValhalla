@@ -9,10 +9,22 @@ public class Hel : Character{
     [SerializeField] float range;
     private HelSpriter animatorSlave;
 
+    public float meleeInnerRange;
+    public float xRange;
+    public float yRange;
+    public float zRange;
+
+    public Transform meleeAttackBox;
+    public Transform meleeAttackCircle;
+
+    public bool isAttacking;
+
     void Start() {
-        maxHealth = 2000;
+        maxHealth = 600;
         endLag = 5f;
         range = 3f;
+
+        zRange = 1;
 
         base.Initialize();
 
@@ -24,22 +36,30 @@ public class Hel : Character{
     void Update() {
         animator.SetFloat("xSpeed", aiPath.desiredVelocity.x);
         animator.SetFloat("ySpeed", aiPath.desiredVelocity.y);
-        Attack();
+        if (Vector3.Distance(transform.position, player.transform.position) < range)
+            Attack();
     }
 
-    void Attack() {
-        if (Vector3.Distance(transform.position, player.transform.position) < range){
-            if (Time.time >= timeUntilNextAttack){
-                animator.SetTrigger("slash");
-                timeUntilNextAttack = Time.time + endLag;
-            }
+    public void Attack() {
+        if (Time.time >= timeUntilNextAttack){
+            aiPath.enabled = false;
+            animator.SetTrigger("slash");
+            timeUntilNextAttack = Time.time + endLag;
         }
     }
 
     void OnDrawGizmosSelected() {
-        if (meleeAttackPoint == null) 
+        if (meleeAttackPoint == null || meleeAttackBox == null || meleeAttackCircle == null) 
             return;
+        
         Gizmos.DrawWireSphere(meleeAttackPoint.position, meleeRange);
+
+        if (meleeAttackBox != null)
+            Gizmos.DrawWireCube(meleeAttackBox.position, new Vector3(xRange, yRange, zRange));
+        
+        if (meleeAttackCircle != null)
+            Gizmos.DrawWireSphere(meleeAttackCircle.position, meleeRange);
+
     }
 
     public void TakeDamage(int damage) {
@@ -52,13 +72,13 @@ public class Hel : Character{
     void Die() {
         // Weird stuff needs to happen here...
         // Hel doesn't really die, cinematic happens
+        Debug.Log("I died...");
         animator.SetBool("isDead", true);
-        Debug.Log("I died... SIKE!");
+        Debug.Log("SIKE!");
 
         Debug.Log("Yeets player out of existence");
         if (animatorSlave.death == true)
             Destroy(gameObject);
-        
-        
+         
     }
 }
