@@ -483,6 +483,40 @@ app.get('/api/metrics/leaderboards/:type', async (req, res)=>{
     }
 });
 
+//View death place and death cause
+app.get('/api/deaths/:type', async (req, res)=>{
+    let connection = null;
+    const validDeathPlaces = new Set(["death_place", "death_cause"])
+
+    try {
+        if(!validDeathPlaces.has(req.params["type"])) throw new Error("Invalid Death Place!")
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute(
+            `SELECT * FROM valhalla.${req.params["type"]}`);
+        console.log(`${results.length} rows returned`);
+        res.json(results);
+    }
+
+    catch (error) {
+        if (error.message === "Invalid Death Place!") {
+            res.status(400);
+        } 
+        else {
+            res.status(500);
+        }
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+
+});
+
+
 // Update metrics
 app.put('/api/metrics', async (req, res)=>{
     let connection = null;
