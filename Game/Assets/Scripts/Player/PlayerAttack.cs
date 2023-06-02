@@ -42,10 +42,10 @@ public class PlayerAttack : MonoBehaviour {
                     master.meleeAttackPoint = null;
                     enemy.GetComponent<MeleeDraugr>().TakeDamage(master.attack);
                 }
-                else if(enemy.CompareTag("Arrow")) {
-                    Debug.Log("you just got yeeted");
-                    enemy.GetComponent<DraugrArrow>().YeetArrow();
-                }
+                // else if(enemy.CompareTag("Arrow")) {
+                //     Debug.Log("you just got yeeted");
+                //     enemy.GetComponent<DraugrArrow>().YeetArrow();
+                // }
             }
         }
 
