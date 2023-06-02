@@ -9,22 +9,27 @@ public class RangedDraugrSpriter : MonoBehaviour
     public Transform shootPoint;
     public GameObject arrow;
     public float direction;
-    [SerializeField] float arrowSpeed = 20f;
+    [SerializeField] float arrowSpeed = 15f;
     private Vector3 facing;
     private bool throwable;
+    public bool death;
     // Start is called before the first frame update
     void Start()
     {
         master = this.GetComponentInParent<RangedDraugr>();
         throwable = true;
+        death = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+
         if (isShooting && throwable) {
-            GameObject projectile = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
-            projectile.GetComponent<Arrow>().SetAttack(master.secondaryAttack);
+            master.angle = Mathf.Atan2(master.facingDirection.y, master.facingDirection.x) * Mathf.Rad2Deg;
+            GameObject projectile = Instantiate(arrow, shootPoint.position, Quaternion.Euler(0, 0, master.angle));
+            projectile.GetComponent<DraugrArrow>().SetAttack(master.secondaryAttack);
+            //projectile.enemyCollider = master.GetComponent<Collider2D>();
             throwable = false;
             Debug.Log("My pointy self just manifested");
             Rigidbody2D projectileRigid2d = projectile.GetComponent<Rigidbody2D>();
@@ -41,6 +46,10 @@ public class RangedDraugrSpriter : MonoBehaviour
         throwable = true;
     }
 
+    public void endOfAnimation() {
+        death = true;
+    }
+
     /*
         these functions change the melee attack reach by 
         calling a different child object that acts as a 
@@ -49,31 +58,28 @@ public class RangedDraugrSpriter : MonoBehaviour
     */
 
     public void Right() {
-        direction = 0f;
-        facing.x = 1;
-        facing.y = 0;
-        shootPoint = this.gameObject.transform.parent.GetChild(8);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
+        facing.x = master.facingDirection.x;
+        facing.y = master.facingDirection.y;
+        shootPoint = transform.parent.GetChild(4);
     }
     public void Left() {
-        direction = 180f;
-        facing.x = -1;
-        facing.y = 0;
-        shootPoint = this.gameObject.transform.parent.GetChild(6);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
+        facing.x = master.facingDirection.x;
+        facing.y = master.facingDirection.y;
+        shootPoint = transform.parent.GetChild(2);
     }
     public void Up() {
-        direction = 90f;
-        facing.x = 0;
-        facing.y = 1;
-        shootPoint = this.gameObject.transform.parent.GetChild(5);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
+        facing.x = master.facingDirection.x;
+        facing.y = master.facingDirection.y;
+        shootPoint = transform.parent.GetChild(1);
     }
     public void Down() {
-        direction = 270f;
-        facing.x = 0;
-        facing.y = -1;
-        shootPoint = this.gameObject.transform.parent.GetChild(7);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
+        facing.x = master.facingDirection.x;
+        facing.y = master.facingDirection.y;
+        shootPoint = transform.parent.GetChild(3);
+    }
+
+    void OnTriggerStay2D(Collider2D other) {
+        if (other.CompareTag("Player"))
+            master.Attack();
     }
 }
