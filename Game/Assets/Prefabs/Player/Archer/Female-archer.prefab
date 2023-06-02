@@ -252,7 +252,6 @@ GameObject:
   - component: {fileID: 2085935705537406938}
   - component: {fileID: 7533395636212230894}
   - component: {fileID: 1923120483}
-  - component: {fileID: 1346567416977838554}
   m_Layer: 3
   m_Name: Female-archer
   m_TagString: Player
@@ -351,21 +350,12 @@ MonoBehaviour:
   timeUntilNextAttack: 0
   timeUntilNextShot: 0
   speed: 2
+  maxStamina: 100
+  currentStamina: 0
   hitpoints: {fileID: 0}
   healthBar: {fileID: 0}
+  amount: 20
 --- !u!114 &1923120483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6582775436091852041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbf5a1a454f2cfce48cc4ce59d56212c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1346567416977838554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
