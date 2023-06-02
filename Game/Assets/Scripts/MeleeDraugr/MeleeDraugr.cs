@@ -16,7 +16,7 @@ public class MeleeDraugr : Character{
     private float reach = 8;
 
     void Start() {
-        maxHealth = 200;
+        maxHealth = 60;
         endLag = 3f;
         range = 1.3f;
         base.Initialize();
@@ -63,15 +63,10 @@ public class MeleeDraugr : Character{
             Destroy(gameObject); 
     }
     /*
-        This function calculates the distance between 
-        the enemy and the player
+        This function allows melee enemy to start chasing the player
     */
-    bool WithinReach(Vector2 me, Vector2 player){ 
-        return (Mathf.Pow((player.x - me.x), 2) + Mathf.Pow((player.y - me.y), 2)) <= reach * reach;
-    }
-
     void ICanSmellYou(){
-        if (WithinReach(transform.position, player.transform.position))
+        if (Vector2.Distance(transform.position, player.position) <= reach)
             aiPath.enabled = true;
         else
             aiPath.enabled = false;

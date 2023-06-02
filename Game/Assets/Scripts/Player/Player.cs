@@ -62,7 +62,8 @@ public class Player : Character {
             secondaryEndLag = 1.5f;
             speed = 2f;
         }
-
+        // hitpoints = GameObject.FindGameObjectWithTag("Player").transform;
+        // healthBar = GameObject.FindGameObjectWithTag("Player").transform;
         animatorSlave = GetComponentInChildren<PlayerAttack>();
         base.Initialize();
         healthBar.SetMaxHealth(maxHealth);
