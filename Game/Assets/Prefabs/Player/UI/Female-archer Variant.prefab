@@ -53,7 +53,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6582775436091852041, guid: efe797a87e8167a44b969f5216659e14, type: 3}
       propertyPath: m_Name
-      value: Female-archer
+      value: Female-archer Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1873596272904258534, guid: efe797a87e8167a44b969f5216659e14, type: 3}
+    - {fileID: 2085935705537406938, guid: efe797a87e8167a44b969f5216659e14, type: 3}
+    - {fileID: 7533395636212230894, guid: efe797a87e8167a44b969f5216659e14, type: 3}
+    - {fileID: 1923120483, guid: efe797a87e8167a44b969f5216659e14, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: efe797a87e8167a44b969f5216659e14, type: 3}
