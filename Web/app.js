@@ -578,25 +578,30 @@ app.get('/api/deaths/:type', async (req, res)=>{
 
 });
 
-app.post('api/game', async (req, res)=>{
+app.post('/api/game', async (req, res)=>{
     let connection = null;
 
     try {
         connection = await connectToDB();
-        const [results, fields] = await connection.query(
-            `CALL create_game(?, ?, ${randint(800000)});`, 
-            [body.params["username"],
-             body.params["character_id"]
+        const [results, fields] = await connection.execute(
+            `CALL valhalla.create_game(?, ?, ${randint(80000)});`, 
+            [req.body["username"],
+             req.body["character_id"]
             ]);
 
         res.json({'message': "Level initialized."})
     }
 
     catch(error) {
-        if (error.message === "User already exists") {
+        if (error.message === "Invalid User!") {
+            res.status(404);
+        }
+
+        else if (error.message === "Game Already Exists!") {
             res.status(400);
         }
         else {
+            console.log(error);
             res.status(500);
         }
         
@@ -623,7 +628,6 @@ app.put('/api/game', async (req, res)=>{
             [req.body['game_id'], req.body['user_id'], req.body['level_id'], req.body['class_id'],
             req.body['user_id']]);
         
-        console.log(`${results.affectedRows} rows updated`);
         res.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`});
     }
 
@@ -730,7 +734,7 @@ app.post("/api/users", async (req, res) => {
     try {
         connection = await connectToDB();
         const [results, fields] = await connection.execute(
-            "CALL init_user(?, ?, ?);", 
+            "CALL create_user(?, ?, ?);", 
             [req.body["username"], 
              req.body["email"],
              req.body["password"]

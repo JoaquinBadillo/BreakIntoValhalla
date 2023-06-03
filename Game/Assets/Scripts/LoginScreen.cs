@@ -106,7 +106,8 @@ public class LoginScreen : MonoBehaviour {
             PlayerPrefs.SetString("email", user.email);
             PlayerPrefs.SetString("password", user.password);
 
-            UnityEngine.SceneManagement.SceneManager.LoadScene("CharacterSelection");
+            SceneManager.LoadScene("ClassSelect");
+            yield break;
         }
     }
 
@@ -143,14 +144,38 @@ public class LoginScreen : MonoBehaviour {
             PlayerPrefs.SetString("username", user.username);
             PlayerPrefs.SetString("email", user.email);
             PlayerPrefs.SetString("password", user.password);
-            
+
             if (user.game_id == 0) {
-                UnityEngine.SceneManagement.SceneManager.LoadScene("CharacterSelection");
+                SceneManager.LoadScene("ClassSelect");
                 yield break;
             }
-
-            UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
-        
         }
+
+        string endpoint = uri + "/" + PlayerPrefs.GetString("username") + "/levels";
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
+            Debug.Log("Hop in loser!");
+            yield return webRequest.SendWebRequest();
+            Debug.Log("We goin' insane!");
+
+            if (webRequest.result == UnityWebRequest.Result.Success) {
+                Debug.Log("Mission Accomplished");
+                jsonString = webRequest.downloadHandler.text;
+                Level level = JsonUtility.FromJson<Level>(webRequest.downloadHandler.text);
+                PlayerPrefs.SetInt("seed", level.seed);
+                Debug.Log("Seed: " + level.seed);
+            }
+
+            else {
+				Debug.Log("Error: " + webRequest.error);
+				yield break;
+			}
+
+            SceneManager.LoadScene("MainScene");
+            yield break;
+        }
+        
     }
+
+
+
 }

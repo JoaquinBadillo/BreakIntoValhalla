@@ -45,7 +45,9 @@ public class DungeonGenerator : MonoBehaviour {
     string uri = "http://localhost:5000/api/users/";
 
     void Start() {
-        GenerateDungeon(); 
+        Debug.Log("Seed: " + PlayerPrefs.GetInt("seed"));
+        Random.InitState(PlayerPrefs.GetInt("seed"));
+        StartGenerator();
     }
 
     // Inserts room as a child of the reference, and checks if it should continue inserting
@@ -96,6 +98,8 @@ public class DungeonGenerator : MonoBehaviour {
                 Level level = JsonUtility.FromJson<Level>(webRequest.downloadHandler.text);
                 Random.InitState(level.seed);
                 StartGenerator();
+
+                yield break;
             }
 
             // Check if update was successful
