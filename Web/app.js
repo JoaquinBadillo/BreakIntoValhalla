@@ -38,38 +38,9 @@ app.get('/', (req, res)=> {
 // API
 
 /**
- * Endpoint to initialize player data and tables
+ * Get level by username
  */
-app.post("/api/users", async (req, res) => {
-    let connection = null;
-
-    try {
-        connection = await connectToDB();
-        const [results, fields] = await connection.query(
-            "CALL init_user(?, ?, ?);", 
-            [req.body["username"], 
-             req.body["email"],
-             req.body["password"]
-            ]);
-
-        res.json({'message': "User initialized."})
-    }
-
-    catch(error) {
-        if (error.message === "User already exists") {
-            res.status(400);
-            res.json(error); 
-        }
-
-        res.status(500);
-        res.json(error); 
-    }
-});
-
-/**
- * Get level by user_id
- */
-app.get('/api/users/:id/levels', async (req, res)=>{
+app.get('/api/users/:username/levels', async (req, res)=>{
     let connection = null;
 
     try {
@@ -79,9 +50,11 @@ app.get('/api/users/:id/levels', async (req, res)=>{
             'FROM valhalla.levels ' +
             'INNER JOIN games USING (level_id) ' +
             'INNER JOIN users USING (game_id) ' +
-            'WHERE user_id = ?', 
-                [req.params["id"]]);
+            'WHERE username = ?', 
+                [req.params["username"]]);
         
+        console.log(results);
+
         if (results.length === 0) 
             throw new Error("Level not found!");
         
@@ -104,8 +77,16 @@ app.get('/api/users/:id/levels', async (req, res)=>{
     }
 });
 
+
+/** 
+ * Utility function for random integers from 1 to max inclusive
+ */ 
+function randint(max) {
+    return Math.floor((Math.random() * max)) + 1;
+}
+
 /**
- * Update level number or seed by user_id.
+ * Update level number from json and set random seed by user_id
  */
 app.put('/api/users/levels', async (req, res)=>{
     let connection = null;
@@ -116,10 +97,9 @@ app.put('/api/users/levels', async (req, res)=>{
             'UPDATE valhalla.levels ' + 
             'INNER JOIN games USING (level_id) ' +
             'INNER JOIN users USING (user_id) ' +
-            'SET level_num = ?, seed = ? ' +
+            `SET level_num = ?, seed = ${randint(8000000)} ` +
             'WHERE user_id = ?', 
                 [req.body["level_num"], 
-                 req.body["seed"], 
                  req.body["user_id"]
                 ]);
 
@@ -139,7 +119,7 @@ app.put('/api/users/levels', async (req, res)=>{
 });
 
 /**
- * Get class by its class_id.
+ * Get class by its class_id or class name
  */
 app.get('/api/classes', async (req, res)=>{
     let connection = null;
@@ -152,6 +132,14 @@ app.get('/api/classes', async (req, res)=>{
                     [req.body["class_id"]]); 
             res.json(results);
         }
+
+        else if (req?.body?.name !== undefined) {
+            const [results, fields] = await connection
+                .execute('SELECT * FROM valhalla.classes WHERE name = ?', 
+                    [req.body["name"]]);
+            res.json(results);
+        }
+
         else {
             const [results, fields] = await connection
                 .execute('SELECT * FROM valhalla.classes');
@@ -242,24 +230,28 @@ app.get('/api/characters/:character_id/stats', async (req, res)=>{
         connection = await connectToDB();
         const [results, fields] = await connection.execute(
             'SELECT * FROM valhalla.stats ' +
-            'INNER JOIN valhalla.classes USING (class_id) ' +
-            'INNER JOIN valhalla.characters USING (class_id) ' +
+            'JOIN valhalla.classes USING (stats_id) ' +
+            'JOIN valhalla.characters USING (class_id) '+ 
             'WHERE character_id = ?', 
                 [req.params["character_id"]]);
-        
-        if (results.length === 0) 
+
+        if (results.length === 0) {
             throw new Error("Class not found!");
+        }
 
         res.json(results[0]);
     }
 
     catch(error) {
-        if (error.message === "Class not found!")
+        if (error.message === "Class not found!") {
             res.status(404);
-        else
+            res.json(error);
+        }
+        else {
             res.status(500);
+            res.json(error);
+        }
         
-        res.json(error);
     }
 
     finally {
@@ -271,16 +263,18 @@ app.get('/api/characters/:character_id/stats', async (req, res)=>{
 });
 
 /**
- * Get all the stats of a specific class
+ * Get all the stats of a specific class using the class name
  */
 app.get('/api/classes/stats', async (req, res)=>{
     let connection = null;
     try {
         connection = await connectToDB();
-        if (req?.body?.class_id !== undefined) {
-            const [results, fields] = await connection
-                .execute('SELECT * FROM valhalla.stats WHERE class_id = ?', 
-                    [req.body["class_id"]]);
+        if (req?.body?.name !== undefined) {
+            const [results, fields] = await connection.execute(
+                'SELECT * FROM valhalla.stats ' +
+                'JOIN valhalla.classes USING (stats_id) ' +
+                'WHERE classes.name = ?', 
+                    [req.body["name"]]);
             res.json(results);
         }
 
@@ -399,6 +393,9 @@ app.put('/api/classes/:class_id/stats/:stat', async (req, res)=>{
     }
 });
 
+/**
+ * Get all player's metrics
+ */
 app.get('/api/metrics', async (req, res)=>{
     let connection = null;
 
@@ -412,9 +409,11 @@ app.get('/api/metrics', async (req, res)=>{
     } 
     
     catch (error) {
+        
         res.status(500);
         res.json(error);
     }
+
     finally {
         if(connection!==null) {
             connection.end();
@@ -423,8 +422,10 @@ app.get('/api/metrics', async (req, res)=>{
     }
 });
 
-// Read metrics specific to user
-app.get('/api/users/metrics', async (req, res)=>{
+/** 
+ * Read metrics specific to user
+ */
+app.get('/api/users/:username/metrics', async (req, res)=>{
     let connection = null;
 
     try {
@@ -433,17 +434,25 @@ app.get('/api/users/metrics', async (req, res)=>{
         const [results, fields] = await connection.execute(
             'SELECT kills, wins FROM valhalla.metrics ' + 
             'INNER JOIN valhalla.users USING (metrics_id) ' +
-            'WHERE user_id = ?',
-            [req.body["user_id"]]);
+            'WHERE username = ?',
+            [req.params["username"]]);
+        
+        if (results.length === 0) 
+            throw new Error("User not found!");
 
         console.log(`${results.length} rows returned`);
         res.json(results);
     } 
     
     catch (error) {
-        res.status(500);
+        if (error.message === "User not found!")
+            res.status(404);
+        else
+            res.status(500);
+        
         res.json(error);
     }
+
     finally {
         if(connection!==null) {
             connection.end();
@@ -452,7 +461,9 @@ app.get('/api/users/metrics', async (req, res)=>{
     }
 });
 
-// View leaderboard
+/** 
+ * View leaderboard
+ */
 app.get('/api/metrics/leaderboards/:type', async (req, res)=>{
     let connection = null;
     const validLeaderboards = new Set(["top_kills", "top_weekly_elims"])
@@ -467,14 +478,67 @@ app.get('/api/metrics/leaderboards/:type', async (req, res)=>{
     } 
     
     catch (error) {
-        if (error.message === "Invalid Leaderboard!") {
+        if (error.message === "Invalid Leaderboard!") 
             res.status(400);
-        } 
+        else
+            res.status(500);
+
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+/** 
+ * Update player metrics
+ * The JSON contains the amount of kills and wins to be 
+ * added to the previous data
+ */
+app.put('/api/users/metrics', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+
+        const [previousData, fields] = await connection.execute(
+            'SELECT kills, wins FROM valhalla.metrics ' +
+            'INNER JOIN valhalla.users USING (metrics_id) ' +
+            'WHERE username = ?',
+            [req.body["username"]]);
+        
+        if (previousData.length === 0) {
+            throw new Error("Data not found!");
+        }
+
+        const [results, fields2] = await connection.execute(
+            'UPDATE valhalla.metrics ' +
+            'INNER JOIN valhalla.users USING (metrics_id) ' +
+            'SET kills = ?, wins = ? ' +
+            'WHERE username = ?',
+            [previousData[0]["kills"] + req.body["kills"],  
+             previousData[0]["wins"] + req.body["wins"],
+             req.body["username"]]);
+
+        console.log(`${results.affectedRows} rows updated`);
+        res.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`});
+    }
+
+    catch(error) {
+        if (error.message === "Data not found!") {
+            res.status(404);
+        }
         else {
             res.status(500);
         }
+
         res.json(error);
     }
+
     finally {
         if(connection!==null) {
             connection.end();
@@ -489,7 +553,7 @@ app.get('/api/deaths/:type', async (req, res)=>{
     const validDeathPlaces = new Set(["death_place", "death_cause"])
 
     try {
-        if(!validDeathPlaces.has(req.params["type"])) throw new Error("Invalid Death Place!")
+        if(!validDeathPlaces.has(req.params["type"])) throw new Error("Invalid Death Data")
         connection = await connectToDB();
         const [results, fields] = await connection.execute(
             `SELECT * FROM valhalla.${req.params["type"]}`);
@@ -498,12 +562,10 @@ app.get('/api/deaths/:type', async (req, res)=>{
     }
 
     catch (error) {
-        if (error.message === "Invalid Death Place!") {
+        if (error.message === "Invalid Death Data")
             res.status(400);
-        } 
-        else {
+        else
             res.status(500);
-        }
         res.json(error);
     }
 
@@ -516,31 +578,33 @@ app.get('/api/deaths/:type', async (req, res)=>{
 
 });
 
-
-// Update metrics
-app.put('/api/metrics', async (req, res)=>{
+app.post('api/game', async (req, res)=>{
     let connection = null;
 
-    try{
+    try {
         connection = await connectToDB();
+        const [results, fields] = await connection.query(
+            `CALL create_game(?, ?, ${randint(800000)});`, 
+            [body.params["username"],
+             body.params["character_id"]
+            ]);
 
-        const [results, fields] = await connection
-        .query('update valhalla.metrics set kills = ?, wins = ? where user_id = ?',
-            [req.body['kills'], req.body['wins'], req.body['user_id']]);
+        res.json({'message': "Level initialized."})
+    }
+
+    catch(error) {
+        if (error.message === "User already exists") {
+            res.status(400);
+        }
+        else {
+            res.status(500);
+        }
         
-        console.log(`${results.affectedRows} rows updated`);
-        res.json({'message': `Data updated correctly: ${results.affectedRows} rows updated.`});
+        res.json(error); 
     }
-    catch(error)
-    {
-        res.status(500);
-        res.json(error);
-        console.log(error);
-    }
-    finally
-    {
-        if(connection!==null) 
-        {
+
+    finally {
+        if(connection!==null) {
             connection.end();
             console.log("Connection closed succesfully!");
         }
@@ -566,7 +630,6 @@ app.put('/api/game', async (req, res)=>{
     catch(error) {
         res.status(500);
         res.json(error);
-        console.log(error);
     }
 
     finally {
@@ -629,9 +692,74 @@ app.get('/api/users/:id', async (req, res)=>{
     }
 });
 
+app.post('/api/users/login', async (req, res)=>{
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute(
+            'SELECT * FROM valhalla.users WHERE username = ? AND password = ?',
+            [req.body["username"], req.body["password"]]);
+
+        if (results.length === 0)
+            throw new Error("Invalid Credentials!");
+        
+        res.json(results[0]);
+    }
+
+    catch(error) {
+        if (error.message === "Invalid Credentials!")
+            res.status(404);
+        else
+            res.status(500);
+    
+        res.json(error);
+    }
+    
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
+app.post("/api/users", async (req, res) => {
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute(
+            "CALL init_user(?, ?, ?);", 
+            [req.body["username"], 
+             req.body["email"],
+             req.body["password"]
+            ]);
+
+        res.json(results);
+    }
+
+    catch(error) {
+        if (error.message === "User already exists") {
+            res.status(400);
+            res.json(error); 
+        }
+        else {
+            res.status(500);
+            res.json(error); 
+        }
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
 
 // endpoint to update a user
-app.put('/api/users', async (req, res)=>{
+app.put('/api/users/data', async (req, res)=>{
     let connection = null;
 
     try {
@@ -656,30 +784,38 @@ app.put('/api/users', async (req, res)=>{
 
 });
 
-// endpoint to delete a user by id or username or email
-app.delete('/api/users/:id', async (req, res)=>{
+app.get('/api/users/characters/:username', async (req, res)=>{
     let connection = null;
 
     try {
         connection = await connectToDB();
-        const[results, fields] = await connection.query('delete from valhalla.users where user_id = ?', [req.body["user_id"]]);
+        const [results, fields] = await connection.execute(
+            'SELECT * FROM valhalla.characters ' +
+            'INNER JOIN valhalla.users USING (character_id) ' +
+            'WHERE username = ?', 
+                [req.params["username"]]);
+        
+        if (results.length === 0) 
+            throw new Error("User not found!");
 
-        console.log(`${results.affectedRows} rows updated`)
-        res.json({'message': `User deleted correctly: ${results.affectedRows} rows updated.`})
+        res.json(results);
     }
 
     catch(error) {
-        res.status(500);
+        if (error.message === "User not found!")
+            res.status(404);
+        else
+            res.status(500);
+        
         res.json(error);
     }
 
     finally {
-        if(connection !==null){
+        if(connection!==null) {
             connection.end();
             console.log("Connection closed succesfully!");
         }
     }
-
 });
 
 app.listen(port, () => {

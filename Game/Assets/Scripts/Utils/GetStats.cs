@@ -13,32 +13,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Stats {
-    // HP
-    public int hp;
-    // Attack Damage for each weapon
-    public int primary_attack;
-    public int secondary_attack;
-    // Attack Speed for each weapon
-    public float primary_lag;
-    public float secondary_lag;
-    // Defense
-    public int defense;
-    // Movement Speed
-    public float speed;
-}
 
 public class GetStats : MonoBehaviour {
-    string uri = "http://localhost:5000/api/classes/";
-    string classType;
-    public Stats stats;
-
-    public void setClassType(string classType) {
-        this.classType = classType;
-    }
+    string uri = "http://localhost:5000/api/characters/";
 
     public IEnumerator FetchStats(System.Action<string> callback) {
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri + classType + "/stats")) {
+        string endpoint = uri + PlayerPrefs.GetInt("classIndex") + "/stats";
+        Debug.Log(endpoint);
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
