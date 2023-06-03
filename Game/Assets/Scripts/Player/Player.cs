@@ -19,37 +19,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Networking;
+
+public class Stats {
+    // HP
+    public int hp;
+    // Attack Damage for each weapon
+    public int primary_attack;
+    public int secondary_attack;
+    // Attack Speed for each weapon
+    public float primary_lag;
+    public float secondary_lag;
+    // Defense
+    public int defense;
+    // Movement Speed
+    public float speed;
+}
 
 public class Player : Character {
     // Health Bar variables
     [SerializeField] TMP_Text hitpoints;
     public SliderMaster healthBar;
-    Stats stats;
     //
     private PlayerAttack animatorSlave;
     // Stamina cost
     public int amount = 20;
+
+    private string className;
+
+    private int defense;
    
     // Sets necessary parameters and gets necessary components
     void Start() {
-        stats = new Stats();
-        GetStats getStats = GetComponent<GetStats>();
-
-        // 1 is the class id for the archer class
-        getStats.setClassType("1"); 
+        PlayerPrefs.SetInt("classIndex", 1);
 
         try {
-            StartCoroutine(getStats.FetchStats((jsonString) => {
-            stats = JsonUtility.FromJson<Stats>(jsonString);
-                // Unpack results
-                maxHealth = stats.hp;
-                attack = stats.primary_attack;
-                secondaryAttack = stats.secondary_attack;
-                endLag = stats.primary_lag;
-                secondaryEndLag = stats.secondary_lag;
-                //defense = stats.defense; Not implemented yet
-                speed = stats.speed;
-            }));
+            StartCoroutine(FetchStats());
         }
         
         catch (System.Exception) {
@@ -62,8 +67,7 @@ public class Player : Character {
             secondaryEndLag = 1.5f;
             speed = 2f;
         }
-        // hitpoints = GameObject.FindGameObjectWithTag("Player").transform;
-        // healthBar = GameObject.FindGameObjectWithTag("Player").transform;
+
         animatorSlave = GetComponentInChildren<PlayerAttack>();
         base.Initialize();
         healthBar.SetMaxHealth(maxHealth);
@@ -138,6 +142,16 @@ public class Player : Character {
         this.enabled = false;
     }
 
+    public void SetStats(Stats stats) {
+        maxHealth = stats.hp;
+        attack = stats.primary_attack;
+        secondaryAttack = stats.secondary_attack;
+        endLag = stats.primary_lag;
+        secondaryEndLag = stats.secondary_lag;
+        defense = stats.defense;
+        speed = stats.speed;
+    }
+
     public int GetMaxHealth() {
         return maxHealth;
     }
@@ -153,5 +167,26 @@ public class Player : Character {
 
     public void UpgradeSpeed() {
         speed += 0.2f;
+    }
+
+    public IEnumerator FetchStats() {
+        string uri = "http://localhost:5000/api/characters/";
+        string endpoint = uri + PlayerPrefs.GetInt("classIndex") + "/stats";
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+
+            // Check if fetching was successful and send json to callback
+            if (webRequest.result == UnityWebRequest.Result.Success) {
+                string jsonString = webRequest.downloadHandler.text;
+                Stats stats = JsonUtility.FromJson<Stats>(webRequest.downloadHandler.text);
+                SetStats(stats);   
+            }
+
+            else {
+                Debug.Log("Error: " + webRequest.error);
+                throw new System.Exception();
+            }
+        }
     }
 }

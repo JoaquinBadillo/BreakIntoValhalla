@@ -87,7 +87,7 @@ CREATE TABLE stats (
 --
 CREATE TABLE games (
 	game_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-    level_id TINYINT UNSIGNED NOT NULL,
+    level_id TINYINT UNSIGNED DEFAULT NULL,
     character_id TINYINT UNSIGNED DEFAULT NULL,
     PRIMARY KEY (game_id),
     UNIQUE INDEX level_id (level_id ASC),
@@ -105,7 +105,7 @@ CREATE TABLE users (
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(32) NOT NULL,
     metrics_id SMALLINT UNSIGNED NOT NULL,
-    game_id SMALLINT UNSIGNED NOT NULL,
+    game_id SMALLINT UNSIGNED DEFAULT NULL,
     PRIMARY KEY (user_id),
     UNIQUE INDEX metrics_id (metrics_id ASC),
     UNIQUE INDEX game_id (game_id ASC),
