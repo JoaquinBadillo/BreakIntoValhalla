@@ -64,7 +64,6 @@ public class PlayerAttack : MonoBehaviour {
 
     public void endAttack() {
         isAttacking = false;
-        // canAttack = false;
     }
 
     public void ShootStart() {
