@@ -13,12 +13,14 @@ public class HelSpriter : MonoBehaviour
     Collider2D[] innerHits;
 
     private Collider2D hitPlayer;
+    private HelSpawner spawner;
 
 
     void Start() {  
         master = this.GetComponentInParent<Hel>();
         master.isAttacking = false;
         death = false;
+        spawner = GetComponent<HelSpawner>();
     }
 
     void Update() {
@@ -104,6 +106,26 @@ public class HelSpriter : MonoBehaviour
         sideAttack = false;
     }
 
+    public void startSummon(){
+        if (spawner.spawnable){
+            master.aiPath.enabled = false;
+            spawner.Spawn();
+        }
+    }
+
+    public void endSummon(){
+        master.aiPath.enabled = true;
+        spawner.spawnable = true;
+    }
+
+    // public void startDeath() {
+    //     master.isAttacking = false;
+    //     master.aiPath.enabled = false;
+    //     master.rb.velocity = Vector2.zero;
+    //     master.rb.isKinematic = true;
+    //     master.anim.SetBool("Death", true);
+    // }
+
     // FIX death animation same as attack
 
     public void endOfAnimation() {
@@ -156,7 +178,9 @@ public class HelSpriter : MonoBehaviour
     }
 
     void OnTriggerStay2D(Collider2D other) {
-        master.Attack();
+        if (other.CompareTag("Player"))
+            master.Attack();
+        
     }
 
 }
