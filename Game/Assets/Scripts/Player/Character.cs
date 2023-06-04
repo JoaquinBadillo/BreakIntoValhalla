@@ -16,8 +16,8 @@ public class Character : MonoBehaviour{
     public int childIndex;
     // Stat variables
     // HP
-    protected int maxHealth = 200;
-    protected int currentHealth;
+    [SerializeField] protected int maxHealth = 200;
+    [SerializeField] protected int currentHealth;
     // ATK
     public int attack = 20;
     public int secondaryAttack = 20;

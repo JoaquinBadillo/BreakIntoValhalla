@@ -1,35 +1,45 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 using Pathfinding;
 
 public class Hel : Character{
+    // Movement Variables
     public AIPath aiPath;
     [SerializeField] Transform player;
     [SerializeField] float range;
+    // Attack Variables
     private HelSpriter animatorSlave;
-
     public float meleeInnerRange;
     public float xRange;
     public float yRange;
     public float zRange;
-
     public Transform meleeAttackBox;
     public Transform meleeAttackCircle;
-
     public bool isAttacking;
+    // Health Bar Variables
+    [SerializeField] TMP_Text hitpoints;
+    public HelSlider healthBar;
+    // Second Phase Variables
+    private bool isSecondPhase;
+    private float timeUntilNextSummon;
+    private float summonLag;
+    private int randomizedSummon;
 
     void Start() {
         maxHealth = 600;
         endLag = 5f;
+        summonLag = 25f;
         range = 3f;
         meleeAttackBox = null;
         meleeAttackCircle = null;
-        
+        isSecondPhase = true;
         zRange = 1;
-
         base.Initialize();
-
+        healthBar = GetComponentInChildren<HelSlider>();
+        healthBar.SetMaxHealth(maxHealth);
         animatorSlave = this.gameObject.transform.GetChild(0).GetComponent<HelSpriter>();
         GetComponent<AIPath>().enabled = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -38,6 +48,9 @@ public class Hel : Character{
     void Update() {
         animator.SetFloat("xSpeed", aiPath.desiredVelocity.x);
         animator.SetFloat("ySpeed", aiPath.desiredVelocity.y);
+        if (isSecondPhase) {
+            Summon();
+        }
     }
 
     public void Attack() {
@@ -45,6 +58,14 @@ public class Hel : Character{
             aiPath.enabled = false;
             animator.SetTrigger("slash");
             timeUntilNextAttack = Time.time + endLag;
+        }
+    }
+
+    public void Summon() {
+        if (Time.time >= timeUntilNextSummon){
+            aiPath.enabled = false;
+            animator.SetTrigger("summon");
+            timeUntilNextSummon = Time.time + summonLag;
         }
     }
 
@@ -64,6 +85,13 @@ public class Hel : Character{
 
     public void TakeDamage(int damage) {
         currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+
+        if (currentHealth <= 300 && currentHealth > 0){
+            isSecondPhase = true;
+            animator.SetBool("isSecond", true);
+        }
+
         if (currentHealth <= 0)
             Die();
             

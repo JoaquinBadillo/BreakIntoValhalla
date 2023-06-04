@@ -187,14 +187,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4240551250185462938, guid: d222f960e61ee4a42b6ad971ae9c9389, type: 3}
-      propertyPath: detailedGizmos
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7829783661263350532, guid: d222f960e61ee4a42b6ad971ae9c9389, type: 3}
-      propertyPath: alwaysDrawGizmos
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8332767520128435673, guid: d222f960e61ee4a42b6ad971ae9c9389, type: 3}
       propertyPath: m_Name
       value: Hel
@@ -205,11 +197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8332767520128435678, guid: d222f960e61ee4a42b6ad971ae9c9389, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.449554
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8332767520128435678, guid: d222f960e61ee4a42b6ad971ae9c9389, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.350826
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8332767520128435678, guid: d222f960e61ee4a42b6ad971ae9c9389, type: 3}
       propertyPath: m_LocalPosition.z
