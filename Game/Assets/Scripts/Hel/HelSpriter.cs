@@ -81,11 +81,7 @@ public class HelSpriter : MonoBehaviour
                 return;
 
             foreach (Collider2D collider in trueCollisions) {
-                if (collider.GetComponent<Obstacle>() != null) {
-                    collider.GetComponent<Obstacle>().Yeet();
-                }
-
-                else if (collider.GetComponent<Player>() != null) {
+                if (collider.GetComponent<Player>() != null) {
                     master.meleeAttackPoint = null;
                     master.meleeAttackBox = null;
                     master.meleeRange = 0f;
