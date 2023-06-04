@@ -15,10 +15,10 @@ public class PlayerAttack : MonoBehaviour {
     [SerializeField] float arrowSpeed = 20f;
     private Vector3 facing;
     private bool throwable;
-
-
-     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
-
+    // Deflect variables
+    private Vector2 deflectDirection;
+    // Stamina variables
+    private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     private Coroutine regen;
 
     void Start() {
@@ -42,10 +42,12 @@ public class PlayerAttack : MonoBehaviour {
                     master.meleeAttackPoint = null;
                     enemy.GetComponent<MeleeDraugr>().TakeDamage(master.attack);
                 }
-                // else if(enemy.CompareTag("Arrow")) {
-                //     Debug.Log("you just got yeeted");
-                //     enemy.GetComponent<DraugrArrow>().YeetArrow();
-                // }
+                else if(enemy.CompareTag("Arrow")) {
+                    Debug.Log("you just got yeeted");
+                    deflectDirection = enemy.GetComponent<DraugrArrow>().facing;
+                    enemy.GetComponent<DraugrArrow>().YeetArrow();
+                    GameObject projectile = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
+                }
             }
         }
 
@@ -143,8 +145,7 @@ public class PlayerAttack : MonoBehaviour {
     private IEnumerator RegenStamina()
     {
         yield return new WaitForSeconds(2f);
-        while(master.currentStamina < master.maxStamina)
-        {
+        while(master.currentStamina < master.maxStamina) {
             master.currentStamina += master.maxStamina / 100; 
             yield return regenTick;
         }
