@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3469103368295794719}
   - component: {fileID: 5040893652854912537}
   - component: {fileID: 5338086843196759976}
-  m_Layer: 9
+  m_Layer: 7
   m_Name: DraugrArrow
   m_TagString: Arrow
   m_Icon: {fileID: 0}

@@ -13,12 +13,14 @@ public class RangedDraugrSpriter : MonoBehaviour
     private Vector3 facing;
     private bool throwable;
     public bool death;
+    private Collider2D myCollider;
     // Start is called before the first frame update
     void Start()
     {
         master = this.GetComponentInParent<RangedDraugr>();
         throwable = true;
         death = false;
+        myCollider = this.GetComponentInParent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -29,11 +31,12 @@ public class RangedDraugrSpriter : MonoBehaviour
             master.angle = Mathf.Atan2(master.facingDirection.y, master.facingDirection.x) * Mathf.Rad2Deg;
             GameObject projectile = Instantiate(arrow, shootPoint.position, Quaternion.Euler(0, 0, master.angle));
             projectile.GetComponent<DraugrArrow>().SetAttack(master.secondaryAttack);
-            //projectile.enemyCollider = master.GetComponent<Collider2D>();
+            projectile.GetComponent<DraugrArrow>().EnemyCollider = myCollider;
             throwable = false;
             Debug.Log("My pointy self just manifested");
             Rigidbody2D projectileRigid2d = projectile.GetComponent<Rigidbody2D>();
             projectileRigid2d.velocity = facing * arrowSpeed;
+            projectile.GetComponent<DraugrArrow>().direction = facing;
         }
     }
 
