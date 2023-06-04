@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour {
     private Player master;
@@ -20,6 +22,8 @@ public class PlayerAttack : MonoBehaviour {
     // Stamina variables
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     private Coroutine regen;
+
+    [SerializeField] GameObject panel;
 
     void Start() {
         master = this.GetComponentInParent<Player>();
@@ -44,7 +48,7 @@ public class PlayerAttack : MonoBehaviour {
                 }
                 else if(enemy.CompareTag("Arrow")) {
                     Debug.Log("you just got yeeted");
-                    deflectDirection = enemy.GetComponent<DraugrArrow>().facing;
+                    //deflectDirection = enemy.GetComponent<DraugrArrow>().facing;
                     enemy.GetComponent<DraugrArrow>().YeetArrow();
                     GameObject projectile = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
                 }
@@ -150,6 +154,21 @@ public class PlayerAttack : MonoBehaviour {
             yield return regenTick;
         }
         regen = null; // reset regen
+    }
+
+    public void Die() {
+        StartCoroutine(dieCoroutine());
+    }
+
+    IEnumerator dieCoroutine() {
+        for (float f = 0f; f <= 1; f += 0.15f) {
+            Color c = new Color(0, 0, 0, f);
+            panel.GetComponent<Image>().color = c;
+            yield return new WaitForSeconds(0.3f);
+        }
+
+        SceneManager.LoadScene("DeathScene");
+        yield break;
     }
 }
 

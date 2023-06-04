@@ -98,13 +98,9 @@ public class LoginScreen : MonoBehaviour {
                 yield break;
             }
 
-            User user = JsonUtility.FromJson<User>(webRequest.downloadHandler.text);
-
-            Debug.Log(user.game_id);
-
-            PlayerPrefs.SetString("username", user.username);
-            PlayerPrefs.SetString("email", user.email);
-            PlayerPrefs.SetString("password", user.password);
+            PlayerPrefs.SetString("username", newUser.username);
+            PlayerPrefs.SetString("email", newUser.email);
+            PlayerPrefs.SetString("password", newUser.password);
 
             SceneManager.LoadScene("ClassSelect");
             yield break;

@@ -251,7 +251,6 @@ GameObject:
   - component: {fileID: 1873596272904258534}
   - component: {fileID: 2085935705537406938}
   - component: {fileID: 7533395636212230894}
-  - component: {fileID: 1923120483}
   m_Layer: 3
   m_Name: Female-archer
   m_TagString: Player
@@ -355,18 +354,6 @@ MonoBehaviour:
   hitpoints: {fileID: 0}
   healthBar: {fileID: 0}
   amount: 20
---- !u!114 &1923120483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6582775436091852041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbf5a1a454f2cfce48cc4ce59d56212c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6741388741946219065
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +510,7 @@ MonoBehaviour:
   arrow: {fileID: 3245069156672053480, guid: f9c89bed7fa97904ba665709e14eb7a2, type: 3}
   direction: 0
   arrowSpeed: 20
+  panel: {fileID: 0}
 --- !u!1 &7806575468176315421
 GameObject:
   m_ObjectHideFlags: 0

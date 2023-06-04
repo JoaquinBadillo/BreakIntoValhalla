@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Screens/ClassSelect.unity
     guid: 5adb75965fd82d54c8151362ebc378b0
+  - enabled: 1
+    path: Assets/Scenes/Screens/DeathScene.unity
+    guid: 00cb6f2dc033998e2afdd20a2bc65f42
   m_configObjects: {}

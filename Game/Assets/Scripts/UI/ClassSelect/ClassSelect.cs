@@ -31,7 +31,8 @@ public class ClassSelect : MonoBehaviour {
 	public void StartGame() {
 		Debug.Log("Ayo stop f poking me!");
 		// API stuff
-		PlayerPrefs.SetInt("classIndex", classIndex);
+		PlayerPrefs.SetInt("classIndex", classIndex + 1);
+		Debug.Log(PlayerPrefs.GetInt("classIndex"));
 		StartCoroutine(CreateGame());
 		//SceneManager.LoadScene(1, LoadSceneMode.Single);
 	}
@@ -39,13 +40,15 @@ public class ClassSelect : MonoBehaviour {
 	public IEnumerator CreateGame() {
 		string uri = "http://localhost:5000/api/game";
 
-		// Create User object
+		// Create Game object
         GameThingy game = new GameThingy();
         game.username = PlayerPrefs.GetString("username");
+		Debug.Log(game.username);
         game.character_id = PlayerPrefs.GetInt("classIndex");
 
         string jsonString = JsonUtility.ToJson(game);
-        
+        Debug.Log(jsonString);
+		
         using (UnityWebRequest webRequest = UnityWebRequest.Put(uri, jsonString)) {
             webRequest.method = "POST";
             webRequest.SetRequestHeader("Content-Type", "application/json");
@@ -53,13 +56,14 @@ public class ClassSelect : MonoBehaviour {
 			yield return webRequest.SendWebRequest();
 
 			if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError) {
-                Debug.LogError("Error: " + webRequest.error);
+                Debug.LogError("Error creating game!");
+				Debug.LogError("Error: " + webRequest.error);
                 yield break;
             }
 		}
 
-		string endpoint = uri + "/" + PlayerPrefs.GetString("username") + "/levels";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
+		uri = "http://localhost:5000/api/users/" + PlayerPrefs.GetString("username") + "/levels";
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri)) {
             yield return webRequest.SendWebRequest();
 
             if (webRequest.result == UnityWebRequest.Result.Success) {

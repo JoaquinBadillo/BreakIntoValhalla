@@ -92,18 +92,20 @@ app.put('/api/users/levels', async (req, res)=>{
     let connection = null;
 
     try {
+        let newSeed = randint(80000);
         connection = await connectToDB();
         const [results, fields] = await connection.execute(
             'UPDATE valhalla.levels ' + 
             'INNER JOIN games USING (level_id) ' +
-            'INNER JOIN users USING (user_id) ' +
-            `SET level_num = ?, seed = ${randint(8000000)} ` +
-            'WHERE user_id = ?', 
+            'INNER JOIN users USING (game_id) ' +
+            `SET level_num = ?, seed = ${newSeed} ` +
+            'WHERE username = ?', 
                 [req.body["level_num"], 
-                 req.body["user_id"]
+                 req.body["username"]
                 ]);
-
-        res.json({'message': 'Seed updated correctly!'});
+        
+        console.log(`SUCCESS: New seed: ${newSeed}`)
+        res.json({'seed': newSeed});
     }
 
     catch(error) {
@@ -582,9 +584,15 @@ app.post('/api/game', async (req, res)=>{
     let connection = null;
 
     try {
+        console.log("Creating game!");
         connection = await connectToDB();
+        let seed = randint(800000);
+        console.log(`Seed: ${seed}`);
+        console.log("User: " + req.body["username"]);
+        console.log("CharId: " + req.body["character_id"]);
+        
         const [results, fields] = await connection.execute(
-            `CALL valhalla.create_game(?, ?, ${randint(80000)});`, 
+            `CALL valhalla.create_game(?, ?, ${seed})`, 
             [req.body["username"],
              req.body["character_id"]
             ]);
