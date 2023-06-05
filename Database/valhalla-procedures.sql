@@ -1,3 +1,10 @@
+-- Valhalla Database Procedures
+-- Version 1.0
+-- Procedures that facilitate the creation of users and games
+
+-- Last edited June 05, 2023
+-- Joaquín Badillo
+
 USE valhalla;
 
 DELIMITER $$

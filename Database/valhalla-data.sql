@@ -1,5 +1,10 @@
 -- Valhalla Sample Database Data
---- This data will be used for testing
+-- Version 1.0
+-- This data will be used for testing
+
+-- Last edited June 05, 2023
+-- Joaquín Badillo
+
 
 SET NAMES utf8mb4;
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
@@ -83,7 +88,10 @@ INSERT INTO valhalla.deaths (`user_id`, `room`, `killer`) VALUES
 (3, 'Hard Battle', 'Archer Draugr'),
 (4, 'Hel Boss Room', 'Hel'),
 (5, 'Hel Boss Room', 'Hel'),
-(6, 'Hel Boss Room', 'Sword Draugr');
+(6, 'Hel Boss Room', 'Sword Draugr'),
+(3, 'Hel Boss Room', 'Hel'),
+(3, 'Hel Boss Room', 'Hel'),
+(4, 'Hel Boss Room', 'Hel');
 COMMIT;
 
 SET SQL_MODE=@OLD_SQL_MODE;
