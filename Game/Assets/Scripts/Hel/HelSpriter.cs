@@ -114,14 +114,6 @@ public class HelSpriter : MonoBehaviour
         spawner.spawnable = true;
     }
 
-    // public void startDeath() {
-    //     master.isAttacking = false;
-    //     master.aiPath.enabled = false;
-    //     master.rb.velocity = Vector2.zero;
-    //     master.rb.isKinematic = true;
-    //     master.anim.SetBool("Death", true);
-    // }
-
     // FIX death animation same as attack
 
     public void Die() {

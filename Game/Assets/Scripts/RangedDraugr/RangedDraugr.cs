@@ -45,8 +45,5 @@ public class RangedDraugr : Character {
 
     void Die() {
         animator.SetBool("isDead", true);
-        Debug.Log("I died");
-        if (animatorSlave.death == true)
-            Destroy(gameObject);
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 public class MeleeDraugrSpriter : MonoBehaviour
 {
@@ -29,6 +30,10 @@ public class MeleeDraugrSpriter : MonoBehaviour
                     hitPlayer.GetComponent<Player>().TakeDamage(master.attack);
                 }
         }
+
+        if (death) {
+            Destroy(master.gameObject);
+        }
     }
 
     public void startAttack() {
@@ -40,9 +45,13 @@ public class MeleeDraugrSpriter : MonoBehaviour
         master.aiPath.enabled = true;
     }
 
-    // FIX death animation same as attack
+    public void StartDeath() {
+        this.GetComponentInParent<Seeker>().enabled = false;
+        this.GetComponentInParent<AIPath>().enabled = false;
+        this.GetComponentInParent<AIDestinationSetter>().enabled = false;
+    }
 
-    public void endOfAnimation() {
+    public void EndDeath() {
         death = true;
     }
 
