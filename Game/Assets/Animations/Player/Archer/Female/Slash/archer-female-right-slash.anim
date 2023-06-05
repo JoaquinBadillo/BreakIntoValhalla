@@ -21,15 +21,15 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 397671885, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
-    - time: 0.15
+    - time: 0.16666667
       value: {fileID: 1516619914, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
     - time: 0.3
       value: {fileID: -1224218760, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
-    - time: 0.45
+    - time: 0.46666667
       value: {fileID: 518862616, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
     - time: 0.6166667
       value: {fileID: -473739523, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
-    - time: 0.76666665
+    - time: 0.75
       value: {fileID: 171101166, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
     - time: 0.9166667
       value: {fileID: 171101166, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
@@ -84,14 +84,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.43333334
+  - time: 0.45
     functionName: Right
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.45
+  - time: 0.46666667
     functionName: startAttack
     data: 
     objectReferenceParameter: {fileID: 0}

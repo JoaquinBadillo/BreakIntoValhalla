@@ -25,7 +25,7 @@ AnimationClip:
       value: {fileID: 2024170493, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
     - time: 0.3
       value: {fileID: -792229711, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
-    - time: 0.45
+    - time: 0.46666667
       value: {fileID: -1721469460, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
     - time: 0.6166667
       value: {fileID: 1558208313, guid: 186a5c4a7ba659945b0a381e61dc9a8c, type: 3}
@@ -93,6 +93,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.6166667
     functionName: startAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.9166667
+    functionName: endAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
