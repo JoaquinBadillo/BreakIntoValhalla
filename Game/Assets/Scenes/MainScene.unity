@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 814357765}
   - component: {fileID: 814357764}
   - component: {fileID: 814357763}
+  - component: {fileID: 814357766}
   m_Layer: 0
   m_Name: Wood_Trigger
   m_TagString: Untagged
@@ -690,6 +691,19 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &814357766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814357761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dac9cffca3e2a5c90bf292f2097043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blocking: {fileID: 1417000778}
 --- !u!1 &858214779
 GameObject:
   m_ObjectHideFlags: 0
