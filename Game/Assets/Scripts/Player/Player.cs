@@ -154,16 +154,19 @@ public class Player : Character {
     }
 
     public void UpgradeAttack() {
-        attack += 2;
+        attack += 3;
     }
 
     public void UpgradeHealth() {
         maxHealth += 20;
         currentHealth += 20;
+        // Update health bar
+        healthBar.SetHealth(currentHealth);
+        hitpoints.text = currentHealth + "/" + maxHealth;
     }
 
     public void UpgradeSpeed() {
-        speed += 0.2f;
+        speed += 0.4f;
     }
 
     public void Heal(float healingRate) {
