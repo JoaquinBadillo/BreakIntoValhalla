@@ -1,3 +1,15 @@
+/* 
+    Character Select Screen
+
+    This script has mainly 2 purposes:
+	1. To allow the user to select a character from an array of prefabs
+	2. To send the user's character selection to the server
+		2.1. Character selection creates a new game in the database, with a random seed
+			 Consult the ER diagram if you want to know more about the database structure
+
+    Joaquin Badillo, Pablo Bolio
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,12 +41,9 @@ public class ClassSelect : MonoBehaviour {
 	}
 
 	public void StartGame() {
-		Debug.Log("Ayo stop f poking me!");
-		// API stuff
 		PlayerPrefs.SetInt("classIndex", classIndex + 1);
 		Debug.Log(PlayerPrefs.GetInt("classIndex"));
 		StartCoroutine(CreateGame());
-		//SceneManager.LoadScene(1, LoadSceneMode.Single);
 	}
 
 	public IEnumerator CreateGame() {

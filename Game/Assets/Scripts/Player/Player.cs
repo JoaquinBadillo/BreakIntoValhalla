@@ -1,17 +1,24 @@
 /* 
     Player Behavior Script
 
-    sets the different behaviours of a player
+    Sets the different behaviours of a player
+
         - Movement (using Vector2)
         - Animations (using the Animator state machine and animator setters)
         - Melee Combat Mechanics (using gizmos for reach)
         - Ranged Combat Mechanics ()
         - Take Damage (using methods called in enemy scripts)
         - Death (deactivating different components with GetComponent<>() method)
-        
-        - Set player stats from DB, contributed by Joaquin Badillo
-
+    
     Pablo Bolio
+
+        - Set player stats from DB, 
+        - Upgrade player stats (called by interactive upgrade objects)
+        - Heal player (called by potions) 
+        
+    Joaquin Badillo
+
+    
 */
 
 using System.Collections;
@@ -46,6 +53,8 @@ public class Player : Character {
     public int amount = 20;
 
     private string className;
+
+    private bool keyCollected;
 
     private int defense;
    
@@ -167,6 +176,26 @@ public class Player : Character {
 
     public void UpgradeSpeed() {
         speed += 0.2f;
+    }
+
+    public void Heal(float healingRate) {
+        currentHealth += (int) (maxHealth * healingRate);
+        
+        // Avoid over-healing shenaningans
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
+        
+        // Update health bar
+        healthBar.SetHealth(currentHealth);
+        hitpoints.text = currentHealth + "/" + maxHealth;
+    }
+
+    public void SetKeyStatus(bool status) {
+        keyCollected = status;
+    }
+
+    public bool HasKey() {
+        return keyCollected;
     }
 
     public IEnumerator FetchStats() {

@@ -26,11 +26,15 @@ public class Chest : Interactive {
         int value = Random.Range(0, 100);
 
         int acc = 0;
-        for (int i = 0; i < dropRates.Count; i++) {
+
+        // Determine the item to drop
+        for (int i = 0; i < drops.Count; i++) {
+            // Probability distribution thingy
             if (value < acc + dropRates[i]) {
                 storedItem = drops[i];
                 break;
             }
+            acc += dropRates[i];
         }
 
     }
