@@ -1,3 +1,21 @@
+/*
+    Login Screen Script
+
+    Allows the user to tab between fields and login with the enter key.
+
+    It reads the username, email, and password fields and sends them to the server
+    to either login or register the user. If the request fails, it displays an error message.
+
+    It handles connection errors and protocol errors (most likely username or email already exists)
+    separately to display more descriptive error messages.
+
+    User is sent to their game scene or to character select according to the model's logic:
+    a game id is required to play the game.
+
+    Joaquín Badillo, Pablo Bolio
+*/
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -91,13 +109,20 @@ public class LoginScreen : MonoBehaviour {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
-            // Check if register process was successful
-            if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError) {
+            // Check for server connection errors
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError) {
+                errorMessage.text = "Server unreachable";
+                Debug.LogError("Error: " + webRequest.error);
+                yield break;
+            }
+            // Check for request errors (most likely username or email already exists)
+            else if (webRequest.result == UnityWebRequest.Result.ProtocolError) {
                 errorMessage.text = "Try with another username or email";
                 Debug.LogError("Error: " + webRequest.error);
                 yield break;
             }
 
+            // If no errors, save user data to PlayerPrefs file and go to class select
             PlayerPrefs.SetString("username", newUser.username);
             PlayerPrefs.SetString("email", newUser.email);
             PlayerPrefs.SetString("password", newUser.password);
@@ -127,9 +152,15 @@ public class LoginScreen : MonoBehaviour {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
-            // Check if login was successful
-            if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError) {
-                errorMessage.text = "Try with another username or email";
+            // Check for server connection errors
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError) {
+                errorMessage.text = "Server unreachable";
+                Debug.LogError("Error: " + webRequest.error);
+                yield break;
+            }
+            // Check for request errors (most likely username or email already exists)
+            else if (webRequest.result == UnityWebRequest.Result.ProtocolError) {
+                errorMessage.text = "Invalid credentials";
                 Debug.LogError("Error: " + webRequest.error);
                 yield break;
             }
@@ -149,12 +180,9 @@ public class LoginScreen : MonoBehaviour {
 
         string endpoint = uri + "/" + PlayerPrefs.GetString("username") + "/levels";
         using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
-            Debug.Log("Hop in loser!");
             yield return webRequest.SendWebRequest();
-            Debug.Log("We goin' insane!");
 
             if (webRequest.result == UnityWebRequest.Result.Success) {
-                Debug.Log("Mission Accomplished");
                 jsonString = webRequest.downloadHandler.text;
                 Level level = JsonUtility.FromJson<Level>(webRequest.downloadHandler.text);
                 PlayerPrefs.SetInt("seed", level.seed);

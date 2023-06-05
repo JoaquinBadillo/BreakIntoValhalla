@@ -1,3 +1,19 @@
+/*
+    Death Scene Script
+
+    Has a coroutine start method that sends a request to the server
+    to update the user's level seed and send them back to level 1 (currently the only one). 
+    If the request fails, the seed is set locally to a random number.
+
+    The endpoint sends the new level data back to the client, which is then used to set the seed
+    in Unity.
+
+    It also waits 2 seconds to change between scenes so that the death screen doesn't flash.
+
+    Joaquín Badillo
+*/
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
