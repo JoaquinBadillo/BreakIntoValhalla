@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6799095663273965131}
   m_Layer: 7
   m_Name: Saber-draugr
-  m_TagString: Enemy
+  m_TagString: Saber Draugr
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4913df07211a0854b88fb0324ab611c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   meleeAttackPoint: {fileID: 6799095663919322278}
   meleeRange: 1
   enemyLayers:
@@ -182,6 +183,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   childIndex: 0
+  maxHealth: 200
+  currentHealth: 0
   attack: 20
   secondaryAttack: 20
   endLag: 0
@@ -189,10 +192,11 @@ MonoBehaviour:
   timeUntilNextAttack: 0
   timeUntilNextShot: 0
   speed: 2
+  maxStamina: 100
+  currentStamina: 0
   aiPath: {fileID: 6799095663273965126}
   player: {fileID: 0}
   range: 1.3
-  withinReach: 0
 --- !u!1 &6799095663919322281
 GameObject:
   m_ObjectHideFlags: 0

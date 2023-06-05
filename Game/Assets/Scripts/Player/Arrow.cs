@@ -6,10 +6,16 @@ public class Arrow : MonoBehaviour {
     private int attack;
 
     void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Enemy")){
-            Debug.Log(other.name);
+        if(other.CompareTag("Saber Draugr")){
             other.GetComponent<MeleeDraugr>().TakeDamage(attack);
-            Debug.Log("Damage dealt: " + attack);
+            Destroy(gameObject);
+        }
+        else if(other.CompareTag("Bow Draugr")){
+            other.GetComponent<RangedDraugr>().TakeDamage(attack);
+            Destroy(gameObject);
+        }
+        else if(other.CompareTag("Hel")){
+            other.GetComponent<Hel>().TakeDamage(attack);
             Destroy(gameObject);
         }
         else if (other.CompareTag("Walls"))
