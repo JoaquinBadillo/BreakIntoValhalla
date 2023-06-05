@@ -41,11 +41,21 @@ public class PlayerAttack : MonoBehaviour {
             Debug.Log("This what we got");
             // Deal damage
             foreach(Collider2D enemy in hitEnemies) {
-                if(enemy.CompareTag("Enemy")) {
+                if (enemy.CompareTag("Saber Draugr")) {
                     Debug.Log("Lo logro señor");
                     master.meleeAttackPoint = null;
                     enemy.GetComponent<MeleeDraugr>().TakeDamage(master.attack);
                 }
+                else if(enemy.CompareTag("Bow Draugr")) {
+                    Debug.Log("Lo logro señor");
+                    master.meleeAttackPoint = null;
+                    enemy.GetComponent<RangedDraugr>().TakeDamage(master.attack);
+                }
+                else if (enemy.CompareTag("Hel")) {
+                    Debug.Log("Lo logro señor");
+                    master.meleeAttackPoint = null;
+                    enemy.GetComponent<Hel>().TakeDamage(master.attack);
+                }  
                 else if(enemy.CompareTag("Arrow")) {
                     Debug.Log("you just got yeeted");
                     //deflectDirection = enemy.GetComponent<DraugrArrow>().facing;

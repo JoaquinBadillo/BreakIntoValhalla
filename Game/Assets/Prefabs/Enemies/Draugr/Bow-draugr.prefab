@@ -154,10 +154,9 @@ GameObject:
   - component: {fileID: 1574141281549724397}
   - component: {fileID: 2140508652378270351}
   - component: {fileID: 6919336011496425641}
-  - component: {fileID: 8461277058149732011}
   m_Layer: 7
   m_Name: Bow-draugr
-  m_TagString: Enemy
+  m_TagString: Bow Draugr
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,6 +240,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   childIndex: 0
+  maxHealth: 200
+  currentHealth: 0
   attack: 20
   secondaryAttack: 20
   endLag: 0
@@ -250,24 +251,10 @@ MonoBehaviour:
   speed: 1.5
   maxStamina: 100
   currentStamina: 0
-  movementSlave: {fileID: 0}
-  stop: 5
-  retreat: 2.5
-  reach: 7
   projectile: {fileID: 3245069156672053480, guid: 045ab4a601fa9ca4b91743e7a864bdd1, type: 3}
   player: {fileID: 0}
---- !u!114 &8461277058149732011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133150606075463992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 815a76f6eccf8d94e86e5320092d9941, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  facingDirection: {x: 0, y: 0}
+  angle: 0
 --- !u!1 &7362722418377152062
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,9 @@ TagManager:
   - Chaser
   - Walls
   - Attacker
+  - Hel
+  - Saber Draugr
+  - Bow Draugr
   layers:
   - Default
   - TransparentFX
