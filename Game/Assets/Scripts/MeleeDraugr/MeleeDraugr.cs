@@ -55,12 +55,6 @@ public class MeleeDraugr : Character{
 
     void Die() {
         animator.SetBool("isDead", true);
-        Debug.Log("I died");
-        this.GetComponent<AIPath>().enabled = false;
-        this.GetComponent<AIDestinationSetter>().enabled = false;
-        this.GetComponent<Seeker>().enabled = false;
-        if (animatorSlave.death == true)
-            Destroy(gameObject); 
     }
     /*
         This function allows melee enemy to start chasing the player

@@ -38,6 +38,9 @@ public class RangedDraugrSpriter : MonoBehaviour
             projectileRigid2d.velocity = facing * arrowSpeed;
             //projectile.GetComponent<DraugrArrow>().direction = facing;
         }
+        if (death) {
+            Destroy(master.gameObject);
+        }
     }
 
     public void ShootStart() {
@@ -49,9 +52,10 @@ public class RangedDraugrSpriter : MonoBehaviour
         throwable = true;
     }
 
-    public void endOfAnimation() {
+    public void EndDeath() {
         death = true;
     }
+
 
     /*
         these functions change the melee attack reach by 
