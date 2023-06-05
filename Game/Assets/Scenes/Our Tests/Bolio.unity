@@ -123,63 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &476841206
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.4720702
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.1347885
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.081711434
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6312962065530029489, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6582775436091852041, guid: efe797a87e8167a44b969f5216659e14, type: 3}
-      propertyPath: m_Name
-      value: Female-archer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: efe797a87e8167a44b969f5216659e14, type: 3}
 --- !u!1001 &849134949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -193,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8332767520128435678, guid: d222f960e61ee4a42b6ad971ae9c9389, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8332767520128435678, guid: d222f960e61ee4a42b6ad971ae9c9389, type: 3}
       propertyPath: m_LocalPosition.x
@@ -276,7 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACQn+v2GHC6ewIAADEFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMuSmzAQ/BWXzrELMPiRW8J6vTns2rVOai9cZBiMykKiJOHHbvnfMxJgiHNCdM+jpzXwRZjQFaRGqrVi2avMgHwfEXsm30Y9+QIXepBixz6hi/lgmSlsEHUx79Qwibhv07QswSiW/hAHboM9BGvBcqnKVXaAWGqjEc4p14CUksZmC4S+RuSCj/HSplzxFMzt6RNPS290w2MKwoDqQ/3JzJ/60SKYthmLyWIeTOfTNs2fRItZ5IV+uBp7M1eiFimnZQWZnaevFHUVwqaTwEnbCDtVKjlnupVJzLVyNsS00jUOiQEZozi20xZMbEYB7FAY+zpM3+S5BtO6ouj1iSn0r6lLfsrG1JLqY6PsRHltOwVRI74p+vofP/YdnStZvnR9fc/2MAVLj+/0mlJtBq4P4adeuu8MOlN+pHsOHwWIN7lWshYZkkbVNrXWEDz1r/fR4gLSY483Uh/Auuod7y65u2I7w81Nf4k5K/eWmoQNsOPSOe42AxTezS8U7PZGtyUQtSr+aPhND8MFa4lnprRBqp1SWHl7WSsbSlbOMztNbWKpBDi4FV2BoNxct1jGPF7hAzdo+8A8U/sptc1brvtCHlIc3Md73gO1lef7ZelCnl9BF5vacCagF22JN/QplkI0Gzb0pEvb1Sqn6SDtULPs39UiM8+be2GWL/OpP8/BH4fRAqJov0xDGi5mQUDc7jGBc1K+bYS29uCtib64wD3r/jCjtaKV2/ZM0fOafZZyYDkTudylCkBsmgp34aCwCX6X2SpjaNAOjGHC3Tf5SgiX6RGy5F4ocZOuLkbRpK+SkIqdpLFIQmL3S0mIhe+7vFVwYnC2zbtiN3L7C1BLAwQUAAAICAAAkJ/r8wFAe20AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0kpmBgbmBSUqaZZqxoXlaqqGuialFqqlpkmWySaKJhZmRkVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAkJ/r9hhwunsCAAAxBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAkJ/r8wFAe20AAAB4AAAACQAkAAAAAAAAAAAAAADIAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAIADAAAAAA==
+    dataString: UEsDBBQAAAgIAACQn+t09zOOegIAADMFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1zmzAQ/SsenWsPYPBHby1xnB6SeOJ2cuEiw2I0FhIjidhOxv+9KwGG0hPivf18u9IXYUJXkBqptoplzzID8n1C7Jl8m/TkE1zoUYo9+4TO5p1lprBG1Nm8UcMk4r5107IEo1j6Qxy5NfYQrAXLpSo32RFiqY1GOKdcA1JKGustEPqakAt+pmvrcsVTsLSnTzytvckNjykIA6o39WcLf+5Hq2Deeqxmq2UwX85bN38WrRaRF/rhZuotXIhapJyWFWS2nz5S1EUIm0wCO20tbFep5JzptkxirpWTIaaVrrFJNMgYxbZdbcHMehTAjoWxv0P31zzXYFpVFL0+MIX6NXHJT9mIWlJ9air7oLy2mYKoKb4J+vwfP/UdnStZPnV5fc/mMAVLT2/0mlJtBqoP4Ye+dN8JdKb8RA8c3gsQL3KrZC0yJI2qrWutIXjof++txQWkpx5vSh2BddUr3g25G7Ht4ea6v8SclQdLzcIG2HPpFHebAQpn8wsLdnuj2xCI2ir+aPhNj8MFa4lHprRBqu1S2PIOslbWlGycZrab2sRSCXBwW3QFgnJz3WEYMx7hiBukHTGP1F6lNnnLdTdk5OLg3t7zRtROnu/D0oU8P4MuXmvDmRgGs8wLChVLIZoV0yPW+u1rldN06HesWfbvcpGF5y29MMvX+dxf5uBPw2gFUXRYpyENV4sgIG77mMBOKd81pbYC4dxEL6XATevemMlW0crte6boecs+SzkQnYlc7lMFIF6bCPfKQWESvJnZJmMo0R6MYcJNnHwlhMv0BFlyD5S4VjcXo2jSR0lIxT6ksUhCYveoJMTC923eKfhgcLbJu2A3cvsLUEsDBBQAAAgIAACQn+vzAUB7bQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSmYGBuYFJSpplmrGheVqqoa6JqUWqqWmSZbJJoomFmZGRUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACQn+t09zOOegIAADMFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACQn+vzAUB7bQAAAHgAAAAJACQAAAAAAAAAAAAAAMcCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAfwMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -330,7 +273,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1600547991
 PrefabInstance:
