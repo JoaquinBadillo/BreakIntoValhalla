@@ -44,18 +44,16 @@ public class Stats {
 }
 
 public class Player : Character {
+    // Box Physics Variables
+    public float xRange;
+    public float yRange;
     // Health Bar variables
     [SerializeField] TMP_Text hitpoints;
     public SliderMaster healthBar;
-    //
-    private PlayerAttack animatorSlave;
     // Stamina cost
     public int amount = 20;
-
     private string className;
-
     private bool keyCollected;
-
     private int defense;
    
     // Sets necessary parameters and gets necessary components
@@ -77,7 +75,6 @@ public class Player : Character {
             speed = 2f;
         }
 
-        animatorSlave = GetComponentInChildren<PlayerAttack>();
         base.Initialize();
         healthBar.SetMaxHealth(maxHealth);
         hitpoints.text = currentHealth + "/" + maxHealth;
@@ -112,7 +109,6 @@ public class Player : Character {
         if (Input.GetKeyDown(KeyCode.P)) {
             animator.SetTrigger("primaryAttack");
             timeUntilNextAttack = Time.time + endLag;
-            //if (animatorSlave.isAttacking == false)
         }
     }
 
@@ -127,10 +123,6 @@ public class Player : Character {
             animator.SetTrigger("secondaryAttack");
             timeUntilNextShot = Time.time + secondaryEndLag;
         }
-            // if (animatorSlave.canAttack == false){
-                
-            //     animatorSlave.canAttack = true;
-            // }
     }
 
     public void TakeDamage(int damage) {
@@ -139,16 +131,12 @@ public class Player : Character {
         healthBar.SetHealth(currentHealth);
         hitpoints.text = currentHealth + "/" + maxHealth;
 
-        if (currentHealth <= 0) {
+        if (currentHealth <= 0)
             Die();
-        }
     }
 
     void Die() {
         animator.SetBool("isDead", true);
-        Debug.Log("I died");
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
     }
 
     public void SetStats(Stats stats) {

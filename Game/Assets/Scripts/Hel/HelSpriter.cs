@@ -96,20 +96,20 @@ public class HelSpriter : MonoBehaviour
         master.isAttacking = true;
     }
 
-    public void endAttack() {
+    public void EndAttack() {
         master.isAttacking = false;
         master.aiPath.enabled = true;
         sideAttack = false;
     }
 
-    public void startSummon(){
+    public void StartSummon(){
         if (spawner.spawnable){
             master.aiPath.enabled = false;
             spawner.Spawn();
         }
     }
 
-    public void endSummon(){
+    public void EndSummon(){
         master.aiPath.enabled = true;
         spawner.spawnable = true;
     }
@@ -124,7 +124,7 @@ public class HelSpriter : MonoBehaviour
 
     // FIX death animation same as attack
 
-    public void endOfAnimation() {
+    public void Die() {
         death = true;
     }
 

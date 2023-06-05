@@ -1162,8 +1162,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.010998845, y: 0.046703815}
-  m_Size: {x: 0.89073014, y: 1.5207651}
+  m_Offset: {x: -0.016470373, y: 0.046703815}
+  m_Size: {x: 0.93815017, y: 1.5207651}
   m_Direction: 0
 --- !u!50 &2316974716854059079
 Rigidbody2D:
@@ -1177,7 +1177,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1219,6 +1219,8 @@ MonoBehaviour:
   speed: 2
   maxStamina: 100
   currentStamina: 0
+  xRange: 0
+  yRange: 0
   hitpoints: {fileID: 4383470570703407084}
   healthBar: {fileID: 4383470570785727715}
   amount: 20

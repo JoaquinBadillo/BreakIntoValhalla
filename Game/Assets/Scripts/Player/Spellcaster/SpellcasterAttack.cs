@@ -4,17 +4,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PlayerAttack : MonoBehaviour {
+public class SpellcasterAttack : MonoBehaviour {
     private Player master;
     // Melee variables
     public bool isAttacking;
     private Collider2D[] hitEnemies;
-    // Shooting variables
-    public bool isShooting;
-    public Transform shootPoint;
-    public GameObject arrow;
+    // Casting variables
+    public bool isCasting; // isShooting
+    public Transform castPoint; // shootpoint
+    public GameObject spell; // arrow
     public float direction;
-    [SerializeField] float arrowSpeed = 20f;
+    [SerializeField] float spellSpeed = 20f; // arrow speed
     private Vector3 facing;
     private bool throwable;
     // Deflect variables
@@ -35,9 +35,9 @@ public class PlayerAttack : MonoBehaviour {
         if (isAttacking) {
             // Detecting attack range
             if (master.meleeAttackPoint == null) 
-                hitEnemies = Physics2D.OverlapCircleAll(Vector2.zero, 0, master.enemyLayers);
+                hitEnemies = Physics2D.OverlapBoxAll(master.meleeAttackPoint.position, Vector2.zero, 0);
             else
-                hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.enemyLayers);
+                hitEnemies = Physics2D.OverlapBoxAll(master.meleeAttackPoint.position, new Vector2(master.xRange, master.yRange), 0, master.enemyLayers);
             Debug.Log("This what we got");
             // Deal damage
             foreach(Collider2D enemy in hitEnemies) {
@@ -60,35 +60,35 @@ public class PlayerAttack : MonoBehaviour {
                     Debug.Log("you just got yeeted");
                     //deflectDirection = enemy.GetComponent<DraugrArrow>().facing;
                     enemy.GetComponent<DraugrArrow>().YeetArrow();
-                    GameObject projectile = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
+                    GameObject projectile = Instantiate(spell, castPoint.position, castPoint.rotation);
                 }
             }
         }
 
-        if (isShooting && throwable) {
-            GameObject projectile = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
-            projectile.GetComponent<Arrow>().SetAttack(master.secondaryAttack);
+        if (isCasting && throwable) {
+            GameObject projectile = Instantiate(spell, castPoint.position, castPoint.rotation);
+            projectile.GetComponent<Spell>().SetAttack(master.secondaryAttack);
             throwable = false;
             Debug.Log("My pointy self just manifested");
             Rigidbody2D projectileRigid2d = projectile.GetComponent<Rigidbody2D>();
-            projectileRigid2d.velocity = facing * arrowSpeed;
+            projectileRigid2d.velocity = facing * spellSpeed;
         }
     }
-    public void startAttack() {
+    public void StartPrimaryAttack() {
         isAttacking = true;
     }
 
-    public void endAttack() {
+    public void EndPrimaryAttack() {
         isAttacking = false;
     }
 
-    public void ShootStart() {
-        isShooting = true;
+    public void StartSecondaryAttack() {
+        isCasting = true;
         Physics2D.OverlapCircleAll(Vector2.zero, 0, master.enemyLayers);
     }
 
-    public void ShootFinish(){
-        isShooting = false;
+    public void EndSecondaryAttack(){
+        isCasting = false;
         throwable = true;
         hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.enemyLayers);
         UseStamina(master.amount);
@@ -103,61 +103,56 @@ public class PlayerAttack : MonoBehaviour {
 
     public void Right() {
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(4);
-        master.meleeRange = 0.5f;
+        // master.xRange;
+        // master.yRange;
         direction = 0f;
         facing.x = 1;
         facing.y = 0;
-        shootPoint = this.gameObject.transform.parent.GetChild(8);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
+        castPoint = this.gameObject.transform.parent.GetChild(8);
+        castPoint.rotation = Quaternion.Euler(0, 0, direction);
     }
     public void Left() {
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(2);
-        master.meleeRange = 0.5f;
+        // master.xRange;
+        // master.yRange;
         direction = 180f;
         facing.x = -1;
         facing.y = 0;
-        shootPoint = this.gameObject.transform.parent.GetChild(6);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
+        castPoint = this.gameObject.transform.parent.GetChild(6);
+        castPoint.rotation = Quaternion.Euler(0, 0, direction);
     }
     public void Up() {
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(1);
-        master.meleeRange = 0.35f;
+        // master.xRange;
+        // master.yRange;
         direction = 90f;
         facing.x = 0;
         facing.y = 1;
-        shootPoint = this.gameObject.transform.parent.GetChild(5);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
+        castPoint = this.gameObject.transform.parent.GetChild(5);
+        castPoint.rotation = Quaternion.Euler(0, 0, direction);
     }
     public void Down() {
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(3);
-        master.meleeRange = 0.43f;
+        // master.xRange;
+        // master.yRange;
         direction = 270f;
         facing.x = 0;
         facing.y = -1;
-        shootPoint = this.gameObject.transform.parent.GetChild(7);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
+        castPoint = this.gameObject.transform.parent.GetChild(7);
+        castPoint.rotation = Quaternion.Euler(0, 0, direction);
     }
 
-    public void UseStamina(int amount)
-    {
-        if(master.currentStamina - amount >= 0)
-        {
+    public void UseStamina(int amount) {
+        if(master.currentStamina - amount >= 0) {
             master.currentStamina -= amount;
-
             if(regen != null)
-            {
                 StopCoroutine(regen);
-            }
+            
             regen = StartCoroutine(RegenStamina());
-        }
-        else
-        {
-            Debug.Log("Not enough stamina");
         }
     }
     
-    private IEnumerator RegenStamina()
-    {
+    private IEnumerator RegenStamina() {
         yield return new WaitForSeconds(2f);
         while(master.currentStamina < master.maxStamina) {
             master.currentStamina += master.maxStamina / 100; 
@@ -167,10 +162,10 @@ public class PlayerAttack : MonoBehaviour {
     }
 
     public void Die() {
-        StartCoroutine(dieCoroutine());
+        StartCoroutine(DieCoroutine());
     }
 
-    IEnumerator dieCoroutine() {
+    IEnumerator DieCoroutine() {
         for (float f = 0f; f <= 1; f += 0.15f) {
             Color c = new Color(0, 0, 0, f);
             panel.GetComponent<Image>().color = c;
