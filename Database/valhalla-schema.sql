@@ -1,6 +1,6 @@
 -- Valhalla Database Schema
 -- Version 2.0
--- Last edited May 30, 2023
+-- Last edited June 05, 2023
 
 -- Developed by Einherjar / Joaquín Badillo, Pablo Bolio, Shaul Zayat
 
@@ -92,7 +92,7 @@ CREATE TABLE games (
     PRIMARY KEY (game_id),
     UNIQUE INDEX level_id (level_id ASC),
     INDEX character_id (character_id ASC),
-    CONSTRAINT fk_levels_game FOREIGN KEY (level_id) REFERENCES levels (level_id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT fk_levels_game FOREIGN KEY (level_id) REFERENCES levels (level_id) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT fk_character_id FOREIGN KEY (character_id) REFERENCES characters (character_id) ON DELETE RESTRICT
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -110,8 +110,8 @@ CREATE TABLE users (
     UNIQUE INDEX metrics_id (metrics_id ASC),
     UNIQUE INDEX game_id (game_id ASC),
     UNIQUE INDEX username (username ASC),
-    CONSTRAINT fk_users_metrics FOREIGN KEY (metrics_id) REFERENCES metrics (metrics_id) ON DELETE RESTRICT ON UPDATE CASCADE,
-    CONSTRAINT fk_users_game FOREIGN KEY (game_id) REFERENCES games (game_id) ON DELETE RESTRICT ON UPDATE CASCADE
+    CONSTRAINT fk_users_metrics FOREIGN KEY (metrics_id) REFERENCES metrics (metrics_id) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_users_game FOREIGN KEY (game_id) REFERENCES games (game_id) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 --
@@ -123,11 +123,8 @@ CREATE TABLE deaths(
     room VARCHAR(50) NOT NULL,
 	killer VARCHAR(50),
     PRIMARY KEY (deaths_id),
-    INDEX user_id (user_id ASC),
-	CONSTRAINT fk_deaths_users FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE RESTRICT ON UPDATE CASCADE
+	CONSTRAINT fk_deaths_users FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-SHOW TABLES;
 
 -- Enable restrictions
 SET SQL_MODE=@OLD_SQL_MODE;

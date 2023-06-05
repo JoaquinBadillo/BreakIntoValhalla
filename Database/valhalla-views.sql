@@ -18,14 +18,12 @@ ORDER BY metrics.kills DESC;
 -- Place of Death View
 CREATE VIEW death_place AS
 SELECT deaths.room, COUNT(deaths.room) AS "total"
-FROM users
-INNER JOIN deaths USING (user_id)
+FROM deaths
 GROUP BY deaths.room;
 
 -- Cause of Death View (Which type of character killed the player)
 CREATE VIEW death_cause AS
 SELECT deaths.killer, COUNT(deaths.killer) AS "total"
-FROM users
-INNER JOIN deaths USING (user_id)
+FROM deaths
 GROUP BY deaths.killer;
 
