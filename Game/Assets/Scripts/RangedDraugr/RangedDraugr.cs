@@ -13,7 +13,7 @@ public class RangedDraugr : Character {
 
 
     void Start() {
-        maxHealth = 40;
+        maxHealth = 15;
         speed = 1.5f;
         secondaryAttack = 15;
         base.Initialize();
