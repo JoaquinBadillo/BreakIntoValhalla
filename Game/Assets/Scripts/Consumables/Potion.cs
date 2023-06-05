@@ -18,8 +18,8 @@ public class Potion : Interactive {
         interactable = true;
     }
 
-    override protected void Interact() {
+    override public void Interact() {
         player.Heal(healingRate);
-        Destroy(this.gameObject);
+        finished = true;
     }
 }

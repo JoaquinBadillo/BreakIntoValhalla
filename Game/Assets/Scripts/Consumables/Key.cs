@@ -18,8 +18,8 @@ public class Key : Interactive {
         interactable = true;
     }
 
-    override protected void Interact() {
+    override public void Interact() {
         player.SetKeyStatus(true);
-        Destroy(this.gameObject);
+        finished = true;
     }
 }

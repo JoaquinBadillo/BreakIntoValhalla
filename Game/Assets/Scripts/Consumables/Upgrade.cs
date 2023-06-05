@@ -23,7 +23,7 @@ public class Upgrade : Interactive {
         player.UpgradeHealth();
         canvas.SetActive(false);
         Time.timeScale = 1f;
-        Destroy(this.gameObject);
+        finished = true;
     }
 
     public void UpgradeAttack() {
@@ -31,7 +31,7 @@ public class Upgrade : Interactive {
         player.UpgradeAttack();
         canvas.SetActive(false);
         Time.timeScale = 1f;
-        Destroy(this.gameObject);
+        finished = true;
     }
 
     public void UpgradeSpeed() {
@@ -39,10 +39,10 @@ public class Upgrade : Interactive {
         player.UpgradeSpeed();
         canvas.SetActive(false);
         Time.timeScale = 1f;
-        Destroy(this.gameObject);
+        finished = true;
     }
 
-    override protected void Interact() {
+    override public void Interact() {
         canvas.SetActive(true);
         Time.timeScale = 0f;
     }

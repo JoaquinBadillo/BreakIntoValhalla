@@ -39,9 +39,9 @@ public class Chest : Interactive {
 
     }
 
-    override protected void Interact() {
-        Instantiate(storedItem, this.transform.position, Quaternion.identity); 
+    override public void Interact() {
+        Instantiate(storedItem, this.transform.position, Quaternion.identity);
+        finished = true;
         // Could potentially add coroutine to wait for animation/SFX to end
-        Destroy(this.gameObject);
     }
 }
