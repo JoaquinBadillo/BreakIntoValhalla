@@ -61,7 +61,7 @@ public class Player : Character {
     private int defense;
 
     // Coins
-    private int coins = 1000;
+    private int coins = 200;
    
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -159,8 +159,26 @@ public class Player : Character {
     }
 
     public void Buy(int price) {
-        if(coins - price >= 0) 
+        if(coins - price >= 0){
             coins -= price;
+            switch (price) {
+                case 100:
+                    Heal(0.5f);
+                    Debug.Log("Healed 1.5");
+                    Debug.Log("Coins: " + coins);
+                    Debug.Log(currentHealth);
+                    break;
+                case 25:
+                    Heal(0.1f);
+                    Debug.Log("Healed 1.1");
+                    Debug.Log("Coins: " + coins);
+                    Debug.Log(currentHealth);
+                    break;
+                default:
+                    Debug.Log("Invalid price");
+                    break;
+            }
+        }       
         else 
             Debug.Log("Not enough coins");
     }
