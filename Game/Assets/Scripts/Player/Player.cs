@@ -50,8 +50,9 @@ public class Player : Character {
     // Health Bar variables
     [SerializeField] TMP_Text hitpoints;
     public SliderMaster healthBar;
+    public SliderMaster staminaBar;
     // Stamina cost
-    public int amount = 20;
+    public int staminaCost = 20;
     private string className;
     private bool keyCollected;
     private int defense;
@@ -76,7 +77,9 @@ public class Player : Character {
         }
 
         base.Initialize();
-        healthBar.SetMaxHealth(maxHealth);
+        healthBar.SetMaxValue(maxHealth);
+        currentStamina = maxStamina;
+        staminaBar.SetMaxValue(maxStamina);
         hitpoints.text = currentHealth + "/" + maxHealth;
     }
 
@@ -92,7 +95,7 @@ public class Player : Character {
         animator.SetFloat("ySpeed", movement.y);
         if (Time.time >= timeUntilNextAttack)
             PrimaryAttack();
-        if (Time.time >= timeUntilNextShot && currentStamina - amount >= 0)
+        if (Time.time >= timeUntilNextShot && currentStamina - staminaCost >= 0)
             SecondaryAttack();
     }
 
@@ -128,7 +131,7 @@ public class Player : Character {
     public void TakeDamage(int damage) {
         Debug.Log("AAAAGH i've been hit");
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetValue(currentHealth);
         hitpoints.text = currentHealth + "/" + maxHealth;
 
         if (currentHealth <= 0)
@@ -161,7 +164,7 @@ public class Player : Character {
         maxHealth += 20;
         currentHealth += 20;
         // Update health bar
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetValue(currentHealth);
         hitpoints.text = currentHealth + "/" + maxHealth;
     }
 
@@ -177,7 +180,7 @@ public class Player : Character {
             currentHealth = maxHealth;
         
         // Update health bar
-        healthBar.SetHealth(currentHealth);
+        healthBar.SetValue(currentHealth);
         hitpoints.text = currentHealth + "/" + maxHealth;
     }
 
