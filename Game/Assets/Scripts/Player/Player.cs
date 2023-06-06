@@ -49,6 +49,7 @@ public class Player : Character {
     // Box Physics Variables
     public float xRange;
     public float yRange;
+    public float zRange;
     // Health Bar variables
     [SerializeField] TMP_Text hitpoints;
     public SliderMaster healthBar;

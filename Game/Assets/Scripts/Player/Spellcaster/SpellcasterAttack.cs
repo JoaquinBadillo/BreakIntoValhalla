@@ -14,7 +14,7 @@ public class SpellcasterAttack : MonoBehaviour {
     public Transform castPoint; // shootpoint
     public GameObject spell; // arrow
     public float direction;
-    [SerializeField] float spellSpeed = 20f; // arrow speed
+    [SerializeField] float spellSpeed = 10f; // arrow speed
     private Vector3 facing;
     private bool throwable;
     // Deflect variables
@@ -74,6 +74,13 @@ public class SpellcasterAttack : MonoBehaviour {
             projectileRigid2d.velocity = facing * spellSpeed;
         }
     }
+
+    void OnDrawGizmosSelected() {
+        if (master.meleeAttackPoint != null)
+            Gizmos.DrawWireCube(master.meleeAttackPoint.position, new Vector3(master.xRange, master.yRange, master.zRange));
+
+    }
+
     public void StartPrimaryAttack() {
         isAttacking = true;
     }
@@ -103,8 +110,8 @@ public class SpellcasterAttack : MonoBehaviour {
 
     public void Right() {
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(4);
-        // master.xRange;
-        // master.yRange;
+        master.xRange = 0.5f;
+        master.yRange = 0.3f;
         direction = 0f;
         facing.x = 1;
         facing.y = 0;
@@ -113,8 +120,8 @@ public class SpellcasterAttack : MonoBehaviour {
     }
     public void Left() {
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(2);
-        // master.xRange;
-        // master.yRange;
+        master.xRange = 0.5f;
+        master.yRange = 0.3f;
         direction = 180f;
         facing.x = -1;
         facing.y = 0;
@@ -123,8 +130,8 @@ public class SpellcasterAttack : MonoBehaviour {
     }
     public void Up() {
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(1);
-        // master.xRange;
-        // master.yRange;
+        master.xRange = 0.3f;
+        master.yRange = 1f;
         direction = 90f;
         facing.x = 0;
         facing.y = 1;
@@ -133,8 +140,8 @@ public class SpellcasterAttack : MonoBehaviour {
     }
     public void Down() {
         master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(3);
-        // master.xRange;
-        // master.yRange;
+        master.xRange = 0.3f;
+        master.yRange = 0.7f;
         direction = 270f;
         facing.x = 0;
         facing.y = -1;
@@ -145,6 +152,7 @@ public class SpellcasterAttack : MonoBehaviour {
     public void UseStamina(int staminaCost) {
         if(master.currentStamina - staminaCost >= 0) {
             master.currentStamina -= staminaCost;
+            master.staminaBar.SetValue(master.currentStamina);
             if(regen != null)
                 StopCoroutine(regen);
             
@@ -155,7 +163,8 @@ public class SpellcasterAttack : MonoBehaviour {
     private IEnumerator RegenStamina() {
         yield return new WaitForSeconds(2f);
         while(master.currentStamina < master.maxStamina) {
-            master.currentStamina += master.maxStamina / 100; 
+            master.currentStamina += master.maxStamina / 100;
+            master.staminaBar.SetValue(master.currentStamina); 
             yield return regenTick;
         }
         regen = null; // reset regen
