@@ -1489,12 +1489,9 @@ MonoBehaviour:
   animator: {fileID: 0}
   meleeAttackPoint: {fileID: 0}
   meleeRange: 0
-  enemyLayers:
+  targetLayer:
     serializedVersion: 2
     m_Bits: 128
-  playerLayers:
-    serializedVersion: 2
-    m_Bits: 0
   childIndex: 0
   maxHealth: 200
   currentHealth: 0

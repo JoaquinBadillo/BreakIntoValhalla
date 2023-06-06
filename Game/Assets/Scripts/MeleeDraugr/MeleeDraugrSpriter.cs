@@ -19,9 +19,9 @@ public class MeleeDraugrSpriter : MonoBehaviour
         if (isAttacking) {
             // Detecting attack range
             if (master.meleeAttackPoint == null) 
-                hitPlayer = Physics2D.OverlapCircle(Vector2.zero, 0, master.playerLayers);
+                hitPlayer = Physics2D.OverlapCircle(Vector2.zero, 0, master.targetLayer);
             else
-                hitPlayer = Physics2D.OverlapCircle(master.meleeAttackPoint.position, master.meleeRange, master.playerLayers);
+                hitPlayer = Physics2D.OverlapCircle(master.meleeAttackPoint.position, master.meleeRange, master.targetLayer);
             // Deal damage
             if (hitPlayer == null) return;
             if(hitPlayer.GetComponent<Player>() != null){
