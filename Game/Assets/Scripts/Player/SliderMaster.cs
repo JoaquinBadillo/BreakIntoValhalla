@@ -7,15 +7,15 @@ public class SliderMaster : MonoBehaviour {
     [SerializeField] Gradient gradient;
     [SerializeField]  Image fill;
 
-    public void SetMaxHealth(int health) {
-        slider.maxValue = health; // Sets maximum health
-        slider.value = health; // Sets current health
+    public void SetMaxValue(int value) {
+        slider.maxValue = value; // Sets maximum health
+        slider.value = value; // Sets current health
         fill.color = gradient.Evaluate(1f);
     }
 
 
-    public void SetHealth(int health) {
-        slider.value = health;
+    public void SetValue(int value) {
+        slider.value = value;
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 }

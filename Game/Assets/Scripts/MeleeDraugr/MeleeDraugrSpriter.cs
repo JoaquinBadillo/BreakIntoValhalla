@@ -49,6 +49,7 @@ public class MeleeDraugrSpriter : MonoBehaviour
         this.GetComponentInParent<Seeker>().enabled = false;
         this.GetComponentInParent<AIPath>().enabled = false;
         this.GetComponentInParent<AIDestinationSetter>().enabled = false;
+        this.GetComponentInParent<Collider2D>().enabled = false;
     }
 
     public void EndDeath() {

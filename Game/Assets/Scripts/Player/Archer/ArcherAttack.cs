@@ -91,7 +91,7 @@ public class ArcherAttack : MonoBehaviour {
         isShooting = false;
         throwable = true;
         hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.enemyLayers);
-        UseStamina(master.amount);
+        UseStamina(master.staminaCost);
     }
 
     /*
@@ -138,9 +138,10 @@ public class ArcherAttack : MonoBehaviour {
         shootPoint.rotation = Quaternion.Euler(0, 0, direction);
     }
 
-    public void UseStamina(int amount) {
-        if(master.currentStamina - amount >= 0) {
-            master.currentStamina -= amount;
+    public void UseStamina(int staminaCost) {
+        if(master.currentStamina - staminaCost >= 0) {
+            master.currentStamina -= staminaCost;
+            master.staminaBar.SetValue(master.currentStamina);
             if(regen != null)
                 StopCoroutine(regen);
             
@@ -152,6 +153,7 @@ public class ArcherAttack : MonoBehaviour {
         yield return new WaitForSeconds(2f);
         while(master.currentStamina < master.maxStamina) {
             master.currentStamina += master.maxStamina / 100; 
+            master.staminaBar.SetValue(master.currentStamina);
             yield return regenTick;
         }
         regen = null; // reset regen
