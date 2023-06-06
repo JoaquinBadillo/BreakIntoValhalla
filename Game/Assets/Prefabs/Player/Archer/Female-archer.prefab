@@ -746,7 +746,7 @@ MonoBehaviour:
     m_Bits: 128
   childIndex: 0
   maxHealth: 200
-  currentHealth: 0
+  currentHealth: 100
   attack: 20
   secondaryAttack: 20
   endLag: 0
