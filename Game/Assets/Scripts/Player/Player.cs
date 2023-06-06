@@ -18,6 +18,8 @@
         
     Joaquin Badillo
 
+    Shaul Zayat
+        - Stamina mechanics
     
 */
 
@@ -56,6 +58,9 @@ public class Player : Character {
     private string className;
     private bool keyCollected;
     private int defense;
+
+    // Coins
+    private int coins = 1000;
    
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -151,6 +156,14 @@ public class Player : Character {
         defense = stats.defense;
         speed = stats.speed;
     }
+
+    public void Buy(int price) {
+        if(coins - price >= 0) 
+            coins -= price;
+        else 
+            Debug.Log("Not enough coins");
+    }
+
 
     public int GetMaxHealth() {
         return maxHealth;
