@@ -35,9 +35,9 @@ public class ArcherAttack : MonoBehaviour {
         if (isAttacking) {
             // Detecting attack range
             if (master.meleeAttackPoint == null) 
-                hitEnemies = Physics2D.OverlapCircleAll(Vector2.zero, 0, master.enemyLayers);
+                hitEnemies = Physics2D.OverlapCircleAll(Vector2.zero, 0, master.targetLayer);
             else
-                hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.enemyLayers);
+                hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.targetLayer);
             Debug.Log("This what we got");
             // Deal damage
             foreach(Collider2D enemy in hitEnemies) {
@@ -84,13 +84,13 @@ public class ArcherAttack : MonoBehaviour {
 
     public void StartSecondaryAttack() {
         isShooting = true;
-        Physics2D.OverlapCircleAll(Vector2.zero, 0, master.enemyLayers);
+        Physics2D.OverlapCircleAll(Vector2.zero, 0, master.targetLayer);
     }
 
     public void EndSecondaryAttack(){
         isShooting = false;
         throwable = true;
-        hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.enemyLayers);
+        hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.targetLayer);
         UseStamina(master.staminaCost);
     }
 

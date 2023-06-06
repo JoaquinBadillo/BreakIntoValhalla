@@ -90,7 +90,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2104697489
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 1670570878, guid: a7286efa59ed70a44bc9b7a2ac3a5830, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -233,12 +233,9 @@ MonoBehaviour:
   animator: {fileID: 0}
   meleeAttackPoint: {fileID: 0}
   meleeRange: 0
-  enemyLayers:
+  targetLayer:
     serializedVersion: 2
-    m_Bits: 0
-  playerLayers:
-    serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   childIndex: 0
   maxHealth: 200
   currentHealth: 0

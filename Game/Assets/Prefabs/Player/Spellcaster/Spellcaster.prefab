@@ -1436,12 +1436,9 @@ MonoBehaviour:
   animator: {fileID: 0}
   meleeAttackPoint: {fileID: 0}
   meleeRange: 0
-  enemyLayers:
+  targetLayer:
     serializedVersion: 2
     m_Bits: 128
-  playerLayers:
-    serializedVersion: 2
-    m_Bits: 0
   childIndex: 0
   maxHealth: 200
   currentHealth: 0
@@ -1629,7 +1626,7 @@ SpriteRenderer:
   m_SortingLayerID: 1262265355
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: -940969195, guid: e14bf28a9b8aea242918d2ecdad7f9c5, type: 3}
+  m_Sprite: {fileID: -980600993, guid: e14bf28a9b8aea242918d2ecdad7f9c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

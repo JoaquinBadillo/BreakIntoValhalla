@@ -11,8 +11,7 @@ public class Character : MonoBehaviour{
     // Attack Variables
     public Transform meleeAttackPoint; // center of the gizmo
     public float meleeRange; // gizmo radius
-    public LayerMask enemyLayers; // Layer that can be attacked by player
-    public LayerMask playerLayers;
+    public LayerMask targetLayer; // The layer that can be damaged
     public int childIndex;
     // Stat variables
     // HP
@@ -28,7 +27,6 @@ public class Character : MonoBehaviour{
     public float timeUntilNextShot;
     // DEF
     // SPD
-
     public float speed = 2f;
     
     //Stamina

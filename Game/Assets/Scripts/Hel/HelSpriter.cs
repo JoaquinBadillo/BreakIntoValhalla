@@ -40,8 +40,8 @@ public class HelSpriter : MonoBehaviour
 
         Debug.Log("Yeet");
         
-        circleHits = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.playerLayers);
-        innerHits = Physics2D.OverlapCircleAll(master.meleeAttackCircle.position, master.meleeInnerRange, master.playerLayers);
+        circleHits = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.targetLayer);
+        innerHits = Physics2D.OverlapCircleAll(master.meleeAttackCircle.position, master.meleeInnerRange, master.targetLayer);
 
         intersection();
     }
@@ -51,9 +51,9 @@ public class HelSpriter : MonoBehaviour
             if (master.meleeAttackPoint == null || master.meleeAttackBox == null)
                 return;
 
-            circleHits = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.playerLayers);
+            circleHits = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.targetLayer);
 
-            innerHits = Physics2D.OverlapBoxAll(master.meleeAttackBox.position, new Vector2(master.xRange, master.yRange), 0, master.playerLayers);
+            innerHits = Physics2D.OverlapBoxAll(master.meleeAttackBox.position, new Vector2(master.xRange, master.yRange), 0, master.targetLayer);
 
             intersection();
     }

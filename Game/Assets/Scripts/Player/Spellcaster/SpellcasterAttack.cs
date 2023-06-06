@@ -35,9 +35,9 @@ public class SpellcasterAttack : MonoBehaviour {
         if (isAttacking) {
             // Detecting attack range
             if (master.meleeAttackPoint == null) 
-                hitEnemies = Physics2D.OverlapBoxAll(master.meleeAttackPoint.position, Vector2.zero, 0);
+                hitEnemies = Physics2D.OverlapBoxAll(Vector2.zero, Vector2.zero, master.targetLayer);
             else
-                hitEnemies = Physics2D.OverlapBoxAll(master.meleeAttackPoint.position, new Vector2(master.xRange, master.yRange), 0, master.enemyLayers);
+                hitEnemies = Physics2D.OverlapBoxAll(master.meleeAttackPoint.position, new Vector2(master.xRange, master.yRange), 0, master.targetLayer);
             Debug.Log("This what we got");
             // Deal damage
             foreach(Collider2D enemy in hitEnemies) {
@@ -75,12 +75,6 @@ public class SpellcasterAttack : MonoBehaviour {
         }
     }
 
-    void OnDrawGizmosSelected() {
-        if (master.meleeAttackPoint != null)
-            Gizmos.DrawWireCube(master.meleeAttackPoint.position, new Vector3(master.xRange, master.yRange, master.zRange));
-
-    }
-
     public void StartPrimaryAttack() {
         isAttacking = true;
     }
@@ -91,13 +85,13 @@ public class SpellcasterAttack : MonoBehaviour {
 
     public void StartSecondaryAttack() {
         isCasting = true;
-        Physics2D.OverlapCircleAll(Vector2.zero, 0, master.enemyLayers);
+        Physics2D.OverlapCircleAll(Vector2.zero, 0, master.targetLayer);
     }
 
     public void EndSecondaryAttack(){
         isCasting = false;
         throwable = true;
-        hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.enemyLayers);
+        hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.targetLayer);
         UseStamina(master.staminaCost);
     }
 

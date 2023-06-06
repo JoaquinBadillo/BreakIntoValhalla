@@ -741,12 +741,9 @@ MonoBehaviour:
   animator: {fileID: 0}
   meleeAttackPoint: {fileID: 0}
   meleeRange: 0
-  enemyLayers:
+  targetLayer:
     serializedVersion: 2
     m_Bits: 128
-  playerLayers:
-    serializedVersion: 2
-    m_Bits: 0
   childIndex: 0
   maxHealth: 200
   currentHealth: 0
@@ -756,14 +753,16 @@ MonoBehaviour:
   secondaryEndLag: 0
   timeUntilNextAttack: 0
   timeUntilNextShot: 0
-  speed: 6.67
+  speed: 2
   maxStamina: 100
   currentStamina: 0
   xRange: 0
   yRange: 0
+  zRange: 0
   hitpoints: {fileID: 883654972539712497}
   healthBar: {fileID: 883654973729843467}
-  amount: 20
+  staminaBar: {fileID: 883654973175300924}
+  staminaCost: 20
 --- !u!1 &883654973364611368
 GameObject:
   m_ObjectHideFlags: 0
