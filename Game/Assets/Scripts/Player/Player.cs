@@ -60,8 +60,15 @@ public class Player : Character {
     private bool keyCollected;
     private int defense;
 
-    // Coins
+    // Shop Variables
     private int coins = 200;
+    private int BigPotionPrice = 100; // 50% of max health
+    private int UpgradePrice = 75; // Upgrade stats
+    private int SmallPotionPrice = 25; // 10% of max health
+
+    // Canvas
+    GameObject upgradeCanvas;
+    GameObject tavernCanvas;
    
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -87,6 +94,11 @@ public class Player : Character {
         currentStamina = maxStamina;
         staminaBar.SetMaxValue(maxStamina);
         hitpoints.text = currentHealth + "/" + maxHealth;
+        tavernCanvas = GameObject.Find("TavernCanvas");
+        upgradeCanvas = GameObject.FindWithTag("Upgrade");
+        if(upgradeCanvas != null)
+            upgradeCanvas.SetActive(false);
+
     }
 
     // Function that is called each frame
@@ -161,23 +173,14 @@ public class Player : Character {
     public void Buy(int price) {
         if(coins - price >= 0){
             coins -= price;
-            switch (price) {
-                case 100:
+            if (price == BigPotionPrice)
                     Heal(0.5f);
-                    Debug.Log("Healed 1.5");
-                    Debug.Log("Coins: " + coins);
-                    Debug.Log(currentHealth);
-                    break;
-                case 25:
+
+            else if (price == UpgradePrice)
+                    upgradeCanvas.SetActive(true);
+
+            else if (price == SmallPotionPrice)          
                     Heal(0.1f);
-                    Debug.Log("Healed 1.1");
-                    Debug.Log("Coins: " + coins);
-                    Debug.Log(currentHealth);
-                    break;
-                default:
-                    Debug.Log("Invalid price");
-                    break;
-            }
         }       
         else 
             Debug.Log("Not enough coins");

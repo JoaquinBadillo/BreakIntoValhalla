@@ -12,6 +12,7 @@ TagManager:
   - Hel
   - Saber Draugr
   - Bow Draugr
+  - Upgrade
   layers:
   - Default
   - TransparentFX
