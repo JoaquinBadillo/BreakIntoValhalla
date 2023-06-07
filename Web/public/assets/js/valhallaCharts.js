@@ -1,12 +1,11 @@
-const DB_HOST = "http://localhost";
-const DB_PORT = '5000';
+const URI = "https://valhallaapi-production.up.railway.app";
 
 // Chart.defaults.global.font.size = 16;
 
 Chart.defaults.color = '#FFFFFF';
 Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.3)';
 
-fetch(`${DB_HOST}:${DB_PORT}/api/metrics/leaderboards/top_kills`,{method: 'GET'})
+fetch(`${URI}/api/metrics/leaderboards/top_kills`,{method: 'GET'})
 .catch(err => console.log(err))
 .then(response => response.json())
 .then(data => {
@@ -57,7 +56,7 @@ fetch(`${DB_HOST}:${DB_PORT}/api/metrics/leaderboards/top_kills`,{method: 'GET'}
 
 
 
-fetch(`${DB_HOST}:${DB_PORT}/api/deaths/death_place`,{method: 'GET'})
+fetch(`${URI}/api/deaths/death_place`,{method: 'GET'})
 .catch(err => console.log(err))
 .then(response => response.json())
 .then(data => {
@@ -106,7 +105,7 @@ fetch(`${DB_HOST}:${DB_PORT}/api/deaths/death_place`,{method: 'GET'})
     });
 });
 
-fetch(`${DB_HOST}:${DB_PORT}/api/deaths/death_cause`,{method: 'GET'})
+fetch(`${URI}/api/deaths/death_cause`,{method: 'GET'})
 .catch(err => console.log(err))
 .then(response => response.json())
 .then(data => {
