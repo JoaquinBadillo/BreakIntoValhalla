@@ -34,6 +34,7 @@
 }
 
 .button-container a {
+    display: inline;
     padding: 1.5vh 2vw;
     color: white;
     background-color: var(--button);

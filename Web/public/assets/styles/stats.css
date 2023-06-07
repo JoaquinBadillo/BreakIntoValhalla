@@ -22,6 +22,7 @@
 }
 
 #stats a {
+    display: inline;
     padding: 1.5vh 1vw;
     color: white;
     background-color: #1E3659;
