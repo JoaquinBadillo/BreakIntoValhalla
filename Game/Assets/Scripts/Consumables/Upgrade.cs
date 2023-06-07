@@ -20,7 +20,7 @@ public class Upgrade : Interactive {
 
     public void UpgradeHealth() {
         Debug.Log("Upgraded Health");
-        player.UpgradeHealth();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().UpgradeHealth();
         canvas.SetActive(false);
         Time.timeScale = 1f;
         finished = true;
@@ -28,7 +28,7 @@ public class Upgrade : Interactive {
 
     public void UpgradeAttack() {
         Debug.Log("Upgraded Attack");
-        player.UpgradeAttack();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().UpgradeAttack();
         canvas.SetActive(false);
         Time.timeScale = 1f;
         finished = true;
@@ -36,7 +36,7 @@ public class Upgrade : Interactive {
 
     public void UpgradeSpeed() {
         Debug.Log("Upgraded Speed");
-        player.UpgradeSpeed();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().UpgradeSpeed();
         canvas.SetActive(false);
         Time.timeScale = 1f;
         finished = true;
