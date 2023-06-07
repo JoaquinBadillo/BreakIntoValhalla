@@ -1256,7 +1256,7 @@ MonoBehaviour:
   arrow: {fileID: 3245069156672053480, guid: f9c89bed7fa97904ba665709e14eb7a2, type: 3}
   direction: 0
   arrowSpeed: 20
-  panel: {fileID: 0}
+  panel: {fileID: 1282449704879870186}
 --- !u!1 &6819160513497888452
 GameObject:
   m_ObjectHideFlags: 0

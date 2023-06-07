@@ -1676,4 +1676,4 @@ MonoBehaviour:
   spell: {fileID: 5111129286134113490, guid: ef8f76e138fd82f40a4b8c9cecb7cf37, type: 3}
   direction: 0
   spellSpeed: 20
-  panel: {fileID: 0}
+  panel: {fileID: 2034140723}
