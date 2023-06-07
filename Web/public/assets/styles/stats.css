@@ -21,7 +21,7 @@
     width: 100%;
 }
 
-#stats button {
+#stats a {
     padding: 1.5vh 1vw;
     color: white;
     background-color: #1E3659;
@@ -30,13 +30,14 @@
     font-family: 'Aclonica', sans-serif;
     font-size: 16px;
     border: 2px solid var(--stats-button-border);
+    text-decoration: none;
 }
 
 #stats p {
     font-size: 20px;
 }
 
-#stats button:hover {
+#stats a:hover {
     background-color: var(--stats-button-hover);
     cursor: pointer;
 }

@@ -33,7 +33,7 @@
     font-family: 'Aclonica', sans-serif;
 }
 
-.button-container button {
+.button-container a {
     padding: 1.5vh 2vw;
     color: white;
     background-color: var(--button);
@@ -42,9 +42,10 @@
     font-family: 'Aclonica', sans-serif;
     font-size: 18px;
     border: 2px solid var(--button-border);
+    text-decoration: none;
 }
 
-.button-container button:hover {
+.button-container a:hover {
     background-color: var(--button-hover);
     cursor: pointer;
 }

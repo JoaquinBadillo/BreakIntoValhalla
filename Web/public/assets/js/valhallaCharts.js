@@ -33,7 +33,7 @@ fetch(`${URI}/api/users/metrics/leaderboards/top_kills`,{method: 'GET'})
         data: {
             labels: player_names,
             datasets: [{
-                label: 'Top Players by Kills',
+                label: 'Kills',
                 backgroundColor: colors,
                 borderColor: borders,
                 data: player_kills
@@ -41,6 +41,15 @@ fetch(`${URI}/api/users/metrics/leaderboards/top_kills`,{method: 'GET'})
         },
 
         options: {
+            plugins: {
+                title: {
+                  display: true,
+                  text: 'Top Players by Kills',
+                  font: {
+                      size: 30
+                  }
+                }
+            },
             indexAxis: 'y',
             scales: {
                 y: {
