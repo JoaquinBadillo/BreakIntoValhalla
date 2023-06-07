@@ -5,7 +5,7 @@ const URI = "https://valhallaapi-production.up.railway.app";
 Chart.defaults.color = '#FFFFFF';
 Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.3)';
 
-fetch(`${URI}/api/metrics/leaderboards/top_kills`,{method: 'GET'})
+fetch(`${URI}/api/users/metrics/leaderboards/top_kills`,{method: 'GET'})
 .catch(err => console.log(err))
 .then(response => response.json())
 .then(data => {
