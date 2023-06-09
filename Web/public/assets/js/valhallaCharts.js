@@ -70,16 +70,13 @@ fetch(`${URI}/api/deaths/death_place`,{method: 'GET'})
 .then(response => response.json())
 .then(data => {
     const colors = [
-        "#3A87FD",
-        "#5095FD",
-        "#66A2FE",
-        "#7CAFFE",
-        "#92BDFE",
-        "#A7CAFE",
-        "#BDD7FE",
-        "#D3E4FF",
-        "#E9F2FF",
-        "#FFFFFF"
+        "#343434",
+        "#808080",
+        "#5D6770",
+        "#555555",
+        "#CDCDCD",
+        "#496063",
+        "#989898"
     ];
     const values = Object.values(data);
     console.log(values);

@@ -66,4 +66,9 @@
     .creators-container img {
         max-height: 10vh;
     }
+
+    .portrait > a {
+        text-decoration: none;
+        color: white;
+    }
 }
