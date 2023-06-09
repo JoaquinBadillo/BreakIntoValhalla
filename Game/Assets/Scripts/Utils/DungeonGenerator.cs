@@ -42,8 +42,8 @@ public class DungeonGenerator : MonoBehaviour {
 
     [SerializeField] AstarPath path;
 
-    string uri = "https://valhallaapi-production.up.railway.app/levels/";
-
+    //string uri = "https://valhallaapi-production.up.railway.app/levels/";
+    string uri = "http://localhost:5000/api/levels/";
     void Start() {
         Debug.Log("Seed: " + PlayerPrefs.GetInt("seed"));
         Random.InitState(PlayerPrefs.GetInt("seed"));

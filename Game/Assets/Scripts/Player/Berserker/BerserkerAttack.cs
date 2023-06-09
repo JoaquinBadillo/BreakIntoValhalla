@@ -143,14 +143,14 @@ public class BerserkerAttack : PlayerAttacker {
     }
 
     override public void Bless() {
-        master.attack += (int) Mathf.Round(master.attack * master.buff);
-        master.secondaryAttack += (int) Mathf.Round(master.secondaryAttack * master.buff);
-        master.speed -= master.speed * master.debuff;
+        master.attack = (int) Mathf.Round(master.attack * master.buff);
+        master.secondaryAttack = (int) Mathf.Round(master.secondaryAttack * master.buff);
+        master.speed = master.speed * master.debuff;
     }
     override public void DeBless(){
-        master.attack -= (int) Mathf.Round(master.attack * master.buff);
-        master.secondaryAttack -= (int) Mathf.Round(master.secondaryAttack * master.buff);
-        master.speed += master.speed * master.debuff;
+        master.attack = (int) Mathf.Round(master.attack / master.buff);
+        master.secondaryAttack = (int) Mathf.Round(master.secondaryAttack / master.buff);
+        master.speed = master.speed / master.debuff;
     }
 }
 
