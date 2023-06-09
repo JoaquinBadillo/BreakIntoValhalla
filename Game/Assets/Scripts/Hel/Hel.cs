@@ -33,7 +33,7 @@ public class Hel : Character{
         summonLag = 25f;
         meleeAttackBox = null;
         meleeAttackCircle = null;
-        isSecondPhase = true;
+        isSecondPhase = false;
         zRange = 1;
         base.Initialize();
         healthBar = GetComponentInChildren<HelSlider>();

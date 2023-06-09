@@ -21,7 +21,6 @@ public class DraugrArrow : MonoBehaviour {
         if(other.CompareTag("Player")) {
             Debug.Log(other.name);
             other.GetComponent<Player>().TakeDamage(attack, "Bow Draugr");
-            Debug.Log("Damage dealt: " + attack);
             YeetArrow();
         }
         else if (other.CompareTag("Walls"))

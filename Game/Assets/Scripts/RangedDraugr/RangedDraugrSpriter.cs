@@ -33,7 +33,6 @@ public class RangedDraugrSpriter : MonoBehaviour
             projectile.GetComponent<DraugrArrow>().SetAttack(master.secondaryAttack);
             projectile.GetComponent<DraugrArrow>().EnemyCollider = myCollider;
             throwable = false;
-            Debug.Log("My pointy self just manifested");
             Rigidbody2D projectileRigid2d = projectile.GetComponent<Rigidbody2D>();
             projectileRigid2d.velocity = facing * arrowSpeed;
             projectile.GetComponent<DraugrArrow>().direction = facing;

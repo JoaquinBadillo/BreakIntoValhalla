@@ -96,7 +96,7 @@ public class Player : Character {
 
     private bool isBlessed;
 
-    private HostSO host;
+    [SerializeField] HostSO host;
    
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -246,8 +246,7 @@ public class Player : Character {
             else if (price == SmallPotionPrice)          
                     Heal(0.1f);
         }       
-        else 
-            Debug.Log("Not enough coins");
+
     }
 
     public int GetMaxHealth() {
@@ -302,13 +301,13 @@ public class Player : Character {
         if (timeUntilDeactivation >= Time.time || timeUntilNextBlessing >= Time.time)
             return;
         
-        Debug.Log("Blessed");
+
         spriterSlave.Bless();
         isBlessed = true;
         timeUntilDeactivation = Time.time + effectDuration;
     }
     void DeBless(){
-        Debug.Log("DeBlessed");
+
         spriterSlave.DeBless(); 
         timeUntilNextBlessing = Time.time + blessingCooldown;
         isBlessed = false;
