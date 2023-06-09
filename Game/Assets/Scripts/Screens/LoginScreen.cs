@@ -39,8 +39,8 @@ public class LoginScreen : MonoBehaviour {
     [SerializeField] TMP_Text email;
     [SerializeField] TMP_Text password;
     [SerializeField] TMP_Text errorMessage;
-    
-    string uri = "http://localhost:5000/api/users";
+
+    string uri = "https://valhallaapi-production.up.railway.app/api";
 
     public Button submit;
     // Start is called before the first frame update
@@ -101,12 +101,14 @@ public class LoginScreen : MonoBehaviour {
 
         Debug.Log(jsonString);
         
-        using (UnityWebRequest webRequest = UnityWebRequest.Put(uri, jsonString)) {
+        string endpoint = uri + "/users";
+        using (UnityWebRequest webRequest = UnityWebRequest.Put(endpoint, jsonString)) {
             webRequest.method = "POST";
             webRequest.SetRequestHeader("Content-Type", "application/json");
             webRequest.SetRequestHeader("Accept", "application/json");
 
             // Request and wait for the desired page.
+            Debug.Log("Sending request to " + endpoint);
             yield return webRequest.SendWebRequest();
 
             // Check for server connection errors
@@ -141,14 +143,14 @@ public class LoginScreen : MonoBehaviour {
         newUser.password = password;
 
         string jsonString = JsonUtility.ToJson(newUser);
-
-        Debug.Log(jsonString);
         
-        using (UnityWebRequest webRequest = UnityWebRequest.Put(uri + "/login", jsonString)) {
+        string endpoint = uri + "/users/login";
+        using (UnityWebRequest webRequest = UnityWebRequest.Put(endpoint, jsonString)) {
             webRequest.method = "POST";
             webRequest.SetRequestHeader("Content-Type", "application/json");
             webRequest.SetRequestHeader("Accept", "application/json");
 
+            Debug.Log("Sending request to " + endpoint);
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
 
@@ -178,8 +180,9 @@ public class LoginScreen : MonoBehaviour {
             }
         }
 
-        string endpoint = uri + "/" + PlayerPrefs.GetString("username") + "/levels";
+        endpoint = uri + "/levels/" + PlayerPrefs.GetString("username");
         using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
+            Debug.Log("Sending request to " + endpoint);
             yield return webRequest.SendWebRequest();
 
             if (webRequest.result == UnityWebRequest.Result.Success) {

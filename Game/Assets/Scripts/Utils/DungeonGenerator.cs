@@ -42,7 +42,7 @@ public class DungeonGenerator : MonoBehaviour {
 
     [SerializeField] AstarPath path;
 
-    string uri = "http://localhost:5000/api/users/";
+    string uri = "https://valhallaapi-production.up.railway.app/levels/";
 
     void Start() {
         Debug.Log("Seed: " + PlayerPrefs.GetInt("seed"));
@@ -87,7 +87,7 @@ public class DungeonGenerator : MonoBehaviour {
 
     private IEnumerator GenerateDungeon() {
         Debug.Log(PlayerPrefs.GetString("username"));
-        string endpoint = uri + PlayerPrefs.GetString("username") + "/levels";
+        string endpoint = uri + PlayerPrefs.GetString("username");
         Debug.Log(uri);
         using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
             // Request and wait for the desired page.
