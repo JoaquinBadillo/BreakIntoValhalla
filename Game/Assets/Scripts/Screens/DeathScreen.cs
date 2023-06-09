@@ -34,8 +34,8 @@ public class DeathScreen : MonoBehaviour
 {
     // Start is called before the first frame update
     IEnumerator Start() {
-        string uri = "https://valhallaapi-production.up.railway.app/api/levels";
-
+        //string uri = "https://valhallaapi-production.up.railway.app/api/levels";
+        string uri = "http://localhost:5000/api/levels";
         // Create Level object
         LevelData data = new LevelData();
         data.username = PlayerPrefs.GetString("username");

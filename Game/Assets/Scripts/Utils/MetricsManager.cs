@@ -20,7 +20,8 @@ public class Metrics {
 }
 
 public class MetricsManager : MonoBehaviour {
-    string uri = "https://valhallaapi-production.up.railway.app/api/users/metrics";
+    //string uri = "https://valhallaapi-production.up.railway.app/api/users/metrics";
+    string uri = "http://localhost:5000/api/users/metrics/";
     string className;
     public Stats stats;
 

@@ -47,18 +47,16 @@ public class ClassSelect : MonoBehaviour {
 	}
 
 	public IEnumerator CreateGame() {
-		string uri = "https://valhallaapi-production.up.railway.app/api";
-
+		//string uri = "https://valhallaapi-production.up.railway.app/api";
+		string uri = "http://localhost:5000/api/";
 		// Create Game object
         GameThingy game = new GameThingy();
         game.username = PlayerPrefs.GetString("username");
-		Debug.Log(game.username);
         game.character_id = PlayerPrefs.GetInt("classIndex");
 
         string jsonString = JsonUtility.ToJson(game);
-        Debug.Log(jsonString);
 		
-        using (UnityWebRequest webRequest = UnityWebRequest.Put(uri + "/game", jsonString)) {
+        using (UnityWebRequest webRequest = UnityWebRequest.Put(uri + "game", jsonString)) {
             webRequest.method = "POST";
             webRequest.SetRequestHeader("Content-Type", "application/json");
             webRequest.SetRequestHeader("Accept", "application/json");
@@ -71,7 +69,7 @@ public class ClassSelect : MonoBehaviour {
             }
 		}
 
-		string endpoint = uri + "/levels/" + PlayerPrefs.GetString("username");
+		string endpoint = uri + "levels/" + PlayerPrefs.GetString("username");
         using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
             yield return webRequest.SendWebRequest();
 

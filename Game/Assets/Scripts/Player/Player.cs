@@ -83,9 +83,11 @@ public class Player : Character {
     public float buff;
     public float debuff;
     private float effectDuration = 10f;
-    private float timeUntilDeactivation;
+    [SerializeField] float timeUntilDeactivation;
     private float blessingCooldown = 40f;
-    private float timeUntilNextBlessing;
+    [SerializeField] float timeUntilNextBlessing;
+
+    private bool isBlessed;
    
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -116,8 +118,10 @@ public class Player : Character {
         dashCooldown = 6f;
         dashDistance = 4.2f;
         isDashing = false;
-        buff = 0.4f;
-        debuff = 0.25f;
+        buff = 1.4f;
+        debuff = 0.75f;
+        isBlessed = false;
+
         if(upgradeCanvas != null)
             upgradeCanvas.SetActive(false);
 
@@ -141,6 +145,12 @@ public class Player : Character {
                 Dash();
         if (movement.x != 0 || movement.y != 0)
             lastmovementDir = movement;
+        
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+            Bless();
+
+        if (isBlessed && Time.time >= timeUntilDeactivation)
+            DeBless();
         // if (Time.time >= timeUntilNextBlessing)
                 // Bless();
         // if (Time.time >= timeUntilDeactivation)
@@ -272,6 +282,7 @@ public class Player : Character {
     }
 
     public IEnumerator FetchStats() {
+        //string uri = "https://valhallaapi-production.up.railway.app/api/characters";
         string uri = "http://localhost:5000/api/characters/";
         string endpoint = uri + PlayerPrefs.GetInt("classIndex") + "/stats";
         using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
@@ -300,14 +311,19 @@ public class Player : Character {
     }
 
     // This function allows the player to get blessed on command
-    // void Bless() {
-        // if (Input.GetKeyDown(KeyCode.LeftControl)) {
-            // spriterSlave.Bless();
-            // timeUntilDeactivation = Time.time + effectDuration;
-        // }
-    // }
-    // void DeBless(){
-        // spriterSlave.DeBless(); 
-        // timeUntilNextBlessing = Time.time + blessingCooldown;
-    // }
+    void Bless() {
+        if (timeUntilDeactivation >= Time.time || timeUntilNextBlessing >= Time.time)
+            return;
+        
+        Debug.Log("Blessed");
+        spriterSlave.Bless();
+        isBlessed = true;
+        timeUntilDeactivation = Time.time + effectDuration;
+    }
+    void DeBless(){
+        Debug.Log("DeBlessed");
+        spriterSlave.DeBless(); 
+        timeUntilNextBlessing = Time.time + blessingCooldown;
+        isBlessed = false;
+    }
 }

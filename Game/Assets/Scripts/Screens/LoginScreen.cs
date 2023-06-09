@@ -40,7 +40,8 @@ public class LoginScreen : MonoBehaviour {
     [SerializeField] TMP_Text password;
     [SerializeField] TMP_Text errorMessage;
 
-    string uri = "https://valhallaapi-production.up.railway.app/api";
+    //string uri = "https://valhallaapi-production.up.railway.app/api";
+    string uri = "http://localhost:5000/api";
 
     public Button submit;
     // Start is called before the first frame update
