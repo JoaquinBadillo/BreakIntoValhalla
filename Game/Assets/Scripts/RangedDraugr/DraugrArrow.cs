@@ -8,7 +8,7 @@ public class DraugrArrow : MonoBehaviour {
     private Collider2D myPointySelf;
     public Collider2D EnemyCollider { get; set;}
     private float returnSpeed;
-    private Vector2 direction; 
+    public Vector2 direction; 
 
     void Start() {
         myPointySelf = GetComponent<Collider2D>();

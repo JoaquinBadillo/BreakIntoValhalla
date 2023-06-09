@@ -9,7 +9,6 @@ public class MeleeDraugr : Character{
     // Attack Variables
     // reach
     [SerializeField] Transform player;
-    [SerializeField] float range;
     // Slave script for animator events
     private MeleeDraugrSpriter animatorSlave;
     // distance between enemy and player
@@ -18,7 +17,6 @@ public class MeleeDraugr : Character{
     void Start() {
         maxHealth = 60;
         endLag = 3f;
-        range = 1.3f;
         base.Initialize();
         animatorSlave = this.gameObject.transform.GetChild(0).GetComponent<MeleeDraugrSpriter>();
         GetComponent<AIPath>().enabled = false;

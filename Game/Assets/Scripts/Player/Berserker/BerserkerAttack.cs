@@ -4,24 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class BerserkerAttack : MonoBehaviour {
-    private Player master;
+public class BerserkerAttack : PlayerAttacker {
     // Melee variables
-    public bool isAttacking;
+    private bool isAttacking;
     private Collider2D[] hitEnemies;
     // Shooting variables
-    public bool isSecondaryAttacking;
-    public Transform shootPoint;
-    public GameObject arrow;
-    public float direction;
-    private Vector3 facing;
-    // Deflect variables
-    private Vector2 deflectDirection;
+    private bool isSecondaryAttacking;
     // Stamina variables
-    private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
-    private Coroutine regen;
-    [SerializeField] GameObject panel;
-    public Transform axeAttackBox;
+    private Transform axeAttackBox;
 
     void Start() {
         master = this.GetComponentInParent<Player>();
@@ -55,9 +45,7 @@ public class BerserkerAttack : MonoBehaviour {
                 }  
                 else if(enemy.CompareTag("Arrow")) {
                     Debug.Log("you just got yeeted");
-                    //deflectDirection = enemy.GetComponent<DraugrArrow>().facing;
-                    enemy.GetComponent<DraugrArrow>().YeetArrow();
-                    GameObject projectile = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
+                    base.Deflect(enemy);
                 }
             }
         }
@@ -87,9 +75,7 @@ public class BerserkerAttack : MonoBehaviour {
                 }  
                 else if(enemy.CompareTag("Arrow")) {
                     Debug.Log("you just got yeeted");
-                    //deflectDirection = enemy.GetComponent<DraugrArrow>().facing;
-                    enemy.GetComponent<DraugrArrow>().YeetArrow();
-                    GameObject projectile = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
+                    base.Deflect(enemy);
                 }
             }
         }
@@ -103,6 +89,7 @@ public class BerserkerAttack : MonoBehaviour {
     
     public void StartPrimaryAttack() {
         isAttacking = true;
+        Physics2D.OverlapBoxAll(Vector2.zero, Vector2.zero, master.targetLayer);
     }
 
     public void EndPrimaryAttack() {
@@ -116,7 +103,6 @@ public class BerserkerAttack : MonoBehaviour {
 
     public void EndSecondaryAttack(){
         isSecondaryAttacking = false;
-        hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.targetLayer);
         UseStamina(master.staminaCost);
     }
 
@@ -128,88 +114,43 @@ public class BerserkerAttack : MonoBehaviour {
     */
 
     public void Right() {
-        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(4);
+        base.RightInitializer();
         master.meleeRange = 0.8f;
-        direction = 0f;
-        facing.x = 1;
-        facing.y = 0;
-        shootPoint = this.gameObject.transform.parent.GetChild(12);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
-        axeAttackBox = this.gameObject.transform.parent.GetChild(8);
+        axeAttackBox = this.gameObject.transform.parent.GetChild(12);
         master.xRange = 1.7f;
         master.yRange = 1.5f;
     }
     public void Left() {
-        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(2);
+        base.LeftInitializer();
         master.meleeRange = 0.8f;
-        direction = 180f;
-        facing.x = -1;
-        facing.y = 0;
-        shootPoint = this.gameObject.transform.parent.GetChild(10);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
-        axeAttackBox = this.gameObject.transform.parent.GetChild(6);
+        axeAttackBox = this.gameObject.transform.parent.GetChild(10);
         master.xRange = 1.7f;
         master.yRange = 1.5f;
     }
     public void Up() {
-        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(1);
+        base.UpInitializer();
         master.meleeRange = 0.65f;
-        direction = 90f;
-        facing.x = 0;
-        facing.y = 1;
-        shootPoint = this.gameObject.transform.parent.GetChild(9);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
-        axeAttackBox = this.gameObject.transform.parent.GetChild(5);
+        axeAttackBox = this.gameObject.transform.parent.GetChild(9);
         master.xRange = 2.3f;
         master.yRange = 1.5f;
     }
     public void Down() {
-        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(3);
+        base.DownInitializer();
         master.meleeRange = 0.75f;
-        direction = 270f;
-        facing.x = 0;
-        facing.y = -1;
-        shootPoint = this.gameObject.transform.parent.GetChild(11);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
-        axeAttackBox = this.gameObject.transform.parent.GetChild(7);
+        axeAttackBox = this.gameObject.transform.parent.GetChild(11);
         master.xRange = 2.5f;
         master.yRange = 1.5f;
     }
 
-    public void UseStamina(int staminaCost) {
-        if(master.currentStamina - staminaCost >= 0) {
-            master.currentStamina -= staminaCost;
-            master.staminaBar.SetValue(master.currentStamina);
-            if(regen != null)
-                StopCoroutine(regen);
-            
-            regen = StartCoroutine(RegenStamina());
-        }
+    override public void Bless() {
+        master.attack += (int) Mathf.Round(master.attack * master.buff);
+        master.secondaryAttack += (int) Mathf.Round(master.secondaryAttack * master.buff);
+        master.speed -= master.speed * master.debuff;
     }
-    
-    private IEnumerator RegenStamina() {
-        yield return new WaitForSeconds(2f);
-        while(master.currentStamina < master.maxStamina) {
-            master.currentStamina += master.maxStamina / 100; 
-            master.staminaBar.SetValue(master.currentStamina);
-            yield return regenTick;
-        }
-        regen = null; // reset regen
-    }
-
-    public void Die() {
-        StartCoroutine(DieCoroutine());
-    }
-
-    IEnumerator DieCoroutine() {
-        for (float f = 0f; f <= 1; f += 0.15f) {
-            Color c = new Color(0, 0, 0, f);
-            panel.GetComponent<Image>().color = c;
-            yield return new WaitForSeconds(0.3f);
-        }
-
-        SceneManager.LoadScene("DeathScene");
-        yield break;
+    override public void DeBless(){
+        master.attack -= (int) Mathf.Round(master.attack * master.buff);
+        master.secondaryAttack -= (int) Mathf.Round(master.secondaryAttack * master.buff);
+        master.speed += master.speed * master.debuff;
     }
 }
 

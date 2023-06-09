@@ -46,10 +46,14 @@ public class Stats {
 }
 
 public class Player : Character {
+    // Spriter Slave
+    private PlayerAttacker spriterSlave;
     // Box Physics Variables
     public float xRange;
     public float yRange;
     public float zRange;
+    // Shootpoint
+    public Transform shootPoint;
     // Health Bar variables
     [SerializeField] TMP_Text hitpoints;
     public SliderMaster healthBar;
@@ -65,10 +69,23 @@ public class Player : Character {
     private int BigPotionPrice = 100; // 50% of max health
     private int UpgradePrice = 75; // Upgrade stats
     private int SmallPotionPrice = 25; // 10% of max health
-
     // Canvas
     GameObject upgradeCanvas;
     GameObject tavernCanvas;
+    // Dash Variables
+    [SerializeField] Vector3 lastmovementDir;
+    [SerializeField] float dashCooldown;
+    [SerializeField] float dashDistance;
+    [SerializeField] LayerMask dashLayer;
+    [SerializeField] float timeUntilNextDash;
+    private bool isDashing;
+    // Blessing Variables
+    public float buff;
+    public float debuff;
+    private float effectDuration = 10f;
+    private float timeUntilDeactivation;
+    private float blessingCooldown = 40f;
+    private float timeUntilNextBlessing;
    
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -88,7 +105,7 @@ public class Player : Character {
             secondaryEndLag = 1.5f;
             speed = 2f;
         }
-
+        spriterSlave = GetComponentInChildren<PlayerAttacker>();
         base.Initialize();
         healthBar.SetMaxValue(maxHealth);
         currentStamina = maxStamina;
@@ -96,6 +113,11 @@ public class Player : Character {
         hitpoints.text = currentHealth + "/" + maxHealth;
         tavernCanvas = GameObject.Find("TavernCanvas");
         upgradeCanvas = GameObject.FindWithTag("Upgrade");
+        dashCooldown = 6f;
+        dashDistance = 4.2f;
+        isDashing = false;
+        buff = 0.4f;
+        debuff = 0.25f;
         if(upgradeCanvas != null)
             upgradeCanvas.SetActive(false);
 
@@ -115,6 +137,14 @@ public class Player : Character {
             PrimaryAttack();
         if (Time.time >= timeUntilNextShot && currentStamina - staminaCost >= 0)
             SecondaryAttack();
+        if (Time.time >= timeUntilNextDash)
+                Dash();
+        if (movement.x != 0 || movement.y != 0)
+            lastmovementDir = movement;
+        // if (Time.time >= timeUntilNextBlessing)
+                // Bless();
+        // if (Time.time >= timeUntilDeactivation)
+                // DeBless();
     }
 
     /*
@@ -122,7 +152,18 @@ public class Player : Character {
         is commonly used for physics
     */
     void FixedUpdate() {
-        rigid2d.MovePosition(rigid2d.position + movement * speed * Time.fixedDeltaTime);
+        rigid2d.velocity = movement * speed;
+        if (isDashing){
+            Vector3 dashPosition = transform.position + lastmovementDir * dashDistance;
+
+            RaycastHit2D raycastHit = Physics2D.Raycast(transform.position, lastmovementDir, dashDistance, dashLayer);
+            if (raycastHit.collider != null) {
+                dashPosition = raycastHit.point;
+            }
+
+            rigid2d.MovePosition(dashPosition);
+            isDashing = false;
+        }
     }
 
     // This function allows the player to attack on command
@@ -150,7 +191,10 @@ public class Player : Character {
         Debug.Log("AAAAGH i've been hit");
         currentHealth -= damage;
         healthBar.SetValue(currentHealth);
-        hitpoints.text = currentHealth + "/" + maxHealth;
+        if (currentHealth <= 0)
+            hitpoints.text = "0 /" + maxHealth;
+        else  
+            hitpoints.text = currentHealth + "/" + maxHealth;
 
         if (currentHealth <= 0)
             Die();
@@ -247,4 +291,23 @@ public class Player : Character {
             }
         }
     }
+
+    void Dash() {
+        if (Input.GetKeyDown(KeyCode.LeftShift)) {
+            isDashing = true;
+            timeUntilNextDash = Time.time + dashCooldown;
+        }
+    }
+
+    // This function allows the player to get blessed on command
+    // void Bless() {
+        // if (Input.GetKeyDown(KeyCode.LeftControl)) {
+            // spriterSlave.Bless();
+            // timeUntilDeactivation = Time.time + effectDuration;
+        // }
+    // }
+    // void DeBless(){
+        // spriterSlave.DeBless(); 
+        // timeUntilNextBlessing = Time.time + blessingCooldown;
+    // }
 }
