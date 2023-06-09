@@ -27,7 +27,7 @@ public class MeleeDraugrSpriter : MonoBehaviour
             if(hitPlayer.GetComponent<Player>() != null){
                     Debug.Log("Lo logro señor");
                     master.meleeAttackPoint = null;
-                    hitPlayer.GetComponent<Player>().TakeDamage(master.attack);
+                    hitPlayer.GetComponent<Player>().TakeDamage(master.attack, "Sword Draugr");
                 }
         }
 

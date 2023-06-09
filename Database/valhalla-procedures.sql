@@ -44,3 +44,18 @@ DELIMITER $$
         UPDATE valhalla.users SET users.game_id = @last_game_id WHERE users.username = username;
     END$$
 DELIMITER ;
+
+DELIMITER $$
+    CREATE PROCEDURE valhalla.add_death(
+        IN _username VARCHAR(30),
+        IN _room VARCHAR(50),
+        IN _killer VARCHAR(50))
+    BEGIN
+        IF (SELECT COUNT(*) FROM valhalla.users WHERE users.username = _username) = 0 THEN
+            SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Invalid User!';
+        END IF;
+
+        INSERT INTO deaths (`user_id`, `room`, `killer`) VALUES 
+        ((SELECT users.user_id FROM valhalla.users WHERE users.username = _username), _room, _killer);
+    END$$
+DELIMITER ;

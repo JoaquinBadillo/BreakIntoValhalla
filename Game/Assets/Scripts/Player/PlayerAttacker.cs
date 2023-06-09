@@ -19,6 +19,17 @@ public class PlayerAttacker : MonoBehaviour {
     // Deflect variables
     private Vector2 deflectDirection;
 
+    // Death Data
+    public string currentRoom;
+
+    public string damageSource;
+    public string killer;
+
+    // Metrics data
+    public int kills;
+
+
+
     virtual public void Bless() {}
     virtual public void DeBless() {}
 
@@ -84,6 +95,11 @@ public class PlayerAttacker : MonoBehaviour {
         regen = null; // reset regen
     }
     public void Die() {
+        Debug.Log("Died in " + currentRoom + " by " + killer + " with " + kills + " kills");
+        PlayerPrefs.SetString("room", currentRoom);
+        PlayerPrefs.SetString("killer", killer);
+        PlayerPrefs.SetInt("kills", kills);
+
         StartCoroutine(DieCoroutine());
     }
 

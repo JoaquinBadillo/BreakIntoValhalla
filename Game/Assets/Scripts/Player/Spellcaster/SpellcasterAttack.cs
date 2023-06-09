@@ -10,11 +10,9 @@ public class SpellcasterAttack : PlayerAttacker {
     private Collider2D[] hitEnemies;
     // Casting variables
     private bool isCasting; // isShooting
-    private GameObject spell; // spell
+    [SerializeField] GameObject spell; // spell
     [SerializeField] float spellSpeed = 10f; // arrow speed
     private bool throwable;
-    // Deflect variables
-    private Vector2 deflectDirection;
 
     void Start() {
         master = this.GetComponentInParent<Player>();

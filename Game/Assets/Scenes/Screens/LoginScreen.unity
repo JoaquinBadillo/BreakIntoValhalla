@@ -446,6 +446,8 @@ GameObject:
   - component: {fileID: 187545245}
   - component: {fileID: 187545244}
   - component: {fileID: 187545246}
+  - component: {fileID: 187545248}
+  - component: {fileID: 187545247}
   m_Layer: 5
   m_Name: Login-box
   m_TagString: Untagged
@@ -534,7 +536,34 @@ MonoBehaviour:
   email: {fileID: 388996632}
   password: {fileID: 106088538}
   errorMessage: {fileID: 1474323317}
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
   submit: {fileID: 1264344569}
+--- !u!114 &187545247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187545242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1e758f8eda75edc894bd3eda85907e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
+--- !u!114 &187545248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187545242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55a754a6f7cb699b09816674fca2f2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
 --- !u!1 &216503591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1196,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 10.55
+  m_fontSize: 13.45
   m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1675,7 +1704,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9.45
+  m_fontSize: 12.05
   m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1831,7 +1860,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.7
+  m_fontSize: 16
   m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2780,7 +2809,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.55
+  m_fontSize: 20.6
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2915,7 +2944,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15.8
+  m_fontSize: 20.95
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

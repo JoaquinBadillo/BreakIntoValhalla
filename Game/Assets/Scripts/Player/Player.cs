@@ -10,16 +10,21 @@
         - Take Damage (using methods called in enemy scripts)
         - Death (deactivating different components with GetComponent<>() method)
     
-    Pablo Bolio
+        Contributed by Pablo Bolio
 
         - Set player stats from DB, 
         - Upgrade player stats (called by interactive upgrade objects)
         - Heal player (called by potions) 
-        
-    Joaquin Badillo
+        - Key (its a hammer visually tho) collection
+        - Set current room (called by room script)
+        - Set killer (damageDealer data sent by enemies on attack)
+        - Minor changes to blessings to enable and disable effects
 
-    Shaul Zayat
+        Contributed by Joaquin Badillo
+
         - Stamina mechanics
+
+        Contributed by Shaul Zayat
     
 */
 
@@ -64,6 +69,8 @@ public class Player : Character {
     private bool keyCollected;
     private int defense;
 
+    private bool canSetKiller = true;
+
     // Shop Variables
     private int coins = 200;
     private int BigPotionPrice = 100; // 50% of max health
@@ -88,6 +95,8 @@ public class Player : Character {
     [SerializeField] float timeUntilNextBlessing;
 
     private bool isBlessed;
+
+    private HostSO host;
    
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -151,10 +160,8 @@ public class Player : Character {
 
         if (isBlessed && Time.time >= timeUntilDeactivation)
             DeBless();
-        // if (Time.time >= timeUntilNextBlessing)
-                // Bless();
-        // if (Time.time >= timeUntilDeactivation)
-                // DeBless();
+        
+        // Gotta love them if statements
     }
 
     /*
@@ -197,20 +204,23 @@ public class Player : Character {
         }
     }
 
-    public void TakeDamage(int damage) {
-        Debug.Log("AAAAGH i've been hit");
+    public void TakeDamage(int damage, string damageSource) {
         currentHealth -= damage;
         healthBar.SetValue(currentHealth);
         if (currentHealth <= 0)
-            hitpoints.text = "0 /" + maxHealth;
+            Die(damageSource);
         else  
             hitpoints.text = currentHealth + "/" + maxHealth;
-
-        if (currentHealth <= 0)
-            Die();
     }
 
-    void Die() {
+    void Die(string damageSource) {
+        // Avoid some enemy kill-steal shenanigans
+        if (canSetKiller) {
+            spriterSlave.killer = damageSource;
+            canSetKiller = false;
+        }
+
+        hitpoints.text = "0 /" + maxHealth;
         animator.SetBool("isDead", true);
     }
 
@@ -239,7 +249,6 @@ public class Player : Character {
         else 
             Debug.Log("Not enough coins");
     }
-
 
     public int GetMaxHealth() {
         return maxHealth;
@@ -281,28 +290,6 @@ public class Player : Character {
         return keyCollected;
     }
 
-    public IEnumerator FetchStats() {
-        //string uri = "https://valhallaapi-production.up.railway.app/api/characters";
-        string uri = "http://localhost:5000/api/characters/";
-        string endpoint = uri + PlayerPrefs.GetInt("classIndex") + "/stats";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-
-            // Check if fetching was successful and send json to callback
-            if (webRequest.result == UnityWebRequest.Result.Success) {
-                string jsonString = webRequest.downloadHandler.text;
-                Stats stats = JsonUtility.FromJson<Stats>(webRequest.downloadHandler.text);
-                SetStats(stats);   
-            }
-
-            else {
-                Debug.Log("Error: " + webRequest.error);
-                throw new System.Exception();
-            }
-        }
-    }
-
     void Dash() {
         if (Input.GetKeyDown(KeyCode.LeftShift)) {
             isDashing = true;
@@ -325,5 +312,29 @@ public class Player : Character {
         spriterSlave.DeBless(); 
         timeUntilNextBlessing = Time.time + blessingCooldown;
         isBlessed = false;
+    }
+
+    public void SetCurrentRoom(string currentRoom) {
+        spriterSlave.currentRoom = currentRoom;
+    }
+
+    public IEnumerator FetchStats() {
+        string endpoint = host.uri + "characters/" + PlayerPrefs.GetInt("classIndex") + "/stats";
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+
+            // Check if fetching was successful and send json to callback
+            if (webRequest.result == UnityWebRequest.Result.Success) {
+                string jsonString = webRequest.downloadHandler.text;
+                Stats stats = JsonUtility.FromJson<Stats>(webRequest.downloadHandler.text);
+                SetStats(stats);   
+            }
+
+            else {
+                Debug.Log("Error: " + webRequest.error);
+                throw new System.Exception();
+            }
+        }
     }
 }
