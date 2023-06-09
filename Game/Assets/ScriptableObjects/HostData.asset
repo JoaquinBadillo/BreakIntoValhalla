@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccffbd6606970a6f7b44fb4a1bf1282f, type: 3}
   m_Name: HostData
   m_EditorClassIdentifier: 
-  uri: 
+  uri: http://localhost:5000/api/

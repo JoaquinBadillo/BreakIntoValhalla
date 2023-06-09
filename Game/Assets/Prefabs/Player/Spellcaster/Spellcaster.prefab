@@ -1470,6 +1470,7 @@ MonoBehaviour:
   debuff: 0
   timeUntilDeactivation: 0
   timeUntilNextBlessing: 0
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
 --- !u!1 &6232340755939442858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,5 +1686,9 @@ MonoBehaviour:
   panel: {fileID: 2034140723}
   arrow: {fileID: 3245069156672053480, guid: f9c89bed7fa97904ba665709e14eb7a2, type: 3}
   arrowSpeed: 20
+  currentRoom: 
+  damageSource: 
+  killer: 
+  kills: 0
   spell: {fileID: 5111129286134113490, guid: ef8f76e138fd82f40a4b8c9cecb7cf37, type: 3}
   spellSpeed: 20

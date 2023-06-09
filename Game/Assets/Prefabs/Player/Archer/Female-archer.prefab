@@ -688,6 +688,9 @@ MonoBehaviour:
   timeUntilNextDash: 0
   buff: 0
   debuff: 0
+  timeUntilDeactivation: 0
+  timeUntilNextBlessing: 0
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
 --- !u!1 &883654973364611368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,6 +1328,10 @@ MonoBehaviour:
   panel: {fileID: 883654972779136332}
   arrow: {fileID: 3245069156672053480, guid: f9c89bed7fa97904ba665709e14eb7a2, type: 3}
   arrowSpeed: 20
+  currentRoom: 
+  damageSource: 
+  killer: 
+  kills: 0
 --- !u!1 &883654973959877152
 GameObject:
   m_ObjectHideFlags: 0
