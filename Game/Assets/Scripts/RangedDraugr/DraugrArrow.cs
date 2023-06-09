@@ -20,7 +20,7 @@ public class DraugrArrow : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Player")) {
             Debug.Log(other.name);
-            other.GetComponent<Player>().TakeDamage(attack);
+            other.GetComponent<Player>().TakeDamage(attack, "Bow Draugr");
             Debug.Log("Damage dealt: " + attack);
             YeetArrow();
         }

@@ -500,6 +500,8 @@ GameObject:
   - component: {fileID: 1400402690}
   - component: {fileID: 1400402689}
   - component: {fileID: 1400402693}
+  - component: {fileID: 1400402695}
+  - component: {fileID: 1400402694}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -601,3 +603,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b6f5f0ec3df04b4b944adf545f8e7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
+--- !u!114 &1400402694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400402688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1e758f8eda75edc894bd3eda85907e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
+--- !u!114 &1400402695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400402688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746e3264f83e3bb4aaefe9a520fb07f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}

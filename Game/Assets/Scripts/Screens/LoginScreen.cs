@@ -40,8 +40,7 @@ public class LoginScreen : MonoBehaviour {
     [SerializeField] TMP_Text password;
     [SerializeField] TMP_Text errorMessage;
 
-    //string uri = "https://valhallaapi-production.up.railway.app/api";
-    string uri = "http://localhost:5000/api";
+    public HostSO host;
 
     public Button submit;
     // Start is called before the first frame update
@@ -102,14 +101,14 @@ public class LoginScreen : MonoBehaviour {
 
         Debug.Log(jsonString);
         
-        string endpoint = uri + "/users";
+        string endpoint = host.uri + "users";
         using (UnityWebRequest webRequest = UnityWebRequest.Put(endpoint, jsonString)) {
             webRequest.method = "POST";
             webRequest.SetRequestHeader("Content-Type", "application/json");
             webRequest.SetRequestHeader("Accept", "application/json");
 
-            // Request and wait for the desired page.
             Debug.Log("Sending request to " + endpoint);
+            
             yield return webRequest.SendWebRequest();
 
             // Check for server connection errors
@@ -145,7 +144,7 @@ public class LoginScreen : MonoBehaviour {
 
         string jsonString = JsonUtility.ToJson(newUser);
         
-        string endpoint = uri + "/users/login";
+        string endpoint = host.uri + "users/login";
         using (UnityWebRequest webRequest = UnityWebRequest.Put(endpoint, jsonString)) {
             webRequest.method = "POST";
             webRequest.SetRequestHeader("Content-Type", "application/json");
@@ -175,35 +174,20 @@ public class LoginScreen : MonoBehaviour {
             PlayerPrefs.SetString("email", user.email);
             PlayerPrefs.SetString("password", user.password);
 
+            // If game does not exist (id == 0), then go to class select and stop coroutine
             if (user.game_id == 0) {
                 SceneManager.LoadScene("ClassSelect");
                 yield break;
             }
         }
 
-        endpoint = uri + "/levels/" + PlayerPrefs.GetString("username");
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
-            Debug.Log("Sending request to " + endpoint);
-            yield return webRequest.SendWebRequest();
+        // Load character data
+        yield return StartCoroutine(GetComponent<CharacterManager>().LoadCharacterData());
 
-            if (webRequest.result == UnityWebRequest.Result.Success) {
-                jsonString = webRequest.downloadHandler.text;
-                Level level = JsonUtility.FromJson<Level>(webRequest.downloadHandler.text);
-                PlayerPrefs.SetInt("seed", level.seed);
-                Debug.Log("Seed: " + level.seed);
-            }
+        // Load level data
+        yield return StartCoroutine(GetComponent<LevelManager>().ReadLevelData());
 
-            else {
-				Debug.Log("Error: " + webRequest.error);
-				yield break;
-			}
-
-            SceneManager.LoadScene("MainScene");
-            yield break;
-        }
-        
+        SceneManager.LoadScene("MainScene");
+        yield break;  
     }
-
-
-
 }

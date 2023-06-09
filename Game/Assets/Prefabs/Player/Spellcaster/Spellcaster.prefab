@@ -322,7 +322,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.014, y: 0.8264907}
   m_AnchorMax: {x: 0.053000003, y: 0.91050935}
-  m_AnchoredPosition: {x: -0.2000122, y: -0.114593506}
+  m_AnchoredPosition: {x: -0.20007324, y: -0.114593506}
   m_SizeDelta: {x: -3.3647003, y: -2.2998047}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &318454989
@@ -1468,6 +1468,8 @@ MonoBehaviour:
   timeUntilNextDash: 0
   buff: 0
   debuff: 0
+  timeUntilDeactivation: 0
+  timeUntilNextBlessing: 0
 --- !u!1 &6232340755939442858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,6 +1683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 2034140723}
-  arrow: {fileID: 0}
+  arrow: {fileID: 3245069156672053480, guid: f9c89bed7fa97904ba665709e14eb7a2, type: 3}
   arrowSpeed: 20
+  spell: {fileID: 5111129286134113490, guid: ef8f76e138fd82f40a4b8c9cecb7cf37, type: 3}
   spellSpeed: 20

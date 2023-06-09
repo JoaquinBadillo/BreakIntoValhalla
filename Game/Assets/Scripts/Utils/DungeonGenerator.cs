@@ -14,12 +14,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
-
-public class Level {
-    public int level_num;
-    public int seed;
-}
+using Cinemachine;
 
 public class DungeonGenerator : MonoBehaviour {
     // Room prefabs sent as a pre-order traversal of a tree
@@ -42,11 +37,27 @@ public class DungeonGenerator : MonoBehaviour {
 
     [SerializeField] AstarPath path;
 
-    //string uri = "https://valhallaapi-production.up.railway.app/levels/";
-    string uri = "http://localhost:5000/api/levels/";
+    [SerializeField]
+    List<GameObject> characters = new List<GameObject>();
+
+    [SerializeField]
+    Transform playerSpawnPoint;
+
+    [SerializeField] GameObject vcam;
+
     void Start() {
         Debug.Log("Seed: " + PlayerPrefs.GetInt("seed"));
         Random.InitState(PlayerPrefs.GetInt("seed"));
+
+        // We have a lot of fun with the 4th character (berserkr), so we make it the default
+        if (!PlayerPrefs.HasKey("classIndex"))
+            PlayerPrefs.SetInt("classIndex", 4);
+        else if (PlayerPrefs.GetInt("classIndex") < 1)
+            PlayerPrefs.SetInt("classIndex", 4);
+        
+        GameObject player = Instantiate(characters[PlayerPrefs.GetInt("classIndex") - 1], playerSpawnPoint.position, Quaternion.identity);
+        vcam.GetComponent<CinemachineVirtualCamera>().Follow = player.transform;
+
         StartGenerator();
     }
 
@@ -83,31 +94,5 @@ public class DungeonGenerator : MonoBehaviour {
         // Call the recursive function to insert rooms, starting with the base
         InsertRoom(gameObject, baseRoom);
         path.Scan();
-    }
-
-    private IEnumerator GenerateDungeon() {
-        Debug.Log(PlayerPrefs.GetString("username"));
-        string endpoint = uri + PlayerPrefs.GetString("username");
-        Debug.Log(uri);
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-
-            if (webRequest.result == UnityWebRequest.Result.Success) {
-                string jsonString = webRequest.downloadHandler.text;
-                Level level = JsonUtility.FromJson<Level>(webRequest.downloadHandler.text);
-                Random.InitState(level.seed);
-                StartGenerator();
-
-                yield break;
-            }
-
-            // Check if update was successful
-            if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError) {
-                Debug.LogError("Fatal Error: Could not update metrics.");
-                Debug.LogError("Reason: " + webRequest.error);
-                yield break;
-            } 
-        }
     }
 }

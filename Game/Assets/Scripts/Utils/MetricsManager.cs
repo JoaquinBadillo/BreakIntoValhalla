@@ -20,26 +20,20 @@ public class Metrics {
 }
 
 public class MetricsManager : MonoBehaviour {
-    //string uri = "https://valhallaapi-production.up.railway.app/api/users/metrics";
-    string uri = "http://localhost:5000/api/users/metrics/";
-    string className;
-    public Stats stats;
+    [SerializeField] HostSO host;
 
-    public void setClassName(string className) {
-        this.className = className;
-    }
-
-    public IEnumerator UpdateMetrics(int kills, int wins) {
+    public IEnumerator UpdateMetrics(int wins) {
         // Create metrics object
         Metrics metrics = new Metrics();
         metrics.username = PlayerPrefs.GetString("username");
-        metrics.kills = kills;
+        metrics.kills = PlayerPrefs.GetInt("kills");
         metrics.wins = wins;
 
         string jsonString = JsonUtility.ToJson(metrics);
         
-        using (UnityWebRequest webRequest = UnityWebRequest.Put(uri, jsonString)) {
-            // Request and wait for the desired page.
+        string endpoint = host.uri + "users/metrics";
+        using (UnityWebRequest webRequest = UnityWebRequest.Put(endpoint, jsonString)) {
+            Debug.Log("Sending request to " + endpoint);
             yield return webRequest.SendWebRequest();
 
             // Check if update was successful

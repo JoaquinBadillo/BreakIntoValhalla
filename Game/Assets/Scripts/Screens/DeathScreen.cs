@@ -20,52 +20,55 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Networking;
 
-
-public class LevelData {
+public class DeathData {
     public string username;
-    public int level_num;
+    public string killer;
+    public string room;
 }
 
-public class LevelResponse {
-    public int seed;
-}
+public class DeathScreen : MonoBehaviour {
+    [SerializeField] HostSO host;
 
-public class DeathScreen : MonoBehaviour
-{
-    // Start is called before the first frame update
     IEnumerator Start() {
-        //string uri = "https://valhallaapi-production.up.railway.app/api/levels";
-        string uri = "http://localhost:5000/api/levels";
-        // Create Level object
-        LevelData data = new LevelData();
+        yield return StartCoroutine(GetComponent<MetricsManager>().UpdateMetrics(0));
+        yield return StartCoroutine(GetComponent<LevelManager>().UpdateLevelData());
+            
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("MainScene");
+        yield break;
+    }
+
+    IEnumerator SendDeathData() {
+        DeathData data = new DeathData();
         data.username = PlayerPrefs.GetString("username");
-        data.level_num = 1;
+        data.killer = PlayerPrefs.GetString("killer");
+        data.room = PlayerPrefs.GetString("room");
 
+        if (data.killer == "" || data.room == "" ) {
+            Debug.LogError("Failed to load data");
+            yield break;
+        }
+
+        
         string jsonString = JsonUtility.ToJson(data);
-
-        Debug.Log(jsonString);
-
-        using (UnityWebRequest webRequest = UnityWebRequest.Put(uri, jsonString)) {
+        string endpoint = host.uri + "deaths";
+        using (UnityWebRequest webRequest = UnityWebRequest.Put(endpoint, jsonString)) {
+            webRequest.method = "POST";
             webRequest.SetRequestHeader("Content-Type", "application/json");
             webRequest.SetRequestHeader("Accept", "application/json");
+
+            Debug.Log("Sending request to " + endpoint);
             yield return webRequest.SendWebRequest();
 
             if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError) {
-                Debug.Log("Error: " + webRequest.error);
-                PlayerPrefs.SetInt("seed", Random.Range(1, 800000));
-            } else {
-                Debug.Log("Success");
-                jsonString = webRequest.downloadHandler.text;
-                Debug.Log(jsonString);
-                LevelResponse level = JsonUtility.FromJson<LevelResponse>(webRequest.downloadHandler.text);
-			    Debug.Log(level.seed);
-                PlayerPrefs.SetInt("seed", level.seed);
+                Debug.LogError("Error sending death data!");
+                Debug.LogError("Error: " + webRequest.error);
             }
-            
-            
 
-            yield return new WaitForSeconds(2);
-            SceneManager.LoadScene("MainScene");
+            else {
+                Debug.Log("Death data sent successfully!");
+            }
+                
             yield break;
         }
     }
