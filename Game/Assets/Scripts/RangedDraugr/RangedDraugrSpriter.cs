@@ -14,6 +14,8 @@ public class RangedDraugrSpriter : MonoBehaviour
     private bool throwable;
     public bool death;
     private Collider2D myCollider;
+
+    [SerializeField] int coins;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +26,7 @@ public class RangedDraugrSpriter : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-
+    void Update() {
         if (isShooting && throwable) {
             master.angle = Mathf.Atan2(master.facingDirection.y, master.facingDirection.x) * Mathf.Rad2Deg;
             GameObject projectile = Instantiate(arrow, shootPoint.position, Quaternion.Euler(0, 0, master.angle));
@@ -36,9 +36,6 @@ public class RangedDraugrSpriter : MonoBehaviour
             Rigidbody2D projectileRigid2d = projectile.GetComponent<Rigidbody2D>();
             projectileRigid2d.velocity = facing * arrowSpeed;
             projectile.GetComponent<DraugrArrow>().direction = facing;
-        }
-        if (death) {
-            Destroy(master.gameObject);
         }
     }
 
@@ -53,8 +50,8 @@ public class RangedDraugrSpriter : MonoBehaviour
 
     public void EndDeath() {
         death = true;
+        StartCoroutine(WaitToDie());
     }
-
 
     /*
         these functions change the melee attack reach by 
@@ -87,5 +84,14 @@ public class RangedDraugrSpriter : MonoBehaviour
     void OnTriggerStay2D(Collider2D other) {
         if (other.CompareTag("Player"))
             master.Attack();
+    }
+
+    public IEnumerator WaitToDie() {
+        master.GetComponent<Collider2D>().enabled = false;
+        Player playerRef = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        playerRef.AddKill();
+        playerRef.AddCoins(coins);
+        yield return new WaitForSeconds(1f);
+        Destroy(master.gameObject);
     }
 }

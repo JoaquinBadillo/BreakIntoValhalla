@@ -142,6 +142,7 @@ MonoBehaviour:
   direction: 0
   arrowSpeed: 20
   death: 0
+  coins: 15
 --- !u!1 &133150606075463992
 GameObject:
   m_ObjectHideFlags: 0

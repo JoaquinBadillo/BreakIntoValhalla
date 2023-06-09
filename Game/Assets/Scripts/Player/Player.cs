@@ -72,7 +72,7 @@ public class Player : Character {
     private bool canSetKiller = true;
 
     // Shop Variables
-    private int coins = 200;
+    [SerializeField] int coins = 200;
     private int BigPotionPrice = 100; // 50% of max health
     private int UpgradePrice = 75; // Upgrade stats
     private int SmallPotionPrice = 25; // 10% of max health
@@ -210,6 +210,7 @@ public class Player : Character {
 
     public void SetStats(Stats stats) {
         maxHealth = stats.hp;
+        currentHealth = stats.hp;
         attack = stats.primary_attack;
         secondaryAttack = stats.secondary_attack;
         endLag = stats.primary_lag;
@@ -299,6 +300,14 @@ public class Player : Character {
 
     public void SetCurrentRoom(string currentRoom) {
         spriterSlave.currentRoom = currentRoom;
+    }
+
+    public void AddKill() {
+        spriterSlave.kills++;
+    }
+
+    public void AddCoins(int _coins) {
+        coins += _coins;
     }
 
     public IEnumerator FetchStats() {

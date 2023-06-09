@@ -32,6 +32,7 @@ public class DeathScreen : MonoBehaviour {
     IEnumerator Start() {
         yield return StartCoroutine(GetComponent<MetricsManager>().UpdateMetrics(0));
         yield return StartCoroutine(GetComponent<LevelManager>().UpdateLevelData());
+        yield return StartCoroutine(SendDeathData());
             
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("MainScene");
@@ -41,8 +42,15 @@ public class DeathScreen : MonoBehaviour {
     IEnumerator SendDeathData() {
         DeathData data = new DeathData();
         data.username = PlayerPrefs.GetString("username");
-        data.killer = PlayerPrefs.GetString("killer");
-        data.room = PlayerPrefs.GetString("room");
+        if (!PlayerPrefs.HasKey("killer") || PlayerPrefs.GetString("killer") == "")
+            data.killer = "A Bunch of Baby Ducks";
+        else 
+            data.killer = PlayerPrefs.GetString("killer");
+        
+        if (!PlayerPrefs.HasKey("room") || PlayerPrefs.GetString("room") == "")
+            data.room = "The Park";
+        else
+            data.room = PlayerPrefs.GetString("room");
 
         if (data.killer == "" || data.room == "" ) {
             Debug.LogError("Failed to load data");
