@@ -22,17 +22,24 @@ public class Metrics {
 public class MetricsManager : MonoBehaviour {
     [SerializeField] HostSO host;
 
-    public IEnumerator UpdateMetrics(int wins) {
+    public IEnumerator UpdateMetrics(int _wins) {
         // Create metrics object
         Metrics metrics = new Metrics();
         metrics.username = PlayerPrefs.GetString("username");
-        metrics.kills = PlayerPrefs.GetInt("kills");
-        metrics.wins = wins;
+        if (PlayerPrefs.HasKey("kills"))
+            metrics.kills = PlayerPrefs.GetInt("kills");
+        else
+            metrics.kills = 0;
+
+        metrics.wins = _wins;
 
         string jsonString = JsonUtility.ToJson(metrics);
         
         string endpoint = host.uri + "users/metrics";
         using (UnityWebRequest webRequest = UnityWebRequest.Put(endpoint, jsonString)) {
+            webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("Accept", "application/json");
+            
             Debug.Log("Sending request to " + endpoint);
             yield return webRequest.SendWebRequest();
 
@@ -40,8 +47,13 @@ public class MetricsManager : MonoBehaviour {
             if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError) {
                 Debug.LogError("Fatal Error: Could not update metrics.");
                 Debug.LogError("Reason: " + webRequest.error);
-                yield break;
             }
+
+            else {
+                Debug.Log("Metrics updated successfully!");
+            }
+
+            yield break;
         }
     }
 }

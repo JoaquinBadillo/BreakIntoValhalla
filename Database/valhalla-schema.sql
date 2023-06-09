@@ -123,8 +123,8 @@ CREATE TABLE deaths(
     room VARCHAR(50) NOT NULL,
 	killer VARCHAR(50),
     PRIMARY KEY (deaths_id),
-	CONSTRAINT fk_deaths_users FOREIGN KEY (user_id) REFERENCES users (user_id) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+	FOREIGN KEY (user_id) REFERENCES users (user_id) ON UPDATE CASCADE
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 -- Enable restrictions
 SET SQL_MODE=@OLD_SQL_MODE;

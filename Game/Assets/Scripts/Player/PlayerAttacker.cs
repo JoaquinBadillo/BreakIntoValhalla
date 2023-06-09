@@ -26,7 +26,7 @@ public class PlayerAttacker : MonoBehaviour {
     public string killer;
 
     // Metrics data
-    public int kills;
+    public int kills = 0;
 
 
 

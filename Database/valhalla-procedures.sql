@@ -54,8 +54,9 @@ DELIMITER $$
         IF (SELECT COUNT(*) FROM valhalla.users WHERE users.username = _username) = 0 THEN
             SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Invalid User!';
         END IF;
-
+        
+		SET @user_id = (SELECT users.user_id FROM valhalla.users WHERE users.username = _username);
         INSERT INTO deaths (`user_id`, `room`, `killer`) VALUES 
-        ((SELECT users.user_id FROM valhalla.users WHERE users.username = _username), _room, _killer);
+        (@user_id, _room, _killer);
     END$$
 DELIMITER ;

@@ -9,6 +9,8 @@ public class MeleeDraugrSpriter : MonoBehaviour
     private bool isAttacking;
     public bool death;
     private Collider2D hitPlayer;
+
+    [SerializeField] int coins;
     void Start() {  
         master = this.GetComponentInParent<MeleeDraugr>();
         isAttacking = false;
@@ -30,10 +32,6 @@ public class MeleeDraugrSpriter : MonoBehaviour
                     hitPlayer.GetComponent<Player>().TakeDamage(master.attack, "Sword Draugr");
                 }
         }
-
-        if (death) {
-            Destroy(master.gameObject);
-        }
     }
 
     public void startAttack() {
@@ -54,6 +52,7 @@ public class MeleeDraugrSpriter : MonoBehaviour
 
     public void EndDeath() {
         death = true;
+        StartCoroutine(WaitToDie());
     }
 
     /*
@@ -78,5 +77,13 @@ public class MeleeDraugrSpriter : MonoBehaviour
     void OnTriggerStay2D(Collider2D other) {
         if (other.CompareTag("Player"))
             master.Attack();
+    }
+
+    public IEnumerator WaitToDie() {
+        master.GetComponent<Collider2D>().enabled = false;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddKill();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddCoins(coins);
+        yield return new WaitForSeconds(1f);
+        Destroy(master.gameObject);
     }
 }
