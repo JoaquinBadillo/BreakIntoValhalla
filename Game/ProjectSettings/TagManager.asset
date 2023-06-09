@@ -59,6 +59,9 @@ TagManager:
   - name: Decorative-Tile
     uniqueID: 2082670583
     locked: 0
+  - name: Shop
+    uniqueID: 1511080773
+    locked: 0
   - name: Foreground
     uniqueID: 2104697489
     locked: 0
