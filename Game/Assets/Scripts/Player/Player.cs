@@ -100,28 +100,12 @@ public class Player : Character {
    
     // Sets necessary parameters and gets necessary components
     void Start() {
-        PlayerPrefs.SetInt("classIndex", 1);
+        StartCoroutine(FetchStats());
 
-        try {
-            StartCoroutine(FetchStats());
-        }
-        
-        catch (System.Exception) {
-            // If FetchStats fails, use some default values
-            Debug.Log("Make sure to start the server!");
-            maxHealth = 200;
-            attack = 20;
-            secondaryAttack = 15;
-            endLag = 1.5f;
-            secondaryEndLag = 1.5f;
-            speed = 2f;
-        }
         spriterSlave = GetComponentInChildren<PlayerAttacker>();
         base.Initialize();
-        healthBar.SetMaxValue(maxHealth);
         currentStamina = maxStamina;
         staminaBar.SetMaxValue(maxStamina);
-        hitpoints.text = currentHealth + "/" + maxHealth;
         tavernCanvas = GameObject.Find("TavernCanvas");
         upgradeCanvas = GameObject.FindWithTag("Upgrade");
         dashCooldown = 6f;
@@ -319,6 +303,7 @@ public class Player : Character {
 
     public IEnumerator FetchStats() {
         string endpoint = host.uri + "characters/" + PlayerPrefs.GetInt("classIndex") + "/stats";
+        Debug.Log(endpoint);
         using (UnityWebRequest webRequest = UnityWebRequest.Get(endpoint)) {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
@@ -326,14 +311,25 @@ public class Player : Character {
             // Check if fetching was successful and send json to callback
             if (webRequest.result == UnityWebRequest.Result.Success) {
                 string jsonString = webRequest.downloadHandler.text;
+                Debug.Log(jsonString);
                 Stats stats = JsonUtility.FromJson<Stats>(webRequest.downloadHandler.text);
                 SetStats(stats);   
             }
 
             else {
+                Debug.Log("Make sure to start the server!");
                 Debug.Log("Error: " + webRequest.error);
-                throw new System.Exception();
+                // Set Default Stats
+                maxHealth = 200;
+                attack = 20;
+                secondaryAttack = 15;
+                endLag = 1.5f;
+                secondaryEndLag = 1.5f;
+                speed = 2f;
             }
+
+            healthBar.SetMaxValue(maxHealth);
+            hitpoints.text = currentHealth + "/" + maxHealth;
         }
     }
 }
