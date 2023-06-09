@@ -1412,7 +1412,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -1454,10 +1454,20 @@ MonoBehaviour:
   xRange: 0.5
   yRange: 0.3
   zRange: 0
+  shootPoint: {fileID: 0}
   hitpoints: {fileID: 247390643}
   healthBar: {fileID: 1852482849}
   staminaBar: {fileID: 828870845}
   staminaCost: 20
+  lastmovementDir: {x: 0, y: 0, z: 0}
+  dashCooldown: 0
+  dashDistance: 0
+  dashLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  timeUntilNextDash: 0
+  buff: 0
+  debuff: 0
 --- !u!1 &6232340755939442858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1670,10 +1680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaee33d53c0d1d546b4b490a83f77f35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAttacking: 0
-  isCasting: 0
-  castPoint: {fileID: 0}
-  spell: {fileID: 5111129286134113490, guid: ef8f76e138fd82f40a4b8c9cecb7cf37, type: 3}
-  direction: 0
-  spellSpeed: 20
   panel: {fileID: 2034140723}
+  arrow: {fileID: 0}
+  arrowSpeed: 20
+  spellSpeed: 20

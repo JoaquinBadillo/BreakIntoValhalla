@@ -9,7 +9,6 @@ public class Hel : Character{
     // Movement Variables
     public AIPath aiPath;
     [SerializeField] Transform player;
-    [SerializeField] float range;
     // Attack Variables
     private HelSpriter animatorSlave;
     public float meleeInnerRange;
@@ -32,7 +31,6 @@ public class Hel : Character{
         maxHealth = 600;
         endLag = 5f;
         summonLag = 25f;
-        range = 3f;
         meleeAttackBox = null;
         meleeAttackCircle = null;
         isSecondPhase = true;

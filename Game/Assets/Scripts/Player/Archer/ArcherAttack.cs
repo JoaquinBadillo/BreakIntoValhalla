@@ -4,26 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ArcherAttack : MonoBehaviour {
-    private Player master;
+public class ArcherAttack : PlayerAttacker {
     // Melee variables
-    public bool isAttacking;
+    private bool isAttacking;
     private Collider2D[] hitEnemies;
     // Shooting variables
-    public bool isShooting;
-    public Transform shootPoint;
-    public GameObject arrow;
-    public float direction;
-    [SerializeField] float arrowSpeed = 20f;
-    private Vector3 facing;
+    private bool isShooting;
     private bool throwable;
-    // Deflect variables
-    private Vector2 deflectDirection;
-    // Stamina variables
-    private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
-    private Coroutine regen;
-
-    [SerializeField] GameObject panel;
+    
 
     void Start() {
         master = this.GetComponentInParent<Player>();
@@ -58,15 +46,13 @@ public class ArcherAttack : MonoBehaviour {
                 }  
                 else if(enemy.CompareTag("Arrow")) {
                     Debug.Log("you just got yeeted");
-                    //deflectDirection = enemy.GetComponent<DraugrArrow>().facing;
-                    enemy.GetComponent<DraugrArrow>().YeetArrow();
-                    GameObject projectile = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
+                    base.Deflect(enemy);
                 }
             }
         }
 
         if (isShooting && throwable) {
-            GameObject projectile = Instantiate(arrow, shootPoint.position, shootPoint.rotation);
+            GameObject projectile = Instantiate(arrow, master.shootPoint.position, master.shootPoint.rotation);
             projectile.GetComponent<Arrow>().SetAttack(master.secondaryAttack);
             throwable = false;
             Debug.Log("My pointy self just manifested");
@@ -90,7 +76,6 @@ public class ArcherAttack : MonoBehaviour {
     public void EndSecondaryAttack(){
         isShooting = false;
         throwable = true;
-        hitEnemies = Physics2D.OverlapCircleAll(master.meleeAttackPoint.position, master.meleeRange, master.targetLayer);
         UseStamina(master.staminaCost);
     }
 
@@ -102,76 +87,31 @@ public class ArcherAttack : MonoBehaviour {
     */
 
     public void Right() {
-        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(4);
+        base.RightInitializer();
         master.meleeRange = 0.5f;
-        direction = 0f;
-        facing.x = 1;
-        facing.y = 0;
-        shootPoint = this.gameObject.transform.parent.GetChild(8);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
     }
     public void Left() {
-        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(2);
+        base.LeftInitializer();
         master.meleeRange = 0.5f;
-        direction = 180f;
-        facing.x = -1;
-        facing.y = 0;
-        shootPoint = this.gameObject.transform.parent.GetChild(6);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
     }
     public void Up() {
-        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(1);
+        base.UpInitializer();
         master.meleeRange = 0.35f;
-        direction = 90f;
-        facing.x = 0;
-        facing.y = 1;
-        shootPoint = this.gameObject.transform.parent.GetChild(5);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
     }
     public void Down() {
-        master.meleeAttackPoint = this.gameObject.transform.parent.GetChild(3);
+        base.DownInitializer();
         master.meleeRange = 0.43f;
-        direction = 270f;
-        facing.x = 0;
-        facing.y = -1;
-        shootPoint = this.gameObject.transform.parent.GetChild(7);
-        shootPoint.rotation = Quaternion.Euler(0, 0, direction);
     }
 
-    public void UseStamina(int staminaCost) {
-        if(master.currentStamina - staminaCost >= 0) {
-            master.currentStamina -= staminaCost;
-            master.staminaBar.SetValue(master.currentStamina);
-            if(regen != null)
-                StopCoroutine(regen);
-            
-            regen = StartCoroutine(RegenStamina());
-        }
+    override public void Bless() {
+        master.attack += (int) Mathf.Round(master.attack * master.buff);
+        master.secondaryAttack += (int) Mathf.Round(master.secondaryAttack * master.buff);
+        master.speed -= master.speed * master.debuff;
     }
-    
-    private IEnumerator RegenStamina() {
-        yield return new WaitForSeconds(2f);
-        while(master.currentStamina < master.maxStamina) {
-            master.currentStamina += master.maxStamina / 100; 
-            master.staminaBar.SetValue(master.currentStamina);
-            yield return regenTick;
-        }
-        regen = null; // reset regen
-    }
-
-    public void Die() {
-        StartCoroutine(DieCoroutine());
-    }
-
-    IEnumerator DieCoroutine() {
-        for (float f = 0f; f <= 1; f += 0.15f) {
-            Color c = new Color(0, 0, 0, f);
-            panel.GetComponent<Image>().color = c;
-            yield return new WaitForSeconds(0.3f);
-        }
-
-        SceneManager.LoadScene("DeathScene");
-        yield break;
+    override public void DeBless(){
+        master.attack -= (int) Mathf.Round(master.attack * master.buff);
+        master.secondaryAttack -= (int) Mathf.Round(master.secondaryAttack * master.buff);
+        master.speed += master.speed * master.debuff;
     }
 }
 
