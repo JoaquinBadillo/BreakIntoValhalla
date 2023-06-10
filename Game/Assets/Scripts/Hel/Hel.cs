@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Pathfinding;
-
+using UnityEngine.SceneManagement;
 public class Hel : Character{
     // Movement Variables
     public AIPath aiPath;
@@ -102,9 +102,19 @@ public class Hel : Character{
         animator.SetBool("isDead", true);
         Debug.Log("SIKE!");
 
+        StartCoroutine(Victory());
+
         Debug.Log("Yeets player out of existence");
         if (animatorSlave.death == true)
             Destroy(gameObject);
          
+    }
+
+    IEnumerator Victory() {
+        int kills = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().GetKills() + 1;
+        PlayerPrefs.SetInt("kills", kills);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddKill();
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("CreditsScene");
     }
 }

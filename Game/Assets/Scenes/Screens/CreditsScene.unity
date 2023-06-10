@@ -410,6 +410,8 @@ GameObject:
   - component: {fileID: 1166677329}
   - component: {fileID: 1166677330}
   - component: {fileID: 1166677331}
+  - component: {fileID: 1166677333}
+  - component: {fileID: 1166677332}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -473,6 +475,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796ea3256b5ea3375ae00c233de0071b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1166677332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166677328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 746e3264f83e3bb4aaefe9a520fb07f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
+--- !u!114 &1166677333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166677328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c1e758f8eda75edc894bd3eda85907e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
 --- !u!1 &1286068226
 GameObject:
   m_ObjectHideFlags: 0

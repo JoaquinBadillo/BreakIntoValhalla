@@ -310,6 +310,10 @@ public class Player : Character {
         coins += _coins;
     }
 
+    public int GetKills() {
+        return spriterSlave.kills;
+    }
+
     public IEnumerator FetchStats() {
         string endpoint = host.uri + "characters/" + PlayerPrefs.GetInt("classIndex") + "/stats";
         Debug.Log(endpoint);
