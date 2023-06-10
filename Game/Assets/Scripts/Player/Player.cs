@@ -53,6 +53,7 @@ public class Stats {
 public class Player : Character {
     // Spriter Slave
     private PlayerAttacker spriterSlave;
+    private Blessed blessedSlave;
     // Box Physics Variables
     public float xRange;
     public float yRange;
@@ -93,9 +94,7 @@ public class Player : Character {
     [SerializeField] float timeUntilDeactivation;
     private float blessingCooldown = 40f;
     [SerializeField] float timeUntilNextBlessing;
-
-    private bool isBlessed;
-
+    public bool isBlessed;
     [SerializeField] HostSO host;
    
     // Sets necessary parameters and gets necessary components
@@ -103,6 +102,7 @@ public class Player : Character {
         StartCoroutine(FetchStats());
 
         spriterSlave = GetComponentInChildren<PlayerAttacker>();
+        blessedSlave = GetComponentInChildren<Blessed>();
         base.Initialize();
         currentStamina = maxStamina;
         staminaBar.SetMaxValue(maxStamina);
@@ -132,10 +132,13 @@ public class Player : Character {
         animator.SetFloat("ySpeed", movement.y);
         if (Time.time >= timeUntilNextAttack)
             PrimaryAttack();
+
         if (Time.time >= timeUntilNextShot && currentStamina - staminaCost >= 0)
             SecondaryAttack();
+
         if (Time.time >= timeUntilNextDash)
                 Dash();
+
         if (movement.x != 0 || movement.y != 0)
             lastmovementDir = movement;
         
@@ -145,6 +148,10 @@ public class Player : Character {
         if (isBlessed && Time.time >= timeUntilDeactivation)
             DeBless();
         
+        if (isBlessed)
+            blessedSlave.AuraOn();
+        else
+            blessedSlave.AuraOff();
         // Gotta love them if statements
     }
 
