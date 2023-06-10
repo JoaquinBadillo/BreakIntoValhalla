@@ -15,7 +15,9 @@ using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour
 {
-    void Finish() {
+    public IEnumerator Finish() {
+        yield return StartCoroutine(GetComponent<MetricsManager>().UpdateMetrics(1));
+        yield return StartCoroutine(GetComponent<LevelManager>().UpdateLevelData());
         SceneManager.LoadScene("LoginScreen");
     }
 }
