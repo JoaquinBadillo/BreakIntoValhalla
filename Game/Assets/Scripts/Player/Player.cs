@@ -54,6 +54,7 @@ public class Player : Character {
     // Slaves
     private PlayerAttacker spriterSlave;
     private Blessed blessedSlave;
+    private Afterimage afterimageSlave;
     // Box Physics Variables
     public float xRange;
     public float yRange;
@@ -81,7 +82,7 @@ public class Player : Character {
     GameObject upgradeCanvas;
     GameObject tavernCanvas;
     // Dash Variables
-    [SerializeField] Vector3 lastmovementDir;
+    public Vector3 lastmovementDir;
     [SerializeField] float dashCooldown;
     [SerializeField] float dashDistance;
     [SerializeField] LayerMask dashLayer;
@@ -102,6 +103,7 @@ public class Player : Character {
         StartCoroutine(FetchStats());
         spriterSlave = GetComponentInChildren<PlayerAttacker>();
         blessedSlave = GetComponentInChildren<Blessed>();
+        afterimageSlave = GetComponentInChildren<Afterimage>();
         base.Initialize();
         currentStamina = maxStamina;
         staminaBar.SetMaxValue(maxStamina);
@@ -134,11 +136,11 @@ public class Player : Character {
         if (Time.time >= timeUntilNextShot && currentStamina - staminaCost >= 0)
             SecondaryAttack();
 
-        if (Time.time >= timeUntilNextDash)
-                Dash();
-
         if (movement.x != 0 || movement.y != 0)
             lastmovementDir = movement;
+
+        if (Time.time >= timeUntilNextDash)
+                Dash();
         
         if (Input.GetKeyDown(KeyCode.LeftControl))
             Bless();
@@ -282,6 +284,7 @@ public class Player : Character {
     void Dash() {
         if (Input.GetKeyDown(KeyCode.LeftShift)) {
             isDashing = true;
+            afterimageSlave.ActivateAfterimage();
             timeUntilNextDash = Time.time + dashCooldown;
         }
     }
