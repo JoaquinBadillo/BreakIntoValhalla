@@ -6,6 +6,7 @@ public class Character : MonoBehaviour{
     // Unity Objects
     public Animator animator; // Unity Object that allows script to change animation states
     protected Rigidbody2D rigid2d; // Unity Object that makes it compatible with physics
+    protected SpriteRenderer spriter;
     // Physics
     protected Vector2 movement;
     // Attack Variables
@@ -36,8 +37,15 @@ public class Character : MonoBehaviour{
     protected void Initialize(){
         rigid2d = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        spriter = GetComponentInChildren<SpriteRenderer>();
         currentHealth = maxHealth;
         currentStamina = maxStamina;
         animator.SetBool("isDead", false);
+    }
+    public IEnumerator Flashing() {
+        spriter.color = Color.red ;
+        yield return new WaitForSeconds(0.1f);
+        spriter.color = Color.white;
+        yield break;
     }
 }

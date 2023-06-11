@@ -441,6 +441,7 @@ MonoBehaviour:
   speed: 2
   maxStamina: 100
   currentStamina: 0
+  trail: {fileID: 0}
   xRange: 2.3
   yRange: 1.5
   zRange: 0
@@ -672,6 +673,7 @@ GameObject:
   - component: {fileID: 27731169918444366}
   - component: {fileID: 659795098162790005}
   - component: {fileID: 75785980}
+  - component: {fileID: 6598830971937205199}
   m_Layer: 3
   m_Name: Spriter
   m_TagString: Untagged
@@ -786,6 +788,23 @@ MonoBehaviour:
   damageSource: 
   killer: 
   kills: 0
+--- !u!114 &6598830971937205199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3427229760818827555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 088e70d97f576f44baac7979dd56e24a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  master: {fileID: 0}
+  activeTime: 0
+  spawnRate: 0
+  timeUntilNextSpawn: 0
+  afterimage: {fileID: 8823520806580567920, guid: e71187a23b189e1448e4cf50ec1ad29f, type: 3}
 --- !u!1 &4219292315065822081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,7 +1434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.7606812, y: -0.000091552734}
+  m_AnchoredPosition: {x: 1.7606812, y: -0.00012207031}
   m_SizeDelta: {x: 52.8162, y: 63.3793}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6177250130083960747
@@ -1570,7 +1589,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.042000003, y: 0.82480437}
   m_AnchorMax: {x: 0.20448771, y: 0.855357}
-  m_AnchoredPosition: {x: 0.10003662, y: 0.9302063}
+  m_AnchoredPosition: {x: 0.100097656, y: 0.9302063}
   m_SizeDelta: {x: -3.4260998, y: -1.8603001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8319943814592135252

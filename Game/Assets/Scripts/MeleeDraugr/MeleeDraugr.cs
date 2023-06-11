@@ -44,8 +44,8 @@ public class MeleeDraugr : Character{
     }
 
     public void TakeDamage(int damage) {
+        StartCoroutine(Flashing());
         currentHealth -= damage;
-        Debug.Log("Got hit, current health is now: " + currentHealth);
         if (currentHealth <= 0)
             Die();
             
