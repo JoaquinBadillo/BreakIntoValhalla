@@ -6,6 +6,7 @@ using TMPro;
 using Pathfinding;
 using UnityEngine.SceneManagement;
 public class Hel : Character{
+    private Blessed auraSlave;
     // Movement Variables
     public AIPath aiPath;
     [SerializeField] Transform player;
@@ -35,6 +36,7 @@ public class Hel : Character{
         meleeAttackCircle = null;
         isSecondPhase = false;
         zRange = 1;
+        auraSlave = this.GetComponentInChildren<Blessed>();
         base.Initialize();
         healthBar = GetComponentInChildren<HelSlider>();
         healthBar.SetMaxHealth(maxHealth);
@@ -47,6 +49,7 @@ public class Hel : Character{
         animator.SetFloat("xSpeed", aiPath.desiredVelocity.x);
         animator.SetFloat("ySpeed", aiPath.desiredVelocity.y);
         if (isSecondPhase) {
+            auraSlave.AuraOn();
             Summon();
         }
     }
@@ -82,6 +85,7 @@ public class Hel : Character{
     }
 
     public void TakeDamage(int damage) {
+        StartCoroutine(Flashing());
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
 

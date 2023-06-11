@@ -51,7 +51,7 @@ public class Stats {
 }
 
 public class Player : Character {
-    // Spriter Slave
+    // Slaves
     private PlayerAttacker spriterSlave;
     private Blessed blessedSlave;
     // Box Physics Variables
@@ -86,7 +86,7 @@ public class Player : Character {
     [SerializeField] float dashDistance;
     [SerializeField] LayerMask dashLayer;
     [SerializeField] float timeUntilNextDash;
-    private bool isDashing;
+    public bool isDashing;
     // Blessing Variables
     public float buff;
     public float debuff;
@@ -100,7 +100,6 @@ public class Player : Character {
     // Sets necessary parameters and gets necessary components
     void Start() {
         StartCoroutine(FetchStats());
-
         spriterSlave = GetComponentInChildren<PlayerAttacker>();
         blessedSlave = GetComponentInChildren<Blessed>();
         base.Initialize();
@@ -114,7 +113,6 @@ public class Player : Character {
         buff = 1.4f;
         debuff = 0.75f;
         isBlessed = false;
-
         if(upgradeCanvas != null)
             upgradeCanvas.SetActive(false);
 
@@ -168,7 +166,6 @@ public class Player : Character {
             if (raycastHit.collider != null) {
                 dashPosition = raycastHit.point;
             }
-
             rigid2d.MovePosition(dashPosition);
             isDashing = false;
         }
@@ -196,6 +193,7 @@ public class Player : Character {
     }
 
     public void TakeDamage(int damage, string damageSource) {
+        StartCoroutine(Flashing());
         currentHealth -= damage;
         healthBar.SetValue(currentHealth);
         if (currentHealth <= 0)
