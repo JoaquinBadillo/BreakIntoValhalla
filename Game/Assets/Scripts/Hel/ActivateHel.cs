@@ -5,10 +5,12 @@ using UnityEngine;
 public class ActivateHel : MonoBehaviour
 {
     [SerializeField] private Spawner conjureHel;
+    [SerializeField] GameObject brokenBridge;
     void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
             other.GetComponent<Player>().SetCurrentRoom("Hel's Throne");
             conjureHel.enabled = true;
+            brokenBridge.SetActive(true);
             StartCoroutine(WakeyWakey());
         }
     }

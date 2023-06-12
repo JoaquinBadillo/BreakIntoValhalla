@@ -20,6 +20,7 @@ public class Key : Interactive {
 
     override public void Interact() {
         player.SetKeyStatus(true);
+        GameObject.FindGameObjectWithTag("NPC").GetComponent<Dialogue>().SetText("The greatest trial of all\nLies ahead");
         finished = true;
     }
 }

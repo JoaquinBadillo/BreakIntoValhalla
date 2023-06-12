@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed0866a8e203ebb7b16cf074bd99452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 0.01
+  amplitude: 0.0025
 --- !u!1 &912223936730518870
 GameObject:
   m_ObjectHideFlags: 0
