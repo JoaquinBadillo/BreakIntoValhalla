@@ -104,10 +104,10 @@ public class PlayerAttacker : MonoBehaviour {
     }
 
     IEnumerator DieCoroutine() {
-        for (float f = 0f; f <= 1; f += 0.15f) {
-            Color c = new Color(0, 0, 0, f);
+        for (float f = 0f; f <= 1; f += 0.05f) {
+            Color c = new Color(0.074f, 0, 0, f);
             panel.GetComponent<Image>().color = c;
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.05f);
         }
 
         SceneManager.LoadScene("DeathScene");
