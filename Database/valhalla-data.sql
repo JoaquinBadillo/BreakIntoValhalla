@@ -76,9 +76,9 @@ COMMIT;
 
 SET AUTOCOMMIT=0; 
 INSERT INTO valhalla.stats (`hp`, `primary_attack`, `secondary_attack`, `primary_lag`, `secondary_lag`, `defense`, `speed`) VALUES
-(200, 20, 15, 0.5, 1.5, 5, 2),
-(250, 30, 40, 0.5, 1.1, 2, 3),
-(150, 15, 35, 0.5, 2, 4, 2);
+(200, 20, 15, 0.5, 1.5, 5, 5),
+(250, 30, 40, 0.5, 1.1, 2, 6),
+(150, 15, 35, 0.5, 2, 4, 5);
 COMMIT;
 
 SET AUTOCOMMIT=0;
