@@ -119,17 +119,17 @@ public class BerserkerAttack : PlayerAttacker {
     }
     public void Up() {
         base.UpInitializer();
-        master.meleeRange = 0.65f;
+        master.meleeRange = 0.85f;
         axeAttackBox = this.gameObject.transform.parent.GetChild(9);
         master.xRange = 2.3f;
         master.yRange = 1.5f;
     }
     public void Down() {
         base.DownInitializer();
-        master.meleeRange = 0.75f;
+        master.meleeRange = 0.85f;
         axeAttackBox = this.gameObject.transform.parent.GetChild(11);
         master.xRange = 2.5f;
-        master.yRange = 1.5f;
+        master.yRange = 1.9f;
     }
 
     override public void Bless() {

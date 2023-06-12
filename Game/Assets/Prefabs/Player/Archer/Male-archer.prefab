@@ -1795,7 +1795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3957809358517960315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.329, y: -0.192, z: -0.17363651}
+  m_LocalPosition: {x: 0.037, y: -0.386, z: -0.17363651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2550,7 +2550,7 @@ SpriteRenderer:
   m_SortingLayerID: 1262265355
   m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 116371122, guid: b6331e890cc457145abd9a81bb2f05d2, type: 3}
+  m_Sprite: {fileID: 1417619539, guid: b6331e890cc457145abd9a81bb2f05d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2813,7 +2813,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7015216331137760676}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.46, y: 0.45, z: -0.17363651}
+  m_LocalPosition: {x: 0.027, y: 0.49, z: -0.17363651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3079,6 +3079,9 @@ MonoBehaviour:
   spriter1: {fileID: 0}
   spriter2: {fileID: 0}
   spriter3: {fileID: 0}
+  morphingSpriter1: {fileID: 0}
+  morphingSpriter2: {fileID: 0}
+  morphingSpriter3: {fileID: 0}
   afterimageOpacity1: 0
   afterimageOpacity2: 0
   afterimageOpacity3: 0
@@ -3088,7 +3091,6 @@ MonoBehaviour:
   afterimageColor1: {r: 0, g: 0, b: 0, a: 0}
   afterimageColor2: {r: 0, g: 0, b: 0, a: 0}
   afterimageColor3: {r: 0, g: 0, b: 0, a: 0}
-  isAfterimageActive: 0
 --- !u!1 &7999799518695735064
 GameObject:
   m_ObjectHideFlags: 0
