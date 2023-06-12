@@ -27,7 +27,7 @@ public class Afterimage : MonoBehaviour {
     
     
     // Start is called before the first frame update
-    protected void Initialize() {
+    protected void Start() {
         afterimageOpacity1 = 0.38671875f; // 99 opacity
         afterimageOpacity2 = 0.2578125f; // 66 opacity
         afterimageOpacity3 = 0.12890625f; // 33 opacity
@@ -36,7 +36,7 @@ public class Afterimage : MonoBehaviour {
         master = GetComponentInParent<Player>();
     }
 
-    protected void Refurbish() {
+    protected void Update() {
         if (master.lastmovementDir.x > 0 && master.lastmovementDir.y == 0)
             Right();
 
