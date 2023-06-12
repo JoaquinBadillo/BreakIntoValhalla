@@ -1,3 +1,10 @@
+/*
+    Ally Marks
+    Simple script to make ally marks (green triangles) move up and down
+
+    Joaquin Badillo
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -15,6 +15,8 @@ public class Interactive : MonoBehaviour {
     protected bool inRange = false;
     protected bool finished = false;
 
+    [SerializeField] protected bool inShop = false;
+
     protected float alpha = 0.7f;
 
     [SerializeField] protected SpriteRenderer spriter;
@@ -23,7 +25,7 @@ public class Interactive : MonoBehaviour {
     protected Player player;
 
     protected void Update() {
-        if (finished) Destroy(this.gameObject);
+        if (finished && !inShop) Destroy(this.gameObject);
         alpha = 0.15f * Mathf.Sin(Mathf.PI * Time.time) + 0.85f;
 
         if (inRange) {

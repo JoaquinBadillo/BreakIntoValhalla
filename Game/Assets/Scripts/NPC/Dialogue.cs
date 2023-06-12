@@ -1,3 +1,11 @@
+/*
+    Dialogue.cs
+    Make the dialogue of the NPC appear when the player is near
+    and show text progressively.
+
+    Joaquin Badillo
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
