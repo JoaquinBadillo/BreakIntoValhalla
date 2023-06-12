@@ -51,6 +51,8 @@ public class Stats {
 }
 
 public class Player : Character {
+    // Unity Components
+    private AudioSource audio;
     // Slaves
     private PlayerAttacker spriterSlave;
     private Blessed blessedSlave;
@@ -104,6 +106,7 @@ public class Player : Character {
         spriterSlave = GetComponentInChildren<PlayerAttacker>();
         blessedSlave = GetComponentInChildren<Blessed>();
         afterimageSlave = GetComponentInChildren<Afterimage>();
+        audio = GetComponent<AudioSource>();
         base.Initialize();
         currentStamina = maxStamina;
         staminaBar.SetMaxValue(maxStamina);
@@ -237,6 +240,7 @@ public class Player : Character {
 
             else if (price == SmallPotionPrice)          
                     Heal(0.1f);
+            audio.Play();
         }       
 
     }
