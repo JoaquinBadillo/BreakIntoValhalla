@@ -93,7 +93,7 @@ MonoBehaviour:
   radius: 0.59
   height: 2
   canMove: 1
-  maxSpeed: 1.8
+  maxSpeed: 4.5
   gravity: {x: NaN, y: NaN, z: NaN}
   groundMask:
     serializedVersion: 2
@@ -188,7 +188,7 @@ MonoBehaviour:
   secondaryEndLag: 0
   timeUntilNextAttack: 0
   timeUntilNextShot: 0
-  speed: 2
+  speed: 0
   maxStamina: 100
   currentStamina: 0
   aiPath: {fileID: 6799095663273965126}
