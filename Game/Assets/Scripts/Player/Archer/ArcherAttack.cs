@@ -90,11 +90,11 @@ public class ArcherAttack : PlayerAttacker {
     }
     public void Up() {
         base.UpInitializer();
-        master.meleeRange = 0.35f;
+        master.meleeRange = 0.65f;
     }
     public void Down() {
         base.DownInitializer();
-        master.meleeRange = 0.43f;
+        master.meleeRange = 0.75f;
     }
 
     override public void Bless() {
