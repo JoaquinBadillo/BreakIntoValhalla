@@ -9264,6 +9264,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2222431318578479591}
     m_Modifications:
+    - target: {fileID: 1407801501, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
+      propertyPath: m_Name
+      value: TavernSign
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407801502, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
+      propertyPath: m_Size.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407801502, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407801502, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d224002c8460f784cb25d5fad91e4aef, type: 3}
+    - target: {fileID: 1407801502, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407801503, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1407801503, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.62
+      objectReference: {fileID: 0}
     - target: {fileID: 1908540691840948486, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -9311,6 +9339,10 @@ PrefabInstance:
     - target: {fileID: 1908540691840948487, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
       propertyPath: m_Name
       value: Tavern
+      objectReference: {fileID: 0}
+    - target: {fileID: 1908540692508884219, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1908540693017580600, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
       propertyPath: m_fontSize
