@@ -33,8 +33,9 @@ router.get('/:username', async (req, res)=>{
     try {
         connection = await connectToDB();
         const [results, fields] = await connection.execute(
-            'SELECT character_id FROM valhalla.characters ' +
-            'INNER JOIN valhalla.users USING (character_id) ' +
+            'SELECT character_id FROM valhalla.users ' +
+            'INNER JOIN valhalla.games USING (game_id) ' +
+            'INNER JOIN valhalla.characters USING (character_id) ' +
             'WHERE username = ?', 
                 [req.params["username"]]);
         
