@@ -253,6 +253,7 @@ public class Player : Character {
         maxHealth += 20;
         currentHealth += 20;
         // Update health bar
+        healthBar.SetMaxValue(maxHealth);
         healthBar.SetValue(currentHealth);
         hitpoints.text = currentHealth + "/" + maxHealth;
     }

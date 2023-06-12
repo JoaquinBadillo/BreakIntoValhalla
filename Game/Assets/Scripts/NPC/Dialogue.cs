@@ -20,6 +20,10 @@ public class Dialogue : MonoBehaviour {
         text = text.Replace("_", "\n");
     }
 
+    public void SetText(string _text) {
+        this.text = _text;
+    }
+
     IEnumerator ShowDialogue() {        
         while (charIndex < text.Length) {
             dialogueText.text += text[charIndex];

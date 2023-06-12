@@ -13,6 +13,7 @@ TagManager:
   - Saber Draugr
   - Bow Draugr
   - Upgrade
+  - NPC
   layers:
   - Default
   - TransparentFX
