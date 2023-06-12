@@ -8,6 +8,11 @@ public class Afterimage : MonoBehaviour {
     [SerializeField] protected SpriteRenderer spriter1;
     [SerializeField] protected SpriteRenderer spriter2;
     [SerializeField] protected SpriteRenderer spriter3;
+
+    [SerializeField] protected SpriteRenderer morphingSpriter1;
+    [SerializeField] protected SpriteRenderer morphingSpriter2;
+    [SerializeField] protected SpriteRenderer morphingSpriter3;
+
     // Opacity Variables
     [SerializeField] protected float afterimageOpacity1;
     [SerializeField] protected float afterimageOpacity2;
@@ -19,8 +24,6 @@ public class Afterimage : MonoBehaviour {
     [SerializeField] protected Color afterimageColor1;
     [SerializeField] protected Color afterimageColor2;
     [SerializeField] protected Color afterimageColor3;
-    // Afterimage Activation Variables
-    [SerializeField] protected bool isAfterimageActive = false;
     
     
     // Start is called before the first frame update
@@ -57,11 +60,6 @@ public class Afterimage : MonoBehaviour {
 
         else if (master.lastmovementDir.x < 0 && master.lastmovementDir.y < 0)
             LeftDown();
-
-        if (!isAfterimageActive) 
-            return;
-        else
-            DeactivateAfterimage();
     }
 
     virtual public void Right() {
@@ -106,37 +104,39 @@ public class Afterimage : MonoBehaviour {
     }
 
     public void ActivateAfterimage() {
-        spriter1.enabled = true;
-        spriter2.enabled = true;
-        spriter3.enabled = true;
+        morphingSpriter1 = spriter1;
+        morphingSpriter2 = spriter2;
+        morphingSpriter3 = spriter3;
+        morphingSpriter1.enabled = true;
+        morphingSpriter2.enabled = true;
+        morphingSpriter3.enabled = true;
         afterimageOpacity1 = 0.38671875f; // 99 opacity
         afterimageOpacity2 = 0.2578125f; // 66 opacity
         afterimageOpacity3 = 0.12890625f; // 33 opacity
-        
-        isAfterimageActive = true;
+        StartCoroutine(DeactivateAfterimage());
     }
 
-    public void DeactivateAfterimage() {
-        if (Time.time >= timeUntilNextFade && afterimageOpacity1 > 0) {  
+    public IEnumerator DeactivateAfterimage() {
+        for (int i = 0; i < 60; i++) {
+            if (morphingSpriter1 != spriter1) {
+                morphingSpriter1.enabled = false;
+                morphingSpriter2.enabled = false;
+                morphingSpriter3.enabled = false;
+                yield break;
+            }
+
             afterimageOpacity3 -= opacityStep;
             afterimageOpacity2 -= opacityStep;
             afterimageOpacity1 -= opacityStep;
     
-            spriter3.color = new Color(1, 1, 1, afterimageOpacity3);
-            spriter2.color = new Color(1, 1, 1, afterimageOpacity2);
-            spriter1.color = new Color(1, 1, 1, afterimageOpacity1);
-    
-            if (afterimageOpacity3 <= 0)
-                spriter1.enabled = false;
-    
-            else if (afterimageOpacity2 <= 0)
-                spriter2.enabled = false;
-    
-            else if (afterimageOpacity1 <= 0){
-                spriter3.enabled = false;
-                isAfterimageActive = false;
-            }
-            timeUntilNextFade = Time.time + timeStep;
+            morphingSpriter3.color = new Color(1, 1, 1, afterimageOpacity3);
+            morphingSpriter2.color = new Color(1, 1, 1, afterimageOpacity2);
+            morphingSpriter1.color = new Color(1, 1, 1, afterimageOpacity1);
+            yield return new WaitForSeconds(0.01666667f);
         }
+        morphingSpriter1.enabled = false;
+        morphingSpriter2.enabled = false;
+        morphingSpriter3.enabled = false;
+        yield break;
     }
 }
