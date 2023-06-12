@@ -1,3 +1,14 @@
+/*
+    Hel Script
+    - Handles Hel's movement, attacks, and health
+    - Hel has two phases, the first phase is a melee attack
+    - The second phase is a summoning phase
+    - Hel has a health bar that is displayed on the screen
+    - When Hel dies the player wins the game
+
+    Pablo Bolio, Joaquin Badillo
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +38,8 @@ public class Hel : Character{
     private float timeUntilNextSummon;
     private float summonLag;
     private int randomizedSummon;
+
+    [SerializeField] GameObject panel;
 
     void Start() {
         maxHealth = 600;
@@ -106,6 +119,11 @@ public class Hel : Character{
         animator.SetBool("isDead", true);
         Debug.Log("SIKE!");
 
+        GameObject[] draugrs = GameObject.FindGameObjectsWithTag("Bow Draugr");
+
+        foreach (GameObject draugr in draugrs)
+            draugr.GetComponent<RangedDraugr>().TakeDamage(1000);
+
         StartCoroutine(Victory());
 
         Debug.Log("Yeets player out of existence");
@@ -118,6 +136,14 @@ public class Hel : Character{
         int kills = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().GetKills() + 1;
         PlayerPrefs.SetInt("kills", kills);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddKill();
+
+        // Fade Out
+        for (float f = 0f; f <= 1; f += 0.05f) {
+            Color c = new Color(0, 0, 0, f);
+            panel.GetComponent<Image>().color = c;
+            yield return new WaitForSeconds(0.05f);
+        }
+
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("CreditsScene");
     }
