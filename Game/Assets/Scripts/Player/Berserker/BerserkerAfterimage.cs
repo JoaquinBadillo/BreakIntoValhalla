@@ -3,15 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BerserkerAfterimage : Afterimage {
-    void Start() {
-        base.Initialize();
-    }
-
-    void Update() {
-        base.Refurbish();
-    }
-
-
     override public void Right() {
         spriter1 = master.gameObject.transform.GetChild(23).GetComponent<SpriteRenderer>();
         spriter2 = master.gameObject.transform.GetChild(24).GetComponent<SpriteRenderer>();

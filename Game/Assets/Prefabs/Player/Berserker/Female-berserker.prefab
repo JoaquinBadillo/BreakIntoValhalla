@@ -2887,6 +2887,7 @@ GameObject:
   - component: {fileID: 8621590036010562838}
   - component: {fileID: 9145859809148168237}
   - component: {fileID: 8630180219178807460}
+  - component: {fileID: 6432806775706832004}
   m_Layer: 3
   m_Name: Spriter
   m_TagString: Untagged
@@ -3001,6 +3002,33 @@ MonoBehaviour:
   damageSource: 
   killer: 
   kills: 0
+--- !u!114 &6432806775706832004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362311254081914747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b7e2d660efe0f4f9b17104e82b010e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriter1: {fileID: 0}
+  spriter2: {fileID: 0}
+  spriter3: {fileID: 0}
+  morphingSpriter1: {fileID: 0}
+  morphingSpriter2: {fileID: 0}
+  morphingSpriter3: {fileID: 0}
+  afterimageOpacity1: 0
+  afterimageOpacity2: 0
+  afterimageOpacity3: 0
+  opacityStep: 0
+  timeStep: 0
+  timeUntilNextFade: 0
+  afterimageColor1: {r: 0, g: 0, b: 0, a: 0}
+  afterimageColor2: {r: 0, g: 0, b: 0, a: 0}
+  afterimageColor3: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &6546315333070770652
 GameObject:
   m_ObjectHideFlags: 0
