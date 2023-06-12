@@ -42,7 +42,7 @@ router.get('/:username', async (req, res)=>{
         if (results.length === 0) 
             throw new Error("User not found!");
 
-        res.json(results);
+        res.json(results[0]);
     }
 
     catch(error) {
