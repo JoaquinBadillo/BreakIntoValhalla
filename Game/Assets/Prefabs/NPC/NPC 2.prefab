@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 3742011359888324533}
   m_Layer: 0
   m_Name: NPC 2
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -423,6 +423,7 @@ MonoBehaviour:
   text: Have you seen my hammer?
   dialogueText: {fileID: 2352274549140609313}
   frame: {fileID: 6188742997310672533}
+  giveCoins: 0
 --- !u!70 &8154097676904983855
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

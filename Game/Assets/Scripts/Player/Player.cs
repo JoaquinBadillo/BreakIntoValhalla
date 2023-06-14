@@ -76,7 +76,7 @@ public class Player : Character {
     private bool canSetKiller = true;
 
     // Shop Variables
-    [SerializeField] int coins = 200;
+    [SerializeField] int coins = 0;
     private int BigPotionPrice = 100; // 50% of max health
     private int UpgradePrice = 75; // Upgrade stats
     private int SmallPotionPrice = 25; // 10% of max health
@@ -99,6 +99,7 @@ public class Player : Character {
     [SerializeField] float timeUntilNextBlessing;
     public bool isBlessed;
     [SerializeField] HostSO host;
+    [SerializeField] CoinDisplay coinDisplay;
    
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -238,6 +239,7 @@ public class Player : Character {
     public void Buy(int price) {
         if(coins - price >= 0){
             coins -= price;
+            coinDisplay.UpdateCoins(coins);
             if (price == BigPotionPrice)
                     Heal(0.5f);
 
@@ -327,6 +329,7 @@ public class Player : Character {
 
     public void AddCoins(int _coins) {
         coins += _coins;
+        coinDisplay.UpdateCoins(coins);
     }
 
     public int GetKills() {
