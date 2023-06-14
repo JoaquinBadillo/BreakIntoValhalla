@@ -4,6 +4,7 @@
 @import "./stats.css";
 @import "./parallax.css";
 @import "./warrior.css";
+@import "video.css";
 
 :root{
     --footer: #3C2C2B;
