@@ -43,7 +43,7 @@ public class Hel : Character{
 
     void Start() {
         maxHealth = 600;
-        endLag = 5f;
+        endLag = 3f;
         summonLag = 25f;
         meleeAttackBox = null;
         meleeAttackCircle = null;

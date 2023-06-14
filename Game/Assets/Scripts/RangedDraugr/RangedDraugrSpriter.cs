@@ -48,6 +48,10 @@ public class RangedDraugrSpriter : MonoBehaviour
         throwable = true;
     }
 
+    public void Idling() {
+        master.canShoot = true;
+    }
+
     public void EndDeath() {
         death = true;
         StartCoroutine(WaitToDie());

@@ -71,7 +71,7 @@ public class Player : Character {
     public int staminaCost = 20;
     private string className;
     private bool keyCollected;
-    private int defense;
+    [SerializeField] private int defense;
 
     private bool canSetKiller = true;
 
@@ -199,7 +199,13 @@ public class Player : Character {
 
     public void TakeDamage(int damage, string damageSource) {
         StartCoroutine(Flashing());
-        currentHealth -= damage;
+        damage -= defense;
+
+        if (damage < 2)
+        currentHealth -= 2;
+        else
+            currentHealth -= damage;
+
         healthBar.SetValue(currentHealth);
         if (currentHealth <= 0)
             Die(damageSource);

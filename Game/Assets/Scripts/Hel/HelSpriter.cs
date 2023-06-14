@@ -20,7 +20,7 @@ public class HelSpriter : MonoBehaviour
         master = this.GetComponentInParent<Hel>();
         master.isAttacking = false;
         death = false;
-        spawner = GetComponent<HelSpawner>();
+        spawner = GameObject.FindGameObjectWithTag("HelThrone").GetComponentInChildren<HelSpawner>();
     }
 
     void Update() {

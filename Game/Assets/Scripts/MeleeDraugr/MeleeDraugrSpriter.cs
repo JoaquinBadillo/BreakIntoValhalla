@@ -44,6 +44,7 @@ public class MeleeDraugrSpriter : MonoBehaviour
     }
 
     public void StartDeath() {
+        master.meleeAttackPoint = null;
         this.GetComponentInParent<Seeker>().enabled = false;
         this.GetComponentInParent<AIPath>().enabled = false;
         this.GetComponentInParent<AIDestinationSetter>().enabled = false;
