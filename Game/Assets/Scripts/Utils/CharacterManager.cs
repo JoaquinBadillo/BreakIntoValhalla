@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class CharacterData {
     public int character_id;
@@ -71,4 +73,33 @@ public class CharacterManager : MonoBehaviour {
         yield break;
 	}
 
+    public IEnumerator SwitchCharacter(Button b, TextMeshProUGUI t) {
+        b.interactable = false;
+        CharacterData data = new CharacterData();
+        data.character_id = PlayerPrefs.GetInt("classIndex");
+
+        string jsonString = JsonUtility.ToJson(data);
+        string endpoint = host.uri + "characters/" + PlayerPrefs.GetString("username");
+        using (UnityWebRequest webRequest = UnityWebRequest.Put(endpoint, jsonString)) {
+            webRequest.method = "PUT";
+            webRequest.SetRequestHeader("Content-Type", "application/json");
+            webRequest.SetRequestHeader("Accept", "application/json");
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result == UnityWebRequest.Result.ConnectionError || webRequest.result == UnityWebRequest.Result.ProtocolError) {
+                Debug.LogError("Error switching character!");
+                Debug.LogError("Error: " + webRequest.error);
+                t.text = "Failed to Connect, Loading Locally...";
+                yield return new WaitForSeconds(2f);
+            }
+
+            else {
+                Debug.Log("Character switched!");
+                
+            }
+
+            SceneManager.LoadScene("MainScene");
+            yield break;
+        }
+    }  
 }

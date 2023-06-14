@@ -14,11 +14,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
+using TMPro;
 
 
 public class ClassSelect : MonoBehaviour {
     public GameObject[] classArray;
 	public int classIndex = 0;
+
+	[SerializeField] TextMeshProUGUI t;
+	[SerializeField] Button b;
 
 	public void Next() {
 		classArray[classIndex].SetActive(false);
@@ -40,5 +45,11 @@ public class ClassSelect : MonoBehaviour {
 		PlayerPrefs.SetInt("classIndex", classIndex + 1);
 		Debug.Log(PlayerPrefs.GetInt("classIndex"));
 		StartCoroutine(GetComponent<CharacterManager>().SelectCharacter());
+	}
+
+	public void SwitchCharacter() {
+		PlayerPrefs.SetInt("classIndex", classIndex + 1);
+		Debug.Log(PlayerPrefs.GetInt("classIndex"));
+		StartCoroutine(GetComponent<CharacterManager>().SwitchCharacter(b, t));	
 	}
 }
