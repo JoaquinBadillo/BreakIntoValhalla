@@ -62,6 +62,41 @@ router.get('/:username', async (req, res)=>{
     }
 });
 
+router.put('/:username', async (req, res) => {
+    let connection = null;
+
+    try {
+        connection = await connectToDB();
+        const [results, fields] = await connection.execute(
+            'UPDATE valhalla.users ' +
+            'INNER JOIN valhalla.games USING (game_id) ' +
+            'SET character_id = ? ' +
+            'WHERE username = ?',
+                [req.body.character_id, req.params["username"]]);
+
+        if (results.affectedRows === 0)
+            throw new Error("User not found!");
+            
+        res.json(results);
+    }
+
+    catch(error) {
+        if (error.message === "User not found!")
+            res.status(404);
+        else
+            res.status(500);
+        
+        res.json(error);
+    }
+
+    finally {
+        if(connection!==null) {
+            connection.end();
+            console.log("Connection closed succesfully!");
+        }
+    }
+});
+
 router.get('/:character_id/stats', async (req, res)=>{
     let connection = null;
     try {

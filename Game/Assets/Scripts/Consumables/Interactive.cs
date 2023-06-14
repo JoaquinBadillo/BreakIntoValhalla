@@ -17,6 +17,8 @@ public class Interactive : MonoBehaviour {
 
     [SerializeField] protected bool inShop = false;
 
+    [SerializeField] protected GameObject _text = null;
+
     protected float alpha = 0.7f;
 
     [SerializeField] protected SpriteRenderer spriter;
@@ -49,11 +51,18 @@ public class Interactive : MonoBehaviour {
 
     protected void OnTriggerEnter2D(Collider2D other) {
         if (!interactable || other.gameObject.tag != "Player") return;
+        if (_text != null) {
+            _text.SetActive(true);
+        }
+
         inRange = true;
     }
 
     protected void OnTriggerExit2D(Collider2D other) {
         if (!interactable || other.gameObject.tag != "Player") return;
+        if (_text != null) {
+            _text.SetActive(false);
+        }
         spriter.color = new Color(1f, 1f, 1f, 0f);
         inRange = false;
     }
