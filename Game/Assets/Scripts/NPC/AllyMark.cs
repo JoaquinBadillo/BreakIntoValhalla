@@ -11,8 +11,12 @@ using UnityEngine;
 
 public class AllyMark : MonoBehaviour {
     [SerializeField] float amplitude;
+    private float initialPos;
 
+    private void Start() {
+        initialPos = transform.position.y;
+    }
     private void Update() {
-        transform.position = new Vector2(transform.position.x, transform.position.y + Mathf.Sin(2 * Time.time) * amplitude);
+        transform.position = new Vector2(transform.position.x, initialPos + Mathf.Sin(2 * Time.time) * amplitude);
     }
 }
