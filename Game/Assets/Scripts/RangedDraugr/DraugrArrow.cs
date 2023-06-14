@@ -25,6 +25,8 @@ public class DraugrArrow : MonoBehaviour {
         }
         else if (other.CompareTag("Walls"))
             YeetArrow();
+        else if (other.CompareTag("Spell"))
+            YeetArrow();
     }
 
     public void YeetArrow() {

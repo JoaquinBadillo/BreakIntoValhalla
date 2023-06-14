@@ -10,12 +10,14 @@ public class RangedDraugr : Character {
     public Transform player; // reference to the player
     public Vector2 facingDirection;
     public float angle; 
+    public bool canShoot;
 
 
     void Start() {
         maxHealth = 15;
         speed = 1.5f;
         secondaryAttack = 15;
+        canShoot = true;
         base.Initialize();
         animatorSlave = GetComponentInChildren<RangedDraugrSpriter>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -30,8 +32,9 @@ public class RangedDraugr : Character {
     }
 
     public void Attack() {
-        if (Time.time >= timeUntilNextShot){
+        if (Time.time >= timeUntilNextShot && canShoot){
             animator.SetTrigger("shoot");
+            canShoot = false;
             timeUntilNextShot = Time.time + secondaryEndLag;
         }
     }
