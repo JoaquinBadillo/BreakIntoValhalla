@@ -39,14 +39,16 @@ public class LoginScreen : MonoBehaviour {
     [SerializeField] TMP_Text email;
     [SerializeField] TMP_Text password;
     [SerializeField] TMP_Text errorMessage;
-
     public HostSO host;
-
     public Button submit;
+    private BackgroundMusic musicMaster;
+
     // Start is called before the first frame update
     void Start() {
         system = EventSystem.current;
         first.Select();
+        musicMaster = GameObject.FindGameObjectWithTag("Sounder").GetComponent<BackgroundMusic>();
+        StartCoroutine(MusicFadeIn());
     }
 
     // Update is called once per frame
@@ -61,6 +63,15 @@ public class LoginScreen : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Return)){
             submit.onClick.Invoke();
             Debug.Log("Gotta love the return key");
+        }
+    }
+
+    IEnumerator MusicFadeIn(){
+        for (float f = musicMaster.audio.volume; f >= 0; f += 0.05f) {
+            musicMaster.audio.volume = f;
+            yield return new WaitForSeconds(0.05f);
+            if (!musicMaster.audio.isPlaying)
+                musicMaster.audio.Play();
         }
     }
 

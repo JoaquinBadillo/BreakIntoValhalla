@@ -9,6 +9,7 @@
         - Ranged Combat Mechanics ()
         - Take Damage (using methods called in enemy scripts)
         - Death (deactivating different components with GetComponent<>() method)
+        - Stamina UI
     
         Contributed by Pablo Bolio
 
@@ -51,8 +52,6 @@ public class Stats {
 }
 
 public class Player : Character {
-    // Unity Components
-    private AudioSource audio;
     // Slaves
     private PlayerAttacker spriterSlave;
     private Blessed blessedSlave;
@@ -100,6 +99,12 @@ public class Player : Character {
     public bool isBlessed;
     [SerializeField] HostSO host;
     [SerializeField] CoinDisplay coinDisplay;
+    // Sound Variables
+    public AudioSource audio;
+    [SerializeField] AudioClip healthRestore;
+    [SerializeField] AudioClip coinToss;
+    public AudioClip slash;
+
    
     // Sets necessary parameters and gets necessary components
     void Start() {
@@ -239,18 +244,28 @@ public class Player : Character {
     public void Buy(int price) {
         if(coins - price >= 0){
             coins -= price;
-            coinDisplay.UpdateCoins(coins);
-            if (price == BigPotionPrice)
-                    Heal(0.5f);
-
-            else if (price == UpgradePrice)
-                    upgradeCanvas.SetActive(true);
-
-            else if (price == SmallPotionPrice)          
-                    Heal(0.1f);
-            audio.Play();
+            StartCoroutine(CoinToss(price));
         }       
 
+    }
+
+    public IEnumerator CoinToss(int price){
+        audio.clip = coinToss;
+        audio.Play();
+
+        yield return new WaitWhile (()=> audio.isPlaying);
+
+        coinDisplay.UpdateCoins(coins);
+            if (price == BigPotionPrice)
+                Heal(0.5f);
+
+            else if (price == UpgradePrice)
+                upgradeCanvas.SetActive(true);
+
+            else if (price == SmallPotionPrice)
+                Heal(0.1f);
+        
+        yield break;
     }
 
     public int GetMaxHealth() {
@@ -259,6 +274,7 @@ public class Player : Character {
 
     public void UpgradeAttack() {
         attack += 3;
+        secondaryAttack += 3;
     }
 
     public void UpgradeHealth() {
@@ -275,6 +291,8 @@ public class Player : Character {
     }
 
     public void Heal(float healingRate) {
+        audio.clip = healthRestore;
+        audio.Play();
         currentHealth += (int) (maxHealth * healingRate);
         
         // Avoid over-healing shenaningans

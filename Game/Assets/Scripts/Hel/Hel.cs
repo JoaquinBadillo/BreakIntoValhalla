@@ -38,8 +38,11 @@ public class Hel : Character{
     private float timeUntilNextSummon;
     private float summonLag;
     private int randomizedSummon;
-
     [SerializeField] GameObject panel;
+    // Audio Variables
+    private BackgroundMusic musicMaster;
+    public AudioSource audio;
+    public AudioClip slash;
 
     void Start() {
         maxHealth = 600;
@@ -50,6 +53,8 @@ public class Hel : Character{
         isSecondPhase = false;
         zRange = 1;
         auraSlave = this.GetComponentInChildren<Blessed>();
+        audio = GetComponent<AudioSource>();
+        musicMaster = GameObject.FindGameObjectWithTag("Sounder").GetComponent<BackgroundMusic>();
         base.Initialize();
         healthBar = GetComponentInChildren<HelSlider>();
         healthBar.SetMaxHealth(maxHealth);
@@ -136,6 +141,13 @@ public class Hel : Character{
         int kills = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().GetKills() + 1;
         PlayerPrefs.SetInt("kills", kills);
         GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().AddKill();
+
+        for (float f = 1f; f >= 0; f -= 0.05f) {
+            musicMaster.audio.volume = f;
+            yield return new WaitForSeconds(0.05f);
+        }
+        musicMaster.audio.Stop();
+        musicMaster.audio.clip = musicMaster.berserkir;
 
         // Fade Out
         for (float f = 0f; f <= 1; f += 0.05f) {

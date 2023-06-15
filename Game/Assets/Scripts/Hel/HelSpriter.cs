@@ -33,6 +33,12 @@ public class HelSpriter : MonoBehaviour
         } 
     }
 
+    public void StartAttackSound(){
+        master.audio.clip = master.slash;
+        master.audio.time = 2.7f;
+        master.audio.Play();
+    }
+
     void circleIntersection() {
         if (master.meleeAttackPoint == null || master.meleeAttackCircle == null)
                 return;
