@@ -45,9 +45,10 @@ public class Hel : Character{
     public AudioClip slash;
 
     void Start() {
-        maxHealth = 600;
+        maxHealth = 1250;
         endLag = 3f;
-        summonLag = 25f;
+        summonLag = 10f;
+        attack = 60;
         meleeAttackBox = null;
         meleeAttackCircle = null;
         isSecondPhase = false;
