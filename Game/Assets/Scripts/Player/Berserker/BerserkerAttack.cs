@@ -54,15 +54,15 @@ public class BerserkerAttack : PlayerAttacker {
             foreach(Collider2D enemy in hitEnemies) {
                 if (enemy.CompareTag("Saber Draugr")) {
                     axeAttackBox = null;
-                    enemy.GetComponent<MeleeDraugr>().TakeDamage(master.attack);
+                    enemy.GetComponent<MeleeDraugr>().TakeDamage(master.secondaryAttack);
                 }
                 else if(enemy.CompareTag("Bow Draugr")) {
                     axeAttackBox = null;
-                    enemy.GetComponent<RangedDraugr>().TakeDamage(master.attack);
+                    enemy.GetComponent<RangedDraugr>().TakeDamage(master.secondaryAttack);
                 }
                 else if (enemy.CompareTag("Hel")) {
                     axeAttackBox = null;
-                    enemy.GetComponent<Hel>().TakeDamage(master.attack);
+                    enemy.GetComponent<Hel>().TakeDamage(master.secondaryAttack);
                 }  
                 else if(enemy.CompareTag("Arrow")) {
                     base.Deflect(enemy);

@@ -49,7 +49,8 @@ public class RangedDraugrSpriter : MonoBehaviour
     }
 
     public void Idling() {
-        master.canShoot = true;
+        if (master!=null)
+            master.canShoot = true;
     }
 
     public void EndDeath() {
