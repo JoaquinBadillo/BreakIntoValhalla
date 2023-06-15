@@ -41,6 +41,13 @@ public class MeleeDraugrSpriter : MonoBehaviour
     public void endAttack() {
         isAttacking = false;
         master.aiPath.enabled = true;
+        master.canAttack = true;
+    }
+
+    public void StartAttackSound(){
+        master.audio.clip = master.slash;
+        master.audio.time = 2.7f;
+        master.audio.Play();
     }
 
     public void StartDeath() {

@@ -13,14 +13,20 @@ public class MeleeDraugr : Character{
     private MeleeDraugrSpriter animatorSlave;
     // distance between enemy and player
     private float reach = 8;
+    // Audio Variables
+    public AudioSource audio;
+    public AudioClip slash;
+    public bool canAttack;
 
     void Start() {
         maxHealth = 60;
         endLag = 3f;
         base.Initialize();
         animatorSlave = this.gameObject.transform.GetChild(0).GetComponent<MeleeDraugrSpriter>();
+        audio = GetComponent<AudioSource>();
         GetComponent<AIPath>().enabled = false;
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        canAttack = true;
     }
 
     void Update() {
@@ -30,8 +36,9 @@ public class MeleeDraugr : Character{
     }
 
     public void Attack() {
-        if (Time.time >= timeUntilNextAttack){
+        if (Time.time >= timeUntilNextAttack && canAttack){
             aiPath.enabled = false;
+            canAttack = false;
             animator.SetTrigger("slash");
             timeUntilNextAttack = Time.time + endLag;
         }
@@ -60,7 +67,7 @@ public class MeleeDraugr : Character{
     void ICanSmellYou(){
         if (Vector2.Distance(transform.position, player.position) <= reach)
             aiPath.enabled = true;
-        else
+        else 
             aiPath.enabled = false;
     }
 }

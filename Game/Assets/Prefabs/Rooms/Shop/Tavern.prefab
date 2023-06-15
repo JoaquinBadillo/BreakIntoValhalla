@@ -4910,6 +4910,7 @@ GameObject:
   - component: {fileID: 2222431318578479591}
   - component: {fileID: 9072638363030474505}
   - component: {fileID: 8100341067494504343}
+  - component: {fileID: 4745409813418481300}
   m_Layer: 0
   m_Name: Tavern
   m_TagString: Untagged
@@ -4974,6 +4975,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomName: Base
+--- !u!114 &4745409813418481300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443137557272488006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7cc3a3842849364ba4d1da98e0a8a10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicMaster: {fileID: 0}
 --- !u!1 &6241570662418547576
 GameObject:
   m_ObjectHideFlags: 0
@@ -9152,7 +9166,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1577314981546844369, guid: cb8502e0b33d6cd2ca24fe30ff3131e4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.323705
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1577314981546844369, guid: cb8502e0b33d6cd2ca24fe30ff3131e4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9306,7 +9320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1908540691840948486, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.0675955
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1908540691840948486, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9347,6 +9361,10 @@ PrefabInstance:
     - target: {fileID: 1908540693017580600, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
       propertyPath: m_fontSize
       value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3391628800666441597, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
+      propertyPath: inShop
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5183993688718344886, guid: 58ce87fdd2def7548bb3933422ded3b2, type: 3}
       propertyPath: m_fontSize

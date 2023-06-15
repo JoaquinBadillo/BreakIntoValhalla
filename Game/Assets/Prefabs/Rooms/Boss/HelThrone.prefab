@@ -34247,6 +34247,7 @@ GameObject:
   - component: {fileID: 1577314981546844369}
   - component: {fileID: 8663091572392543692}
   - component: {fileID: 4236776310556849883}
+  - component: {fileID: 4974802977331165883}
   m_Layer: 0
   m_Name: HelThrone
   m_TagString: HelThrone
@@ -34312,6 +34313,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conjureHel: {fileID: 1211460941}
   brokenBridge: {fileID: 5940149737517645139}
+--- !u!114 &4974802977331165883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043329327379910223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db799c24f4a01f41a91d199f94b36f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicMaster: {fileID: 0}
 --- !u!1 &5137686399891090467
 GameObject:
   m_ObjectHideFlags: 0

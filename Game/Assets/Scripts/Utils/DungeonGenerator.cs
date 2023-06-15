@@ -46,6 +46,7 @@ public class DungeonGenerator : MonoBehaviour {
     [SerializeField] GameObject vcam;
 
     void Start() {
+        StartCoroutine(FadeInMusic());
         Debug.Log("Seed: " + PlayerPrefs.GetInt("seed"));
         Random.InitState(PlayerPrefs.GetInt("seed"));
 
@@ -94,5 +95,14 @@ public class DungeonGenerator : MonoBehaviour {
         // Call the recursive function to insert rooms, starting with the base
         InsertRoom(gameObject, baseRoom);
         path.Scan();
+    }
+
+    IEnumerator FadeInMusic() {
+        AudioSource sounder = GameObject.FindGameObjectWithTag("Sounder").GetComponent<AudioSource>();
+        for (float f = sounder.volume; f < 1; f += 0.05f) {
+            sounder.volume = f;
+            yield return new WaitForSeconds(0.05f);
+        }
+        sounder.Play();
     }
 }

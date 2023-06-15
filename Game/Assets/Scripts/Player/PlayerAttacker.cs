@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerAttacker : MonoBehaviour {
     protected Player master;
+    private BackgroundMusic musicMaster;
     // Physics Variables
     protected Vector3 facing;
     protected float direction;
@@ -74,6 +75,12 @@ public class PlayerAttacker : MonoBehaviour {
         projectile.GetComponent<Rigidbody2D>().velocity = deflectDirection * arrowSpeed;
     }
 
+    public void StartAttackSound(){
+        master.audio.clip = master.slash;
+        master.audio.time = 2.7f;
+        master.audio.Play();
+    }
+
     public void UseStamina(int staminaCost) {
         if(master.currentStamina - staminaCost >= 0) {
             master.currentStamina -= staminaCost;
@@ -104,6 +111,13 @@ public class PlayerAttacker : MonoBehaviour {
     }
 
     IEnumerator DieCoroutine() {
+        for (float f = 1f; f >= 0; f -= 0.05f) {
+            musicMaster = GameObject.FindGameObjectWithTag("Sounder").GetComponent<BackgroundMusic>();
+            musicMaster.audio.volume = f;
+            yield return new WaitForSeconds(0.05f);
+        }
+        musicMaster.audio.Stop();
+
         for (float f = 0f; f <= 1; f += 0.05f) {
             Color c = new Color(0.074f, 0, 0, f);
             panel.GetComponent<Image>().color = c;

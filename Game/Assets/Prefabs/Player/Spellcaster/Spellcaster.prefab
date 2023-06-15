@@ -2963,6 +2963,10 @@ MonoBehaviour:
   isBlessed: 0
   host: {fileID: 11400000, guid: d79b9fa4b3393bd14a8d2fa4680ef60c, type: 2}
   coinDisplay: {fileID: 6256664715801144893}
+  audio: {fileID: 0}
+  healthRestore: {fileID: 8300000, guid: 62ce8a970d0473a4cae729efc2a89d2a, type: 3}
+  coinToss: {fileID: 8300000, guid: 6c615048892ff354798bb019dd539529, type: 3}
+  slash: {fileID: 8300000, guid: 9c5fabcb0bc08864fa0fbd0aa66880b7, type: 3}
 --- !u!114 &-123670054474894243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3000,7 +3004,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6c615048892ff354798bb019dd539529, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

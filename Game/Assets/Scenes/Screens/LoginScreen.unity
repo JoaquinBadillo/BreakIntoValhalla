@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.061374176, y: 0.47300002}
   m_AnchorMax: {x: 0.9332859, y: 0.60713446}
-  m_AnchoredPosition: {x: 0.12741089, y: -0.19999981}
+  m_AnchoredPosition: {x: 0.12741089, y: -0.20000076}
   m_SizeDelta: {x: -3.1945, y: -2.8855}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &120559269
@@ -478,7 +478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.37600002, y: 0.15534484}
   m_AnchorMax: {x: 0.63500005, y: 0.63658124}
-  m_AnchoredPosition: {x: 1.5287018, y: -3.0999908}
+  m_AnchoredPosition: {x: 1.5287018, y: -3.100006}
   m_SizeDelta: {x: -8.6654, y: -0.7139001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &187545244
@@ -599,7 +599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.37600002, y: 0.15534484}
   m_AnchorMax: {x: 0.63500005, y: 0.63658124}
-  m_AnchoredPosition: {x: 1.5287018, y: -3.0999908}
+  m_AnchoredPosition: {x: 1.5287018, y: -3.100006}
   m_SizeDelta: {x: -8.6654, y: -0.7139001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &216503594
@@ -1196,7 +1196,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.45
+  m_fontSize: 27.4
   m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1283,7 +1283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.06521772, y: 0.7857017}
   m_AnchorMax: {x: 0.9332859, y: 0.9292689}
-  m_AnchoredPosition: {x: -0.05316162, y: -0.0012130737}
+  m_AnchoredPosition: {x: -0.05316162, y: -0.0012207031}
   m_SizeDelta: {x: -2.118454, y: -2.2693634}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808425255
@@ -1634,7 +1634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.252}
   m_AnchorMax: {x: 0.51000005, y: 0.748}
-  m_AnchoredPosition: {x: 0.000022888184, y: -0.00001335144}
+  m_AnchoredPosition: {x: 0.000015258789, y: -0.00001335144}
   m_SizeDelta: {x: -0.000045776367, y: 0.0001001358}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1008858458
@@ -1704,7 +1704,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12.05
+  m_fontSize: 24.4
   m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16
+  m_fontSize: 31.9
   m_fontSizeBase: 10.5
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2022,7 +2022,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05849976, y: 0}
   m_AnchorMax: {x: 0.9325003, y: 1}
-  m_AnchoredPosition: {x: 0.06829834, y: 0.00004005432}
+  m_AnchoredPosition: {x: 0.06829834, y: 0.000038146973}
   m_SizeDelta: {x: 0.052200317, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1198124988
@@ -2074,7 +2074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.31, y: 0.64343053}
   m_AnchorMax: {x: 0.68986905, y: 0.91843057}
-  m_AnchoredPosition: {x: -0.22010803, y: 0}
+  m_AnchoredPosition: {x: -0.22009277, y: 0}
   m_SizeDelta: {x: -15.527199, y: -16.8153}
   m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!114 &1264324095
@@ -2152,7 +2152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.18761228, y: 0.19629827}
   m_AnchorMax: {x: 0.8124694, y: 0.31229827}
-  m_AnchoredPosition: {x: 0.000030517578, y: 0.0000076293945}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0.000015258789}
   m_SizeDelta: {x: -1, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264344569
@@ -2809,7 +2809,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.6
+  m_fontSize: 45.05
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2944,7 +2944,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20.95
+  m_fontSize: 45.75
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3047,3 +3047,148 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1 &2146744028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2146744031}
+  - component: {fileID: 2146744030}
+  - component: {fileID: 2146744029}
+  m_Layer: 0
+  m_Name: Sounder
+  m_TagString: Sounder
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2146744029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146744028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c53d2d8dc5564248ba84a51ba8bb58a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 0}
+  berserkir: {fileID: 8300000, guid: 8778c2b38e1829c438311f53375bedcb, type: 3}
+  FlokisLastJourney: {fileID: 8300000, guid: 06185a02dea34de4691df38d239489e3, type: 3}
+  Hel: {fileID: 8300000, guid: 5434faee2edd8304e94ad9c068e23a7d, type: 3}
+--- !u!82 &2146744030
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146744028}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8778c2b38e1829c438311f53375bedcb, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &2146744031
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146744028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 237.69601, y: 45.230442, z: 4.2586975}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
