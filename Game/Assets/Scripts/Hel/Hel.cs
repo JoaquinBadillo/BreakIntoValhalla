@@ -67,10 +67,8 @@ public class Hel : Character{
     void Update() {
         animator.SetFloat("xSpeed", aiPath.desiredVelocity.x);
         animator.SetFloat("ySpeed", aiPath.desiredVelocity.y);
-        if (isSecondPhase) {
-            auraSlave.AuraOn();
+        if (isSecondPhase)
             Summon();
-        }
     }
 
     public void Attack() {
@@ -108,8 +106,10 @@ public class Hel : Character{
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
 
-        if (currentHealth <= 300 && currentHealth > 0){
+        if (currentHealth <= 300 && currentHealth > 0 && !isSecondPhase){
             isSecondPhase = true;
+            auraSlave.AuraOn();
+            attack = 70;
             animator.SetBool("isSecond", true);
         }
 
